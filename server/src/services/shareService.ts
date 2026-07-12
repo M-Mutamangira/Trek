@@ -280,3 +280,38 @@ export function getSharedPlacePhotoPath(token: string, placeId: string): string 
 
   return serveFilePath(placeId);
 }
+
+export function getFeaturedTrips(): any[] {
+  const rows = db.prepare(`
+    SELECT t.id, t.title, t.description, t.start_date, t.end_date, t.cover_image, s.token as public_token, ti.token as invite_token
+    FROM trips t
+    JOIN share_tokens s ON t.id = s.trip_id
+    JOIN users u ON t.user_id = u.id
+    LEFT JOIN trip_invite_tokens ti ON t.id = ti.trip_id
+    WHERE u.role = 'admin' AND t.is_archived = 0
+    ORDER BY t.created_at DESC
+  `).all() as any[];
+
+  return rows.map(r => {
+    let duration = 'Flexible';
+    if (r.start_date && r.end_date) {
+      const start = new Date(r.start_date);
+      const end = new Date(r.end_date);
+      const diffTime = Math.abs(end.getTime() - start.getTime());
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1;
+      duration = `${diffDays} Day${diffDays > 1 ? 's' : ''}`;
+    }
+
+    return {
+      id: String(r.id),
+      title: r.title,
+      duration,
+      image: r.cover_image ? `/uploads/covers/${r.cover_image}` : 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop',
+      tags: ['Featured'],
+      description: r.description || '',
+      publicToken: r.public_token,
+      inviteToken: r.invite_token || '',
+    };
+  });
+}
+

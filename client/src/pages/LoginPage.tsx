@@ -182,7 +182,7 @@ export default function LoginPage(): React.ReactElement {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', fontFamily: "var(--font-system)", position: 'relative' }}>
-
+      
       {/* Language dropdown */}
       <div style={{ position: 'absolute', top: 16, right: 16, zIndex: 10 }}>
         <button

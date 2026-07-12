@@ -97,6 +97,11 @@ export class SharedController {
     stream.pipe(res);
   }
 
+  @Get('featured')
+  getFeatured() {
+    return this.share.getFeaturedTrips();
+  }
+
   @Get(':token')
   read(@Param('token') token: string) {
     const data = this.share.getSharedTripData(token);

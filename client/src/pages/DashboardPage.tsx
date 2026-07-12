@@ -31,6 +31,7 @@ import { convertDistance, getDistanceUnitLabel } from '../utils/units'
 import { useSettingsStore } from '../store/settingsStore'
 import { useAddonStore } from '../store/addonStore'
 import { normalizeAppearance } from '@trek/shared'
+import FeaturedStoriesStrip from '../components/Dashboard/FeaturedStoriesStrip'
 import '../styles/dashboard.css'
 
 const GRADIENTS = [
@@ -151,6 +152,7 @@ export default function DashboardPage(): React.ReactElement {
       {demoMode && <DemoBanner />}
       <div className="trek-dash-scroll">
         <MobileTopBar />
+        <FeaturedStoriesStrip />
         <main className="page" data-no-sidebar={sidebarVisible ? undefined : 'true'}>
           <div className="page-main">
             {loadError && (

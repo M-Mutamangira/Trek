@@ -150,7 +150,7 @@ apiClient.interceptors.request.use(
 )
 
 export function isAuthPublicPath(pathname: string): boolean {
-  const publicPaths = ['/login', '/register', '/forgot-password', '/reset-password']
+  const publicPaths = ['/', '/contact', '/login', '/register', '/forgot-password', '/reset-password']
   const publicPrefixes = ['/shared/', '/public/']
   return publicPaths.includes(pathname) || publicPrefixes.some((p) => pathname.startsWith(p))
 }
@@ -981,6 +981,7 @@ export const shareApi = {
   createLink: (tripId: number | string, perms?: Record<string, boolean>) => apiClient.post(`/trips/${tripId}/share-link`, perms || {}).then(r => r.data),
   deleteLink: (tripId: number | string) => apiClient.delete(`/trips/${tripId}/share-link`).then(r => r.data),
   getSharedTrip: (token: string) => apiClient.get(`/shared/${token}`).then(r => r.data),
+  getFeaturedTrips: () => apiClient.get('/shared/featured').then(r => r.data),
 }
 
 // Public transit routing (#1065) — Transitous/MOTIS proxied through the server.

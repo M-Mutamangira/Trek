@@ -7,6 +7,8 @@ import { useAddonStore } from './store/addonStore'
 import { usePluginStore } from './store/pluginStore'
 import PluginPage from './pages/PluginPage'
 import LoginPage from './pages/LoginPage'
+import LandingPage from './pages/LandingPage'
+import ContactPage from './pages/ContactPage'
 import ForgotPasswordPage from './pages/ForgotPasswordPage'
 import ResetPasswordPage from './pages/ResetPasswordPage'
 import DashboardPage from './pages/DashboardPage'
@@ -116,7 +118,11 @@ export default function App() {
   const { loadPlugins } = usePluginStore()
 
   useEffect(() => {
-    if (!location.pathname.startsWith('/shared/') && !location.pathname.startsWith('/public/') && !location.pathname.startsWith('/login')) {
+    const isPublic = location.pathname === '/' || location.pathname === '/contact'
+    const isShared = location.pathname.startsWith('/shared/') || location.pathname.startsWith('/public/')
+    const isLogin = location.pathname.startsWith('/login')
+
+    if (!isShared && !isLogin && (!isPublic || isAuthenticated)) {
       // If the persist snapshot already has an authenticated user, validate
       // silently so the PWA shell renders immediately without a spinner.
       const alreadyAuthenticated = useAuthStore.getState().isAuthenticated
@@ -205,15 +211,19 @@ export default function App() {
     || location.pathname.startsWith('/forgot-password')
     || location.pathname.startsWith('/reset-password')
 
+  const isPublicPage = location.pathname === '/' || location.pathname === '/contact'
+  const hideWidgets = isAuthPage || isPublicPage
+
   return (
     <TranslationProvider>
-      {!isAuthPage && <SystemNoticeHost />}
+      {!hideWidgets && <SystemNoticeHost />}
       <ToastContainer />
-      {!isAuthPage && <BackgroundTasksWidget />}
-      {!isAuthPage && <SaveToCollectionModal />}
+      {!hideWidgets && <BackgroundTasksWidget />}
+      {!hideWidgets && <SaveToCollectionModal />}
       <OfflineBanner />
       <Routes>
-        <Route path="/" element={<RootRedirect />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/shared/:token" element={<SharedTripPage />} />
         <Route path="/public/journey/:token" element={<JourneyPublicPage />} />
