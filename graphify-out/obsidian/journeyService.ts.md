@@ -1,0 +1,87 @@
+---
+source_file: "server/src/services/journeyService.ts"
+type: "code"
+community: "Server Services Journeyservice Tests"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Server_Services_Journeyservice_Tests
+---
+
+# journeyService.ts
+
+## Connections
+- [[Journey_1]] - `imports` [EXTRACTED]
+- [[JourneyContributor_1]] - `imports` [EXTRACTED]
+- [[JourneyEntry_1]] - `imports` [EXTRACTED]
+- [[JourneyPhoto_1]] - `imports` [EXTRACTED]
+- [[addContributor()]] - `contains` [EXTRACTED]
+- [[addPhoto()]] - `contains` [EXTRACTED]
+- [[addProviderPhoto()]] - `contains` [EXTRACTED]
+- [[addProviderPhotoToGallery()]] - `contains` [EXTRACTED]
+- [[addTripToJourney()]] - `contains` [EXTRACTED]
+- [[assignments.service.ts]] - `imports_from` [EXTRACTED]
+- [[assignments.ts_1]] - `imports_from` [EXTRACTED]
+- [[avatarUrl()]] - `imports` [EXTRACTED]
+- [[avatarUrl.ts]] - `imports_from` [EXTRACTED]
+- [[broadcastJourneyEvent()]] - `contains` [EXTRACTED]
+- [[broadcastToUser()_2]] - `imports` [EXTRACTED]
+- [[canAccessJourney()]] - `contains` [EXTRACTED]
+- [[canAccessTrip()]] - `imports` [EXTRACTED]
+- [[canEdit()]] - `contains` [EXTRACTED]
+- [[create-rpc-host.ts]] - `imports_from` [EXTRACTED]
+- [[createEntry()_2]] - `contains` [EXTRACTED]
+- [[createJourney()_2]] - `contains` [EXTRACTED]
+- [[database.ts]] - `imports_from` [EXTRACTED]
+- [[db_1]] - `imports` [EXTRACTED]
+- [[deleteEntry()_2]] - `contains` [EXTRACTED]
+- [[deleteGalleryPhoto()]] - `contains` [EXTRACTED]
+- [[deleteJourney()_2]] - `contains` [EXTRACTED]
+- [[deletePhoto()]] - `contains` [EXTRACTED]
+- [[deleteTrekPhotoIfOrphan()]] - `imports` [EXTRACTED]
+- [[ensureInGallery()]] - `contains` [EXTRACTED]
+- [[getJourneyFull()]] - `contains` [EXTRACTED]
+- [[getOrCreateLocalTrekPhoto()]] - `imports` [EXTRACTED]
+- [[getOrCreateTrekPhoto()]] - `imports` [EXTRACTED]
+- [[getSuggestions()]] - `contains` [EXTRACTED]
+- [[insertSkeletonEntry()]] - `contains` [EXTRACTED]
+- [[isOwner()_2]] - `contains` [EXTRACTED]
+- [[journal-entry-rows.controller.ts]] - `imports_from` [EXTRACTED]
+- [[journey.service.ts]] - `imports_from` [EXTRACTED]
+- [[journey.ts]] - `imports_from` [EXTRACTED]
+- [[journeyService.test.ts]] - `imports_from` [EXTRACTED]
+- [[journeyService.ts]] - `contains` [EXTRACTED]
+- [[journeyShareService.ts]] - `imports_from` [EXTRACTED]
+- [[linkGalleryPhotoToEntry()]] - `contains` [EXTRACTED]
+- [[linkPhotoToEntry()]] - `contains` [EXTRACTED]
+- [[listEntries()]] - `contains` [EXTRACTED]
+- [[listJourneys()]] - `contains` [EXTRACTED]
+- [[listUserTrips()]] - `contains` [EXTRACTED]
+- [[onPlaceCreated()]] - `contains` [EXTRACTED]
+- [[onPlaceDeleted()]] - `contains` [EXTRACTED]
+- [[onPlaceUpdated()]] - `contains` [EXTRACTED]
+- [[photoResolverService.ts]] - `imports_from` [EXTRACTED]
+- [[places.service.ts]] - `imports_from` [EXTRACTED]
+- [[places.ts_1]] - `imports_from` [EXTRACTED]
+- [[promoteSkeletonIfNeeded()]] - `contains` [EXTRACTED]
+- [[reconcileTripSkeletons()]] - `contains` [EXTRACTED]
+- [[removeContributor()]] - `contains` [EXTRACTED]
+- [[removeTripFromJourney()]] - `contains` [EXTRACTED]
+- [[reorderEntries()]] - `contains` [EXTRACTED]
+- [[resources.ts]] - `imports_from` [EXTRACTED]
+- [[setPhotoProvider()]] - `contains` [EXTRACTED]
+- [[setTrekPhotoProvider()]] - `imports` [EXTRACTED]
+- [[syncTripPhotos()]] - `contains` [EXTRACTED]
+- [[syncTripPlaces()]] - `contains` [EXTRACTED]
+- [[types.ts_2]] - `imports_from` [EXTRACTED]
+- [[unlinkPhotoFromEntry()]] - `contains` [EXTRACTED]
+- [[updateContributorRole()]] - `contains` [EXTRACTED]
+- [[updateEntry()_2]] - `contains` [EXTRACTED]
+- [[updateJourney()]] - `contains` [EXTRACTED]
+- [[updateJourneyPreferences()]] - `contains` [EXTRACTED]
+- [[updatePhoto()]] - `contains` [EXTRACTED]
+- [[uploadGalleryPhotos()]] - `contains` [EXTRACTED]
+- [[websocket.ts_1]] - `imports_from` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Server_Services_Journeyservice_Tests

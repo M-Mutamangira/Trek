@@ -1,0 +1,86 @@
+---
+source_file: "server/src/services/placeService.ts"
+type: "code"
+community: "Server Services Placeservice Tests"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Server_Services_Placeservice_Tests
+---
+
+# placeService.ts
+
+## Connections
+- [[DedupSet_1]] - `contains` [EXTRACTED]
+- [[EnrichablePlace]] - `imports` [EXTRACTED]
+- [[GpxImportOptions]] - `contains` [EXTRACTED]
+- [[KmlImportOptions]] - `contains` [EXTRACTED]
+- [[KmlImportSummary]] - `imports` [EXTRACTED]
+- [[ListImportOptions]] - `contains` [EXTRACTED]
+- [[Place_4]] - `imports` [EXTRACTED]
+- [[PlaceImportResult]] - `contains` [EXTRACTED]
+- [[PlaceWithCategory_2]] - `contains` [EXTRACTED]
+- [[SsrfBlockedError]] - `imports` [EXTRACTED]
+- [[UpdateConflict]] - `imports` [EXTRACTED]
+- [[booking-import.service.ts]] - `imports_from` [EXTRACTED]
+- [[buildCategoryNameLookup()]] - `imports` [EXTRACTED]
+- [[buildDedupSet()_1]] - `contains` [EXTRACTED]
+- [[checkSsrf()]] - `imports` [EXTRACTED]
+- [[conflictResult.ts]] - `imports_from` [EXTRACTED]
+- [[conflictUpdate.test.ts]] - `imports_from` [EXTRACTED]
+- [[create-rpc-host.ts]] - `imports_from` [EXTRACTED]
+- [[createKmlImportSummary()]] - `imports` [EXTRACTED]
+- [[createPlace()]] - `contains` [EXTRACTED]
+- [[database.ts]] - `imports_from` [EXTRACTED]
+- [[days.ts]] - `imports_from` [EXTRACTED]
+- [[db_1]] - `imports` [EXTRACTED]
+- [[decodeUtf8WithWarning()]] - `imports` [EXTRACTED]
+- [[deletePlace()_3]] - `contains` [EXTRACTED]
+- [[deletePlacesMany()_1]] - `contains` [EXTRACTED]
+- [[enrichImportedPlaces()]] - `imports` [EXTRACTED]
+- [[extractKmlPlacemarkNodes()]] - `imports` [EXTRACTED]
+- [[findDuplicatePlace()_1]] - `contains` [EXTRACTED]
+- [[getPlace()]] - `contains` [EXTRACTED]
+- [[getPlaceWithTags()]] - `imports` [EXTRACTED]
+- [[getUnsplashKey()]] - `imports` [EXTRACTED]
+- [[googleMapsFeatureIdFromItem()]] - `contains` [EXTRACTED]
+- [[googleMapsHexId()]] - `contains` [EXTRACTED]
+- [[gpxParser]] - `contains` [EXTRACTED]
+- [[importGoogleList()]] - `contains` [EXTRACTED]
+- [[importGpx()]] - `contains` [EXTRACTED]
+- [[importKmlPlaces()]] - `contains` [EXTRACTED]
+- [[importKmzPlaces()]] - `contains` [EXTRACTED]
+- [[importMapFile()]] - `contains` [EXTRACTED]
+- [[importNaverList()]] - `contains` [EXTRACTED]
+- [[isPlaceDuplicate()]] - `contains` [EXTRACTED]
+- [[isUpdateConflict()]] - `imports` [EXTRACTED]
+- [[kmlImport.ts]] - `imports_from` [EXTRACTED]
+- [[kmlParser]] - `contains` [EXTRACTED]
+- [[kmzUnpack.test.ts]] - `imports_from` [EXTRACTED]
+- [[listPlaces()]] - `contains` [EXTRACTED]
+- [[loadTagsByPlaceIds()]] - `imports` [EXTRACTED]
+- [[parsePlacemarkNode()]] - `imports` [EXTRACTED]
+- [[placeEnrichment.ts]] - `imports_from` [EXTRACTED]
+- [[placePhotoCache.ts]] - `imports_from` [EXTRACTED]
+- [[placeService.test.ts]] - `imports_from` [EXTRACTED]
+- [[places.service.ts]] - `imports_from` [EXTRACTED]
+- [[places.test.ts_1]] - `imports_from` [EXTRACTED]
+- [[places.ts_1]] - `imports_from` [EXTRACTED]
+- [[queryHelpers.ts]] - `imports_from` [EXTRACTED]
+- [[reclaimPhotoCache()]] - `contains` [EXTRACTED]
+- [[resolveCategoryIdForFolder()]] - `imports` [EXTRACTED]
+- [[resources.ts]] - `imports_from` [EXTRACTED]
+- [[safeFetchFollow()]] - `imports` [EXTRACTED]
+- [[searchPlaceImage()]] - `contains` [EXTRACTED]
+- [[searchUnsplashPhotos()]] - `imports` [EXTRACTED]
+- [[ssrfGuard.ts]] - `imports_from` [EXTRACTED]
+- [[trackInsertedInDedupSet()]] - `contains` [EXTRACTED]
+- [[trips.service.ts]] - `imports_from` [EXTRACTED]
+- [[types.ts_2]] - `imports_from` [EXTRACTED]
+- [[unpackKmzToKml()]] - `contains` [EXTRACTED]
+- [[unsplashService.ts]] - `imports_from` [EXTRACTED]
+- [[updatePlace()_1]] - `contains` [EXTRACTED]
+- [[updatePlacesMany()]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Server_Services_Placeservice_Tests

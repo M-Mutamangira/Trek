@@ -1,0 +1,212 @@
+---
+type: community
+cohesion: 0.03
+members: 159
+---
+
+# Client Components Planner Tests
+
+**Cohesion:** 0.03 - loosely connected
+**Members:** 159 nodes
+
+## Members
+- [[AccommodationList()]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[Action]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[AssignmentLookupEntry]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[Chip()]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[ChipProps]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[Column]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[ConfirmDialog()]] - code - client/src/components/shared/ConfirmDialog.tsx
+- [[ConfirmDialog.test.tsx]] - code - client/src/components/shared/ConfirmDialog.test.tsx
+- [[ConfirmDialog.tsx]] - code - client/src/components/shared/ConfirmDialog.tsx
+- [[ConfirmDialogProps]] - code - client/src/components/shared/ConfirmDialog.tsx
+- [[ContextMenu()]] - code - client/src/components/shared/ContextMenu.tsx
+- [[ContextMenu.test.tsx]] - code - client/src/components/shared/ContextMenu.test.tsx
+- [[ContextMenu.tsx]] - code - client/src/components/shared/ContextMenu.tsx
+- [[ContextMenuProps]] - code - client/src/components/shared/ContextMenu.tsx
+- [[DayDetailPanel()]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[DayDetailPanel.tsx]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[DayPlanSidebar]] - code - client/src/components/Planner/DayPlanSidebar.tsx
+- [[DayPlanSidebar.constants.ts]] - code - client/src/components/Planner/DayPlanSidebar.constants.ts
+- [[DayPlanSidebar.tsx]] - code - client/src/components/Planner/DayPlanSidebar.tsx
+- [[DayPlanSidebarNoteModal()]] - code - client/src/components/Planner/DayPlanSidebarNoteModal.tsx
+- [[DayPlanSidebarNoteModal.tsx]] - code - client/src/components/Planner/DayPlanSidebarNoteModal.tsx
+- [[DayPlanSidebarNoteModalProps]] - code - client/src/components/Planner/DayPlanSidebarNoteModal.tsx
+- [[DayPlanSidebarRouteConnector.tsx]] - code - client/src/components/Planner/DayPlanSidebarRouteConnector.tsx
+- [[DayPlanSidebarTimeConfirmModal()]] - code - client/src/components/Planner/DayPlanSidebarTimeConfirmModal.tsx
+- [[DayPlanSidebarTimeConfirmModal.tsx]] - code - client/src/components/Planner/DayPlanSidebarTimeConfirmModal.tsx
+- [[DayPlanSidebarTimeConfirmModalProps]] - code - client/src/components/Planner/DayPlanSidebarTimeConfirmModal.tsx
+- [[DayPlanSidebarTransportDetailModal()]] - code - client/src/components/Planner/DayPlanSidebarTransportDetailModal.tsx
+- [[DayPlanSidebarTransportDetailModal.tsx]] - code - client/src/components/Planner/DayPlanSidebarTransportDetailModal.tsx
+- [[DayPlanSidebarTransportDetailModalProps]] - code - client/src/components/Planner/DayPlanSidebarTransportDetailModal.tsx
+- [[DragDataPayload]] - code - client/src/components/Planner/DayPlanSidebar.tsx
+- [[EMPTY]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[FitBoundsToPlaces()]] - code - client/src/pages/SharedTripPage.tsx
+- [[HotelPickerModal()]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[HotelRouteConnector()]] - code - client/src/components/Planner/DayPlanSidebarRouteConnector.tsx
+- [[InfoChip()]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[InfoChipProps]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[ListImportModal()]] - code - client/src/components/Planner/PlacesSidebarListImportModal.tsx
+- [[MOCK_ROUTE_WITH_LEGS]] - code - client/tests/integration/hooks/useRouteCalculation.test.ts
+- [[MOCK_SEGMENTS]] - code - client/tests/integration/hooks/useRouteCalculation.test.ts
+- [[MemoPlaceRow]] - code - client/src/components/Planner/PlacesSidebarRow.tsx
+- [[MenuItem]] - code - client/src/components/shared/ContextMenu.tsx
+- [[MenuState]] - code - client/src/components/shared/ContextMenu.tsx
+- [[MergedItem_1]] - code - client/src/utils/dayMerge.ts
+- [[MobileDayPickerSheet()]] - code - client/src/components/Planner/PlacesSidebarMobileDayPicker.tsx
+- [[NOTE_ICONS]] - code - client/src/components/Planner/DayPlanSidebar.constants.ts
+- [[NOTE_ICON_MAP_1]] - code - client/src/components/Planner/DayPlanSidebar.constants.ts
+- [[NO_ACCOMMODATIONS]] - code - client/src/hooks/useRouteCalculation.ts
+- [[NoteModalUi]] - code - client/src/components/Planner/DayPlanSidebarNoteModal.tsx
+- [[PlaceReservationParticipants()]] - code - client/src/components/Planner/PlaceInspector.tsx
+- [[Placement]] - code - client/src/components/shared/Tooltip.tsx
+- [[PlacesList()]] - code - client/src/components/Planner/PlacesSidebarList.tsx
+- [[PlacesSelectionBar()]] - code - client/src/components/Planner/PlacesSidebarSelectionBar.tsx
+- [[PlacesSidebar]] - code - client/src/components/Planner/PlacesSidebar.tsx
+- [[PlacesSidebar.tsx]] - code - client/src/components/Planner/PlacesSidebar.tsx
+- [[PlacesSidebarList.tsx]] - code - client/src/components/Planner/PlacesSidebarList.tsx
+- [[PlacesSidebarListImportModal.tsx]] - code - client/src/components/Planner/PlacesSidebarListImportModal.tsx
+- [[PlacesSidebarMobileDayPicker.tsx]] - code - client/src/components/Planner/PlacesSidebarMobileDayPicker.tsx
+- [[PlacesSidebarSelectionBar.tsx]] - code - client/src/components/Planner/PlacesSidebarSelectionBar.tsx
+- [[PluginActions()]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[PluginCardFooter()]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[PluginColumns()]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[PluginContributions.tsx]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[RES_ICONS]] - code - client/src/components/Planner/DayPlanSidebar.constants.ts
+- [[RES_TYPE_COLORS]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[RES_TYPE_ICONS]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[ReservationCard()]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[ReservationsPanel()]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[ReservationsPanel.tsx]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[ReservationsPanelProps]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[RouteConnector()]] - code - client/src/components/Planner/DayPlanSidebarRouteConnector.tsx
+- [[RouteResult]] - code - client/src/types.ts
+- [[RouteSegment_1]] - code - client/src/types.ts
+- [[SUPPORTED_LANGUAGES]] - code - shared/src/i18n/languages.ts
+- [[SaveToCollectionState]] - code - client/src/store/saveToCollectionStore.ts
+- [[SaveToCollectionTarget]] - code - client/src/store/saveToCollectionStore.ts
+- [[Section()]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[SectionProps]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[SharedTripPage()]] - code - client/src/pages/SharedTripPage.tsx
+- [[SharedTripPage.tsx]] - code - client/src/pages/SharedTripPage.tsx
+- [[SidebarState]] - code - client/src/components/Planner/usePlacesSidebar.ts
+- [[TONE_CLASS]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[TRANSPORT_DETAIL_COLORS]] - code - client/src/components/Planner/DayPlanSidebar.constants.ts
+- [[TRANSPORT_ICONS]] - code - client/src/pages/SharedTripPage.tsx
+- [[TRANSPORT_TYPES_5]] - code - client/src/hooks/useRouteCalculation.ts
+- [[TRANSPORT_TYPES_6]] - code - client/src/utils/dayMerge.ts
+- [[TYPE_ICONS]] - code - client/src/components/Planner/DayPlanSidebar.constants.ts
+- [[TYPE_OPTIONS_1]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[TimeConfirmState]] - code - client/src/components/Planner/DayPlanSidebarTimeConfirmModal.tsx
+- [[Tooltip()]] - code - client/src/components/shared/Tooltip.tsx
+- [[Tooltip.tsx]] - code - client/src/components/shared/Tooltip.tsx
+- [[TooltipProps]] - code - client/src/components/shared/Tooltip.tsx
+- [[TransitItineraryInline()]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[TransitJourneyCard()]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[TransitJourneyModal()]] - code - client/src/components/Planner/TransitJourneyModal.tsx
+- [[TransitJourneyModal.tsx]] - code - client/src/components/Planner/TransitJourneyModal.tsx
+- [[TransitJourneyModalProps]] - code - client/src/components/Planner/TransitJourneyModal.tsx
+- [[TransitLegChips()]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[TransitLegDisplay]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[TransitLegMeta]] - code - client/src/components/Planner/TransitJourneyModal.tsx
+- [[TransitMetaBadges()]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[TransitMetaItem]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[TransitTitle()]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[TransitWalkDivider()]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[UpcomingTool()]] - code - client/src/pages/DashboardPage.tsx
+- [[ViewContribution]] - code - client/src/api/client.ts
+- [[ViewName]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[WEATHER_ICON_MAP]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[WIcon()]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[WIconProps]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[Window]] - code - client/src/components/Planner/DayPlanSidebar.tsx
+- [[applyChronoOrder()]] - code - client/src/utils/dayMerge.ts
+- [[buildAssignmentLookup()]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[buildMockStore()]] - code - client/tests/integration/hooks/useRouteCalculation.test.ts
+- [[cTemp()]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[createMarkerIcon()]] - code - client/src/pages/SharedTripPage.tsx
+- [[dayMerge.test.ts]] - code - client/src/utils/dayMerge.test.ts
+- [[dayMerge.ts]] - code - client/src/utils/dayMerge.ts
+- [[dayOrder.test.ts]] - code - client/src/utils/dayOrder.test.ts
+- [[dayOrder.ts]] - code - client/src/utils/dayOrder.ts
+- [[days]] - code - client/src/utils/dayOrder.test.ts
+- [[expandFlightLegsForDay()]] - code - client/src/utils/dayMerge.ts
+- [[fmtTransitDuration()]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[formatTime()_2]] - code - client/src/utils/formatters.ts
+- [[formatTime12()]] - code - client/src/components/Planner/DayDetailPanel.tsx
+- [[getAccommodationAnchors()]] - code - client/src/utils/dayOrder.ts
+- [[getDayBookendHotels()]] - code - client/src/utils/dayOrder.ts
+- [[getDayOrder()]] - code - client/src/utils/dayOrder.ts
+- [[getDisplayTimeForDay()]] - code - client/src/utils/dayMerge.ts
+- [[getMergedItems()]] - code - client/src/utils/dayMerge.ts
+- [[getNoteIcon()]] - code - client/src/components/Planner/DayPlanSidebar.constants.ts
+- [[getSpanPhase()]] - code - client/src/utils/dayMerge.ts
+- [[getTransportForDay()]] - code - client/src/utils/dayMerge.ts
+- [[getTransportRouteEndpoints()]] - code - client/src/utils/dayMerge.ts
+- [[getType()]] - code - client/src/components/Planner/ReservationsPanel.tsx
+- [[hotel()]] - code - client/src/utils/dayOrder.test.ts
+- [[isDayInAccommodationRange()]] - code - client/src/utils/dayOrder.ts
+- [[makeMenu()]] - code - client/src/components/shared/ContextMenu.test.tsx
+- [[parseMultiLegs()]] - code - client/src/utils/dayMerge.ts
+- [[parseTimeToMinutes()]] - code - client/src/utils/dayMerge.ts
+- [[placeToSaveTarget()]] - code - client/src/components/Collections/saveTarget.ts
+- [[saveTarget.ts]] - code - client/src/components/Collections/saveTarget.ts
+- [[saveToCollectionStore.ts]] - code - client/src/store/saveToCollectionStore.ts
+- [[shouldDrawEveningLeg()]] - code - client/src/utils/dayOrder.ts
+- [[shouldDrawMorningLeg()]] - code - client/src/utils/dayOrder.ts
+- [[splitReservationDateTime()]] - code - client/src/utils/formatters.ts
+- [[transitDisplay.tsx]] - code - client/src/components/Planner/transitDisplay.tsx
+- [[useContextMenu()]] - code - client/src/components/shared/ContextMenu.tsx
+- [[useDayDetail()]] - code - client/src/components/Planner/useDayDetail.ts
+- [[useDayDetail.ts]] - code - client/src/components/Planner/useDayDetail.ts
+- [[useDayNotes()]] - code - client/src/hooks/useDayNotes.ts
+- [[useDayPlanSidebar()]] - code - client/src/components/Planner/DayPlanSidebar.tsx
+- [[usePlacesSidebar()]] - code - client/src/components/Planner/usePlacesSidebar.ts
+- [[usePlacesSidebar.ts]] - code - client/src/components/Planner/usePlacesSidebar.ts
+- [[usePluginViewContributions()]] - code - client/src/components/Plugins/PluginContributions.tsx
+- [[useRouteCalculation()]] - code - client/src/hooks/useRouteCalculation.ts
+- [[useRouteCalculation.test.ts]] - code - client/tests/integration/hooks/useRouteCalculation.test.ts
+- [[useRouteCalculation.ts]] - code - client/src/hooks/useRouteCalculation.ts
+- [[weatherApi]] - code - client/src/api/client.ts
+- [[withHotelBookends()]] - code - client/src/components/Map/RouteCalculator.ts
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Client_Components_Planner_Tests
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 71 edges to [[_COMMUNITY_Client Sync Store Tests]]
+- 60 edges to [[_COMMUNITY_Client Components Tests Tests]]
+- 41 edges to [[_COMMUNITY_Client Components Admin Tests]]
+- 34 edges to [[_COMMUNITY_Client Components Settings Tests]]
+- 27 edges to [[_COMMUNITY_Client Components Planner Tests_1]]
+- 23 edges to [[_COMMUNITY_Client Api Components Tests]]
+- 23 edges to [[_COMMUNITY_Client Components Budget Tests]]
+- 17 edges to [[_COMMUNITY_Client Components Planner Tests_2]]
+- 16 edges to [[_COMMUNITY_Client Components Map Tests_2]]
+- 12 edges to [[_COMMUNITY_Client Components Collections Tests_1]]
+- 9 edges to [[_COMMUNITY_Client Components Todo Tests]]
+- 5 edges to [[_COMMUNITY_Client Pages Atlas Tests]]
+- 4 edges to [[_COMMUNITY_Client Components Files Tests]]
+- 4 edges to [[_COMMUNITY_Client Pages Journeydetailpage (Client)]]
+- 4 edges to [[_COMMUNITY_Client Components Packing Tests]]
+- 3 edges to [[_COMMUNITY_Client Weather Weatherwidget (Client)]]
+- 3 edges to [[_COMMUNITY_Client Utils Filedownload Tests]]
+- 2 edges to [[_COMMUNITY_Adminpluginspanel Client Components (Client)]]
+- 2 edges to [[_COMMUNITY_Client Components Collab (Client)_1]]
+- 2 edges to [[_COMMUNITY_Server Plugins Controller Tests]]
+- 2 edges to [[_COMMUNITY_Client Components Journey (Client)_1]]
+- 1 edge to [[_COMMUNITY_Client Services Photoservice Tests]]
+- 1 edge to [[_COMMUNITY_Plugin Sdk Cli Tests]]
+- 1 edge to [[_COMMUNITY_Server Assignments Nest Tests]]
+- 1 edge to [[_COMMUNITY_Plugin Sdk Mock Tests]]
+
+## Top bridge nodes
+- [[DayPlanSidebar.tsx]] - degree 101, connects to 13 communities
+- [[DayDetailPanel.tsx]] - degree 49, connects to 8 communities
+- [[ReservationsPanel.tsx]] - degree 47, connects to 8 communities
+- [[SharedTripPage.tsx]] - degree 28, connects to 8 communities
+- [[useDayPlanSidebar()]] - degree 25, connects to 7 communities

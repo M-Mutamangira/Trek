@@ -1,0 +1,28 @@
+---
+type: community
+cohesion: 0.67
+members: 3
+---
+
+# Plugin Sdk Index Tests
+
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
+
+## Members
+- [[.send()]] - code - plugin-sdk/src/index.ts
+- [[.test()]] - code - plugin-sdk/src/index.ts
+- [[NotificationChannel]] - code - plugin-sdk/src/index.ts
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Plugin_Sdk_Index_Tests
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Plugin Sdk Index]]
+
+## Top bridge nodes
+- [[NotificationChannel]] - degree 3, connects to 1 community

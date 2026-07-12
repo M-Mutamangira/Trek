@@ -1,0 +1,46 @@
+---
+source_file: "server/src/mcp/scopes.ts"
+type: "code"
+community: "Server Services Mcp Tests"
+location: "L93"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Server_Services_Mcp_Tests
+---
+
+# canRead()
+
+## Connections
+- [[assignments.ts_1]] - `imports` [EXTRACTED]
+- [[atlas.ts]] - `imports` [EXTRACTED]
+- [[budget.ts_1]] - `imports` [EXTRACTED]
+- [[collab.ts]] - `imports` [EXTRACTED]
+- [[journey.ts]] - `imports` [EXTRACTED]
+- [[mapsWeather.ts]] - `imports` [EXTRACTED]
+- [[notifications.ts_1]] - `imports` [EXTRACTED]
+- [[packing.ts_1]] - `imports` [EXTRACTED]
+- [[places.ts_1]] - `imports` [EXTRACTED]
+- [[registerAssignmentTools()]] - `calls` [EXTRACTED]
+- [[registerAtlasTools()]] - `calls` [EXTRACTED]
+- [[registerBudgetTools()]] - `calls` [EXTRACTED]
+- [[registerCollabTools()]] - `calls` [EXTRACTED]
+- [[registerJourneyTools()]] - `calls` [EXTRACTED]
+- [[registerMapsWeatherTools()]] - `calls` [EXTRACTED]
+- [[registerNotificationTools()]] - `calls` [EXTRACTED]
+- [[registerPackingTools()]] - `calls` [EXTRACTED]
+- [[registerPlaceTools()]] - `calls` [EXTRACTED]
+- [[registerResources()]] - `calls` [EXTRACTED]
+- [[registerTagTools()]] - `calls` [EXTRACTED]
+- [[registerTodoTools()]] - `calls` [EXTRACTED]
+- [[registerTripTools()]] - `calls` [EXTRACTED]
+- [[registerVacayTools()]] - `calls` [EXTRACTED]
+- [[resources.ts]] - `imports` [EXTRACTED]
+- [[scopes.test.ts]] - `imports` [EXTRACTED]
+- [[scopes.ts]] - `contains` [EXTRACTED]
+- [[tags.ts_1]] - `imports` [EXTRACTED]
+- [[todos.ts]] - `imports` [EXTRACTED]
+- [[trips.ts_1]] - `imports` [EXTRACTED]
+- [[vacay.ts_1]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Server_Services_Mcp_Tests

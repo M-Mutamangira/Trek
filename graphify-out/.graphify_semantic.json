@@ -1,0 +1,1994 @@
+{
+  "nodes": [
+    {
+      "id": "code_of_conduct",
+      "label": "Contributor Covenant 3.0 Code of Conduct",
+      "file_type": "document",
+      "source_file": "CODE_OF_CONDUCT.md"
+    },
+    {
+      "id": "contributing",
+      "label": "Contributing to TREK",
+      "file_type": "document",
+      "source_file": "CONTRIBUTING.md"
+    },
+    {
+      "id": "mcp",
+      "label": "MCP Integration",
+      "file_type": "document",
+      "source_file": "MCP.md"
+    },
+    {
+      "id": "notice",
+      "label": "Third-party data & attributions",
+      "file_type": "document",
+      "source_file": "NOTICE.md"
+    },
+    {
+      "id": "readme",
+      "label": "TREK README",
+      "file_type": "document",
+      "source_file": "README.md"
+    },
+    {
+      "id": "security",
+      "label": "Security Policy",
+      "file_type": "document",
+      "source_file": "SECURITY.md"
+    },
+    {
+      "id": "trademarks",
+      "label": "Trademark Policy",
+      "file_type": "document",
+      "source_file": "TRADEMARKS.md"
+    },
+    {
+      "id": "docker_compose",
+      "label": "Docker Compose Configuration",
+      "file_type": "code",
+      "source_file": "docker-compose.yml"
+    },
+    {
+      "id": "funding",
+      "label": "Funding Configuration",
+      "file_type": "code",
+      "source_file": ".github/FUNDING.yml"
+    },
+    {
+      "id": "pull_request_template",
+      "label": "Pull Request Template",
+      "file_type": "code",
+      "source_file": ".github/PULL_REQUEST_TEMPLATE.md"
+    },
+    {
+      "id": "bug_report_template",
+      "label": "Bug Report Template",
+      "file_type": "code",
+      "source_file": ".github/ISSUE_TEMPLATE/bug_report.yml"
+    },
+    {
+      "id": "charts_readme",
+      "label": "TREK Helm Chart README",
+      "file_type": "document",
+      "source_file": "charts/README.md"
+    },
+    {
+      "id": "charts_trek_chart",
+      "label": "Helm Chart Metadata",
+      "file_type": "code",
+      "source_file": "charts/trek/Chart.yaml"
+    },
+    {
+      "id": "charts_trek_values",
+      "label": "Helm Chart Values",
+      "file_type": "code",
+      "source_file": "charts/trek/values.yaml"
+    },
+    {
+      "id": "client_index",
+      "label": "Client Entry Point",
+      "file_type": "code",
+      "source_file": "client/index.html"
+    },
+    {
+      "id": "client_pages_pattern",
+      "label": "Page Pattern Documentation",
+      "file_type": "document",
+      "source_file": "client/src/pages/PATTERN.md"
+    },
+    {
+      "id": "client_theme_readme",
+      "label": "Appearance & Theming Documentation",
+      "file_type": "document",
+      "source_file": "client/src/theme/README.md"
+    },
+    {
+      "id": "docs_system_notices",
+      "label": "System Notices Documentation",
+      "file_type": "document",
+      "source_file": "docs/system-notices.md"
+    },
+    {
+      "id": "client_public_icons_trek_loading_dark",
+      "label": "TREK Loading Dark GIF",
+      "file_type": "image",
+      "source_file": "client/public/icons/trek-loading-dark.gif"
+    },
+    {
+      "id": "client_public_icons_trek_loading_light",
+      "label": "TREK Loading Light GIF",
+      "file_type": "image",
+      "source_file": "client/public/icons/trek-loading-light.gif"
+    },
+    {
+      "id": "server_src_systemnotices_registry",
+      "label": "System Notices Registry",
+      "file_type": "code",
+      "source_file": "server/src/systemNotices/registry.ts"
+    },
+    {
+      "id": "client_src_i18n_translations_en",
+      "label": "English Translations",
+      "file_type": "code",
+      "source_file": "client/src/i18n/translations/en.ts"
+    },
+    {
+      "id": "client_src_components_systemnotices_noticeactions",
+      "label": "Notice Actions Component",
+      "file_type": "code",
+      "source_file": "client/src/components/SystemNotices/noticeActions.js"
+    },
+    {
+      "id": "client_src_app",
+      "label": "Client App Entry",
+      "file_type": "code",
+      "source_file": "client/src/App.tsx"
+    },
+    {
+      "id": "server_src_systemnotices_conditions",
+      "label": "System Notice Conditions",
+      "file_type": "code",
+      "source_file": "server/src/systemNotices/conditions.js"
+    },
+    {
+      "id": "server_src_addons",
+      "label": "Addons Registry",
+      "file_type": "code",
+      "source_file": "server/src/addons.ts"
+    },
+    {
+      "id": "plugin_sdk_readme",
+      "label": "TREK Plugin SDK README",
+      "file_type": "document",
+      "source_file": "plugin-sdk/README.md"
+    },
+    {
+      "id": "plugin_sdk_examples_koffi_readme",
+      "label": "Koffi Plugin README",
+      "file_type": "document",
+      "source_file": "plugin-sdk/examples/koffi/README.md"
+    },
+    {
+      "id": "docs_tiles_grid_desktop",
+      "label": "TREK Feature Tiles (Desktop)",
+      "file_type": "image",
+      "source_file": "docs/tiles/grid-desktop.svg"
+    },
+    {
+      "id": "docs_screenshots_dashboard",
+      "label": "Dashboard Screenshot",
+      "file_type": "image",
+      "source_file": "docs/screenshots/dashboard.png"
+    },
+    {
+      "id": "docs_screenshots_trip_planner",
+      "label": "Trip Planner Screenshot",
+      "file_type": "image",
+      "source_file": "docs/screenshots/trip-planner.png"
+    },
+    {
+      "id": "docs_screenshots_budget",
+      "label": "Budget Screenshot",
+      "file_type": "image",
+      "source_file": "docs/screenshots/budget.png"
+    },
+    {
+      "id": "docs_screenshots_vacay",
+      "label": "Vacay Screenshot",
+      "file_type": "image",
+      "source_file": "docs/screenshots/vacay.png"
+    },
+    {
+      "id": "docs_screenshots_journey",
+      "label": "Journey Screenshot",
+      "file_type": "image",
+      "source_file": "docs/screenshots/journey.png"
+    },
+    {
+      "id": "docs_screenshots_atlas",
+      "label": "Atlas Screenshot",
+      "file_type": "image",
+      "source_file": "docs/screenshots/atlas.png"
+    },
+    {
+      "id": "docs_screenshots_admin",
+      "label": "Admin Screenshot",
+      "file_type": "image",
+      "source_file": "docs/screenshots/admin.png"
+    },
+    {
+      "id": "plugin_sdk_examples_koffi_client_index",
+      "label": "Koffi Client Index",
+      "file_type": "code",
+      "source_file": "plugin-sdk/examples/koffi/client/index.html"
+    },
+    {
+      "id": "plugin_sdk_examples_trip_doctor_readme",
+      "label": "Trip Doctor README",
+      "file_type": "document",
+      "source_file": "plugin-sdk/examples/trip-doctor/README.md"
+    },
+    {
+      "id": "server_src_nest_readme",
+      "label": "NestJS Migration Guide",
+      "file_type": "document",
+      "source_file": "server/src/nest/README.md"
+    },
+    {
+      "id": "shared_readme",
+      "label": "@trek/shared README",
+      "file_type": "document",
+      "source_file": "shared/README.md"
+    },
+    {
+      "id": "wiki_ai_booking_import",
+      "label": "AI Booking Import",
+      "file_type": "document",
+      "source_file": "wiki/AI-Booking-Import.md"
+    },
+    {
+      "id": "wiki_accommodations",
+      "label": "Accommodations",
+      "file_type": "document",
+      "source_file": "wiki/Accommodations.md"
+    },
+    {
+      "id": "wiki_addons_overview",
+      "label": "Addons Overview",
+      "file_type": "document",
+      "source_file": "wiki/Addons-Overview.md"
+    },
+    {
+      "id": "wiki_admin_addons",
+      "label": "Admin — Addons",
+      "file_type": "document",
+      "source_file": "wiki/Admin-Addons.md"
+    },
+    {
+      "id": "wiki_admin_categories",
+      "label": "Admin — Categories",
+      "file_type": "document",
+      "source_file": "wiki/Admin-Categories.md"
+    },
+    {
+      "id": "wiki_admin_github_releases",
+      "label": "Admin — GitHub Releases",
+      "file_type": "document",
+      "source_file": "wiki/Admin-GitHub-Releases.md"
+    },
+    {
+      "id": "wiki_admin_packing_templates",
+      "label": "Admin — Packing Templates",
+      "file_type": "document",
+      "source_file": "wiki/Admin-Packing-Templates.md"
+    },
+    {
+      "id": "wiki_admin_panel_overview",
+      "label": "Admin Panel Overview",
+      "file_type": "document",
+      "source_file": "wiki/Admin-Panel-Overview.md"
+    },
+    {
+      "id": "wiki_admin_permissions",
+      "label": "Admin — Permissions",
+      "file_type": "document",
+      "source_file": "wiki/Admin-Permissions.md"
+    },
+    {
+      "id": "wiki_admin_users_and_invites",
+      "label": "Admin — Users and Invites",
+      "file_type": "document",
+      "source_file": "wiki/Admin-Users-and-Invites.md"
+    },
+    {
+      "id": "wiki_atlas",
+      "label": "Atlas",
+      "file_type": "document",
+      "source_file": "wiki/Atlas.md"
+    },
+    {
+      "id": "wiki_audit_log",
+      "label": "Audit Log",
+      "file_type": "document",
+      "source_file": "wiki/Audit-Log.md"
+    },
+    {
+      "id": "wiki_backups",
+      "label": "Backups",
+      "file_type": "document",
+      "source_file": "wiki/Backups.md"
+    },
+    {
+      "id": "wiki_budget_tracking",
+      "label": "Budget Tracking",
+      "file_type": "document",
+      "source_file": "wiki/Budget-Tracking.md"
+    },
+    {
+      "id": "wiki_collab_chat",
+      "label": "Collab Chat",
+      "file_type": "document",
+      "source_file": "wiki/Collab-Chat.md"
+    },
+    {
+      "id": "wiki_collab_notes",
+      "label": "Collab Notes",
+      "file_type": "document",
+      "source_file": "wiki/Collab-Notes.md"
+    },
+    {
+      "id": "wiki_collab_polls",
+      "label": "Collab Polls",
+      "file_type": "document",
+      "source_file": "wiki/Collab-Polls.md"
+    },
+    {
+      "id": "wiki_collections",
+      "label": "Collections",
+      "file_type": "document",
+      "source_file": "wiki/Collections.md"
+    },
+    {
+      "id": "wiki_contributing",
+      "label": "Contributing",
+      "file_type": "document",
+      "source_file": "wiki/Contributing.md"
+    },
+    {
+      "id": "wiki_creating_a_trip",
+      "label": "Creating a Trip",
+      "file_type": "document",
+      "source_file": "wiki/Creating-a-Trip.md"
+    },
+    {
+      "id": "wiki_dashboard_widgets",
+      "label": "Dashboard Widgets",
+      "file_type": "document",
+      "source_file": "wiki/Dashboard-Widgets.md"
+    },
+    {
+      "id": "wiki_day_plans_and_notes",
+      "label": "Day Plans and Notes",
+      "file_type": "document",
+      "source_file": "wiki/Day-Plans-and-Notes.md"
+    },
+    {
+      "id": "wiki_demo_mode",
+      "label": "Demo Mode",
+      "file_type": "document",
+      "source_file": "wiki/Demo-Mode.md"
+    },
+    {
+      "id": "wiki_development_environment",
+      "label": "Developer Setup Guide",
+      "file_type": "document",
+      "source_file": "wiki/Development-environment.md"
+    },
+    {
+      "id": "wiki_display_settings",
+      "label": "Display Settings",
+      "file_type": "document",
+      "source_file": "wiki/Display-Settings.md"
+    },
+    {
+      "id": "wiki_documents_and_files",
+      "label": "Documents and Files",
+      "file_type": "document",
+      "source_file": "wiki/Documents-and-Files.md"
+    },
+    {
+      "id": "wiki_encryption_key_rotation",
+      "label": "Encryption Key Rotation",
+      "file_type": "document",
+      "source_file": "wiki/Encryption-Key-Rotation.md"
+    },
+    {
+      "id": "wiki_environment_variables",
+      "label": "Environment Variables",
+      "file_type": "document",
+      "source_file": "wiki/Environment-Variables.md"
+    },
+    {
+      "id": "wiki_faq",
+      "label": "FAQ",
+      "file_type": "document",
+      "source_file": "wiki/FAQ.md"
+    },
+    {
+      "id": "wiki_home",
+      "label": "TREK Wiki Home",
+      "file_type": "document",
+      "source_file": "wiki/Home.md"
+    },
+    {
+      "id": "wiki_install_docker_compose",
+      "label": "Install: Docker Compose",
+      "file_type": "document",
+      "source_file": "wiki/Install-Docker-Compose.md"
+    },
+    {
+      "id": "wiki_install_docker",
+      "label": "Install: Docker",
+      "file_type": "document",
+      "source_file": "wiki/Install-Docker.md"
+    },
+    {
+      "id": "wiki_install_helm",
+      "label": "Install: Helm",
+      "file_type": "document",
+      "source_file": "wiki/Install-Helm.md"
+    },
+    {
+      "id": "wiki_install_portainer",
+      "label": "Install: Portainer",
+      "file_type": "document",
+      "source_file": "wiki/Install-Portainer.md"
+    },
+    {
+      "id": "wiki_install_proxmox",
+      "label": "Install: Proxmox VE (LXC)",
+      "file_type": "document",
+      "source_file": "wiki/Install-Proxmox.md"
+    },
+    {
+      "id": "wiki_install_unraid",
+      "label": "Install: Unraid",
+      "file_type": "document",
+      "source_file": "wiki/Install-Unraid.md"
+    },
+    {
+      "id": "wiki_internal_network_access",
+      "label": "Internal Network Access",
+      "file_type": "document",
+      "source_file": "wiki/Internal-Network-Access.md"
+    },
+    {
+      "id": "wiki_invite_links",
+      "label": "Invite Links",
+      "file_type": "document",
+      "source_file": "wiki/Invite-Links.md"
+    },
+    {
+      "id": "wiki_journey_journal",
+      "label": "Journey Journal",
+      "file_type": "document",
+      "source_file": "wiki/Journey-Journal.md"
+    },
+    {
+      "id": "wiki_languages",
+      "label": "Languages",
+      "file_type": "document",
+      "source_file": "wiki/Languages.md"
+    },
+    {
+      "id": "wiki_login_and_registration",
+      "label": "Login and Registration",
+      "file_type": "document",
+      "source_file": "wiki/Login-and-Registration.md"
+    },
+    {
+      "id": "wiki_mcp_addon_tools",
+      "label": "MCP Addon Tools and Resources",
+      "file_type": "document",
+      "source_file": "wiki/MCP-Addon-Tools.md"
+    },
+    {
+      "id": "plugin_sdk_examples_koffi_docs_screenshot",
+      "label": "Koffi Screenshot",
+      "file_type": "image",
+      "source_file": "plugin-sdk/examples/koffi/docs/screenshot.png"
+    },
+    {
+      "id": "server_tests_fixtures_small_image",
+      "label": "Small Test Image",
+      "file_type": "image",
+      "source_file": "server/tests/fixtures/small-image.jpg"
+    },
+    {
+      "id": "uploads_photos_google_1c11b39b210346006a5a2e005aa32737f8558c78",
+      "label": "Google Place Photo",
+      "file_type": "image",
+      "source_file": "uploads/photos/google/1c11b39b210346006a5a2e005aa32737f8558c78.jpg"
+    },
+    {
+      "id": "wiki_mcp_overview",
+      "label": "MCP Overview",
+      "file_type": "document",
+      "source_file": "wiki\\MCP-Overview.md"
+    },
+    {
+      "id": "wiki_mcp_prompts",
+      "label": "MCP Prompts",
+      "file_type": "document",
+      "source_file": "wiki\\MCP-Prompts.md"
+    },
+    {
+      "id": "wiki_mcp_scopes",
+      "label": "MCP Scopes",
+      "file_type": "document",
+      "source_file": "wiki\\MCP-Scopes.md"
+    },
+    {
+      "id": "wiki_mcp_setup",
+      "label": "MCP Setup",
+      "file_type": "document",
+      "source_file": "wiki\\MCP-Setup.md"
+    },
+    {
+      "id": "wiki_mcp_tools_and_resources",
+      "label": "MCP Tools and Resources",
+      "file_type": "document",
+      "source_file": "wiki\\MCP-Tools-and-Resources.md"
+    },
+    {
+      "id": "wiki_map_features",
+      "label": "Map Features",
+      "file_type": "document",
+      "source_file": "wiki\\Map-Features.md"
+    },
+    {
+      "id": "wiki_map_settings",
+      "label": "Map Settings",
+      "file_type": "document",
+      "source_file": "wiki\\Map-Settings.md"
+    },
+    {
+      "id": "wiki_my_trips_dashboard",
+      "label": "My Trips Dashboard",
+      "file_type": "document",
+      "source_file": "wiki\\My-Trips-Dashboard.md"
+    },
+    {
+      "id": "wiki_notifications",
+      "label": "Notifications",
+      "file_type": "document",
+      "source_file": "wiki\\Notifications.md"
+    },
+    {
+      "id": "wiki_oidc_sso",
+      "label": "OIDC / Single Sign-On",
+      "file_type": "document",
+      "source_file": "wiki\\OIDC-SSO.md"
+    },
+    {
+      "id": "wiki_offline_mode_and_pwa",
+      "label": "Offline Mode and PWA",
+      "file_type": "document",
+      "source_file": "wiki\\Offline-Mode-and-PWA.md"
+    },
+    {
+      "id": "wiki_pdf_export",
+      "label": "PDF Export",
+      "file_type": "document",
+      "source_file": "wiki\\PDF-Export.md"
+    },
+    {
+      "id": "wiki_packing_lists",
+      "label": "Packing Lists",
+      "file_type": "document",
+      "source_file": "wiki\\Packing-Lists.md"
+    },
+    {
+      "id": "wiki_packing_templates",
+      "label": "Packing Templates",
+      "file_type": "document",
+      "source_file": "wiki\\Packing-Templates.md"
+    },
+    {
+      "id": "wiki_photo_providers",
+      "label": "Photo Providers",
+      "file_type": "document",
+      "source_file": "wiki\\Photo-Providers.md"
+    },
+    {
+      "id": "wiki_places_and_search",
+      "label": "Places and Search",
+      "file_type": "document",
+      "source_file": "wiki\\Places-and-Search.md"
+    },
+    {
+      "id": "wiki_plugin_cookbook",
+      "label": "Plugin Cookbook",
+      "file_type": "document",
+      "source_file": "wiki\\Plugin-Cookbook.md"
+    },
+    {
+      "id": "wiki_plugin_development",
+      "label": "Plugin Development",
+      "file_type": "document",
+      "source_file": "wiki\\Plugin-Development.md"
+    },
+    {
+      "id": "wiki_plugin_permissions",
+      "label": "Plugin Permissions",
+      "file_type": "document",
+      "source_file": "wiki\\Plugin-Permissions.md"
+    },
+    {
+      "id": "wiki_plugin_publishing",
+      "label": "Plugin Publishing",
+      "file_type": "document",
+      "source_file": "wiki\\Plugin-Publishing.md"
+    },
+    {
+      "id": "wiki_plugins",
+      "label": "Plugins",
+      "file_type": "document",
+      "source_file": "wiki\\Plugins.md"
+    },
+    {
+      "id": "wiki_public_share_links",
+      "label": "Public Share Links",
+      "file_type": "document",
+      "source_file": "wiki\\Public-Share-Links.md"
+    },
+    {
+      "id": "mcp_server",
+      "label": "Model Context Protocol Server",
+      "file_type": "concept",
+      "source_file": "wiki\\MCP-Overview.md"
+    },
+    {
+      "id": "plugin_system",
+      "label": "TREK Plugin System",
+      "file_type": "concept",
+      "source_file": "wiki\\Plugins.md"
+    },
+    {
+      "id": "oauth_2_1",
+      "label": "OAuth 2.1 Authentication",
+      "file_type": "concept",
+      "source_file": "wiki\\MCP-Setup.md"
+    },
+    {
+      "id": "offline_sync",
+      "label": "Offline Data Sync",
+      "file_type": "concept",
+      "source_file": "wiki\\Offline-Mode-and-PWA.md"
+    },
+    {
+      "id": "quick_start",
+      "label": "Quick Start",
+      "file_type": "document",
+      "source_file": "wiki/Quick-Start.md"
+    },
+    {
+      "id": "real_time_collaboration",
+      "label": "Real-Time Collaboration",
+      "file_type": "document",
+      "source_file": "wiki/Real-Time-Collaboration.md"
+    },
+    {
+      "id": "reservations_and_bookings",
+      "label": "Reservations & Bookings",
+      "file_type": "document",
+      "source_file": "wiki/Reservations-and-Bookings.md"
+    },
+    {
+      "id": "reverse_proxy",
+      "label": "Reverse Proxy",
+      "file_type": "document",
+      "source_file": "wiki/Reverse-Proxy.md"
+    },
+    {
+      "id": "route_optimization",
+      "label": "Route Optimization",
+      "file_type": "document",
+      "source_file": "wiki/Route-Optimization.md"
+    },
+    {
+      "id": "security_hardening",
+      "label": "Security Hardening",
+      "file_type": "document",
+      "source_file": "wiki/Security-Hardening.md"
+    },
+    {
+      "id": "tags_and_categories",
+      "label": "Tags and Categories",
+      "file_type": "document",
+      "source_file": "wiki/Tags-and-Categories.md"
+    },
+    {
+      "id": "todos_and_tasks",
+      "label": "Todos and Tasks",
+      "file_type": "document",
+      "source_file": "wiki/Todos-and-Tasks.md"
+    },
+    {
+      "id": "transport_flights_trains_cars",
+      "label": "Transport: Flights, Trains & Cars",
+      "file_type": "document",
+      "source_file": "wiki/Transport-Flights-Trains-Cars.md"
+    },
+    {
+      "id": "trip_members_and_sharing",
+      "label": "Trip Members and Sharing",
+      "file_type": "document",
+      "source_file": "wiki/Trip-Members-and-Sharing.md"
+    },
+    {
+      "id": "trip_planner_overview",
+      "label": "Trip Planner Overview",
+      "file_type": "document",
+      "source_file": "wiki/Trip-Planner-Overview.md"
+    },
+    {
+      "id": "troubleshooting",
+      "label": "Troubleshooting",
+      "file_type": "document",
+      "source_file": "wiki/Troubleshooting.md"
+    },
+    {
+      "id": "two_factor_authentication",
+      "label": "Two-Factor Authentication",
+      "file_type": "document",
+      "source_file": "wiki/Two-Factor-Authentication.md"
+    },
+    {
+      "id": "updating",
+      "label": "Updating",
+      "file_type": "document",
+      "source_file": "wiki/Updating.md"
+    },
+    {
+      "id": "user_settings",
+      "label": "User Settings",
+      "file_type": "document",
+      "source_file": "wiki/User-Settings.md"
+    },
+    {
+      "id": "vacay",
+      "label": "Vacay",
+      "file_type": "document",
+      "source_file": "wiki/Vacay.md"
+    },
+    {
+      "id": "weather_forecasts",
+      "label": "Weather Forecasts",
+      "file_type": "document",
+      "source_file": "wiki/Weather-Forecasts.md"
+    },
+    {
+      "id": "whats_next_widget",
+      "label": "What's Next Widget",
+      "file_type": "document",
+      "source_file": "wiki/Whats-Next-Widget.md"
+    },
+    {
+      "id": "trek_docker_image",
+      "label": "TREK Docker Image",
+      "file_type": "code",
+      "source_file": "wiki/Quick-Start.md"
+    },
+    {
+      "id": "encryption_key",
+      "label": "Encryption Key",
+      "file_type": "concept",
+      "source_file": "wiki/Quick-Start.md"
+    },
+    {
+      "id": "collab_addon",
+      "label": "Collab Addon",
+      "file_type": "concept",
+      "source_file": "wiki/Real-Time-Collaboration.md"
+    },
+    {
+      "id": "websocket_transport",
+      "label": "WebSocket Transport",
+      "file_type": "concept",
+      "source_file": "wiki/Real-Time-Collaboration.md"
+    },
+    {
+      "id": "kde_itinerary",
+      "label": "KDE Itinerary",
+      "file_type": "code",
+      "source_file": "wiki/Reservations-and-Bookings.md"
+    },
+    {
+      "id": "osrm",
+      "label": "OSRM (Open Source Routing Machine)",
+      "file_type": "code",
+      "source_file": "wiki/Route-Optimization.md"
+    },
+    {
+      "id": "mcp_api",
+      "label": "MCP API",
+      "file_type": "concept",
+      "source_file": "wiki/User-Settings.md"
+    },
+    {
+      "id": "assets_2fa_png",
+      "label": "2FA Setup Screenshot",
+      "file_type": "image",
+      "source_file": "wiki/assets/2FA.png"
+    },
+    {
+      "id": "assets_bookings_png",
+      "label": "Reservations Panel Screenshot",
+      "file_type": "image",
+      "source_file": "wiki/assets/Bookings.png"
+    },
+    {
+      "id": "assets_collab_png",
+      "label": "Collab Widget Screenshot",
+      "file_type": "image",
+      "source_file": "wiki/assets/Collab.png"
+    },
+    {
+      "id": "wiki_assets_hotel_reservationdaysidebar",
+      "label": "Hotel Reservation Day Sidebar UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\Hotel-ReservationDaySidebar.png"
+    },
+    {
+      "id": "wiki_assets_invitelinkform",
+      "label": "Invite Link Creation Form UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\InviteLinkForm.png"
+    },
+    {
+      "id": "wiki_assets_journey",
+      "label": "Journey Timeline and Map UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\Journey.png"
+    },
+    {
+      "id": "wiki_assets_login",
+      "label": "Login and Features Overview UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\Login.png"
+    },
+    {
+      "id": "wiki_assets_mcpaccess",
+      "label": "MCP Access Management UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\MCPAccess.png"
+    },
+    {
+      "id": "wiki_assets_mcpconfig",
+      "label": "MCP Configuration and OAuth Sessions UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\MCPConfig.png"
+    },
+    {
+      "id": "wiki_assets_notifsettings",
+      "label": "Notification Settings UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\NotifSettings.png"
+    },
+    {
+      "id": "wiki_assets_oauthconsentdcr",
+      "label": "OAuth Authorization Consent UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\OAuthConsentDCR.png"
+    },
+    {
+      "id": "wiki_assets_optimizeroute",
+      "label": "Route Optimization and Trip Plan UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\OptimizeRoute.png"
+    },
+    {
+      "id": "wiki_assets_pdfjourney",
+      "label": "Journey Book PDF Preview UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\PDFJourney.png"
+    },
+    {
+      "id": "wiki_assets_pdftrip",
+      "label": "Trip Plan PDF Preview UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\PDFTrip.png"
+    },
+    {
+      "id": "wiki_assets_packinglist",
+      "label": "Packing List Management UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\PackingList.png"
+    },
+    {
+      "id": "wiki_assets_packingtemplate",
+      "label": "Packing Templates Administration UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\PackingTemplate.png"
+    },
+    {
+      "id": "wiki_assets_permissionsettings",
+      "label": "Permission Settings Administration UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\PermissionSettings.png"
+    },
+    {
+      "id": "wiki_assets_placeautocomplete",
+      "label": "Place Autocomplete Search UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\PlaceAutocomplete.png"
+    },
+    {
+      "id": "wiki_assets_share",
+      "label": "Trip Sharing and Public Link UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\Share.png"
+    },
+    {
+      "id": "wiki_assets_todos",
+      "label": "To-Do List Management UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\Todos.png"
+    },
+    {
+      "id": "wiki_assets_tripcreate",
+      "label": "Create New Trip Dialog UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\TripCreate.png"
+    },
+    {
+      "id": "wiki_assets_tripplaner",
+      "label": "Trip Planner Map View UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\TripPlaner.png"
+    },
+    {
+      "id": "wiki_assets_tripplannerwithplane",
+      "label": "Trip Planner with Flight Route UI",
+      "file_type": "image",
+      "source_file": "wiki\\assets\\TripPlannerWithPlane.png"
+    },
+    {
+      "id": "wiki_assets_usersandinvites",
+      "label": "Administration UI: Users and Invite Links",
+      "file_type": "image",
+      "source_file": "wiki/assets/UsersAndInvites.png"
+    },
+    {
+      "id": "wiki_assets_usrsettings",
+      "label": "User Settings UI: Display Preferences",
+      "file_type": "image",
+      "source_file": "wiki/assets/UsrSettings.png"
+    },
+    {
+      "id": "wiki_assets_usrsettingsmap",
+      "label": "User Settings UI: Map Provider and Template",
+      "file_type": "image",
+      "source_file": "wiki/assets/UsrSettingsMap.png"
+    },
+    {
+      "id": "wiki_assets_vacay",
+      "label": "Vacay UI: Vacation Management Calendar",
+      "file_type": "image",
+      "source_file": "wiki/assets/Vacay.png"
+    },
+    {
+      "id": "wiki_assets_weather",
+      "label": "Trip Planner UI: Weather and Itinerary Details",
+      "file_type": "image",
+      "source_file": "wiki/assets/Weather.png"
+    },
+    {
+      "id": "wiki_assets_portainer_add_stack",
+      "label": "Portainer UI: Add Stack Button",
+      "file_type": "image",
+      "source_file": "wiki/assets/portainer-add-stack.png"
+    },
+    {
+      "id": "wiki_assets_portainer_deploy_stack",
+      "label": "Portainer UI: Deploy Stack Action",
+      "file_type": "image",
+      "source_file": "wiki/assets/portainer-deploy-stack.png"
+    },
+    {
+      "id": "wiki_assets_portainer_environment_variable",
+      "label": "Portainer UI: Environment Variable Configuration",
+      "file_type": "image",
+      "source_file": "wiki/assets/portainer-environment-variable.png"
+    },
+    {
+      "id": "wiki_assets_portainer_force_pull",
+      "label": "Portainer UI: Force Update and Re-pull Image Dialog",
+      "file_type": "image",
+      "source_file": "wiki/assets/portainer-force-pull.png"
+    },
+    {
+      "id": "wiki_assets_portainer_stack_save",
+      "label": "Portainer UI: Docker Compose Web Editor",
+      "file_type": "image",
+      "source_file": "wiki/assets/portainer-stack-save.png"
+    },
+    {
+      "id": "wiki_assets_portainer_update_stack",
+      "label": "Portainer UI: Update Stack Action",
+      "file_type": "image",
+      "source_file": "wiki/assets/portainer-update-stack.png"
+    },
+    {
+      "id": "wiki_assets_portainer_update_version",
+      "label": "Portainer UI: Updating Image Version in Compose",
+      "file_type": "image",
+      "source_file": "wiki/assets/portainer-update-version.png"
+    }
+  ],
+  "edges": [
+    {
+      "source": "contributing",
+      "target": "code_of_conduct",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "source": "readme",
+      "target": "mcp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "notice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "docker_compose",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    },
+    {
+      "source": "docker_compose",
+      "target": "readme",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    },
+    {
+      "source": "charts_readme",
+      "target": "charts_trek_chart",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "source": "charts_readme",
+      "target": "charts_trek_values",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "source": "pull_request_template",
+      "target": "contributing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "client_index",
+      "target": "client_public_icons_trek_loading_dark",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7
+    },
+    {
+      "source": "client_index",
+      "target": "client_public_icons_trek_loading_light",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7
+    },
+    {
+      "source": "docs_system_notices",
+      "target": "server_src_systemnotices_registry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/system-notices.md"
+    },
+    {
+      "source": "docs_system_notices",
+      "target": "client_src_i18n_translations_en",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/system-notices.md"
+    },
+    {
+      "source": "docs_system_notices",
+      "target": "client_src_components_systemnotices_noticeactions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/system-notices.md"
+    },
+    {
+      "source": "client_src_app",
+      "target": "client_src_components_systemnotices_noticeactions",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/system-notices.md"
+    },
+    {
+      "source": "docs_system_notices",
+      "target": "server_src_systemnotices_conditions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/system-notices.md"
+    },
+    {
+      "source": "docs_system_notices",
+      "target": "server_src_addons",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/system-notices.md"
+    },
+    {
+      "source": "plugin_sdk_examples_koffi_readme",
+      "target": "plugin_sdk_readme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "plugin-sdk/examples/koffi/README.md"
+    },
+    {
+      "source": "docs_tiles_grid_desktop",
+      "target": "docs_screenshots_trip_planner",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/tiles/grid-desktop.svg"
+    },
+    {
+      "source": "docs_tiles_grid_desktop",
+      "target": "docs_screenshots_budget",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/tiles/grid-desktop.svg"
+    },
+    {
+      "source": "docs_tiles_grid_desktop",
+      "target": "docs_screenshots_vacay",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/tiles/grid-desktop.svg"
+    },
+    {
+      "source": "docs_tiles_grid_desktop",
+      "target": "docs_screenshots_journey",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/tiles/grid-desktop.svg"
+    },
+    {
+      "source": "docs_screenshots_admin",
+      "target": "docs_system_notices",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "docs/screenshots/admin.png"
+    },
+    {
+      "source": "plugin_sdk_examples_trip_doctor_readme",
+      "target": "wiki_admin_permissions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "server_src_nest_readme",
+      "target": "shared_readme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_ai_booking_import",
+      "target": "wiki_admin_addons",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_accommodations",
+      "target": "wiki_day_plans_and_notes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_admin_addons",
+      "target": "wiki_addons_overview",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_admin_panel_overview",
+      "target": "wiki_admin_addons",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_admin_panel_overview",
+      "target": "wiki_audit_log",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_atlas",
+      "target": "wiki_admin_addons",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_audit_log",
+      "target": "wiki_environment_variables",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_backups",
+      "target": "wiki_encryption_key_rotation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_budget_tracking",
+      "target": "wiki_admin_addons",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_collab_chat",
+      "target": "wiki_collab_notes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_collections",
+      "target": "wiki_admin_addons",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_creating_a_trip",
+      "target": "wiki_environment_variables",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_day_plans_and_notes",
+      "target": "wiki_accommodations",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    },
+    {
+      "source": "wiki_demo_mode",
+      "target": "wiki_environment_variables",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_development_environment",
+      "target": "wiki_contributing",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_encryption_key_rotation",
+      "target": "wiki_backups",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_environment_variables",
+      "target": "wiki_encryption_key_rotation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_admin_panel_overview",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_install_docker_compose",
+      "target": "wiki_environment_variables",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_install_proxmox",
+      "target": "wiki_environment_variables",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_internal_network_access",
+      "target": "wiki_environment_variables",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_journey_journal",
+      "target": "wiki_admin_addons",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_addon_tools",
+      "target": "wiki_mcp_addon_tools",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "plugin_sdk_examples_koffi_docs_screenshot",
+      "target": "plugin_sdk_examples_koffi_client_index",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "source": "wiki_mcp_overview",
+      "target": "wiki_mcp_setup",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_overview",
+      "target": "wiki_mcp_scopes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_overview",
+      "target": "wiki_mcp_tools_and_resources",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_prompts",
+      "target": "wiki_mcp_tools_and_resources",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_scopes",
+      "target": "wiki_mcp_setup",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_setup",
+      "target": "wiki_mcp_overview",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_setup",
+      "target": "wiki_mcp_scopes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_tools_and_resources",
+      "target": "wiki_mcp_scopes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_tools_and_resources",
+      "target": "wiki_mcp_prompts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_map_features",
+      "target": "wiki_map_settings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_map_settings",
+      "target": "wiki_map_features",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_packing_lists",
+      "target": "wiki_packing_templates",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_packing_templates",
+      "target": "wiki_packing_lists",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_plugin_cookbook",
+      "target": "wiki_plugin_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_plugin_cookbook",
+      "target": "wiki_plugin_permissions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_plugin_development",
+      "target": "wiki_plugin_permissions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_plugin_permissions",
+      "target": "wiki_plugins",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_plugin_publishing",
+      "target": "wiki_plugin_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_plugins",
+      "target": "wiki_plugin_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_plugins",
+      "target": "wiki_plugin_permissions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_overview",
+      "target": "mcp_server",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_plugins",
+      "target": "plugin_system",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_mcp_setup",
+      "target": "oauth_2_1",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_oidc_sso",
+      "target": "oauth_2_1",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    },
+    {
+      "source": "wiki_offline_mode_and_pwa",
+      "target": "offline_sync",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "quick_start",
+      "target": "trek_docker_image",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "quick_start",
+      "target": "encryption_key",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "real_time_collaboration",
+      "target": "websocket_transport",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "real_time_collaboration",
+      "target": "collab_addon",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "reservations_and_bookings",
+      "target": "kde_itinerary",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "reservations_and_bookings",
+      "target": "transport_flights_trains_cars",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "reverse_proxy",
+      "target": "security_hardening",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "route_optimization",
+      "target": "osrm",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "security_hardening",
+      "target": "encryption_key",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "security_hardening",
+      "target": "two_factor_authentication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "trip_members_and_sharing",
+      "target": "trip_planner_overview",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "user_settings",
+      "target": "mcp_api",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "whats_next_widget",
+      "target": "real_time_collaboration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "assets_2fa_png",
+      "target": "two_factor_authentication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "assets_bookings_png",
+      "target": "reservations_and_bookings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "assets_collab_png",
+      "target": "whats_next_widget",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "wiki_assets_mcpaccess",
+      "target": "wiki_assets_mcpconfig",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "wiki\\assets\\MCPAccess.png"
+    },
+    {
+      "source": "wiki_assets_oauthconsentdcr",
+      "target": "wiki_assets_mcpconfig",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "wiki\\assets\\OAuthConsentDCR.png"
+    },
+    {
+      "source": "wiki_assets_packinglist",
+      "target": "wiki_assets_packingtemplate",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "wiki\\assets\\PackingList.png"
+    },
+    {
+      "source": "wiki_assets_tripplaner",
+      "target": "wiki_assets_tripplannerwithplane",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki\\assets\\TripPlaner.png"
+    },
+    {
+      "source": "wiki_assets_pdftrip",
+      "target": "wiki_assets_tripplaner",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "wiki\\assets\\PDFTrip.png"
+    },
+    {
+      "source": "wiki_assets_usersandinvites",
+      "target": "wiki_assets_usrsettings",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "wiki/assets/UsersAndInvites.png"
+    },
+    {
+      "source": "wiki_assets_portainer_add_stack",
+      "target": "wiki_assets_portainer_stack_save",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "wiki/assets/portainer-add-stack.png"
+    },
+    {
+      "source": "wiki_assets_portainer_stack_save",
+      "target": "wiki_assets_portainer_deploy_stack",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "wiki/assets/portainer-stack-save.png"
+    },
+    {
+      "source": "wiki_assets_portainer_update_version",
+      "target": "wiki_assets_portainer_update_stack",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "wiki/assets/portainer-update-version.png"
+    },
+    {
+      "source": "wiki_assets_portainer_update_stack",
+      "target": "wiki_assets_portainer_force_pull",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "wiki/assets/portainer-update-stack.png"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "project_governance",
+      "label": "Project Governance & Contribution",
+      "nodes": [
+        "code_of_conduct",
+        "contributing",
+        "security",
+        "trademarks",
+        "pull_request_template",
+        "bug_report_template"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "deployment_config",
+      "label": "Deployment & Infrastructure",
+      "nodes": [
+        "docker_compose",
+        "charts_readme",
+        "charts_trek_chart",
+        "charts_trek_values"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "mcp_feature_set",
+      "label": "Model Context Protocol Implementation",
+      "nodes": [
+        "mcp",
+        "readme"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "system_notices_flow",
+      "label": "System Notices Implementation Flow",
+      "nodes": [
+        "server_src_systemnotices_registry",
+        "client_src_i18n_translations_en",
+        "client_src_components_systemnotices_noticeactions"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/system-notices.md"
+    },
+    {
+      "id": "trek_core_features",
+      "label": "TREK Core Features",
+      "nodes": [
+        "docs_screenshots_trip_planner",
+        "docs_screenshots_budget",
+        "docs_screenshots_vacay",
+        "docs_screenshots_journey",
+        "docs_screenshots_atlas"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/tiles/grid-desktop.svg"
+    },
+    {
+      "id": "trek_plugin_system",
+      "label": "TREK Plugin System",
+      "nodes": [
+        "plugin_sdk_examples_trip_doctor_readme",
+        "wiki_admin_addons",
+        "wiki_audit_log",
+        "wiki_environment_variables"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "trek_deployment_options",
+      "label": "TREK Deployment Options",
+      "nodes": [
+        "wiki_install_docker_compose",
+        "wiki_install_docker",
+        "wiki_install_helm",
+        "wiki_install_portainer",
+        "wiki_install_proxmox",
+        "wiki_install_unraid"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "id": "trek_collaboration_features",
+      "label": "TREK Collaboration Features",
+      "nodes": [
+        "wiki_collab_chat",
+        "wiki_collab_notes",
+        "wiki_collab_polls"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "id": "mcp_documentation_group",
+      "label": "Model Context Protocol Documentation",
+      "nodes": [
+        "wiki_mcp_overview",
+        "wiki_mcp_setup",
+        "wiki_mcp_scopes",
+        "wiki_mcp_tools_and_resources",
+        "wiki_mcp_prompts"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "id": "plugin_ecosystem_group",
+      "label": "Plugin System Documentation",
+      "nodes": [
+        "wiki_plugins",
+        "wiki_plugin_development",
+        "wiki_plugin_permissions",
+        "wiki_plugin_cookbook",
+        "wiki_plugin_publishing"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "id": "map_configuration_group",
+      "label": "Map Features and Settings",
+      "nodes": [
+        "wiki_map_features",
+        "wiki_map_settings",
+        "wiki_places_and_search"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7
+    },
+    {
+      "id": "trek_core_features",
+      "label": "TREK Core Planning Features",
+      "nodes": [
+        "trip_planner_overview",
+        "route_optimization",
+        "weather_forecasts",
+        "reservations_and_bookings",
+        "transport_flights_trains_cars"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "trek_security_stack",
+      "label": "TREK Security & Auth Stack",
+      "nodes": [
+        "security_hardening",
+        "two_factor_authentication",
+        "encryption_key",
+        "reverse_proxy"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "trek_collaboration_suite",
+      "label": "TREK Collaboration Suite",
+      "nodes": [
+        "real_time_collaboration",
+        "collab_addon",
+        "whats_next_widget",
+        "websocket_transport"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "mcp_auth_flow",
+      "label": "Model Context Protocol Auth Flow",
+      "nodes": [
+        "wiki_assets_mcpconfig",
+        "wiki_assets_mcpaccess",
+        "wiki_assets_oauthconsentdcr"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "wiki\\assets\\MCPConfig.png"
+    },
+    {
+      "id": "trip_planning_core",
+      "label": "Core Trip Planning Interface",
+      "nodes": [
+        "wiki_assets_tripplaner",
+        "wiki_assets_hotel_reservationdaysidebar",
+        "wiki_assets_placeautocomplete",
+        "wiki_assets_optimizeroute"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "wiki\\assets\\TripPlaner.png"
+    },
+    {
+      "id": "trek_user_management_flow",
+      "label": "Trek User and Admin Settings Flow",
+      "nodes": [
+        "wiki_assets_usersandinvites",
+        "wiki_assets_usrsettings",
+        "wiki_assets_usrsettingsmap"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "wiki/assets/UsersAndInvites.png"
+    },
+    {
+      "id": "portainer_deployment_workflow",
+      "label": "Portainer Stack Deployment and Update Workflow",
+      "nodes": [
+        "wiki_assets_portainer_add_stack",
+        "wiki_assets_portainer_stack_save",
+        "wiki_assets_portainer_deploy_stack",
+        "wiki_assets_portainer_update_version",
+        "wiki_assets_portainer_update_stack",
+        "wiki_assets_portainer_force_pull"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "wiki/assets/portainer-add-stack.png"
+    }
+  ],
+  "input_tokens": 326274,
+  "output_tokens": 12833
+}

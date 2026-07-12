@@ -1,0 +1,24 @@
+---
+source_file: "server/src/services/vacayService.ts"
+type: "code"
+community: "Server Services Vacayservice Tests"
+location: "L127"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Server_Services_Vacayservice_Tests
+---
+
+# getPlanUsers()
+
+## Connections
+- [[addYear()]] - `calls` [EXTRACTED]
+- [[deleteYear()]] - `calls` [EXTRACTED]
+- [[dissolvePlan()]] - `calls` [EXTRACTED]
+- [[getPlanData()]] - `calls` [EXTRACTED]
+- [[getStats()_2]] - `calls` [EXTRACTED]
+- [[updatePlan()]] - `calls` [EXTRACTED]
+- [[vacayService.test.ts]] - `imports` [EXTRACTED]
+- [[vacayService.ts]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Server_Services_Vacayservice_Tests

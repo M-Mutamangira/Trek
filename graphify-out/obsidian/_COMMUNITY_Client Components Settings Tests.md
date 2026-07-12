@@ -1,0 +1,247 @@
+---
+type: community
+cohesion: 0.02
+members: 185
+---
+
+# Client Components Settings Tests
+
+**Cohesion:** 0.02 - loosely connected
+**Members:** 185 nodes
+
+## Members
+- [[ALL_SCOPES]] - code - client/src/api/oauthScopes.ts
+- [[ALL_TABS]] - code - client/src/components/Collab/CollabPanel.tsx
+- [[AboutTab()]] - code - client/src/components/Settings/AboutTab.tsx
+- [[AboutTab.tsx]] - code - client/src/components/Settings/AboutTab.tsx
+- [[ActivityRow]] - code - client/src/components/Settings/PluginActivityPanel.tsx
+- [[AddressInput()]] - code - client/src/components/Planner/AddressInput.tsx
+- [[AddressInput.tsx]] - code - client/src/components/Planner/AddressInput.tsx
+- [[AirTrailConnectionSection()]] - code - client/src/components/Settings/AirTrailConnectionSection.tsx
+- [[AirTrailConnectionSection.tsx]] - code - client/src/components/Settings/AirTrailConnectionSection.tsx
+- [[AppConfig]] - code - client/src/pages/login/useLogin.ts
+- [[AuditEntry]] - code - client/src/components/Admin/AuditLogPanel.tsx
+- [[AuditLogPanel()]] - code - client/src/components/Admin/AuditLogPanel.tsx
+- [[AuditLogPanel.tsx]] - code - client/src/components/Admin/AuditLogPanel.tsx
+- [[AuditLogPanelProps]] - code - client/src/components/Admin/AuditLogPanel.tsx
+- [[Badge()]] - code - client/src/components/Collections/StatusBadge.test.tsx
+- [[CollabFeatures_1]] - code - client/src/components/Collab/CollabPanel.tsx
+- [[CollabPanel()]] - code - client/src/components/Collab/CollabPanel.tsx
+- [[CollabPanel.tsx]] - code - client/src/components/Collab/CollabPanel.tsx
+- [[CollabPanelProps]] - code - client/src/components/Collab/CollabPanel.tsx
+- [[CopyTripDialog()]] - code - client/src/components/shared/CopyTripDialog.tsx
+- [[CopyTripDialog.tsx]] - code - client/src/components/shared/CopyTripDialog.tsx
+- [[CopyTripDialogProps]] - code - client/src/components/shared/CopyTripDialog.tsx
+- [[DemoBanner()]] - code - client/src/components/Layout/DemoBanner.tsx
+- [[DemoBanner.tsx]] - code - client/src/components/Layout/DemoBanner.tsx
+- [[DemoTexts]] - code - client/src/components/Layout/DemoBanner.tsx
+- [[ExpandableStory()]] - code - client/src/components/Journey/JourneyDetailPageExpandableStory.tsx
+- [[FileManager()]] - code - client/src/components/Files/FileManager.tsx
+- [[FilesPage()]] - code - client/src/pages/FilesPage.tsx
+- [[FilesPage.tsx]] - code - client/src/pages/FilesPage.tsx
+- [[ForgotPasswordPage()]] - code - client/src/pages/ForgotPasswordPage.tsx
+- [[ForgotPasswordPage.tsx]] - code - client/src/pages/ForgotPasswordPage.tsx
+- [[GuestBadge()]] - code - client/src/components/shared/GuestBadge.tsx
+- [[GuestBadge.tsx]] - code - client/src/components/shared/GuestBadge.tsx
+- [[HelpPage()]] - code - client/src/pages/HelpPage.tsx
+- [[HelpPage.tsx]] - code - client/src/pages/HelpPage.tsx
+- [[InAppNotificationsPage()]] - code - client/src/pages/InAppNotificationsPage.tsx
+- [[InAppNotificationsPage.tsx]] - code - client/src/pages/InAppNotificationsPage.tsx
+- [[IntegrationsMcpSection()]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[IntegrationsTab()]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[IntegrationsTab.tsx]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[JoinTripPage()]] - code - client/src/pages/JoinTripPage.tsx
+- [[JoinTripPage.tsx]] - code - client/src/pages/JoinTripPage.tsx
+- [[JourneyDetailPageExpandableStory.tsx]] - code - client/src/components/Journey/JourneyDetailPageExpandableStory.tsx
+- [[JourneyDetailPageVerdictSection.tsx]] - code - client/src/components/Journey/JourneyDetailPageVerdictSection.tsx
+- [[JourneyShareSection()]] - code - client/src/components/Journey/JourneyShareSection.tsx
+- [[JourneyShareSection.tsx]] - code - client/src/components/Journey/JourneyShareSection.tsx
+- [[ListsContainer()]] - code - client/src/pages/TripPlannerPage.tsx
+- [[LlmConnectionSection()]] - code - client/src/components/Settings/LlmConnectionSection.tsx
+- [[LlmConnectionSection.tsx]] - code - client/src/components/Settings/LlmConnectionSection.tsx
+- [[LocationSelect()]] - code - client/src/components/Planner/LocationSelect.tsx
+- [[LocationSelect.tsx]] - code - client/src/components/Planner/LocationSelect.tsx
+- [[LoginPage()]] - code - client/src/pages/LoginPage.tsx
+- [[LoginPage.tsx]] - code - client/src/pages/LoginPage.tsx
+- [[MAP_PRESETS_1]] - code - client/src/components/Settings/MapSettingsTab.tsx
+- [[MapPreset]] - code - client/src/components/Settings/MapSettingsTab.tsx
+- [[MapSettingsTab.tsx]] - code - client/src/components/Settings/MapSettingsTab.tsx
+- [[McpToken]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[McpTokenModals()]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[MobileAddPlaceButton()]] - code - client/src/components/Planner/DayPlanSidebarMobileAddPlaceButton.tsx
+- [[OAUTH_PRESETS]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[OAuthAuthorizePage()]] - code - client/src/pages/OAuthAuthorizePage.tsx
+- [[OAuthAuthorizePage.tsx]] - code - client/src/pages/OAuthAuthorizePage.tsx
+- [[OAuthClient]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[OAuthClientModals()]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[OAuthPreset]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[OAuthSession]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[POI_CATEGORIES]] - code - client/src/components/Map/poiCategories.ts
+- [[PageShell()]] - code - client/src/components/Layout/PageShell.tsx
+- [[PageShell.tsx]] - code - client/src/components/Layout/PageShell.tsx
+- [[PageShellProps]] - code - client/src/components/Layout/PageShell.tsx
+- [[PageSidebar()]] - code - client/src/components/Layout/PageSidebar.tsx
+- [[PageSidebar.tsx]] - code - client/src/components/Layout/PageSidebar.tsx
+- [[PageSidebarProps]] - code - client/src/components/Layout/PageSidebar.tsx
+- [[PageSidebarTab]] - code - client/src/components/Layout/PageSidebar.tsx
+- [[PageSpinner()]] - code - client/src/components/shared/Spinner.tsx
+- [[PageSpinnerProps]] - code - client/src/components/shared/Spinner.tsx
+- [[PageState]] - code - client/src/pages/oauthAuthorize/useOAuthAuthorize.ts
+- [[PhotoProviderAddon]] - code - client/src/components/Settings/PhotoProvidersSection.tsx
+- [[PhotoProvidersSection()]] - code - client/src/components/Settings/PhotoProvidersSection.tsx
+- [[PhotoProvidersSection.tsx]] - code - client/src/components/Settings/PhotoProvidersSection.tsx
+- [[PlacesBulkCategoryModal()]] - code - client/src/components/Planner/PlacesBulkCategoryModal.tsx
+- [[PlacesBulkCategoryModal.tsx]] - code - client/src/components/Planner/PlacesBulkCategoryModal.tsx
+- [[PlacesBulkCategoryModalProps]] - code - client/src/components/Planner/PlacesBulkCategoryModal.tsx
+- [[PluginAction]] - code - client/src/api/client.ts
+- [[PluginActivityPanel()]] - code - client/src/components/Settings/PluginActivityPanel.tsx
+- [[PluginActivityPanel.tsx]] - code - client/src/components/Settings/PluginActivityPanel.tsx
+- [[PluginOAuthSection()]] - code - client/src/components/Settings/PluginSettingsTab.tsx
+- [[PluginPage()]] - code - client/src/pages/PluginPage.tsx
+- [[PluginPage.tsx]] - code - client/src/pages/PluginPage.tsx
+- [[PluginSettingsForm()]] - code - client/src/components/Settings/PluginSettingsTab.tsx
+- [[PluginSettingsTab()]] - code - client/src/components/Settings/PluginSettingsTab.tsx
+- [[PluginSettingsTab.tsx]] - code - client/src/components/Settings/PluginSettingsTab.tsx
+- [[PluginUserSettingField]] - code - client/src/api/client.ts
+- [[PoiCategoryPill()]] - code - client/src/components/Map/PoiCategoryPill.tsx
+- [[PoiCategoryPill.tsx]] - code - client/src/components/Map/PoiCategoryPill.tsx
+- [[Props_11]] - code - client/src/components/Map/PoiCategoryPill.tsx
+- [[Props_13]] - code - client/src/components/OAuth/ScopeGroupPicker.tsx
+- [[Props_15]] - code - client/src/components/Planner/AddressInput.tsx
+- [[Props_17]] - code - client/src/components/Planner/LocationSelect.tsx
+- [[Props_18]] - code - client/src/components/Settings/AboutTab.tsx
+- [[Provider]] - code - client/src/components/Settings/LlmConnectionSection.tsx
+- [[Provider_1]] - code - client/src/components/Settings/MapSettingsTab.tsx
+- [[ProviderConfig]] - code - client/src/components/Settings/PhotoProvidersSection.tsx
+- [[ProviderField]] - code - client/src/components/Settings/PhotoProvidersSection.tsx
+- [[RegisterPage()]] - code - client/src/pages/RegisterPage.tsx
+- [[RegisterPage.tsx]] - code - client/src/pages/RegisterPage.tsx
+- [[ResetPasswordPage()]] - code - client/src/pages/ResetPasswordPage.tsx
+- [[ResetPasswordPage.tsx]] - code - client/src/pages/ResetPasswordPage.tsx
+- [[SCOPE_GROUPS]] - code - client/src/api/oauthScopes.ts
+- [[SCOPE_GROUP_NAMES]] - code - client/src/api/oauthScopes.ts
+- [[ScopeGroupPicker()]] - code - client/src/components/OAuth/ScopeGroupPicker.tsx
+- [[ScopeGroupPicker.tsx]] - code - client/src/components/OAuth/ScopeGroupPicker.tsx
+- [[ScopeInfo]] - code - client/src/api/oauthScopes.ts
+- [[ScopeKeys]] - code - client/src/api/oauthScopes.ts
+- [[Section()_1]] - code - client/src/components/Settings/Section.tsx
+- [[Section.tsx]] - code - client/src/components/Settings/Section.tsx
+- [[SectionProps_1]] - code - client/src/components/Settings/Section.tsx
+- [[SettingsPage()]] - code - client/src/pages/SettingsPage.tsx
+- [[SettingsPage.tsx]] - code - client/src/pages/SettingsPage.tsx
+- [[SidebarInner()]] - code - client/src/components/Layout/PageSidebar.tsx
+- [[Spinner()]] - code - client/src/components/shared/Spinner.tsx
+- [[Spinner.tsx]] - code - client/src/components/shared/Spinner.tsx
+- [[SpinnerProps]] - code - client/src/components/shared/Spinner.tsx
+- [[StyleDropdown()]] - code - client/src/components/Settings/MapSettingsTab.tsx
+- [[TAG_STYLES_1]] - code - client/src/components/Settings/MapSettingsTab.tsx
+- [[TagChip()]] - code - client/src/components/Settings/MapSettingsTab.tsx
+- [[TestComponent()]] - code - client/tests/unit/i18n/index.test.ts
+- [[ToggleSwitch()]] - code - client/src/components/Settings/ToggleSwitch.tsx
+- [[ToggleSwitch.tsx]] - code - client/src/components/Settings/ToggleSwitch.tsx
+- [[TransHtml()]] - code - client/src/i18n/TransHtml.tsx
+- [[TransHtml.tsx]] - code - client/src/i18n/TransHtml.tsx
+- [[TransHtmlProps]] - code - client/src/i18n/TransHtml.tsx
+- [[TranslatedDetail()]] - code - client/src/components/Collections/CollectionPlaceDetail.test.tsx
+- [[TripMember_1]] - code - client/src/components/Collab/CollabPanel.tsx
+- [[VacayCalendar()]] - code - client/src/components/Vacay/VacayCalendar.tsx
+- [[VacayCalendar.tsx]] - code - client/src/components/Vacay/VacayCalendar.tsx
+- [[VacayMonthCard()]] - code - client/src/components/Vacay/VacayMonthCard.tsx
+- [[VacayMonthCard.tsx]] - code - client/src/components/Vacay/VacayMonthCard.tsx
+- [[ValidateResult]] - code - client/src/pages/oauthAuthorize/useOAuthAuthorize.ts
+- [[VerdictSection()]] - code - client/src/components/Journey/JourneyDetailPageVerdictSection.tsx
+- [[WEEKDAY_KEYS]] - code - client/src/components/Vacay/VacayMonthCard.tsx
+- [[WILL_COPY_KEYS]] - code - client/src/components/shared/CopyTripDialog.tsx
+- [[WONT_COPY_KEYS]] - code - client/src/components/shared/CopyTripDialog.tsx
+- [[WikiContent()]] - code - client/src/pages/HelpPage.tsx
+- [[addonIcons]] - code - client/src/components/Layout/DemoBanner.tsx
+- [[codeTone()]] - code - client/src/components/Settings/PluginActivityPanel.tsx
+- [[configApi]] - code - client/src/api/client.ts
+- [[detectBrowserLanguage()]] - code - client/src/i18n/TranslationContext.tsx
+- [[featureIcons]] - code - client/src/components/Layout/DemoBanner.tsx
+- [[getProviderConfig()]] - code - client/src/components/Settings/PhotoProvidersSection.tsx
+- [[getProviderFields()]] - code - client/src/components/Settings/PhotoProvidersSection.tsx
+- [[getScopesByGroup()]] - code - client/src/api/oauthScopes.ts
+- [[hasStoredLanguage()]] - code - client/src/store/settingsStore.ts
+- [[hexToRgba()]] - code - client/src/components/Vacay/VacayMonthCard.tsx
+- [[hoverOff()]] - code - client/src/components/Planner/PlacesBulkCategoryModal.tsx
+- [[hoverOn()]] - code - client/src/components/Planner/PlacesBulkCategoryModal.tsx
+- [[index.ts]] - code - client/src/i18n/index.ts
+- [[inputBase]] - code - client/src/pages/ForgotPasswordPage.tsx
+- [[inputBase_1]] - code - client/src/pages/ResetPasswordPage.tsx
+- [[isWeekend()]] - code - client/src/components/Vacay/holidays.ts
+- [[oauthApi]] - code - client/src/api/client.ts
+- [[oauthScopes.test.ts]] - code - client/src/api/oauthScopes.test.ts
+- [[oauthScopes.ts]] - code - client/src/api/oauthScopes.ts
+- [[rowStyle]] - code - client/src/components/Planner/PlacesBulkCategoryModal.tsx
+- [[texts]] - code - client/src/components/Layout/DemoBanner.tsx
+- [[useFiles()]] - code - client/src/pages/files/useFiles.ts
+- [[useForgotPassword()]] - code - client/src/pages/forgotPassword/useForgotPassword.ts
+- [[useForgotPassword.ts]] - code - client/src/pages/forgotPassword/useForgotPassword.ts
+- [[useHelp()]] - code - client/src/pages/help/useHelp.ts
+- [[useInAppNotifications()]] - code - client/src/pages/inAppNotifications/useInAppNotifications.ts
+- [[useInAppNotifications.ts]] - code - client/src/pages/inAppNotifications/useInAppNotifications.ts
+- [[useIntegrations()]] - code - client/src/components/Settings/IntegrationsTab.tsx
+- [[useIsDesktop()]] - code - client/src/components/Collab/CollabPanel.tsx
+- [[useJoinTrip()]] - code - client/src/pages/join/useJoinTrip.ts
+- [[useLogin()]] - code - client/src/pages/login/useLogin.ts
+- [[useLogin.ts]] - code - client/src/pages/login/useLogin.ts
+- [[useOAuthAuthorize()]] - code - client/src/pages/oauthAuthorize/useOAuthAuthorize.ts
+- [[useOAuthAuthorize.ts]] - code - client/src/pages/oauthAuthorize/useOAuthAuthorize.ts
+- [[useRegister()]] - code - client/src/pages/register/useRegister.ts
+- [[useRegister.ts]] - code - client/src/pages/register/useRegister.ts
+- [[useResetPassword()]] - code - client/src/pages/resetPassword/useResetPassword.ts
+- [[useResetPassword.ts]] - code - client/src/pages/resetPassword/useResetPassword.ts
+- [[useSettings()]] - code - client/src/pages/settings/useSettings.ts
+- [[useSettings.ts]] - code - client/src/pages/settings/useSettings.ts
+- [[useTranslation()]] - code - client/src/i18n/TranslationContext.tsx
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Client_Components_Settings_Tests
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 146 edges to [[_COMMUNITY_Client Components Admin Tests]]
+- 74 edges to [[_COMMUNITY_Client Components Tests Tests]]
+- 46 edges to [[_COMMUNITY_Client Components Planner Tests_1]]
+- 44 edges to [[_COMMUNITY_Client Api Components Tests]]
+- 34 edges to [[_COMMUNITY_Client Components Planner Tests]]
+- 32 edges to [[_COMMUNITY_Client Sync Store Tests]]
+- 23 edges to [[_COMMUNITY_Client Pages Atlas Tests]]
+- 23 edges to [[_COMMUNITY_Client Components Budget Tests]]
+- 19 edges to [[_COMMUNITY_Client Components Packing Tests]]
+- 16 edges to [[_COMMUNITY_Client Components Map Tests_1]]
+- 13 edges to [[_COMMUNITY_Client Components Planner Tests_2]]
+- 12 edges to [[_COMMUNITY_Client Pages Journeydetailpage (Client)]]
+- 11 edges to [[_COMMUNITY_Client Components Todo Tests]]
+- 10 edges to [[_COMMUNITY_Client Components Journey (Client)_2]]
+- 10 edges to [[_COMMUNITY_Client Pages Journeypage (Client)]]
+- 9 edges to [[_COMMUNITY_Client Components Systemnotices Tests]]
+- 8 edges to [[_COMMUNITY_Client Appearancesettingstab Components (Client)]]
+- 6 edges to [[_COMMUNITY_Client Collections Components Tests]]
+- 6 edges to [[_COMMUNITY_Client Components Journey (Client)_4]]
+- 5 edges to [[_COMMUNITY_Adminpluginspanel Client Components (Client)]]
+- 5 edges to [[_COMMUNITY_Client Components Collections Tests_1]]
+- 5 edges to [[_COMMUNITY_Client Components Collections Tests]]
+- 5 edges to [[_COMMUNITY_Client Components Journey (Client)_1]]
+- 5 edges to [[_COMMUNITY_Client Pages Journeypublic (Client)]]
+- 4 edges to [[_COMMUNITY_Client Components Collab (Client)_1]]
+- 4 edges to [[_COMMUNITY_Client Components Vacay Tests]]
+- 3 edges to [[_COMMUNITY_Client Components Files Tests]]
+- 3 edges to [[_COMMUNITY_Client Api Authurl Tests]]
+- 3 edges to [[_COMMUNITY_Client Components Journey (Client)_3]]
+- 3 edges to [[_COMMUNITY_Client Components Journeymapgl (Client)]]
+- 2 edges to [[_COMMUNITY_Client Components Map (Client)_1]]
+- 1 edge to [[_COMMUNITY_Auth Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Client Components Map (Client)]]
+- 1 edge to [[_COMMUNITY_Server Plugins Controller Tests]]
+
+## Top bridge nodes
+- [[useTranslation()]] - degree 307, connects to 27 communities
+- [[index.ts]] - degree 142, connects to 26 communities
+- [[MapSettingsTab.tsx]] - degree 37, connects to 8 communities
+- [[SettingsPage.tsx]] - degree 22, connects to 7 communities
+- [[ToggleSwitch.tsx]] - degree 12, connects to 6 communities

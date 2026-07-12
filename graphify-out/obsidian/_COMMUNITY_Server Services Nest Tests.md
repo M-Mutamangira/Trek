@@ -1,0 +1,241 @@
+---
+type: community
+cohesion: 0.03
+members: 130
+---
+
+# Server Services Nest Tests
+
+**Cohesion:** 0.03 - loosely connected
+**Members:** 130 nodes
+
+## Members
+- [[ACTIONS_MAP]] - code - server/src/services/permissions.ts
+- [[AppSetting]] - code - server/src/types.ts
+- [[AssignmentRow]] - code - server/src/types.ts
+- [[AuthRequest]] - code - server/src/types.ts
+- [[BLOCKED_EXTENSIONS]] - code - server/src/services/fileService.ts
+- [[Category_1]] - code - server/src/types.ts
+- [[CreateAccommodationData]] - code - server/src/services/dayService.ts
+- [[Day_3]] - code - server/src/types.ts
+- [[DayAccommodation]] - code - server/src/services/dayService.ts
+- [[DayAssignment]] - code - server/src/types.ts
+- [[DayNote_1]] - code - server/src/types.ts
+- [[DayReorderError]] - code - server/src/services/dayService.ts
+- [[GalleryPhoto_1]] - code - server/src/types.ts
+- [[Journey_1]] - code - server/src/types.ts
+- [[JourneyContributor_1]] - code - server/src/types.ts
+- [[JourneyEntry_1]] - code - server/src/types.ts
+- [[JourneyPhoto_1]] - code - server/src/types.ts
+- [[JourneyTrip_1]] - code - server/src/types.ts
+- [[NOTE_UPLOAD]] - code - server/src/nest/collab/collab.controller.ts
+- [[NomadWebSocket]] - code - server/src/websocket.ts
+- [[PERMISSION_ACTIONS]] - code - server/src/services/permissions.ts
+- [[PackingItem_1]] - code - server/src/types.ts
+- [[Participant]] - code - server/src/types.ts
+- [[ParticipantRow]] - code - server/src/services/queryHelpers.ts
+- [[PermissionAction]] - code - server/src/services/permissions.ts
+- [[PermissionLevel_1]] - code - server/src/services/permissions.ts
+- [[Place_4]] - code - server/src/types.ts
+- [[PlaceWithCategory_1]] - code - server/src/db/database.ts
+- [[PlaceWithCategory_2]] - code - server/src/services/placeService.ts
+- [[PlaceWithTags]] - code - server/src/db/database.ts
+- [[PrivacyFields]] - code - server/src/nest/packing/packing.service.ts
+- [[ReservationEndpoint_1]] - code - server/src/types.ts
+- [[Setting]] - code - server/src/types.ts
+- [[Tag]] - code - server/src/types.ts
+- [[TagRow]] - code - server/src/services/queryHelpers.ts
+- [[Trip_5]] - code - server/src/nest/budget/budget.service.ts
+- [[Trip_6]] - code - server/src/nest/collab/collab.service.ts
+- [[Trip_7]] - code - server/src/nest/days/day-notes.service.ts
+- [[Trip_8]] - code - server/src/nest/days/days.service.ts
+- [[Trip_10]] - code - server/src/nest/packing/packing.service.ts
+- [[Trip_11]] - code - server/src/nest/places/places.service.ts
+- [[Trip_12]] - code - server/src/nest/reservations/accommodations.service.ts
+- [[Trip_14]] - code - server/src/nest/share/share.service.ts
+- [[Trip_15]] - code - server/src/nest/todo/todo.service.ts
+- [[Trip_16]] - code - server/src/nest/trip-invite/trip-invite.service.ts
+- [[TripAccess]] - code - server/src/db/database.ts
+- [[TripMember_5]] - code - server/src/types.ts
+- [[accommodations.service.ts]] - code - server/src/nest/reservations/accommodations.service.ts
+- [[addDays()_2]] - code - server/src/services/dayService.ts
+- [[assertNoInvertedAccommodation()]] - code - server/src/services/dayService.ts
+- [[broadcast()]] - code - server/src/websocket.ts
+- [[broadcastPackingItem()]] - code - server/src/nest/plugins/host/create-rpc-host.ts
+- [[broadcastPackingUpdate()]] - code - server/src/nest/plugins/host/create-rpc-host.ts
+- [[budget.service.ts]] - code - server/src/nest/budget/budget.service.ts
+- [[canEditTripAs()]] - code - server/src/nest/plugins/host/create-rpc-host.ts
+- [[checkPermission()]] - code - server/src/services/permissions.ts
+- [[collab.controller.ts]] - code - server/src/nest/collab/collab.controller.ts
+- [[collab.module.ts]] - code - server/src/nest/collab/collab.module.ts
+- [[collab.service.ts]] - code - server/src/nest/collab/collab.service.ts
+- [[consumeEphemeralTokenWithMeta()]] - code - server/src/services/ephemeralTokens.ts
+- [[createAccommodation()]] - code - server/src/services/dayService.ts
+- [[database.ts]] - code - server/src/db/database.ts
+- [[day-notes.service.ts]] - code - server/src/nest/days/day-notes.service.ts
+- [[dayDelta()]] - code - server/src/services/dayService.ts
+- [[dayService.ts]] - code - server/src/services/dayService.ts
+- [[days.controller.test.ts]] - code - server/tests/unit/nest/days.controller.test.ts
+- [[days.controller.ts]] - code - server/src/nest/days/days.controller.ts
+- [[days.module.ts]] - code - server/src/nest/days/days.module.ts
+- [[days.service.ts]] - code - server/src/nest/days/days.service.ts
+- [[daysSvc()]] - code - server/tests/unit/nest/days.controller.test.ts
+- [[db_1]] - code - server/src/db/database.ts
+- [[dbRows]] - code - server/tests/unit/services/permissions.test.ts
+- [[demo-seed.ts]] - code - server/src/demo/demo-seed.ts
+- [[emitPluginEvent()]] - code - server/src/plugin-event-sink.ts
+- [[ensureDemoMembership()]] - code - server/src/demo/demo-seed.ts
+- [[filesDir_1]] - code - server/src/nest/collab/collab.controller.ts
+- [[formatAssignmentWithPlace()]] - code - server/src/services/queryHelpers.ts
+- [[getAccommodationWithPlace()]] - code - server/src/services/dayService.ts
+- [[getAssignmentsForDay()]] - code - server/src/services/dayService.ts
+- [[getPermissionLevel()]] - code - server/src/services/permissions.ts
+- [[insertDay()]] - code - server/src/services/dayService.ts
+- [[isOwner()]] - code - server/src/db/database.ts
+- [[joinTripAsMember()]] - code - server/src/services/tripMembership.ts
+- [[leaveRoom()]] - code - server/src/websocket.ts
+- [[listDayAssignments()]] - code - server/src/services/assignmentService.ts
+- [[loadParticipantsByAssignmentIds()]] - code - server/src/services/queryHelpers.ts
+- [[loadPermissions()]] - code - server/src/services/permissions.ts
+- [[makeReq()_2]] - code - server/tests/unit/middleware/tripAccess.test.ts
+- [[makeRes()_2]] - code - server/tests/unit/middleware/tripAccess.test.ts
+- [[makeRow()]] - code - server/tests/unit/services/queryHelpers.test.ts
+- [[mockCanAccessTrip]] - code - server/tests/unit/middleware/tripAccess.test.ts
+- [[mockIsOwner]] - code - server/tests/unit/middleware/tripAccess.test.ts
+- [[notesSvc()]] - code - server/tests/unit/nest/days.controller.test.ts
+- [[onPlaceUpdated()]] - code - server/src/services/journeyService.ts
+- [[packing.module.ts]] - code - server/src/nest/packing/packing.module.ts
+- [[packing.service.ts]] - code - server/src/nest/packing/packing.service.ts
+- [[permissions.test.ts]] - code - server/tests/unit/services/permissions.test.ts
+- [[permissions.ts]] - code - server/src/services/permissions.ts
+- [[places.service.ts]] - code - server/src/nest/places/places.service.ts
+- [[queryHelpers.test.ts]] - code - server/tests/unit/services/queryHelpers.test.ts
+- [[queryHelpers.ts]] - code - server/src/services/queryHelpers.ts
+- [[reorderDays()]] - code - server/src/services/dayService.ts
+- [[requireTripAccess()]] - code - server/src/middleware/tripAccess.ts
+- [[requireTripOwner()]] - code - server/src/middleware/tripAccess.ts
+- [[restampReservationDates()]] - code - server/src/services/dayService.ts
+- [[rooms]] - code - server/src/websocket.ts
+- [[sampleParticipants]] - code - server/tests/unit/services/queryHelpers.test.ts
+- [[sampleTags]] - code - server/tests/unit/services/queryHelpers.test.ts
+- [[savePermissions()_1]] - code - server/src/services/permissions.ts
+- [[seedDemoData()]] - code - server/src/demo/demo-seed.ts
+- [[seedExampleTrips()]] - code - server/src/demo/demo-seed.ts
+- [[setupWebSocket()]] - code - server/src/websocket.ts
+- [[share.service.ts]] - code - server/src/nest/share/share.service.ts
+- [[socketId]] - code - server/src/websocket.ts
+- [[socketMsgCounts]] - code - server/src/websocket.ts
+- [[socketRooms]] - code - server/src/websocket.ts
+- [[socketUser]] - code - server/src/websocket.ts
+- [[thrown()_12]] - code - server/tests/unit/nest/days.controller.test.ts
+- [[todo.service.ts]] - code - server/src/nest/todo/todo.service.ts
+- [[trip_21]] - code - server/tests/unit/nest/days.controller.test.ts
+- [[trip-invite.service.ts]] - code - server/src/nest/trip-invite/trip-invite.service.ts
+- [[tripAccess.test.ts]] - code - server/tests/unit/middleware/tripAccess.test.ts
+- [[tripAccess.ts]] - code - server/src/middleware/tripAccess.ts
+- [[tripMembership.ts]] - code - server/src/services/tripMembership.ts
+- [[types.ts_2]] - code - server/src/types.ts
+- [[updateAccommodation()]] - code - server/src/services/dayService.ts
+- [[updateDay()]] - code - server/src/services/dayService.ts
+- [[user_14]] - code - server/tests/unit/nest/days.controller.test.ts
+- [[websocket.ts_1]] - code - server/src/websocket.ts
+- [[withDatePart()]] - code - server/src/services/dayService.ts
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Server_Services_Nest_Tests
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 68 edges to [[_COMMUNITY_Server Services Mcp Tests]]
+- 65 edges to [[_COMMUNITY_Server Services Host Tests]]
+- 24 edges to [[_COMMUNITY_Import Server Nest Tests]]
+- 24 edges to [[_COMMUNITY_Plugins Server Nest Tests]]
+- 19 edges to [[_COMMUNITY_Server Services Budgetservice Tests]]
+- 18 edges to [[_COMMUNITY_Collections Server Nest Tests]]
+- 17 edges to [[_COMMUNITY_Server Services Airtrail Tests]]
+- 16 edges to [[_COMMUNITY_Server Services Placeservice Tests]]
+- 14 edges to [[_COMMUNITY_Server Services Tripservice (Server)]]
+- 14 edges to [[_COMMUNITY_Server Services Journeyservice Tests]]
+- 13 edges to [[_COMMUNITY_Server Auth Middleware Tests]]
+- 11 edges to [[_COMMUNITY_Server Tests Integration Tests]]
+- 11 edges to [[_COMMUNITY_Server Services Collabservice Tests]]
+- 11 edges to [[_COMMUNITY_Server Nest Auth Tests]]
+- 11 edges to [[_COMMUNITY_Files Server Nest Tests]]
+- 10 edges to [[_COMMUNITY_Server Services Authservice Tests]]
+- 10 edges to [[_COMMUNITY_Collab Server Nest Tests]]
+- 10 edges to [[_COMMUNITY_Server Nest Days (Server)]]
+- 10 edges to [[_COMMUNITY_Server Tests Unit Tests_1]]
+- 9 edges to [[_COMMUNITY_Share Server Nest Tests]]
+- 8 edges to [[_COMMUNITY_Server Services Adminservice Tests]]
+- 8 edges to [[_COMMUNITY_Memories Server Services (Server)]]
+- 8 edges to [[_COMMUNITY_Days Server Nest (Server)]]
+- 8 edges to [[_COMMUNITY_Places Server Nest Tests]]
+- 7 edges to [[_COMMUNITY_Server Services Oauthservice Tests]]
+- 7 edges to [[_COMMUNITY_Server Nest Health Tests]]
+- 7 edges to [[_COMMUNITY_Server Memories Services Tests]]
+- 7 edges to [[_COMMUNITY_Todo Server Nest Tests]]
+- 6 edges to [[_COMMUNITY_Server Services Collectionsservice (Server)]]
+- 6 edges to [[_COMMUNITY_Server Services Notifications Tests]]
+- 6 edges to [[_COMMUNITY_Server Services Oidcservice Tests]]
+- 6 edges to [[_COMMUNITY_Budget Server Nest Tests]]
+- 6 edges to [[_COMMUNITY_Packing Server Nest Tests]]
+- 6 edges to [[_COMMUNITY_Server Supervisor Plugins Tests]]
+- 5 edges to [[_COMMUNITY_Server Plugins Services Tests]]
+- 5 edges to [[_COMMUNITY_Server Services Mapsservice Tests]]
+- 5 edges to [[_COMMUNITY_Server Scheduler Services Tests]]
+- 5 edges to [[_COMMUNITY_Memories Server Services Tests]]
+- 5 edges to [[_COMMUNITY_Server Services Passkeyservice Tests]]
+- 5 edges to [[_COMMUNITY_Reservations Server Nest Tests]]
+- 4 edges to [[_COMMUNITY_Server Tests Unit Tests]]
+- 4 edges to [[_COMMUNITY_Server Services Packingservice (Server)]]
+- 4 edges to [[_COMMUNITY_Addons Server Nest Tests]]
+- 4 edges to [[_COMMUNITY_Plugins Server Nest Tests_2]]
+- 4 edges to [[_COMMUNITY_Server Atlasservice Services (Server)]]
+- 4 edges to [[_COMMUNITY_Server Systemnotices Conditions Tests]]
+- 4 edges to [[_COMMUNITY_Journey Server Nest Tests]]
+- 4 edges to [[_COMMUNITY_Server Nest Accommodations Tests]]
+- 3 edges to [[_COMMUNITY_Server Db Seeds Tests]]
+- 3 edges to [[_COMMUNITY_Feeds Server Nest (Server)]]
+- 3 edges to [[_COMMUNITY_Maps Server Nest Tests]]
+- 3 edges to [[_COMMUNITY_Server Services Tests Tests]]
+- 3 edges to [[_COMMUNITY_Server Services Unsplashservice Tests]]
+- 3 edges to [[_COMMUNITY_Server Assignments Nest Tests]]
+- 3 edges to [[_COMMUNITY_Backup Server Nest Tests]]
+- 3 edges to [[_COMMUNITY_Trip Invite Server (Server)]]
+- 2 edges to [[_COMMUNITY_Platform Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Server Plugins Plugin Tests]]
+- 2 edges to [[_COMMUNITY_Plugins Server Nest Tests_1]]
+- 2 edges to [[_COMMUNITY_Server Services Memories (Server)]]
+- 2 edges to [[_COMMUNITY_Server Services Settingsservice Tests]]
+- 2 edges to [[_COMMUNITY_Server Services Usercleanupservice (Server)]]
+- 2 edges to [[_COMMUNITY_Server Services Vacayservice Tests]]
+- 2 edges to [[_COMMUNITY_Admin Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Atlas Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_E2e Collab Server Tests]]
+- 2 edges to [[_COMMUNITY_E2e Days Server Tests]]
+- 2 edges to [[_COMMUNITY_Memories Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Notifications Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Oauth Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_E2e Packing Server Tests]]
+- 2 edges to [[_COMMUNITY_Settings Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_System Notices Server Tests]]
+- 2 edges to [[_COMMUNITY_Tags Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Vacay Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_E2e Server Tests Tests_1]]
+- 1 edge to [[_COMMUNITY_Budget Server Tests Tests]]
+- 1 edge to [[_COMMUNITY_Server Tests Unit Tests_6]]
+- 1 edge to [[_COMMUNITY_Photos Server Nest (Server)]]
+- 1 edge to [[_COMMUNITY_Client Components Admin Tests]]
+- 1 edge to [[_COMMUNITY_Trips Server Nest (Server)_2]]
+- 1 edge to [[_COMMUNITY_Categories Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Server Tests Unit Tests_4]]
+
+## Top bridge nodes
+- [[types.ts_2]] - degree 151, connects to 52 communities
+- [[database.ts]] - degree 136, connects to 44 communities
+- [[db_1]] - degree 93, connects to 41 communities
+- [[checkPermission()]] - degree 43, connects to 19 communities
+- [[websocket.ts_1]] - degree 48, connects to 16 communities

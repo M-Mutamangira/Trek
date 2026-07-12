@@ -1,0 +1,86 @@
+---
+source_file: "server/src/services/collectionsService.ts"
+type: "code"
+community: "Server Services Collectionsservice (Server)"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Server_Services_Collectionsservice_Server
+---
+
+# collectionsService.ts
+
+## Connections
+- [[DedupSet]] - `contains` [EXTRACTED]
+- [[EffectiveRole]] - `contains` [EXTRACTED]
+- [[PlaceRow]] - `contains` [EXTRACTED]
+- [[acceptInvite()]] - `contains` [EXTRACTED]
+- [[accessibleCollectionIds()]] - `contains` [EXTRACTED]
+- [[assertAccess()]] - `contains` [EXTRACTED]
+- [[assertCanDelete()]] - `contains` [EXTRACTED]
+- [[assertCanEdit()]] - `contains` [EXTRACTED]
+- [[assignLabels()]] - `contains` [EXTRACTED]
+- [[attachTags()]] - `contains` [EXTRACTED]
+- [[availableUsers()]] - `contains` [EXTRACTED]
+- [[broadcastToUser()_2]] - `imports` [EXTRACTED]
+- [[buildDedupSet()]] - `contains` [EXTRACTED]
+- [[buildMembers()]] - `contains` [EXTRACTED]
+- [[canAccessTrip()]] - `imports` [EXTRACTED]
+- [[cancelInvite()]] - `contains` [EXTRACTED]
+- [[checkPermission()]] - `imports` [EXTRACTED]
+- [[collectionIdOfLabel()]] - `contains` [EXTRACTED]
+- [[collectionIdOfPlace()]] - `contains` [EXTRACTED]
+- [[collections.service.ts]] - `imports_from` [EXTRACTED]
+- [[collectionsService.test.ts]] - `imports_from` [EXTRACTED]
+- [[copyToTrip()_2]] - `contains` [EXTRACTED]
+- [[create-rpc-host.ts]] - `imports_from` [EXTRACTED]
+- [[createCollection()]] - `contains` [EXTRACTED]
+- [[createLabel()]] - `contains` [EXTRACTED]
+- [[database.ts]] - `imports_from` [EXTRACTED]
+- [[db_1]] - `imports` [EXTRACTED]
+- [[declineInvite()]] - `contains` [EXTRACTED]
+- [[deleteCollection()]] - `contains` [EXTRACTED]
+- [[deleteLabel()]] - `contains` [EXTRACTED]
+- [[deleteOldCollectionCover()]] - `contains` [EXTRACTED]
+- [[deletePlace()_2]] - `contains` [EXTRACTED]
+- [[deletePlacesMany()]] - `contains` [EXTRACTED]
+- [[findDuplicateCollectionPlace()]] - `contains` [EXTRACTED]
+- [[findMembership()]] - `contains` [EXTRACTED]
+- [[findMembershipForUser()]] - `contains` [EXTRACTED]
+- [[getCollection()]] - `contains` [EXTRACTED]
+- [[getCollectionRow()]] - `contains` [EXTRACTED]
+- [[getLabelById()]] - `contains` [EXTRACTED]
+- [[getPlaceById()]] - `contains` [EXTRACTED]
+- [[httpError()]] - `contains` [EXTRACTED]
+- [[hydratePlaces()]] - `contains` [EXTRACTED]
+- [[isCollectionPlaceDuplicate()]] - `contains` [EXTRACTED]
+- [[isOwner()_1]] - `contains` [EXTRACTED]
+- [[isVisible()]] - `contains` [EXTRACTED]
+- [[leaveCollection()]] - `contains` [EXTRACTED]
+- [[listCollections()]] - `contains` [EXTRACTED]
+- [[loadLabelIdsByPlaceIds()]] - `contains` [EXTRACTED]
+- [[loadLabelsByCollection()]] - `contains` [EXTRACTED]
+- [[loadTagsByCollectionPlaceIds()]] - `contains` [EXTRACTED]
+- [[notifyCollectionUsers()]] - `contains` [EXTRACTED]
+- [[ownerOf()]] - `contains` [EXTRACTED]
+- [[parseLinks()]] - `contains` [EXTRACTED]
+- [[permissions.ts]] - `imports_from` [EXTRACTED]
+- [[removeMember()_2]] - `contains` [EXTRACTED]
+- [[reorderCollections()]] - `contains` [EXTRACTED]
+- [[roleOf()]] - `contains` [EXTRACTED]
+- [[saveFromTripPlace()]] - `contains` [EXTRACTED]
+- [[saveFromTripPlaces()]] - `contains` [EXTRACTED]
+- [[savePlace()_2]] - `contains` [EXTRACTED]
+- [[sendInvite()]] - `contains` [EXTRACTED]
+- [[serializeLinks()]] - `contains` [EXTRACTED]
+- [[setCollectionCover()]] - `contains` [EXTRACTED]
+- [[setMemberRole()]] - `contains` [EXTRACTED]
+- [[setPlaceLabels()]] - `contains` [EXTRACTED]
+- [[setStatus()]] - `contains` [EXTRACTED]
+- [[updateCollection()]] - `contains` [EXTRACTED]
+- [[updateLabel()]] - `contains` [EXTRACTED]
+- [[updatePlace()]] - `contains` [EXTRACTED]
+- [[websocket.ts_1]] - `imports_from` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Server_Services_Collectionsservice_Server

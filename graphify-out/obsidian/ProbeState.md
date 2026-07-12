@@ -1,0 +1,17 @@
+---
+source_file: "client/src/sync/connectivity.ts"
+type: "code"
+community: "Client Sync Connectivity Tests"
+location: "L8"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Client_Sync_Connectivity_Tests
+---
+
+# ProbeState
+
+## Connections
+- [[connectivity.ts]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Client_Sync_Connectivity_Tests

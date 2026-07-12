@@ -1,0 +1,17 @@
+---
+source_file: "shared/src/admin/admin.schema.ts"
+type: "code"
+community: "Admin Shared Schema"
+location: "L22"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Admin_Shared_Schema
+---
+
+# AdminPermissionsRequest
+
+## Connections
+- [[admin.schema.ts]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Admin_Shared_Schema

@@ -1,0 +1,372 @@
+---
+type: community
+cohesion: 0.02
+members: 236
+---
+
+# Client Components Admin Tests
+
+**Cohesion:** 0.02 - loosely connected
+**Members:** 236 nodes
+
+## Members
+- [[.err()]] - code - server/src/nest/plugins/host/rpc-host.ts
+- [[ADMIN_CHANNEL_LABEL_KEYS]] - code - client/src/pages/admin/AdminPage.constants.ts
+- [[ADMIN_EVENT_LABEL_KEYS]] - code - client/src/pages/admin/AdminPage.constants.ts
+- [[API_DEV]] - code - client/src/api/client.ts
+- [[AccountTab()]] - code - client/src/components/Settings/AccountTab.tsx
+- [[AccountTab.tsx]] - code - client/src/components/Settings/AccountTab.tsx
+- [[Addon]] - code - client/src/components/Admin/AddonManager.tsx
+- [[AddonIcon()]] - code - client/src/components/Admin/AddonManager.tsx
+- [[AddonIconProps]] - code - client/src/components/Admin/AddonManager.tsx
+- [[AddonManager()]] - code - client/src/components/Admin/AddonManager.tsx
+- [[AddonManager.tsx]] - code - client/src/components/Admin/AddonManager.tsx
+- [[AddonRow()]] - code - client/src/components/Admin/AddonManager.tsx
+- [[AddonRowProps]] - code - client/src/components/Admin/AddonManager.tsx
+- [[AdminMcpToken]] - code - client/src/components/Admin/AdminMcpTokensPanel.tsx
+- [[AdminMcpTokensPanel()]] - code - client/src/components/Admin/AdminMcpTokensPanel.tsx
+- [[AdminMcpTokensPanel.tsx]] - code - client/src/components/Admin/AdminMcpTokensPanel.tsx
+- [[AdminNotificationsPanel()]] - code - client/src/pages/admin/AdminNotificationsPanel.tsx
+- [[AdminNotificationsPanel.tsx]] - code - client/src/pages/admin/AdminNotificationsPanel.tsx
+- [[AdminNotificationsTab.tsx]] - code - client/src/pages/admin/AdminNotificationsTab.tsx
+- [[AdminNotificationsTabProps]] - code - client/src/pages/admin/AdminNotificationsTab.tsx
+- [[AdminOAuthSession]] - code - client/src/components/Admin/AdminMcpTokensPanel.tsx
+- [[AdminPage()]] - code - client/src/pages/AdminPage.tsx
+- [[AdminPage.constants.ts]] - code - client/src/pages/admin/AdminPage.constants.ts
+- [[AdminPage.tsx]] - code - client/src/pages/AdminPage.tsx
+- [[AdminSettingsTab()]] - code - client/src/pages/admin/AdminSettingsTab.tsx
+- [[AdminSettingsTab.tsx]] - code - client/src/pages/admin/AdminSettingsTab.tsx
+- [[AdminSettingsTabProps]] - code - client/src/pages/admin/AdminSettingsTab.tsx
+- [[AdminStats]] - code - client/src/pages/admin/adminModel.ts
+- [[AdminUpdateBanner()]] - code - client/src/pages/admin/AdminUpdateBanner.tsx
+- [[AdminUpdateBanner.tsx]] - code - client/src/pages/admin/AdminUpdateBanner.tsx
+- [[AdminUpdateBannerProps]] - code - client/src/pages/admin/AdminUpdateBanner.tsx
+- [[AdminUser]] - code - client/src/pages/admin/adminModel.ts
+- [[AdminUserModals()]] - code - client/src/pages/admin/AdminUserModals.tsx
+- [[AdminUserModals.tsx]] - code - client/src/pages/admin/AdminUserModals.tsx
+- [[AdminUserModalsProps]] - code - client/src/pages/admin/AdminUserModals.tsx
+- [[AdminUsersTab()]] - code - client/src/pages/admin/AdminUsersTab.tsx
+- [[AdminUsersTab.tsx]] - code - client/src/pages/admin/AdminUsersTab.tsx
+- [[AdminUsersTabProps]] - code - client/src/pages/admin/AdminUsersTab.tsx
+- [[AirTrailImportModal()]] - code - client/src/components/Planner/AirTrailImportModal.tsx
+- [[AirTrailImportModal.tsx]] - code - client/src/components/Planner/AirTrailImportModal.tsx
+- [[AirTrailImportModalProps]] - code - client/src/components/Planner/AirTrailImportModal.tsx
+- [[AppUser]] - code - client/src/components/Admin/DevNotificationsPanel.tsx
+- [[ApplyTemplateButton()]] - code - client/src/components/Packing/ApplyTemplateButton.tsx
+- [[ApplyTemplateButton.tsx]] - code - client/src/components/Packing/ApplyTemplateButton.tsx
+- [[ApplyTemplateButtonProps]] - code - client/src/components/Packing/ApplyTemplateButton.tsx
+- [[Avatar()]] - code - client/src/components/Trips/TripMembersModal.tsx
+- [[AvatarProps]] - code - client/src/components/Trips/TripMembersModal.tsx
+- [[BackupPanel()]] - code - client/src/components/Admin/BackupPanel.tsx
+- [[BackupPanel.tsx]] - code - client/src/components/Admin/BackupPanel.tsx
+- [[CATEGORIES]] - code - client/src/components/Admin/PermissionsPanel.tsx
+- [[COLLAB_SUB_FEATURES]] - code - client/src/components/Admin/AddonManager.tsx
+- [[CategoryManager()]] - code - client/src/components/Admin/CategoryManager.tsx
+- [[CategoryManager.tsx]] - code - client/src/components/Admin/CategoryManager.tsx
+- [[ChannelDescriptor]] - code - client/src/components/Settings/NotificationsTab.tsx
+- [[CollabFeatures]] - code - client/src/components/Admin/AddonManager.tsx
+- [[CollabPolls()]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[CollabPolls.tsx]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[CollabPollsProps]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[ContributorInviteDialog()]] - code - client/src/components/Journey/ContributorInviteDialog.tsx
+- [[ContributorInviteDialog.tsx]] - code - client/src/components/Journey/ContributorInviteDialog.tsx
+- [[CopyToTripModal()]] - code - client/src/components/Collections/CopyToTripModal.tsx
+- [[CopyToTripModal.tsx]] - code - client/src/components/Collections/CopyToTripModal.tsx
+- [[CoverSearchPhoto]] - code - client/src/components/Collections/ListEditorModal.tsx
+- [[CoverSearchPhoto_1]] - code - client/src/components/Trips/TripFormModal.tsx
+- [[CreatePollModal()]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[CreatePollModalProps]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[CustomSelect()]] - code - client/src/components/shared/CustomSelect.tsx
+- [[CustomSelect.tsx]] - code - client/src/components/shared/CustomSelect.tsx
+- [[CustomSelectProps]] - code - client/src/components/shared/CustomSelect.tsx
+- [[DAYS_OF_MONTH]] - code - client/src/components/Admin/BackupPanel.tsx
+- [[DAYS_OF_WEEK]] - code - client/src/components/Admin/BackupPanel.tsx
+- [[DEFAULT_FORM]] - code - client/src/components/Planner/PlaceFormModal.helpers.ts
+- [[DevNotificationsPanel()]] - code - client/src/components/Admin/DevNotificationsPanel.tsx
+- [[DevNotificationsPanel.tsx]] - code - client/src/components/Admin/DevNotificationsPanel.tsx
+- [[EVENT_LABEL_KEYS]] - code - client/src/components/Settings/NotificationsTab.tsx
+- [[FileImportModal()]] - code - client/src/components/Planner/FileImportModal.tsx
+- [[FileImportModal.tsx]] - code - client/src/components/Planner/FileImportModal.tsx
+- [[FileImportModalProps]] - code - client/src/components/Planner/FileImportModal.tsx
+- [[GetState_5]] - code - client/src/store/slices/packingSlice.ts
+- [[HOURS]] - code - client/src/components/Admin/BackupPanel.tsx
+- [[HelpNavItem]] - code - client/src/api/client.ts
+- [[HelpNavSection]] - code - client/src/api/client.ts
+- [[HelpPageData]] - code - client/src/api/client.ts
+- [[ICON_COLORS]] - code - client/src/components/shared/Toast.tsx
+- [[ICON_MAP]] - code - client/src/components/Admin/AddonManager.tsx
+- [[ICON_NAMES]] - code - client/src/components/Admin/CategoryManager.tsx
+- [[INTERVAL_OPTIONS]] - code - client/src/components/Admin/BackupPanel.tsx
+- [[ImmichIcon()]] - code - client/src/components/Admin/AddonManager.tsx
+- [[JoinTripState]] - code - client/src/pages/join/useJoinTrip.ts
+- [[KEEP_OPTIONS]] - code - client/src/components/Admin/BackupPanel.tsx
+- [[LEVEL_LABELS]] - code - client/src/components/Admin/PermissionsPanel.tsx
+- [[ListEditorModal()]] - code - client/src/components/Collections/ListEditorModal.tsx
+- [[ListEditorModal.tsx]] - code - client/src/components/Collections/ListEditorModal.tsx
+- [[LlmParsingConfig()]] - code - client/src/components/Admin/AddonManager.tsx
+- [[MUTATING_METHODS]] - code - client/src/api/client.ts
+- [[MemberAvatar()]] - code - client/src/components/Collections/ShareCollectionModal.tsx
+- [[Modal()]] - code - client/src/components/shared/Modal.tsx
+- [[Modal.tsx]] - code - client/src/components/shared/Modal.tsx
+- [[ModalProps]] - code - client/src/components/shared/Modal.tsx
+- [[NotificationsTab()]] - code - client/src/components/Settings/NotificationsTab.tsx
+- [[NotificationsTab.tsx]] - code - client/src/components/Settings/NotificationsTab.tsx
+- [[NotifyType]] - code - client/src/store/notify.ts
+- [[OidcConfig]] - code - client/src/pages/admin/adminModel.ts
+- [[PRESET_COLORS]] - code - client/src/components/Admin/CategoryManager.tsx
+- [[PRESET_COLORS_1]] - code - client/src/components/Vacay/VacayPersons.tsx
+- [[PROVIDER_ICONS]] - code - client/src/components/Admin/AddonManager.tsx
+- [[PackingTemplateManager()]] - code - client/src/components/Admin/PackingTemplateManager.tsx
+- [[PackingTemplateManager.tsx]] - code - client/src/components/Admin/PackingTemplateManager.tsx
+- [[PasskeyCredential]] - code - client/src/api/client.ts
+- [[PasskeysSection()]] - code - client/src/components/Settings/PasskeysSection.tsx
+- [[PasskeysSection.tsx]] - code - client/src/components/Settings/PasskeysSection.tsx
+- [[PermissionEntry]] - code - client/src/components/Admin/PermissionsPanel.tsx
+- [[PermissionLevel]] - code - client/src/store/permissionsStore.ts
+- [[PermissionsPanel()]] - code - client/src/components/Admin/PermissionsPanel.tsx
+- [[PermissionsPanel.tsx]] - code - client/src/components/Admin/PermissionsPanel.tsx
+- [[PlaceFormData]] - code - client/src/components/Planner/PlaceFormModal.helpers.ts
+- [[PlaceFormModal()]] - code - client/src/components/Planner/PlaceFormModal.tsx
+- [[PlaceFormModal.helpers.test.ts]] - code - client/src/components/Planner/PlaceFormModal.helpers.test.ts
+- [[PlaceFormModal.helpers.ts]] - code - client/src/components/Planner/PlaceFormModal.helpers.ts
+- [[PlaceFormModal.tsx]] - code - client/src/components/Planner/PlaceFormModal.tsx
+- [[PlaceSubmitData]] - code - client/src/components/Planner/PlaceFormModal.tsx
+- [[PlacesImportSummary]] - code - client/src/components/Planner/FileImportModal.tsx
+- [[PluginPdfSection]] - code - client/src/api/client.ts
+- [[Poll]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[PollCard()]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[PollCardProps]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[PollOption]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[PollVoter]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[PreferencesMatrix]] - code - client/src/components/Settings/NotificationsTab.tsx
+- [[ProviderOption]] - code - client/src/components/Admin/AddonManager.tsx
+- [[RATE_LIMIT_MESSAGES]] - code - client/src/api/client.ts
+- [[RECOMMENDED_MODELS]] - code - client/src/components/Admin/AddonManager.tsx
+- [[ROLE_ORDER]] - code - client/src/components/Collections/ShareCollectionModal.tsx
+- [[SWATCHES_1]] - code - client/src/components/Collections/ListEditorModal.tsx
+- [[SaveToCollectionModal()]] - code - client/src/components/Collections/SaveToCollectionModal.tsx
+- [[SaveToCollectionModal.tsx]] - code - client/src/components/Collections/SaveToCollectionModal.tsx
+- [[SaveTripPlacesToListModal()]] - code - client/src/components/Collections/SaveTripPlacesToListModal.tsx
+- [[SaveTripPlacesToListModal.tsx]] - code - client/src/components/Collections/SaveTripPlacesToListModal.tsx
+- [[SaveTripPlacesToListModalProps]] - code - client/src/components/Collections/SaveTripPlacesToListModal.tsx
+- [[SelectOption]] - code - client/src/components/shared/CustomSelect.tsx
+- [[SetState_5]] - code - client/src/store/slices/packingSlice.ts
+- [[ShareCollectionModal()]] - code - client/src/components/Collections/ShareCollectionModal.tsx
+- [[ShareCollectionModal.tsx]] - code - client/src/components/Collections/ShareCollectionModal.tsx
+- [[ShareLinkSection()]] - code - client/src/components/Trips/TripMembersModal.tsx
+- [[SynologyIcon()]] - code - client/src/components/Admin/AddonManager.tsx
+- [[Template]] - code - client/src/components/Admin/PackingTemplateManager.tsx
+- [[Template_1]] - code - client/src/components/Packing/ApplyTemplateButton.tsx
+- [[TemplateCategory]] - code - client/src/components/Admin/PackingTemplateManager.tsx
+- [[TemplateItem]] - code - client/src/components/Admin/PackingTemplateManager.tsx
+- [[TimeSection()]] - code - client/src/components/Planner/PlaceFormModal.tsx
+- [[TimeSectionProps]] - code - client/src/components/Planner/PlaceFormModal.tsx
+- [[Toast_1]] - code - client/src/components/shared/Toast.tsx
+- [[Toast.tsx]] - code - client/src/components/shared/Toast.tsx
+- [[ToastType]] - code - client/src/components/shared/Toast.tsx
+- [[Trip]] - code - client/src/components/Admin/DevNotificationsPanel.tsx
+- [[TripCreateRequest]] - code - shared/src/trip/trip.schema.ts
+- [[TripFormModal()]] - code - client/src/components/Trips/TripFormModal.tsx
+- [[TripFormModal.tsx]] - code - client/src/components/Trips/TripFormModal.tsx
+- [[TripFormModalProps]] - code - client/src/components/Trips/TripFormModal.tsx
+- [[TripInviteLinkSection()]] - code - client/src/components/Trips/TripMembersModal.tsx
+- [[TripMembersModal()]] - code - client/src/components/Trips/TripMembersModal.tsx
+- [[TripMembersModal.tsx]] - code - client/src/components/Trips/TripMembersModal.tsx
+- [[TripMembersModalProps]] - code - client/src/components/Trips/TripMembersModal.tsx
+- [[TripOption]] - code - client/src/components/Collections/CopyToTripModal.tsx
+- [[UpdateInfo]] - code - client/src/pages/admin/adminModel.ts
+- [[UploadOptions]] - code - client/src/api/client.ts
+- [[UserWithOidc]] - code - client/src/types.ts
+- [[VacayPersons()]] - code - client/src/components/Vacay/VacayPersons.tsx
+- [[VacayPersons.tsx]] - code - client/src/components/Vacay/VacayPersons.tsx
+- [[VoterChip()]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[VoterChipProps]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[Window_1]] - code - client/src/components/shared/Toast.tsx
+- [[adminApi]] - code - client/src/api/client.ts
+- [[adminModel.ts]] - code - client/src/pages/admin/adminModel.ts
+- [[airtrailApi]] - code - client/src/api/client.ts
+- [[apiError.ts]] - code - client/src/utils/apiError.ts
+- [[authApi]] - code - client/src/api/client.ts
+- [[backupApi]] - code - client/src/api/client.ts
+- [[channelLabel()]] - code - client/src/components/Settings/NotificationsTab.tsx
+- [[checkInDev()]] - code - client/src/api/client.ts
+- [[client.interceptor.test.ts]] - code - client/tests/unit/api/client.interceptor.test.ts
+- [[client.ts]] - code - client/src/api/client.ts
+- [[collabApi]] - code - client/src/api/client.ts
+- [[collectionsApi]] - code - client/src/api/collections.ts
+- [[createAssignmentsSlice()]] - code - client/src/store/slices/assignmentsSlice.ts
+- [[createBudgetSlice()]] - code - client/src/store/slices/budgetSlice.ts
+- [[createDayNotesSlice()]] - code - client/src/store/slices/dayNotesSlice.ts
+- [[createDaysSlice()]] - code - client/src/store/slices/daysSlice.ts
+- [[createFilesSlice()]] - code - client/src/store/slices/filesSlice.ts
+- [[createPackingSlice()]] - code - client/src/store/slices/packingSlice.ts
+- [[createPlacesSlice()]] - code - client/src/store/slices/placesSlice.ts
+- [[createReservationsSlice()]] - code - client/src/store/slices/reservationsSlice.ts
+- [[createTodoSlice()]] - code - client/src/store/slices/todoSlice.ts
+- [[dayNotesApi]] - code - client/src/api/client.ts
+- [[findDuplicatePlace()]] - code - client/src/components/Planner/PlaceFormModal.tsx
+- [[fmtDate()_1]] - code - client/src/components/Planner/AirTrailImportModal.tsx
+- [[fmtDate()_2]] - code - client/src/components/Settings/PasskeysSection.tsx
+- [[formatDate()_4]] - code - client/src/utils/formatters.ts
+- [[getAddonLabel()]] - code - client/src/components/Admin/AddonManager.tsx
+- [[getApiErrorMessage()]] - code - client/src/types.ts
+- [[getApiErrorMessage()_1]] - code - client/src/utils/apiError.ts
+- [[helpApi]] - code - client/src/api/client.ts
+- [[idx()]] - code - server/scripts/build-airports.mjs
+- [[inAppNotificationsApi]] - code - client/src/api/client.ts
+- [[isAuthPublicPath()]] - code - client/src/api/client.ts
+- [[isExpired()]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[isGoogleMapsUrl()]] - code - client/src/components/Planner/PlaceFormModal.helpers.ts
+- [[isWebauthnAbort()]] - code - client/src/components/Settings/PasskeysSection.tsx
+- [[notificationsApi]] - code - client/src/api/client.ts
+- [[notify()_1]] - code - client/src/store/notify.ts
+- [[notify.ts]] - code - client/src/store/notify.ts
+- [[packingApi]] - code - client/src/api/client.ts
+- [[packingSlice.ts]] - code - client/src/store/slices/packingSlice.ts
+- [[placesApi]] - code - client/src/api/client.ts
+- [[reservationsApi]] - code - client/src/api/client.ts
+- [[settingsApi]] - code - client/src/api/client.ts
+- [[sizeClasses]] - code - client/src/components/shared/Modal.tsx
+- [[spyPost()]] - code - client/src/api/uploadTimeout.test.ts
+- [[timeRemaining()]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[totalVotes()]] - code - client/src/components/Collab/CollabPolls.tsx
+- [[translateRateLimit()]] - code - client/src/api/client.ts
+- [[tripInviteApi]] - code - client/src/api/client.ts
+- [[tripsApi]] - code - client/src/api/client.ts
+- [[unregisterSWAndReload()]] - code - client/src/api/client.ts
+- [[uploadTimeout.test.ts]] - code - client/src/api/uploadTimeout.test.ts
+- [[useAdmin()]] - code - client/src/pages/admin/useAdmin.ts
+- [[useAdmin.ts]] - code - client/src/pages/admin/useAdmin.ts
+- [[useCanDo()]] - code - client/src/store/permissionsStore.ts
+- [[useCollabNotes()]] - code - client/src/components/Collab/CollabNotes.tsx
+- [[useCollectionStore]] - code - client/src/store/collectionStore.ts
+- [[useFileManager()]] - code - client/src/components/Files/useFileManager.ts
+- [[useHelp.ts]] - code - client/src/pages/help/useHelp.ts
+- [[useJoinTrip.ts]] - code - client/src/pages/join/useJoinTrip.ts
+- [[usePlaceFormModal()]] - code - client/src/components/Planner/PlaceFormModal.tsx
+- [[useSaveToCollectionStore]] - code - client/src/store/saveToCollectionStore.ts
+- [[useToast()]] - code - client/src/components/shared/Toast.tsx
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Client_Components_Admin_Tests
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 146 edges to [[_COMMUNITY_Client Components Settings Tests]]
+- 129 edges to [[_COMMUNITY_Client Sync Store Tests]]
+- 112 edges to [[_COMMUNITY_Client Components Tests Tests]]
+- 67 edges to [[_COMMUNITY_Client Api Components Tests]]
+- 49 edges to [[_COMMUNITY_Client Collections Components Tests]]
+- 41 edges to [[_COMMUNITY_Client Components Planner Tests]]
+- 37 edges to [[_COMMUNITY_Client Components Planner Tests_1]]
+- 32 edges to [[_COMMUNITY_Client Components Budget Tests]]
+- 25 edges to [[_COMMUNITY_Client Pages Atlas Tests]]
+- 25 edges to [[_COMMUNITY_Client Pages Journeydetailpage (Client)]]
+- 20 edges to [[_COMMUNITY_Client Components Todo Tests]]
+- 18 edges to [[_COMMUNITY_Client Components Planner Tests_2]]
+- 18 edges to [[_COMMUNITY_Client Components Packing Tests]]
+- 14 edges to [[_COMMUNITY_Collection Shared Schema (Client)]]
+- 11 edges to [[_COMMUNITY_Client Components Collab (Client)_1]]
+- 11 edges to [[_COMMUNITY_Client Pages Journeypublic (Client)]]
+- 9 edges to [[_COMMUNITY_Assignment Shared Schema]]
+- 9 edges to [[_COMMUNITY_Shared Schema Airtrail Tests]]
+- 9 edges to [[_COMMUNITY_Packing Shared Schema]]
+- 8 edges to [[_COMMUNITY_Auth Shared Schema]]
+- 8 edges to [[_COMMUNITY_Client Components Map Tests_1]]
+- 7 edges to [[_COMMUNITY_Place Shared Schema]]
+- 7 edges to [[_COMMUNITY_Reservation Shared Schema]]
+- 7 edges to [[_COMMUNITY_Trip Shared Schema]]
+- 7 edges to [[_COMMUNITY_Maps Server Nest Tests]]
+- 6 edges to [[_COMMUNITY_Collab Shared Schema]]
+- 6 edges to [[_COMMUNITY_Maps Shared Schema]]
+- 6 edges to [[_COMMUNITY_Notification Shared Schema Tests]]
+- 6 edges to [[_COMMUNITY_Adminpluginspanel Client Components (Client)]]
+- 6 edges to [[_COMMUNITY_Client Components Collections Tests]]
+- 5 edges to [[_COMMUNITY_Journey Shared Schema]]
+- 4 edges to [[_COMMUNITY_Client Pages Journeypage (Client)]]
+- 4 edges to [[_COMMUNITY_Client Components Collections Tests_1]]
+- 4 edges to [[_COMMUNITY_Client Components Files Tests]]
+- 4 edges to [[_COMMUNITY_Backup Server Nest Tests]]
+- 4 edges to [[_COMMUNITY_Server Plugins Services Tests]]
+- 4 edges to [[_COMMUNITY_Server Nest Auth Tests]]
+- 3 edges to [[_COMMUNITY_Client Components Map (Client)]]
+- 3 edges to [[_COMMUNITY_Budget Shared Schema (Client)]]
+- 3 edges to [[_COMMUNITY_Client Components Collections (Client)]]
+- 3 edges to [[_COMMUNITY_Server Plugins Controller Tests]]
+- 3 edges to [[_COMMUNITY_Client Appearancesettingstab Components (Client)]]
+- 3 edges to [[_COMMUNITY_Admin Server Nest Tests]]
+- 3 edges to [[_COMMUNITY_Import Server Nest Tests]]
+- 3 edges to [[_COMMUNITY_Budget Server Nest Tests]]
+- 3 edges to [[_COMMUNITY_Places Server Nest Tests]]
+- 3 edges to [[_COMMUNITY_Journey Server Nest Tests]]
+- 3 edges to [[_COMMUNITY_Server Weather Weatherservice Tests]]
+- 2 edges to [[_COMMUNITY_Client Components Systemnotices Tests]]
+- 2 edges to [[_COMMUNITY_Client Sync Connectivity Tests]]
+- 2 edges to [[_COMMUNITY_Category Shared Schema]]
+- 2 edges to [[_COMMUNITY_File Shared Schema]]
+- 2 edges to [[_COMMUNITY_Settings Shared Schema]]
+- 2 edges to [[_COMMUNITY_Todo Shared Schema]]
+- 2 edges to [[_COMMUNITY_Weather Shared Schema]]
+- 2 edges to [[_COMMUNITY_Client Components Collab (Client)]]
+- 2 edges to [[_COMMUNITY_Client Components Collab (Client)_2]]
+- 2 edges to [[_COMMUNITY_Client Components Map (Client)_1]]
+- 2 edges to [[_COMMUNITY_Plugin Sdk Cli Tests]]
+- 2 edges to [[_COMMUNITY_Client Usecountup Adminstatcard (Client)]]
+- 2 edges to [[_COMMUNITY_Oauth Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Host Server Plugins Tests]]
+- 2 edges to [[_COMMUNITY_Reservations Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Settings Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Server Services Mapsservice Tests]]
+- 2 edges to [[_COMMUNITY_Server Auth Middleware Tests]]
+- 2 edges to [[_COMMUNITY_Collab Server Nest Tests]]
+- 2 edges to [[_COMMUNITY_Server Tests Unit Tests_4]]
+- 1 edge to [[_COMMUNITY_Client Api Authurl Tests]]
+- 1 edge to [[_COMMUNITY_Client Components Journey (Client)_2]]
+- 1 edge to [[_COMMUNITY_Client Services Photoservice Tests]]
+- 1 edge to [[_COMMUNITY_Client Weather Weatherwidget (Client)]]
+- 1 edge to [[_COMMUNITY_Client Utils Uploadqueue Tests]]
+- 1 edge to [[_COMMUNITY_Client Store Journeystore Tests]]
+- 1 edge to [[_COMMUNITY_Client Tests Unit Tests]]
+- 1 edge to [[_COMMUNITY_Controller Server Plugins Tests]]
+- 1 edge to [[_COMMUNITY_Client Components Pdf Tests]]
+- 1 edge to [[_COMMUNITY_Client Components Journey (Client)_1]]
+- 1 edge to [[_COMMUNITY_Airports Server Scripts (Server)]]
+- 1 edge to [[_COMMUNITY_Server Scripts Build (Server)]]
+- 1 edge to [[_COMMUNITY_Server Tests Websocket Tests]]
+- 1 edge to [[_COMMUNITY_Server Tests Unit Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Oauthservice Tests]]
+- 1 edge to [[_COMMUNITY_Auth Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Router Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Oidc Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Host Server Nest (Server)_1]]
+- 1 edge to [[_COMMUNITY_Plugins Server Nest Tests_3]]
+- 1 edge to [[_COMMUNITY_Server Plugins Egress Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Budgetservice Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Adminservice Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Authservice Tests]]
+- 1 edge to [[_COMMUNITY_Server Tests Helpers Tests_1]]
+- 1 edge to [[_COMMUNITY_Server Nest Accommodations Tests]]
+- 1 edge to [[_COMMUNITY_Airports Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Server Assignments Nest Tests]]
+- 1 edge to [[_COMMUNITY_Atlas Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Categories Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Collections Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Nest Tests]]
+- 1 edge to [[_COMMUNITY_Files Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Notifications Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Packing Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Share Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_System Notices Server Tests]]
+- 1 edge to [[_COMMUNITY_Tags Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Todo Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Vacay Server Nest Tests]]
+
+## Top bridge nodes
+- [[.err()]] - degree 123, connects to 53 communities
+- [[client.ts]] - degree 293, connects to 48 communities
+- [[Toast.tsx]] - degree 93, connects to 19 communities
+- [[useToast()]] - degree 150, connects to 18 communities
+- [[idx()]] - degree 17, connects to 11 communities

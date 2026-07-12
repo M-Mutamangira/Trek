@@ -1,0 +1,20 @@
+---
+source_file: "server/src/services/collectionsService.ts"
+type: "code"
+community: "Server Services Collectionsservice (Server)"
+location: "L97"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Server_Services_Collectionsservice_Server
+---
+
+# roleOf()
+
+## Connections
+- [[assertCanDelete()]] - `calls` [EXTRACTED]
+- [[assertCanEdit()]] - `calls` [EXTRACTED]
+- [[collectionsService.ts]] - `contains` [EXTRACTED]
+- [[isOwner()_1]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Server_Services_Collectionsservice_Server

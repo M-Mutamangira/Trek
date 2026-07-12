@@ -1,0 +1,18 @@
+---
+source_file: "shared/src/i18n/pl/trips.ts"
+type: "code"
+community: "Shared I18n Pl"
+location: "L3"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Shared_I18n_Pl
+---
+
+# trips
+
+## Connections
+- [[index.ts_21]] - `imports` [EXTRACTED]
+- [[trips.ts_16]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Shared_I18n_Pl

@@ -1,0 +1,219 @@
+---
+type: community
+cohesion: 0.04
+members: 134
+---
+
+# Journey Server Nest Tests
+
+**Cohesion:** 0.04 - loosely connected
+**Members:** 134 nodes
+
+## Members
+- [[.addContributor()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.addContributor()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.addPhoto()]] - code - server/src/nest/journey/journey.service.ts
+- [[.addProviderPhoto()]] - code - server/src/nest/journey/journey.service.ts
+- [[.addProviderPhotoToGallery()]] - code - server/src/nest/journey/journey.service.ts
+- [[.addTrip()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.addTripToJourney()]] - code - server/src/nest/journey/journey.service.ts
+- [[.availableTrips()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.canActivate()_7]] - code - server/src/nest/journey/journey-addon.guard.ts
+- [[.constructor()_36]] - code - server/src/nest/journey/journey-addon.guard.ts
+- [[.constructor()_38]] - code - server/src/nest/journey/journey.controller.ts
+- [[.constructor()_37]] - code - server/src/nest/journey/journey-public.controller.ts
+- [[.cover()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.coverImages()]] - code - server/src/nest/trips/trips.controller.ts
+- [[.create()_11]] - code - server/src/nest/journey/journey.controller.ts
+- [[.createEntry()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.createEntry()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.createJourney()]] - code - server/src/nest/journey/journey.service.ts
+- [[.createOrUpdateJourneyShareLink()]] - code - server/src/nest/journey/journey.service.ts
+- [[.deleteEntry()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.deleteEntry()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.deleteGalleryPhoto()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.deleteGalleryPhoto()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.deleteJourney()]] - code - server/src/nest/journey/journey.service.ts
+- [[.deleteJourneyShareLink()]] - code - server/src/nest/journey/journey.service.ts
+- [[.deletePhoto()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.deletePhoto()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.deleteShareLink()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.galleryProviderPhotos()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.get()_6]] - code - server/src/nest/journey/journey.controller.ts
+- [[.get()_5]] - code - server/src/nest/journey/journey-public.controller.ts
+- [[.getAppSettings()]] - code - server/src/nest/auth/auth.controller.ts
+- [[.getJourneyFull()]] - code - server/src/nest/journey/journey.service.ts
+- [[.getJourneyShareLink()]] - code - server/src/nest/journey/journey.service.ts
+- [[.getNotificationPrefs()]] - code - server/src/nest/admin/admin.controller.ts
+- [[.getPublicJourney()]] - code - server/src/nest/journey/journey.service.ts
+- [[.getSettings()]] - code - server/src/nest/auth/auth.controller.ts
+- [[.getShareLink()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.getSuggestions()]] - code - server/src/nest/journey/journey.service.ts
+- [[.immichAutoUploadEnabled()]] - code - server/src/nest/journey/journey.service.ts
+- [[.journeyAddonEnabled()]] - code - server/src/nest/journey/journey.service.ts
+- [[.legacyPhoto()]] - code - server/src/nest/journey/journey-public.controller.ts
+- [[.linkPhoto()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.linkPhotoToEntry()]] - code - server/src/nest/journey/journey.service.ts
+- [[.list()_15]] - code - server/src/nest/journey/journey.controller.ts
+- [[.list()_30]] - code - server/src/nest/trips/trips.controller.ts
+- [[.listEntries()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.listEntries()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.listJourneys()]] - code - server/src/nest/journey/journey.service.ts
+- [[.listMcpTokens()_2]] - code - server/src/nest/auth/auth.controller.ts
+- [[.listUpcoming()]] - code - server/src/nest/reservations/reservations.service.ts
+- [[.listUserTrips()]] - code - server/src/nest/journey/journey.service.ts
+- [[.me()]] - code - server/src/nest/auth/auth.controller.ts
+- [[.me()_1]] - code - server/src/nest/health/health.controller.ts
+- [[.photo()]] - code - server/src/nest/journey/journey-public.controller.ts
+- [[.preferences()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.providerPhotos()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.remove()_13]] - code - server/src/nest/journey/journey.controller.ts
+- [[.removeContributor()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.removeContributor()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.removeTrip()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.removeTripFromJourney()]] - code - server/src/nest/journey/journey.service.ts
+- [[.reorderEntries()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.reorderEntries()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.setPhotoProvider()]] - code - server/src/nest/journey/journey.service.ts
+- [[.setShareLink()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.streamImmichAsset()]] - code - server/src/nest/journey/journey.service.ts
+- [[.streamPhoto()]] - code - server/src/nest/journey/journey.service.ts
+- [[.streamSynologyAsset()]] - code - server/src/nest/journey/journey.service.ts
+- [[.suggestions()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.travelStats()]] - code - server/src/nest/auth/auth.controller.ts
+- [[.unlinkPhoto()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.unlinkPhotoFromEntry()]] - code - server/src/nest/journey/journey.service.ts
+- [[.upcoming()]] - code - server/src/nest/reservations/upcoming-reservations.controller.ts
+- [[.update()_11]] - code - server/src/nest/journey/journey.controller.ts
+- [[.updateContributor()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.updateContributorRole()]] - code - server/src/nest/journey/journey.service.ts
+- [[.updateEntry()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.updateEntry()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.updateJourney()]] - code - server/src/nest/journey/journey.service.ts
+- [[.updateJourneyPreferences()]] - code - server/src/nest/journey/journey.service.ts
+- [[.updatePhoto()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.updatePhoto()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.uploadEntryPhotos()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.uploadGalleryPhotos()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.uploadGalleryPhotos()_1]] - code - server/src/nest/journey/journey.service.ts
+- [[.uploadGalleryVideo()]] - code - server/src/nest/journey/journey.controller.ts
+- [[.uploadToImmich()]] - code - server/src/nest/journey/journey.service.ts
+- [[.users()]] - code - server/src/nest/auth/auth.controller.ts
+- [[.validateKeys()]] - code - server/src/nest/auth/auth.controller.ts
+- [[.validateShareTokenForAsset()]] - code - server/src/nest/journey/journey.service.ts
+- [[.validateShareTokenForPhoto()]] - code - server/src/nest/journey/journey.service.ts
+- [[Body_18]] - code
+- [[Controller_26]] - code
+- [[Controller_25]] - code
+- [[CurrentUser_5]] - code - server/src/nest/auth/current-user.decorator.ts
+- [[Delete_14]] - code
+- [[Get_6]] - code
+- [[Get_25]] - code
+- [[Get_24]] - code
+- [[Get_56]] - code
+- [[Headers_9]] - code
+- [[HttpCode_10]] - code
+- [[IMAGE_UPLOAD]] - code - server/src/nest/journey/journey.controller.ts
+- [[Injectable_30]] - code
+- [[Injectable_31]] - code
+- [[JourneyAddonGuard]] - code - server/src/nest/journey/journey-addon.guard.ts
+- [[JourneyController]] - code - server/src/nest/journey/journey.controller.ts
+- [[JourneyPublicController]] - code - server/src/nest/journey/journey-public.controller.ts
+- [[JourneyService]] - code - server/src/nest/journey/journey.service.ts
+- [[Param_21]] - code
+- [[Param_20]] - code
+- [[Patch_3]] - code
+- [[Post_19]] - code
+- [[Put_13]] - code
+- [[Query_21]] - code
+- [[Res_8]] - code
+- [[UploadedFile_5]] - code
+- [[UploadedFiles_1]] - code
+- [[UseGuards_21]] - code
+- [[UseInterceptors_6]] - code
+- [[VIDEO_UPLOAD]] - code - server/src/nest/journey/journey.controller.ts
+- [[getAllowedExtensions()]] - code - server/src/services/fileService.ts
+- [[isVideoMime()]] - code - server/src/services/fileService.ts
+- [[journey-addon.guard.ts]] - code - server/src/nest/journey/journey-addon.guard.ts
+- [[journey-public.controller.ts]] - code - server/src/nest/journey/journey-public.controller.ts
+- [[journey.controller.test.ts]] - code - server/tests/unit/nest/journey.controller.test.ts
+- [[journey.controller.ts]] - code - server/src/nest/journey/journey.controller.ts
+- [[journey.module.ts]] - code - server/src/nest/journey/journey.module.ts
+- [[svc()_6]] - code - server/tests/unit/nest/journey.controller.test.ts
+- [[thrown()_14]] - code - server/tests/unit/nest/journey.controller.test.ts
+- [[thrownAsync()_5]] - code - server/tests/unit/nest/journey.controller.test.ts
+- [[uploadsBase]] - code - server/src/nest/journey/journey.controller.ts
+- [[user_17]] - code - server/tests/unit/nest/journey.controller.test.ts
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Journey_Server_Nest_Tests
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 76 edges to [[_COMMUNITY_Collections Server Nest Tests]]
+- 29 edges to [[_COMMUNITY_Auth Server Nest Tests]]
+- 26 edges to [[_COMMUNITY_Admin Server Nest Tests]]
+- 21 edges to [[_COMMUNITY_Vacay Server Nest Tests]]
+- 20 edges to [[_COMMUNITY_Packing Server Nest Tests]]
+- 16 edges to [[_COMMUNITY_Budget Server Nest Tests]]
+- 16 edges to [[_COMMUNITY_Collab Server Nest Tests]]
+- 15 edges to [[_COMMUNITY_Notifications Server Nest Tests]]
+- 14 edges to [[_COMMUNITY_Files Server Nest Tests]]
+- 13 edges to [[_COMMUNITY_Import Server Nest Tests]]
+- 13 edges to [[_COMMUNITY_Places Server Nest Tests]]
+- 12 edges to [[_COMMUNITY_Atlas Server Nest Tests]]
+- 11 edges to [[_COMMUNITY_Memories Server Nest Tests_1]]
+- 11 edges to [[_COMMUNITY_Memories Server Nest Tests]]
+- 9 edges to [[_COMMUNITY_Server Assignments Nest Tests]]
+- 9 edges to [[_COMMUNITY_Feeds Server Nest (Server)]]
+- 9 edges to [[_COMMUNITY_Reservations Server Nest Tests]]
+- 9 edges to [[_COMMUNITY_Trips Server Nest (Server)]]
+- 8 edges to [[_COMMUNITY_Todo Server Nest Tests]]
+- 7 edges to [[_COMMUNITY_Backup Server Nest Tests]]
+- 7 edges to [[_COMMUNITY_Memories Server Nest (Server)]]
+- 7 edges to [[_COMMUNITY_Oauth Server Nest Tests]]
+- 6 edges to [[_COMMUNITY_Controller Server Nest Tests]]
+- 5 edges to [[_COMMUNITY_Server Nest Auth Tests]]
+- 5 edges to [[_COMMUNITY_Controller Server Nest (Server)]]
+- 5 edges to [[_COMMUNITY_Server Nest Days (Server)]]
+- 5 edges to [[_COMMUNITY_Days Server Nest (Server)]]
+- 5 edges to [[_COMMUNITY_Tags Server Nest Tests]]
+- 5 edges to [[_COMMUNITY_Trips Server Nest (Server)_1]]
+- 4 edges to [[_COMMUNITY_Server Nest Health Tests]]
+- 4 edges to [[_COMMUNITY_Server Services Nest Tests]]
+- 4 edges to [[_COMMUNITY_Plugins Server Nest Tests]]
+- 4 edges to [[_COMMUNITY_Maps Server Nest Tests]]
+- 4 edges to [[_COMMUNITY_Photos Server Nest (Server)]]
+- 4 edges to [[_COMMUNITY_Server Nest Accommodations Tests]]
+- 4 edges to [[_COMMUNITY_Settings Server Nest Tests]]
+- 4 edges to [[_COMMUNITY_Share Server Nest Tests]]
+- 4 edges to [[_COMMUNITY_Trip Invite Server (Server)]]
+- 3 edges to [[_COMMUNITY_Server Auth Middleware Tests]]
+- 3 edges to [[_COMMUNITY_Trips Server Nest Tests]]
+- 3 edges to [[_COMMUNITY_Server Services Host Tests]]
+- 3 edges to [[_COMMUNITY_Client Components Admin Tests]]
+- 2 edges to [[_COMMUNITY_System Notices Server Tests]]
+- 2 edges to [[_COMMUNITY_Server Services Unsplashservice Tests]]
+- 2 edges to [[_COMMUNITY_Trips Server Nest (Server)_2]]
+- 2 edges to [[_COMMUNITY_E2e Journey Server Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Vacayservice Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Collabservice Tests]]
+- 1 edge to [[_COMMUNITY_Categories Server Nest Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Airtrail Tests]]
+- 1 edge to [[_COMMUNITY_Server Nest Integrations (Server)]]
+- 1 edge to [[_COMMUNITY_Server Scheduler Services Tests]]
+- 1 edge to [[_COMMUNITY_Memories Server Services Tests]]
+- 1 edge to [[_COMMUNITY_Server Services Placeservice Tests]]
+- 1 edge to [[_COMMUNITY_Slidingtabs Client Components Tests]]
+- 1 edge to [[_COMMUNITY_Health Server Nest (Server)]]
+- 1 edge to [[_COMMUNITY_Memories Server Services (Server)]]
+
+## Top bridge nodes
+- [[CurrentUser_5]] - degree 407, connects to 50 communities
+- [[journey.controller.ts]] - degree 20, connects to 7 communities
+- [[.users()]] - degree 7, connects to 4 communities
+- [[.coverImages()]] - degree 7, connects to 4 communities
+- [[journey.controller.test.ts]] - degree 14, connects to 3 communities

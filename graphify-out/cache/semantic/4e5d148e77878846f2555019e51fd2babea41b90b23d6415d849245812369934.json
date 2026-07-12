@@ -1,0 +1,1 @@
+{"nodes": [{"id": "wiki_mcp_overview", "label": "MCP Overview", "file_type": "document", "source_file": "wiki\\MCP-Overview.md"}, {"id": "mcp_server", "label": "Model Context Protocol Server", "file_type": "concept", "source_file": "wiki\\MCP-Overview.md"}], "edges": [], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "wiki_assets_pdftrip", "label": "Trip Plan PDF Preview UI", "file_type": "image", "source_file": "wiki\\assets\\PDFTrip.png"}], "edges": [{"source": "wiki_assets_pdftrip", "target": "wiki_assets_tripplaner", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "wiki\\assets\\PDFTrip.png"}], "hyperedges": []}

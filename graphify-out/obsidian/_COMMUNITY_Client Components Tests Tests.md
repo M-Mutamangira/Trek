@@ -1,0 +1,448 @@
+---
+type: community
+cohesion: 0.02
+members: 375
+---
+
+# Client Components Tests Tests
+
+**Cohesion:** 0.02 - loosely connected
+**Members:** 375 nodes
+
+## Members
+- [[ADMIN_USER]] - code - client/src/components/Admin/DevNotificationsPanel.test.tsx
+- [[ALLOWED]] - code - client/src/components/Admin/PermissionsPanel.test.tsx
+- [[AboutTab.test.tsx]] - code - client/src/components/Settings/AboutTab.test.tsx
+- [[AccountTab.test.tsx]] - code - client/src/components/Settings/AccountTab.test.tsx
+- [[Addon_2]] - code - client/src/store/addonStore.ts
+- [[AddonManager.test.tsx]] - code - client/src/components/Admin/AddonManager.test.tsx
+- [[AddonState]] - code - client/src/store/addonStore.ts
+- [[AdminMcpTokensPanel.test.tsx]] - code - client/src/components/Admin/AdminMcpTokensPanel.test.tsx
+- [[AdminPage.test.tsx]] - code - client/src/pages/AdminPage.test.tsx
+- [[AdminPluginsPanel.test.tsx]] - code - client/src/components/Admin/AdminPluginsPanel.test.tsx
+- [[App.test.tsx]] - code - client/src/App.test.tsx
+- [[AppearanceSettingsTab.test.tsx]] - code - client/src/components/Settings/AppearanceSettingsTab.test.tsx
+- [[AtlasPage.test.tsx]] - code - client/src/pages/AtlasPage.test.tsx
+- [[AuditLogPanel.test.tsx]] - code - client/src/components/Admin/AuditLogPanel.test.tsx
+- [[AvatarResponse]] - code - client/src/store/authStore.ts
+- [[BackupPanel.test.tsx]] - code - client/src/components/Admin/BackupPanel.test.tsx
+- [[BadgeProps]] - code - client/src/components/Collections/StatusBadge.test.tsx
+- [[BottomNav.test.tsx]] - code - client/src/components/Layout/BottomNav.test.tsx
+- [[BudgetPanel.test.tsx]] - code - client/src/components/Budget/BudgetPanel.test.tsx
+- [[CategoryManager.test.tsx]] - code - client/src/components/Admin/CategoryManager.test.tsx
+- [[CollabChat.test.tsx]] - code - client/src/components/Collab/CollabChat.test.tsx
+- [[CollabNotes.test.tsx]] - code - client/src/components/Collab/CollabNotes.test.tsx
+- [[CollabPanel.test.tsx]] - code - client/src/components/Collab/CollabPanel.test.tsx
+- [[CollabPolls.test.tsx]] - code - client/src/components/Collab/CollabPolls.test.tsx
+- [[CollectionList.test.tsx]] - code - client/src/components/Collections/CollectionList.test.tsx
+- [[CollectionPlaceDetail.test.tsx]] - code - client/src/components/Collections/CollectionPlaceDetail.test.tsx
+- [[CostsPanel.test.tsx]] - code - client/src/components/Budget/CostsPanel.test.tsx
+- [[CustomSelect.test.tsx]] - code - client/src/components/shared/CustomSelect.test.tsx
+- [[CustomTimePicker.test.tsx]] - code - client/src/components/shared/CustomTimePicker.test.tsx
+- [[DashboardPage.test.tsx]] - code - client/src/pages/DashboardPage.test.tsx
+- [[DayDetailPanel.test.tsx]] - code - client/src/components/Planner/DayDetailPanel.test.tsx
+- [[DayPlanSidebar.test.tsx]] - code - client/src/components/Planner/DayPlanSidebar.test.tsx
+- [[DeepPartial]] - code - client/tests/helpers/store.ts
+- [[DemoBanner.test.tsx]] - code - client/src/components/Layout/DemoBanner.test.tsx
+- [[DetailProps]] - code - client/src/components/Collections/CollectionPlaceDetail.test.tsx
+- [[DevNotificationsPanel.test.tsx]] - code - client/src/components/Admin/DevNotificationsPanel.test.tsx
+- [[DisplaySettingsTab.test.tsx]] - code - client/src/components/Settings/DisplaySettingsTab.test.tsx
+- [[ENTRY_1]] - code - client/src/components/Admin/AuditLogPanel.test.tsx
+- [[ENTRY_2]] - code - client/src/components/Admin/AuditLogPanel.test.tsx
+- [[FileManager.test.tsx]] - code - client/src/components/Files/FileManager.test.tsx
+- [[FilesPage.test.tsx]] - code - client/src/pages/FilesPage.test.tsx
+- [[GitHubPanel.test.tsx]] - code - client/src/components/Admin/GitHubPanel.test.tsx
+- [[Handlers]] - code - client/src/components/Collections/CollectionList.test.tsx
+- [[ITINERARY]] - code - client/src/components/Planner/TransitSearchPanel.test.tsx
+- [[InAppNotification]] - code - client/src/store/inAppNotificationStore.ts
+- [[InAppNotification_1]] - code - client/tests/helpers/factories.ts
+- [[InAppNotificationBell()]] - code - client/src/components/Layout/InAppNotificationBell.tsx
+- [[InAppNotificationBell.test.tsx]] - code - client/src/components/Layout/InAppNotificationBell.test.tsx
+- [[InAppNotificationBell.tsx]] - code - client/src/components/Layout/InAppNotificationBell.tsx
+- [[InAppNotificationItem()]] - code - client/src/components/Notifications/InAppNotificationItem.tsx
+- [[InAppNotificationItem.test.tsx]] - code - client/src/components/Notifications/InAppNotificationItem.test.tsx
+- [[InAppNotificationItem.tsx]] - code - client/src/components/Notifications/InAppNotificationItem.tsx
+- [[InAppNotificationsPage.test.tsx]] - code - client/src/pages/InAppNotificationsPage.test.tsx
+- [[IntegrationsTab.test.tsx]] - code - client/src/components/Settings/IntegrationsTab.test.tsx
+- [[JournalBody.test.tsx]] - code - client/src/components/Journey/JournalBody.test.tsx
+- [[JourneyDetailPage.test.tsx]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[JourneyMap.test.tsx]] - code - client/src/components/Journey/JourneyMap.test.tsx
+- [[JourneyPage.test.tsx]] - code - client/src/pages/JourneyPage.test.tsx
+- [[JourneyPublicPage.test.tsx]] - code - client/src/pages/JourneyPublicPage.test.tsx
+- [[LoginPage.oidc-redirect.test.tsx]] - code - client/src/pages/LoginPage.oidc-redirect.test.tsx
+- [[LoginPage.test.tsx]] - code - client/src/pages/LoginPage.test.tsx
+- [[LoginResult]] - code - client/src/store/authStore.ts
+- [[MapSettingsTab.test.tsx]] - code - client/src/components/Settings/MapSettingsTab.test.tsx
+- [[MapView.test.tsx]] - code - client/src/components/Map/MapView.test.tsx
+- [[MapViewGL.test.tsx]] - code - client/src/components/Map/MapViewGL.test.tsx
+- [[MarkdownToolbar.test.tsx]] - code - client/src/components/Journey/MarkdownToolbar.test.tsx
+- [[MobileTopBar()]] - code - client/src/components/Layout/MobileTopBar.tsx
+- [[MobileTopBar.test.tsx]] - code - client/src/components/Layout/MobileTopBar.test.tsx
+- [[MobileTopBar.tsx]] - code - client/src/components/Layout/MobileTopBar.tsx
+- [[MockIO]] - code - client/src/components/Planner/DayPlanSidebar.test.tsx
+- [[MockIO_1]] - code - client/src/components/Planner/PlaceInspector.test.tsx
+- [[MockIO_2]] - code - client/src/components/Planner/PlacesSidebar.test.tsx
+- [[Modal.test.tsx]] - code - client/src/components/shared/Modal.test.tsx
+- [[Navbar.test.tsx]] - code - client/src/components/Layout/Navbar.test.tsx
+- [[NotificationItemProps]] - code - client/src/components/Notifications/InAppNotificationItem.tsx
+- [[NotificationState]] - code - client/src/store/inAppNotificationStore.ts
+- [[NotificationsTab.test.tsx]] - code - client/src/components/Settings/NotificationsTab.test.tsx
+- [[OAuthAuthorizePage.test.tsx]] - code - client/src/pages/OAuthAuthorizePage.test.tsx
+- [[OPTIONS]] - code - client/src/components/shared/CustomSelect.test.tsx
+- [[PAGE_1]] - code - client/src/components/Admin/GitHubPanel.test.tsx
+- [[PAGE_2]] - code - client/src/components/Admin/GitHubPanel.test.tsx
+- [[PackingListPanel.test.tsx]] - code - client/src/components/Packing/PackingListPanel.test.tsx
+- [[PackingTemplateManager.test.tsx]] - code - client/src/components/Admin/PackingTemplateManager.test.tsx
+- [[PermissionsPanel.test.tsx]] - code - client/src/components/Admin/PermissionsPanel.test.tsx
+- [[PermissionsState]] - code - client/src/store/permissionsStore.ts
+- [[PhotoLightbox.test.tsx]] - code - client/src/components/Journey/PhotoLightbox.test.tsx
+- [[PhotoProvidersSection.test.tsx]] - code - client/src/components/Settings/PhotoProvidersSection.test.tsx
+- [[PlaceFormModal.test.tsx]] - code - client/src/components/Planner/PlaceFormModal.test.tsx
+- [[PlaceInspector.test.tsx]] - code - client/src/components/Planner/PlaceInspector.test.tsx
+- [[PlacesSidebar.test.tsx]] - code - client/src/components/Planner/PlacesSidebar.test.tsx
+- [[ProfileSheet()]] - code - client/src/components/Layout/MobileTopBar.tsx
+- [[RawNotification]] - code - client/src/store/inAppNotificationStore.ts
+- [[RegisterPage.test.tsx]] - code - client/src/pages/RegisterPage.test.tsx
+- [[RenderWithProvidersOptions]] - code - client/tests/helpers/render.tsx
+- [[ReservationModal.test.tsx]] - code - client/src/components/Planner/ReservationModal.test.tsx
+- [[ReservationsPanel.test.tsx]] - code - client/src/components/Planner/ReservationsPanel.test.tsx
+- [[SAMPLE_PERMISSIONS]] - code - client/src/components/Admin/PermissionsPanel.test.tsx
+- [[ScopeGroupPicker.test.tsx]] - code - client/src/components/OAuth/ScopeGroupPicker.test.tsx
+- [[Settings]] - code - client/src/types.ts
+- [[SettingsPage.test.tsx]] - code - client/src/pages/SettingsPage.test.tsx
+- [[SettingsState]] - code - client/src/store/settingsStore.ts
+- [[SharedTripPage.test.tsx]] - code - client/src/pages/SharedTripPage.test.tsx
+- [[StatusBadge.test.tsx]] - code - client/src/components/Collections/StatusBadge.test.tsx
+- [[SystemNoticeModal.test.tsx]] - code - client/src/components/SystemNotices/SystemNoticeModal.test.tsx
+- [[TFnProbe()]] - code - client/src/components/Collections/CollectionList.test.tsx
+- [[TOKEN_1]] - code - client/src/components/Admin/AdminMcpTokensPanel.test.tsx
+- [[TOKEN_2]] - code - client/src/components/Admin/AdminMcpTokensPanel.test.tsx
+- [[Toast.test.tsx]] - code - client/src/components/shared/Toast.test.tsx
+- [[ToastContainer()]] - code - client/src/components/shared/Toast.tsx
+- [[TodoListPanel.test.tsx]] - code - client/src/components/Todo/TodoListPanel.test.tsx
+- [[ToggleSwitch.test.tsx]] - code - client/src/components/Settings/ToggleSwitch.test.tsx
+- [[TransitJourneyModal.test.tsx]] - code - client/src/components/Planner/TransitJourneyModal.test.tsx
+- [[TransitSearchPanel.test.tsx]] - code - client/src/components/Planner/TransitSearchPanel.test.tsx
+- [[TranslationProvider()]] - code - client/src/i18n/TranslationContext.tsx
+- [[TransportModal.test.tsx]] - code - client/src/components/Planner/TransportModal.test.tsx
+- [[TripFormModal.test.tsx]] - code - client/src/components/Trips/TripFormModal.test.tsx
+- [[TripMembersModal.test.tsx]] - code - client/src/components/Trips/TripMembersModal.test.tsx
+- [[TripOwnerContext]] - code - client/src/store/permissionsStore.ts
+- [[TripPlannerPage.test.tsx]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[VALIDATE_OK]] - code - client/src/pages/OAuthAuthorizePage.test.tsx
+- [[VacayCalendar.test.tsx]] - code - client/src/components/Vacay/VacayCalendar.test.tsx
+- [[VacayMonthCard.test.tsx]] - code - client/src/components/Vacay/VacayMonthCard.test.tsx
+- [[VacayPage.test.tsx]] - code - client/src/pages/VacayPage.test.tsx
+- [[VacayPersons.test.tsx]] - code - client/src/components/Vacay/VacayPersons.test.tsx
+- [[VacaySettings.test.tsx]] - code - client/src/components/Vacay/VacaySettings.test.tsx
+- [[VacayStats.test.tsx]] - code - client/src/components/Vacay/VacayStats.test.tsx
+- [[WeatherWidget.test.tsx]] - code - client/src/components/Weather/WeatherWidget.test.tsx
+- [[WhatsNextWidget.test.tsx]] - code - client/src/components/Collab/WhatsNextWidget.test.tsx
+- [[Window_2]] - code - client/tests/integration/hooks/useDayNotes.test.ts
+- [[addToast()]] - code - client/src/components/shared/Toast.test.tsx
+- [[addonStore.test.ts]] - code - client/tests/unit/stores/addonStore.test.ts
+- [[addonStore.ts]] - code - client/src/store/addonStore.ts
+- [[assignments.test.ts]] - code - client/tests/unit/remoteEventHandler/assignments.test.ts
+- [[assignmentsSlice.test.ts]] - code - client/tests/unit/slices/assignmentsSlice.test.ts
+- [[atlasStatsResponse]] - code - client/src/pages/AtlasPage.test.tsx
+- [[authStore.test.ts]] - code - client/tests/unit/stores/authStore.test.ts
+- [[authStore.ts]] - code - client/src/store/authStore.ts
+- [[autoBackup]] - code - client/src/components/Admin/BackupPanel.test.tsx
+- [[basePlan]] - code - client/src/components/Vacay/VacayCalendar.test.tsx
+- [[basePlan_1]] - code - client/src/components/Vacay/VacaySettings.test.tsx
+- [[baseProps]] - code - client/src/components/Vacay/VacayMonthCard.test.tsx
+- [[bridge]] - code - client/src/components/Collections/CollectionList.test.tsx
+- [[budget.test.ts]] - code - client/tests/unit/remoteEventHandler/budget.test.ts
+- [[budgetSlice.test.ts]] - code - client/src/store/slices/budgetSlice.test.ts
+- [[budgetSlice.test.ts_1]] - code - client/tests/unit/slices/budgetSlice.test.ts
+- [[buildAddon()]] - code - client/src/components/Admin/AddonManager.test.tsx
+- [[buildAdmin()]] - code - client/tests/helpers/factories.ts
+- [[buildAssignment()]] - code - client/tests/helpers/factories.ts
+- [[buildBudgetItem()]] - code - client/tests/helpers/factories.ts
+- [[buildCategory()]] - code - client/tests/helpers/factories.ts
+- [[buildDay()]] - code - client/tests/helpers/factories.ts
+- [[buildDayNote()]] - code - client/tests/helpers/factories.ts
+- [[buildFile()]] - code - client/src/components/Files/FileManager.test.tsx
+- [[buildInAppNotification()]] - code - client/tests/helpers/factories.ts
+- [[buildJourneyListItem()]] - code - client/src/pages/JourneyPage.test.tsx
+- [[buildMapPlace()]] - code - client/src/components/Map/MapView.test.tsx
+- [[buildMapPlace()_1]] - code - client/src/components/Map/MapViewGL.test.tsx
+- [[buildNonMonotonicDays()]] - code - client/src/components/Planner/DayDetailPanel.test.tsx
+- [[buildNonMonotonicDaysRM()]] - code - client/src/components/Planner/ReservationModal.test.tsx
+- [[buildNotification()]] - code - client/src/components/Layout/InAppNotificationBell.test.tsx
+- [[buildNotification()_1]] - code - client/src/components/Notifications/InAppNotificationItem.test.tsx
+- [[buildPackingItem()]] - code - client/tests/helpers/factories.ts
+- [[buildPermission()]] - code - client/src/components/Admin/PermissionsPanel.test.tsx
+- [[buildPlace()]] - code - client/tests/helpers/factories.ts
+- [[buildPoll()]] - code - client/src/components/Collab/CollabPolls.test.tsx
+- [[buildRawNotif()]] - code - client/tests/unit/stores/inAppNotificationStore.test.ts
+- [[buildRelease()]] - code - client/src/components/Admin/GitHubPanel.test.tsx
+- [[buildReservation()]] - code - client/tests/helpers/factories.ts
+- [[buildSettings()]] - code - client/tests/helpers/factories.ts
+- [[buildStat()]] - code - client/src/components/Vacay/VacayStats.test.tsx
+- [[buildTag()]] - code - client/tests/helpers/factories.ts
+- [[buildTodoItem()]] - code - client/tests/helpers/factories.ts
+- [[buildTrip()]] - code - client/tests/helpers/factories.ts
+- [[buildTripFile()]] - code - client/tests/helpers/factories.ts
+- [[buildUser()]] - code - client/tests/helpers/factories.ts
+- [[buildWeather()]] - code - client/src/components/Weather/WeatherWidget.test.tsx
+- [[cafe]] - code - client/src/components/Collections/CollectionList.test.tsx
+- [[capturedConfirmDialogProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedDayDetailPanelProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedDayPlanSidebarProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedFileManagerProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedPlaceFormModalProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedPlaceInspectorProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedPlacesSidebarProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedReservationModalProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedReservationsPanelProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedTripFormModalProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[capturedTripMembersModalProps]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[cat]] - code - client/src/components/Planner/PlaceInspector.test.tsx
+- [[cat1]] - code - client/src/components/Admin/PackingTemplateManager.test.tsx
+- [[client.test.ts]] - code - client/tests/integration/api/client.test.ts
+- [[clipboardWriteText]] - code - client/src/components/Settings/IntegrationsTab.test.tsx
+- [[createTextareaRef()]] - code - client/src/components/Journey/MarkdownToolbar.test.tsx
+- [[currentUser]] - code - client/src/components/Collab/CollabChat.test.tsx
+- [[currentUser_1]] - code - client/src/components/Collab/CollabNotes.test.tsx
+- [[currentUser_2]] - code - client/src/components/Collab/CollabPolls.test.tsx
+- [[currentUser_3]] - code - client/src/components/Layout/BottomNav.test.tsx
+- [[currentUser_4]] - code - client/src/components/Layout/MobileTopBar.test.tsx
+- [[dateOffset()]] - code - client/tests/unit/sync/tripSyncManager.test.ts
+- [[day]] - code - client/src/components/Planner/DayDetailPanel.test.tsx
+- [[day_1]] - code - client/src/components/Planner/TransitSearchPanel.test.tsx
+- [[dayNotes.test.ts]] - code - client/tests/unit/remoteEventHandler/dayNotes.test.ts
+- [[dayNotesSlice.test.ts]] - code - client/tests/unit/slices/dayNotesSlice.test.ts
+- [[days.test.ts]] - code - client/tests/unit/remoteEventHandler/days.test.ts
+- [[defaultBackupHandlers()]] - code - client/src/components/Admin/BackupPanel.test.tsx
+- [[defaultProps]] - code - client/src/components/Collab/CollabChat.test.tsx
+- [[defaultProps_1]] - code - client/src/components/Collab/CollabNotes.test.tsx
+- [[defaultProps_2]] - code - client/src/components/Collab/CollabPolls.test.tsx
+- [[defaultProps_3]] - code - client/src/components/Files/FileManager.test.tsx
+- [[defaultProps_4]] - code - client/src/components/Planner/DayDetailPanel.test.tsx
+- [[defaultProps_5]] - code - client/src/components/Planner/PlaceFormModal.test.tsx
+- [[defaultProps_6]] - code - client/src/components/Planner/PlaceInspector.test.tsx
+- [[defaultProps_7]] - code - client/src/components/Planner/PlacesSidebar.test.tsx
+- [[defaultProps_8]] - code - client/src/components/Planner/ReservationModal.test.tsx
+- [[defaultProps_9]] - code - client/src/components/Planner/ReservationsPanel.test.tsx
+- [[defaultProps_10]] - code - client/src/components/Planner/TransportModal.test.tsx
+- [[defaultProps_11]] - code - client/src/components/Trips/TripFormModal.test.tsx
+- [[defaultProps_12]] - code - client/src/components/Trips/TripMembersModal.test.tsx
+- [[emptyAtlasResponse]] - code - client/src/pages/AtlasPage.test.tsx
+- [[enableMcp()]] - code - client/src/components/Settings/IntegrationsTab.test.tsx
+- [[entriesWithCoords]] - code - client/src/components/Journey/JourneyMap.test.tsx
+- [[entriesWithoutCoords]] - code - client/src/components/Journey/JourneyMap.test.tsx
+- [[factories.ts]] - code - client/tests/helpers/factories.ts
+- [[fakeProvider]] - code - client/src/components/Settings/PhotoProvidersSection.test.tsx
+- [[fakeProviderSimple]] - code - client/src/components/Settings/PhotoProvidersSection.test.tsx
+- [[files.test.ts]] - code - client/tests/unit/remoteEventHandler/files.test.ts
+- [[filesSlice.test.ts]] - code - client/tests/unit/slices/filesSlice.test.ts
+- [[flushGraceDelay()]] - code - client/src/components/SystemNotices/SystemNoticeModal.test.tsx
+- [[geoJsonWithFR]] - code - client/src/pages/AtlasPage.test.tsx
+- [[getDayPickerTriggers()]] - code - client/src/components/Planner/DayDetailPanel.test.tsx
+- [[getFutureDate()]] - code - client/src/components/Collab/WhatsNextWidget.test.tsx
+- [[getPastDate()]] - code - client/src/components/Collab/WhatsNextWidget.test.tsx
+- [[getToggleButton()]] - code - client/src/components/Admin/BackupPanel.test.tsx
+- [[glCanvasContainer]] - code - client/src/components/Map/MapViewGL.test.tsx
+- [[glMap]] - code - client/src/components/Map/MapViewGL.test.tsx
+- [[inAppNotificationStore.test.ts]] - code - client/tests/unit/stores/inAppNotificationStore.test.ts
+- [[inAppNotificationStore.ts]] - code - client/src/store/inAppNotificationStore.ts
+- [[index.test.ts]] - code - client/tests/unit/i18n/index.test.ts
+- [[initial]] - code - client/src/store/pluginStore.test.ts
+- [[initialAddonState]] - code - client/tests/helpers/store.ts
+- [[initialAuthState]] - code - client/tests/helpers/store.ts
+- [[initialNotifState]] - code - client/tests/helpers/store.ts
+- [[initialPermsState]] - code - client/tests/helpers/store.ts
+- [[initialSettingsState]] - code - client/tests/helpers/store.ts
+- [[initialTripState]] - code - client/tests/helpers/store.ts
+- [[initialVacayState]] - code - client/tests/helpers/store.ts
+- [[item1]] - code - client/src/components/Admin/PackingTemplateManager.test.tsx
+- [[item2]] - code - client/src/components/Admin/PackingTemplateManager.test.tsx
+- [[makeAssignment()]] - code - client/src/components/Collab/WhatsNextWidget.test.tsx
+- [[makeBundle()]] - code - client/tests/unit/sync/tripSyncManager.test.ts
+- [[makeDefaultProps()]] - code - client/src/components/Planner/DayPlanSidebar.test.tsx
+- [[makeGeoJsonWithA3Fallback()]] - code - client/src/pages/AtlasPage.test.tsx
+- [[makeNotice()]] - code - client/src/components/SystemNotices/SystemNoticeModal.test.tsx
+- [[makeProps()_1]] - code - client/src/components/Planner/TransitJourneyModal.test.tsx
+- [[makeProps()_2]] - code - client/src/components/Planner/TransitSearchPanel.test.tsx
+- [[makeReservation()]] - code - client/src/components/Planner/TransitJourneyModal.test.tsx
+- [[makeVacayState()]] - code - client/src/pages/VacayPage.test.tsx
+- [[manualBackup]] - code - client/src/components/Admin/BackupPanel.test.tsx
+- [[mapMock]] - code - client/src/components/Map/MapView.test.tsx
+- [[memberUser]] - code - client/src/components/Trips/TripMembersModal.test.tsx
+- [[memories.test.ts]] - code - client/tests/unit/remoteEventHandler/memories.test.ts
+- [[minimalMatrix]] - code - client/src/components/Settings/NotificationsTab.test.tsx
+- [[mixedEntries]] - code - client/src/components/Journey/JourneyMap.test.tsx
+- [[mockDayNotesState]] - code - client/src/components/Planner/DayPlanSidebar.test.tsx
+- [[mockDetail()]] - code - client/src/components/Admin/AdminPluginsPanel.test.tsx
+- [[mockIsMobile]] - code - client/src/pages/JourneyPublicPage.test.tsx
+- [[mockJourneyData]] - code - client/src/pages/JourneyPublicPage.test.tsx
+- [[mockJourneyDetail]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[mockList()]] - code - client/src/components/Admin/AdminPluginsPanel.test.tsx
+- [[mockLoadStats]] - code - client/src/components/Vacay/VacayStats.test.tsx
+- [[mockMatrix()]] - code - client/src/components/Settings/NotificationsTab.test.tsx
+- [[mockNavigate]] - code - client/src/components/Layout/BottomNav.test.tsx
+- [[mockNavigate_1]] - code - client/src/components/Layout/MobileTopBar.test.tsx
+- [[mockNavigate_2]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[mockNavigate_3]] - code - client/src/pages/JourneyPage.test.tsx
+- [[mockNavigate_4]] - code - client/src/pages/LoginPage.oidc-redirect.test.tsx
+- [[mockNavigate_5]] - code - client/src/pages/RegisterPage.test.tsx
+- [[mockPlaceSelectionState]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[mockSelectAssignment]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[mockSetSelectedPlaceId]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[mockUpdateVacationDays]] - code - client/src/components/Vacay/VacayStats.test.tsx
+- [[mockUseTripWebSocket]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[next()]] - code - client/tests/helpers/factories.ts
+- [[nextId()]] - code - client/src/pages/JourneyPage.test.tsx
+- [[normalizeNotification()]] - code - client/src/store/inAppNotificationStore.ts
+- [[now]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[openDetail()]] - code - client/src/components/Admin/AdminPluginsPanel.test.tsx
+- [[openEntryEditor()]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[openGalleryWithProvider()]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[openSettingsDialog()]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[openSuggestion()]] - code - client/src/components/Planner/PlaceFormModal.test.tsx
+- [[ownerUser]] - code - client/src/components/Trips/TripMembersModal.test.tsx
+- [[ownerUser_1]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[packing.test.ts]] - code - client/tests/unit/remoteEventHandler/packing.test.ts
+- [[packingSlice.test.ts]] - code - client/src/store/slices/packingSlice.test.ts
+- [[packingSlice.test.ts_1]] - code - client/tests/unit/slices/packingSlice.test.ts
+- [[permissionsStore.test.ts]] - code - client/tests/unit/stores/permissionsStore.test.ts
+- [[permissionsStore.ts]] - code - client/src/store/permissionsStore.ts
+- [[pickFromAndLondon()]] - code - client/src/components/Planner/TransitSearchPanel.test.tsx
+- [[pickFromAndTo()]] - code - client/src/components/Planner/TransitSearchPanel.test.tsx
+- [[place]] - code - client/src/components/Collections/CollectionPlaceDetail.test.tsx
+- [[place_1]] - code - client/src/components/Planner/PlaceInspector.test.tsx
+- [[places]] - code - client/src/components/Collections/CollectionList.test.tsx
+- [[places.test.ts]] - code - client/tests/unit/remoteEventHandler/places.test.ts
+- [[placesSlice.test.ts]] - code - client/tests/unit/slices/placesSlice.test.ts
+- [[plugin()]] - code - client/src/components/Admin/AdminPluginsPanel.test.tsx
+- [[pluginMatrix()]] - code - client/src/components/Settings/NotificationsTab.test.tsx
+- [[pluginStore.test.ts]] - code - client/src/store/pluginStore.test.ts
+- [[relativeTime()]] - code - client/src/components/Notifications/InAppNotificationItem.tsx
+- [[render.tsx]] - code - client/tests/helpers/render.tsx
+- [[renderAndWait()]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[renderApp()]] - code - client/src/App.test.tsx
+- [[renderDetail()]] - code - client/src/components/Collections/CollectionPlaceDetail.test.tsx
+- [[renderFilesPage()]] - code - client/src/pages/FilesPage.test.tsx
+- [[renderList()]] - code - client/src/components/Collections/CollectionList.test.tsx
+- [[renderPanel()]] - code - client/src/components/Admin/PermissionsPanel.test.tsx
+- [[renderPlannerPage()]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[renderSharedTrip()]] - code - client/src/pages/SharedTripPage.test.tsx
+- [[renderWithProviders()]] - code - client/tests/helpers/render.tsx
+- [[renderWithTripDates()]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[reservations.test.ts]] - code - client/tests/unit/remoteEventHandler/reservations.test.ts
+- [[reservationsSlice.test.ts]] - code - client/tests/unit/slices/reservationsSlice.test.ts
+- [[resetAllStores()]] - code - client/tests/helpers/store.ts
+- [[samplePhotos]] - code - client/src/components/Journey/PhotoLightbox.test.tsx
+- [[seedAuth()]] - code - client/src/App.test.tsx
+- [[seedCurrentUser()]] - code - client/src/components/Vacay/VacayPersons.test.tsx
+- [[seedDefaults()]] - code - client/src/pages/JourneyPage.test.tsx
+- [[seedMemoriesEnabled()]] - code - client/src/components/Settings/PhotoProvidersSection.test.tsx
+- [[seedStore()]] - code - client/tests/helpers/store.ts
+- [[seedTripStore()]] - code - client/src/pages/TripPlannerPage.test.tsx
+- [[seedVacay()]] - code - client/src/components/Vacay/VacayPersons.test.tsx
+- [[serveMultiLeg()]] - code - client/src/pages/SharedTripPage.test.tsx
+- [[server]] - code - client/tests/helpers/msw/server.ts
+- [[server.ts]] - code - client/tests/helpers/msw/server.ts
+- [[setSearch()]] - code - client/src/pages/LoginPage.oidc-redirect.test.tsx
+- [[setSearchParams()]] - code - client/src/pages/OAuthAuthorizePage.test.tsx
+- [[setViewport()]] - code - client/src/components/Collab/CollabPanel.test.tsx
+- [[settingsStore.test.ts]] - code - client/tests/unit/stores/settingsStore.test.ts
+- [[settingsStore.ts]] - code - client/src/store/settingsStore.ts
+- [[setup404()]] - code - client/src/pages/JourneyPublicPage.test.tsx
+- [[setupDefaultHandlers()]] - code - client/src/pages/JourneyDetailPage.test.tsx
+- [[setupDefaultHandlers()_1]] - code - client/src/pages/JourneyPage.test.tsx
+- [[setupMfaQrState()]] - code - client/src/components/Settings/AccountTab.test.tsx
+- [[setupSuccess()]] - code - client/src/pages/JourneyPublicPage.test.tsx
+- [[shared.ts]] - code - client/tests/helpers/msw/handlers/shared.ts
+- [[store.ts]] - code - client/tests/helpers/store.ts
+- [[tmpl1]] - code - client/src/components/Admin/PackingTemplateManager.test.tsx
+- [[tmpl2]] - code - client/src/components/Admin/PackingTemplateManager.test.tsx
+- [[todo.test.ts]] - code - client/tests/unit/remoteEventHandler/todo.test.ts
+- [[todoSlice.test.ts]] - code - client/src/store/slices/todoSlice.test.ts
+- [[todoSlice.test.ts_1]] - code - client/tests/unit/slices/todoSlice.test.ts
+- [[tomorrow]] - code - client/src/components/Collab/WhatsNextWidget.test.tsx
+- [[touchEvent()]] - code - client/src/components/Map/MapViewGL.test.tsx
+- [[trip_1]] - code - client/src/components/Planner/DayPlanSidebar.test.tsx
+- [[trip.test.ts]] - code - client/tests/unit/remoteEventHandler/trip.test.ts
+- [[tripHandlers()]] - code - client/tests/unit/tripStore.test.ts
+- [[tripMembers]] - code - client/src/components/Budget/CostsPanel.test.tsx
+- [[tripStore.test.ts]] - code - client/tests/unit/tripStore.test.ts
+- [[tripSyncManager.test.ts]] - code - client/tests/unit/sync/tripSyncManager.test.ts
+- [[trips.ts]] - code - client/tests/helpers/msw/handlers/trips.ts
+- [[useAuthStore]] - code - client/src/store/authStore.ts
+- [[useDayNotes.test.ts]] - code - client/tests/integration/hooks/useDayNotes.test.ts
+- [[useDefaultAtlasHandlers()]] - code - client/src/pages/AtlasPage.test.tsx
+- [[useInAppNotificationListener.test.ts]] - code - client/tests/integration/hooks/useInAppNotificationListener.test.ts
+- [[useInAppNotificationStore]] - code - client/src/store/inAppNotificationStore.ts
+- [[usePermissionsStore]] - code - client/src/store/permissionsStore.ts
+- [[useSettingsStore]] - code - client/src/store/settingsStore.ts
+- [[useTripStore]] - code - client/src/store/tripStore.ts
+- [[useVacayStore]] - code - client/src/store/vacayStore.ts
+- [[vacayStore.test.ts]] - code - client/tests/unit/stores/vacayStore.test.ts
+- [[withAvailableUsers()]] - code - client/src/components/Vacay/VacayPersons.test.tsx
+- [[withNoAvailableUsers()]] - code - client/src/components/Vacay/VacayPersons.test.tsx
+- [[wrapper()]] - code - client/tests/integration/hooks/useDayNotes.test.ts
+- [[yesterday]] - code - client/src/components/Collab/WhatsNextWidget.test.tsx
+- [[{ transitApiMock }]] - code - client/src/components/Planner/TransitSearchPanel.test.tsx
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Client_Components_Tests_Tests
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 118 edges to [[_COMMUNITY_Client Sync Store Tests]]
+- 112 edges to [[_COMMUNITY_Client Components Admin Tests]]
+- 80 edges to [[_COMMUNITY_Client Api Components Tests]]
+- 74 edges to [[_COMMUNITY_Client Components Settings Tests]]
+- 60 edges to [[_COMMUNITY_Client Components Planner Tests]]
+- 48 edges to [[_COMMUNITY_Client Components Planner Tests_1]]
+- 34 edges to [[_COMMUNITY_Client Tests Helpers Tests]]
+- 32 edges to [[_COMMUNITY_Client Pages Atlas Tests]]
+- 32 edges to [[_COMMUNITY_Client Components Budget Tests]]
+- 21 edges to [[_COMMUNITY_Client Components Packing Tests]]
+- 17 edges to [[_COMMUNITY_Client Collections Components Tests]]
+- 14 edges to [[_COMMUNITY_Client Components Todo Tests]]
+- 11 edges to [[_COMMUNITY_Client Components Planner Tests_2]]
+- 11 edges to [[_COMMUNITY_Client Components Systemnotices Tests]]
+- 10 edges to [[_COMMUNITY_Client Components Collab (Client)_1]]
+- 8 edges to [[_COMMUNITY_Client Components Map (Client)_1]]
+- 5 edges to [[_COMMUNITY_Shared Schema Airtrail Tests]]
+- 5 edges to [[_COMMUNITY_Client Components Journey (Client)_1]]
+- 5 edges to [[_COMMUNITY_Client Services Photoservice Tests]]
+- 5 edges to [[_COMMUNITY_Client Weather Weatherwidget (Client)]]
+- 4 edges to [[_COMMUNITY_Client Components Collections Tests_1]]
+- 4 edges to [[_COMMUNITY_Client Components Journey (Client)]]
+- 4 edges to [[_COMMUNITY_Client Components Map Tests_2]]
+- 4 edges to [[_COMMUNITY_Client Appearancesettingstab Components (Client)]]
+- 4 edges to [[_COMMUNITY_Client Pages Journeydetailpage (Client)]]
+- 3 edges to [[_COMMUNITY_Client Components Collections Tests]]
+- 3 edges to [[_COMMUNITY_Client Components Map (Client)]]
+- 3 edges to [[_COMMUNITY_Client Components Map Tests]]
+- 3 edges to [[_COMMUNITY_Client Pages Journeypublic (Client)]]
+- 3 edges to [[_COMMUNITY_Applyappearance Client Theme (Client)]]
+- 2 edges to [[_COMMUNITY_Client Utils Filedownload Tests]]
+- 2 edges to [[_COMMUNITY_Client Components Journey (Client)_3]]
+- 2 edges to [[_COMMUNITY_Client Components Journeymapgl (Client)]]
+- 2 edges to [[_COMMUNITY_Client Components Pdf Tests_1]]
+- 2 edges to [[_COMMUNITY_Slidingtabs Client Components Tests]]
+- 2 edges to [[_COMMUNITY_Client Store Journeystore Tests]]
+- 2 edges to [[_COMMUNITY_Client Sync Tileprefetcher Tests]]
+- 2 edges to [[_COMMUNITY_Client Tests Setup Tests]]
+- 2 edges to [[_COMMUNITY_Client Api Authurl Tests]]
+- 1 edge to [[_COMMUNITY_Adminpluginspanel Client Components (Client)]]
+- 1 edge to [[_COMMUNITY_Client Components Files Tests]]
+- 1 edge to [[_COMMUNITY_Client Components Map Tests_1]]
+- 1 edge to [[_COMMUNITY_Client Utils Uploadqueue Tests]]
+- 1 edge to [[_COMMUNITY_Client Pages Journeypage (Client)]]
+- 1 edge to [[_COMMUNITY_Appearance Shared Schema]]
+
+## Top bridge nodes
+- [[settingsStore.ts]] - degree 90, connects to 23 communities
+- [[useSettingsStore]] - degree 121, connects to 22 communities
+- [[authStore.ts]] - degree 111, connects to 16 communities
+- [[useAuthStore]] - degree 116, connects to 12 communities
+- [[render.tsx]] - degree 99, connects to 11 communities
