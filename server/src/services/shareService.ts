@@ -306,7 +306,7 @@ export function getFeaturedTrips(): any[] {
       id: String(r.id),
       title: r.title,
       duration,
-      image: r.cover_image ? `/uploads/covers/${r.cover_image}` : 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop',
+      image: r.cover_image ? (r.cover_image.startsWith('http') || r.cover_image.startsWith('/uploads/') ? r.cover_image : `/uploads/covers/${r.cover_image}`) : 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop',
       tags: ['Featured'],
       description: r.description || '',
       publicToken: r.public_token,

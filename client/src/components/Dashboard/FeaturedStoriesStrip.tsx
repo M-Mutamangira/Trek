@@ -204,7 +204,7 @@ export default function FeaturedStoriesStrip(): React.ReactElement | null {
           return (
             <Link
               key={trip.id}
-              to={isFromApi ? `/shared/${trip.publicToken}` : '/#destinations'}
+              to={`/shared/${trip.publicToken}`}
               className="story-bubble"
               onClick={() => {
                 markSeen(trip.id)

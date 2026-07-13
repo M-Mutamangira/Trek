@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig, defaultExclude } from 'vitest/config';
 import swc from 'unplugin-swc';
 
 export default defineConfig({
@@ -16,6 +16,10 @@ export default defineConfig({
   test: {
     root: '.',
     include: ['tests/**/*.test.ts'],
+    exclude: [
+      ...defaultExclude,
+      '**/graphify-out/**',
+    ],
     globals: true,
     setupFiles: ['tests/setup.ts'],
     testTimeout: 15000,

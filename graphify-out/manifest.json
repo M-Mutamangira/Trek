@@ -3465,9 +3465,9 @@
     "semantic_hash": "4b18cce5489164c8103fcf047ac5fc27"
   },
   "server/src/db/seeds.ts": {
-    "mtime": 1783881770.891063,
-    "ast_hash": "e99e3c0d11536f1b417f23fcf14aed3a",
-    "semantic_hash": "e99e3c0d11536f1b417f23fcf14aed3a"
+    "mtime": 1783957410.547864,
+    "ast_hash": "03ef7849b5c5bd6df35d0ecadf06f171",
+    "semantic_hash": ""
   },
   "server/src/demo/demo-reset.ts": {
     "mtime": 1783881770.891063,
@@ -5010,8 +5010,8 @@
     "semantic_hash": "e115f708e762866d6c867163c2624ae9"
   },
   "server/src/services/shareService.ts": {
-    "mtime": 1783893426.0286188,
-    "ast_hash": "46a364e326cdf7aca48018106780bd6c",
+    "mtime": 1783957390.4053502,
+    "ast_hash": "15f16940999bc156280f785a6fd10e3d",
     "semantic_hash": ""
   },
   "server/src/services/tagService.ts": {
@@ -12990,8 +12990,8 @@
     "semantic_hash": "ef017aa631cb62813fe94d9b1395f395"
   },
   "client/src/components/Dashboard/FeaturedStoriesStrip.tsx": {
-    "mtime": 1783899242.0803475,
-    "ast_hash": "d10bb14496d8db855f7d9818544675bb",
+    "mtime": 1783957396.93734,
+    "ast_hash": "279d6b32598db49265fba39bd3082801",
     "semantic_hash": ""
   },
   "client/src/pages/ContactPage.tsx": {
@@ -13000,8 +13000,8 @@
     "semantic_hash": ""
   },
   "client/src/pages/LandingPage.tsx": {
-    "mtime": 1783902797.4449487,
-    "ast_hash": "f592f65fda9b7068b1ae05f1ea8f7b14",
+    "mtime": 1783904986.6221592,
+    "ast_hash": "a44a5d8f681986a4e218d7f0ed8f5ee8",
     "semantic_hash": ""
   },
   "market-opportunity-analysis-2026-07-13.md": {

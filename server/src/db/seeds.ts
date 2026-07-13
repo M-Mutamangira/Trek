@@ -166,10 +166,93 @@ function seedAddons(db: Database.Database): void {
   }
 }
 
+function seedFeaturedTrips(db: Database.Database): void {
+  try {
+    const admin = db.prepare("SELECT id FROM users WHERE role = 'admin'").get() as { id: number } | undefined;
+    if (!admin) return;
+
+    const existing = db.prepare("SELECT COUNT(*) as count FROM share_tokens WHERE token IN ('kyoto-demo', 'amalfi-demo', 'swiss-demo')").get() as { count: number };
+    if (existing.count > 0) return;
+
+    console.log('Seeding default featured trips...');
+
+    const insertTrip = db.prepare('INSERT INTO trips (user_id, title, description, start_date, end_date, currency, cover_image) VALUES (?, ?, ?, ?, ?, ?, ?)');
+    const insertDay = db.prepare('INSERT INTO days (trip_id, day_number, date) VALUES (?, ?, ?)');
+    const insertPlace = db.prepare('INSERT INTO places (trip_id, name, lat, lng, address, category_id, place_time, duration_minutes, notes, image_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+    const insertAssignment = db.prepare('INSERT INTO day_assignments (day_id, place_id, order_index) VALUES (?, ?, ?)');
+    const insertShareToken = db.prepare('INSERT INTO share_tokens (trip_id, token, created_by, share_map, share_bookings, share_packing, share_budget, share_collab) VALUES (?, ?, ?, 1, 1, 1, 1, 1)');
+    const insertInviteToken = db.prepare('INSERT INTO trip_invite_tokens (trip_id, token, created_by) VALUES (?, ?, ?)');
+
+    // 1. Kyoto Cherry Blossom Tour
+    const trip1 = insertTrip.run(
+      admin.id,
+      'Kyoto Cherry Blossom Tour',
+      'See Kyoto during cherry blossom season — temples, gardens, and the Philosopher\'s Path in full bloom.',
+      '2026-04-15',
+      '2026-04-24',
+      'JPY',
+      'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop'
+    );
+    const t1Id = Number(trip1.lastInsertRowid);
+    insertShareToken.run(t1Id, 'kyoto-demo', admin.id);
+    insertInviteToken.run(t1Id, 'kyoto-join', admin.id);
+
+    // Seed days & places for Kyoto
+    const d1 = Number(insertDay.run(t1Id, 1, '2026-04-15').lastInsertRowid);
+    const p1 = Number(insertPlace.run(t1Id, 'Hotel Granvia Kyoto', 34.9856, 135.7580, 'Kyoto Station, Kyoto, Japan', 1, '15:00', 60, 'Check in and rest after travel.', null).lastInsertRowid);
+    insertAssignment.run(d1, p1, 0);
+
+    const d2 = Number(insertDay.run(t1Id, 2, '2026-04-16').lastInsertRowid);
+    const p2 = Number(insertPlace.run(t1Id, 'Fushimi Inari Taisha', 34.9671, 135.7727, '68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto, Japan', 3, '08:00', 120, 'Stroll under 10,000 torii gates.', null).lastInsertRowid);
+    insertAssignment.run(d2, p2, 0);
+
+    // 2. Amalfi Coast Explorer
+    const trip2 = insertTrip.run(
+      admin.id,
+      'Amalfi Coast Explorer',
+      'Drive the Amalfi coast, visit Positano and Ravello, and eat your way through Italy\'s most scenic stretch of coastline.',
+      '2026-05-10',
+      '2026-05-16',
+      'EUR',
+      'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600&auto=format&fit=crop'
+    );
+    const t2Id = Number(trip2.lastInsertRowid);
+    insertShareToken.run(t2Id, 'amalfi-demo', admin.id);
+    insertInviteToken.run(t2Id, 'amalfi-join', admin.id);
+
+    const t2d1 = Number(insertDay.run(t2Id, 1, '2026-05-10').lastInsertRowid);
+    const t2p1 = Number(insertPlace.run(t2Id, 'Villa Franca Positano', 40.6281, 14.4850, 'Positano, Italy', 1, '14:00', 60, 'Welcome to Amalfi Coast!', null).lastInsertRowid);
+    insertAssignment.run(t2d1, t2p1, 0);
+
+    // 3. Swiss Alps & Lakes
+    const trip3 = insertTrip.run(
+      admin.id,
+      'Swiss Alps & Lakes',
+      'Hike alpine trails, swim in mountain lakes, and sleep in villages that sit at the foot of glaciers.',
+      '2026-07-01',
+      '2026-07-12',
+      'CHF',
+      'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?q=80&w=600&auto=format&fit=crop'
+    );
+    const t3Id = Number(trip3.lastInsertRowid);
+    insertShareToken.run(t3Id, 'swiss-demo', admin.id);
+    insertInviteToken.run(t3Id, 'swiss-join', admin.id);
+
+    const t3d1 = Number(insertDay.run(t3Id, 1, '2026-07-01').lastInsertRowid);
+    const t3p1 = Number(insertPlace.run(t3Id, 'Victoria Jungfrau Grand Hotel', 46.6863, 7.8590, 'Interlaken, Switzerland', 1, '15:00', 60, 'Stunning Alpine views.', null).lastInsertRowid);
+    insertAssignment.run(t3d1, t3p1, 0);
+
+    console.log('Default featured trips seeded successfully');
+  } catch (err: unknown) {
+    console.error('Error seeding featured trips:', err instanceof Error ? err.message : err);
+  }
+}
+
 function runSeeds(db: Database.Database): void {
   seedAdminAccount(db);
   seedCategories(db);
   seedAddons(db);
+  seedFeaturedTrips(db);
 }
 
 export { runSeeds, seedAdminAccount };

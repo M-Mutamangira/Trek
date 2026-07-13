@@ -358,15 +358,15 @@ describe('SharedTripPage', () => {
     });
   });
 
-  describe('FE-PAGE-SHARED-015: Savanna Escape branding footer is rendered', () => {
-    it('renders the Shared via Savanna Escape footer', async () => {
+  describe('FE-PAGE-SHARED-015: Savanna Escape branding footer is removed', () => {
+    it('ensures the Shared via Savanna Escape footer is not rendered', async () => {
       renderSharedTrip('test-token');
 
       await waitFor(() => {
         expect(screen.getByText('Shared Paris Trip')).toBeInTheDocument();
       });
 
-      expect(screen.getByText(/shared via/i)).toBeInTheDocument();
+      expect(screen.queryByText(/shared via/i)).toBeNull();
     });
   });
 

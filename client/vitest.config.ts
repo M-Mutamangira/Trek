@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig, defaultExclude } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
@@ -10,6 +10,10 @@ export default defineConfig({
     include: [
       'tests/**/*.test.{ts,tsx}',
       'src/**/*.test.{ts,tsx}',
+    ],
+    exclude: [
+      ...defaultExclude,
+      '**/graphify-out/**',
     ],
     setupFiles: ['tests/setup.ts'],
     testTimeout: 15000,
