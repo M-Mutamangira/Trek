@@ -27,12 +27,6 @@ vi.mock('../components/Settings/AccountTab', () => ({
   default: () => <div data-testid="account-tab">Account Settings</div>,
 }));
 
-vi.mock('../components/Settings/AboutTab', () => ({
-  default: ({ appVersion }: { appVersion: string }) => (
-    <div data-testid="about-tab">About v{appVersion}</div>
-  ),
-}));
-
 beforeEach(() => {
   resetAllStores();
   seedStore(useAuthStore, { isAuthenticated: true, user: buildUser() });

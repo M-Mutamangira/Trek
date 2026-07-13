@@ -1,4 +1,4 @@
-import type { TranslationStrings } from '../types';
+﻿import type { TranslationStrings } from '../types';
 
 const settings: TranslationStrings = {
   'settings.title': 'Pengaturan',
@@ -18,7 +18,6 @@ const settings: TranslationStrings = {
   'settings.plugins.saved': 'Pengaturan disimpan',
   'settings.tabs.account': 'Akun',
   'settings.tabs.offline': 'Offline',
-  'settings.tabs.about': 'Tentang',
   'settings.map': 'Peta',
   'settings.mapTemplate': 'Template Peta',
   'settings.mapTemplatePlaceholder.select': 'Pilih template...',
@@ -33,14 +32,14 @@ const settings: TranslationStrings = {
   'settings.mapExperimental': 'Eksperimental',
   'settings.mapMapboxToken': 'Token akses Mapbox',
   'settings.mapMapboxTokenHint': 'Token publik (pk.*) dari',
-  'settings.mapMapboxTokenLink': 'mapbox.com → Token akses',
+  'settings.mapMapboxTokenLink': 'mapbox.com â†’ Token akses',
   'settings.mapStyle': 'Gaya peta',
   'settings.mapStylePlaceholder': 'Pilih gaya Mapbox',
   'settings.mapStyleHint': 'Preset atau URL mapbox://styles/USER/ID milikmu',
   'settings.mapOpenFreeMapStylePlaceholder': 'Pilih gaya OpenFreeMap',
   'settings.mapOpenFreeMapStyleHint': 'Preset atau URL gaya OpenFreeMap. Gaya OpenFreeMap berfungsi tanpa token.',
   'settings.map3dBuildings': 'Bangunan 3D & medan',
-  'settings.map3dHint': 'Kemiringan + ekstrusi bangunan 3D nyata — bekerja di semua gaya, termasuk satelit.',
+  'settings.map3dHint': 'Kemiringan + ekstrusi bangunan 3D nyata â€” bekerja di semua gaya, termasuk satelit.',
   'settings.mapHighQuality': 'Mode kualitas tinggi',
   'settings.mapHighQualityHint':
     'Antialiasing + proyeksi globe untuk tepi yang lebih tajam dan tampilan dunia realistis.',
@@ -88,7 +87,7 @@ const settings: TranslationStrings = {
   'settings.notificationPreferences.email': 'Email',
   'settings.notificationPreferences.webhook': 'Webhook',
   'settings.notificationPreferences.inapp': 'In-App',
-  'settings.notificationPreferences.notConfigured': 'Belum dikonfigurasi — atur di pengaturan plugin',
+  'settings.notificationPreferences.notConfigured': 'Belum dikonfigurasi â€” atur di pengaturan plugin',
   'settings.plugins.actions': 'Tindakan',
   'settings.plugins.actions.confirm': 'Jalankan tindakan ini?',
   'settings.notificationPreferences.sendTest': 'Kirim tes',
@@ -145,11 +144,11 @@ const settings: TranslationStrings = {
   'settings.mcp.modal.createTitle': 'Buat API Token',
   'settings.mcp.modal.tokenName': 'Nama Token',
   'settings.mcp.modal.tokenNamePlaceholder': 'mis. Claude Desktop, Laptop kerja',
-  'settings.mcp.modal.creating': 'Membuat…',
+  'settings.mcp.modal.creating': 'Membuatâ€¦',
   'settings.mcp.modal.create': 'Buat Token',
   'settings.mcp.modal.createdTitle': 'Token Dibuat',
   'settings.mcp.modal.createdWarning':
-    'Token ini hanya ditampilkan sekali. Salin dan simpan sekarang — tidak bisa dipulihkan.',
+    'Token ini hanya ditampilkan sekali. Salin dan simpan sekarang â€” tidak bisa dipulihkan.',
   'settings.mcp.modal.done': 'Selesai',
   'settings.mcp.toast.created': 'Token dibuat',
   'settings.mcp.toast.createError': 'Gagal membuat token',
@@ -171,10 +170,10 @@ const settings: TranslationStrings = {
   'settings.oauth.rotateSecretMessage':
     'Secret klien baru akan dibuat dan semua sesi yang ada langsung dibatalkan. Perbarui aplikasimu sebelum menutup dialog ini.',
   'settings.oauth.rotateSecretConfirm': 'Putar Ulang',
-  'settings.oauth.rotateSecretConfirming': 'Memutar ulang…',
+  'settings.oauth.rotateSecretConfirming': 'Memutar ulangâ€¦',
   'settings.oauth.rotateSecretDoneTitle': 'Secret Baru Dibuat',
   'settings.oauth.rotateSecretDoneWarning':
-    'Secret ini hanya ditampilkan sekali. Salin sekarang dan perbarui aplikasimu — semua sesi sebelumnya telah dibatalkan.',
+    'Secret ini hanya ditampilkan sekali. Salin sekarang dan perbarui aplikasimu â€” semua sesi sebelumnya telah dibatalkan.',
   'settings.oauth.activeSessions': 'Sesi OAuth Aktif',
   'settings.oauth.sessionScopes': 'Cakupan',
   'settings.oauth.sessionExpires': 'Kedaluwarsa',
@@ -191,14 +190,14 @@ const settings: TranslationStrings = {
     'Satu URI per baris. HTTPS wajib (localhost dikecualikan). Kecocokan tepat diberlakukan.',
   'settings.oauth.modal.scopes': 'Cakupan yang Diizinkan',
   'settings.oauth.modal.scopesHint':
-    'list_trips dan get_trip_summary selalu tersedia — tidak perlu cakupan. Keduanya memungkinkan AI menemukan ID perjalanan yang diperlukan untuk menggunakan alat lainnya.',
+    'list_trips dan get_trip_summary selalu tersedia â€” tidak perlu cakupan. Keduanya memungkinkan AI menemukan ID perjalanan yang diperlukan untuk menggunakan alat lainnya.',
   'settings.oauth.modal.selectAll': 'Pilih semua',
   'settings.oauth.modal.deselectAll': 'Batalkan semua',
-  'settings.oauth.modal.creating': 'Mendaftarkan…',
+  'settings.oauth.modal.creating': 'Mendaftarkanâ€¦',
   'settings.oauth.modal.create': 'Daftarkan Client',
   'settings.oauth.modal.createdTitle': 'Client Terdaftar',
   'settings.oauth.modal.createdWarning':
-    'Client secret hanya ditampilkan sekali. Salin sekarang — tidak dapat dipulihkan.',
+    'Client secret hanya ditampilkan sekali. Salin sekarang â€” tidak dapat dipulihkan.',
   'settings.oauth.toast.createError': 'Gagal mendaftarkan klien OAuth',
   'settings.oauth.toast.deleted': 'Klien OAuth dihapus',
   'settings.oauth.toast.deleteError': 'Gagal menghapus klien OAuth',
@@ -207,12 +206,11 @@ const settings: TranslationStrings = {
   'settings.oauth.toast.rotateError': 'Gagal memutar ulang client secret',
   'settings.oauth.modal.machineClient': 'Klien mesin (tanpa login browser)',
   'settings.oauth.modal.machineClientHint':
-    'Menggunakan grant client_credentials — tidak perlu URI pengalihan. Token diterbitkan langsung melalui client_id + client_secret dan bertindak sebagai Anda dalam cakupan yang dipilih.',
+    'Menggunakan grant client_credentials â€” tidak perlu URI pengalihan. Token diterbitkan langsung melalui client_id + client_secret dan bertindak sebagai Anda dalam cakupan yang dipilih.',
   'settings.oauth.modal.machineClientUsage':
     'Dapatkan token: POST /oauth/token dengan grant_type=client_credentials, client_id, dan client_secret. Tanpa browser, tanpa refresh token.',
   'settings.oauth.badge.machine': 'mesin',
   'settings.account': 'Akun',
-  'settings.about': 'Tentang',
   'settings.about.reportBug': 'Laporkan Bug',
   'settings.about.reportBugHint': 'Menemukan masalah? Beri tahu kami',
   'settings.about.featureRequest': 'Permintaan Fitur',
@@ -221,7 +219,7 @@ const settings: TranslationStrings = {
   'settings.about.supporters.badge': 'Pendukung Bulanan',
   'settings.about.supporters.title': 'Rekan perjalanan untuk TREK',
   'settings.about.supporters.subtitle':
-    'Saat kamu merencanakan rute berikutnya, orang-orang ini ikut merencanakan masa depan TREK. Kontribusi bulanan mereka langsung masuk ke pengembangan dan jam kerja nyata — supaya TREK tetap Open Source.',
+    'Saat kamu merencanakan rute berikutnya, orang-orang ini ikut merencanakan masa depan TREK. Kontribusi bulanan mereka langsung masuk ke pengembangan dan jam kerja nyata â€” supaya TREK tetap Open Source.',
   'settings.about.supporters.since': 'pendukung sejak {date}',
   'settings.about.supporters.tierEmpty': 'Jadilah yang pertama',
   'settings.about.supporter.tier.noReturnTicket': 'No Return Ticket',
@@ -229,8 +227,6 @@ const settings: TranslationStrings = {
   'settings.about.supporter.tier.businessClassDreamer': 'Business Class Dreamer',
   'settings.about.supporter.tier.budgetTraveller': 'Budget Traveller',
   'settings.about.supporter.tier.hostelBunkmate': 'Hostel Bunkmate',
-  'settings.about.description':
-    'TREK adalah perencana perjalanan self-hosted yang membantu kamu mengatur perjalanan dari ide pertama hingga kenangan terakhir. Perencanaan harian, anggaran, daftar bawaan, foto dan masih banyak lagi — semua di satu tempat, di servermu sendiri.',
   'settings.about.madeWith': 'Dibuat dengan',
   'settings.about.madeBy': 'oleh Maurice dan komunitas open-source yang terus berkembang.',
   'settings.username': 'Nama pengguna',
@@ -303,7 +299,7 @@ const settings: TranslationStrings = {
   'settings.currencyHint': 'All amounts in Costs are converted to and shown in this currency.',
   'settings.passkey.title': 'Passkey',
   'settings.passkey.description':
-    'Masuk lebih cepat dan tahan terhadap phishing dengan passkey — sidik jari, wajah, PIN, atau kunci keamanan fisik kamu. Kata sandimu tetap tersedia sebagai cadangan.',
+    'Masuk lebih cepat dan tahan terhadap phishing dengan passkey â€” sidik jari, wajah, PIN, atau kunci keamanan fisik kamu. Kata sandimu tetap tersedia sebagai cadangan.',
   'settings.passkey.notConfigured':
     'Passkey diaktifkan tetapi belum sepenuhnya dikonfigurasi di server ini. Minta administratormu untuk mengatur domain WebAuthn.',
   'settings.passkey.add': 'Tambah passkey',
@@ -328,11 +324,11 @@ const settings: TranslationStrings = {
     'Tampilkan pil kategori di peta perjalanan untuk menemukan restoran, hotel, dan lainnya di sekitar dari OpenStreetMap.',
   'settings.airtrail.title': 'AirTrail',
   'settings.airtrail.hint':
-    'Hubungkan AirTrail yang kamu host sendiri untuk mengimpor dan menyinkronkan penerbangan. Buat kunci API di AirTrail pada Pengaturan → Keamanan.',
+    'Hubungkan AirTrail yang kamu host sendiri untuk mengimpor dan menyinkronkan penerbangan. Buat kunci API di AirTrail pada Pengaturan â†’ Keamanan.',
   'settings.airtrail.url': 'URL Instans',
   'settings.airtrail.apiKey': 'Kunci API',
   'settings.airtrail.apiKeyPlaceholder': 'Kunci API Bearer',
-  'settings.airtrail.apiKeyHint': 'Dibuat di AirTrail pada Pengaturan → Keamanan. Disimpan terenkripsi.',
+  'settings.airtrail.apiKeyHint': 'Dibuat di AirTrail pada Pengaturan â†’ Keamanan. Disimpan terenkripsi.',
   'settings.airtrail.allowInsecureTls': 'Izinkan sertifikat yang ditandatangani sendiri',
   'settings.airtrail.allowInsecureTlsHint': 'Aktifkan hanya untuk instans tepercaya di jaringanmu sendiri.',
   'settings.airtrail.writeBack': 'Tulis perubahan kembali ke AirTrail',
@@ -343,7 +339,7 @@ const settings: TranslationStrings = {
   'settings.airtrail.toast.saved': 'Koneksi AirTrail disimpan',
   'settings.airtrail.toast.saveError': 'Tidak dapat menyimpan koneksi',
   'settings.airtrail.test.button': 'Uji koneksi',
-  'settings.airtrail.test.success': 'Terhubung — {count} penerbangan ditemukan',
+  'settings.airtrail.test.success': 'Terhubung â€” {count} penerbangan ditemukan',
   'settings.airtrail.test.failed': 'Koneksi gagal',
   'settings.aiParsing.title': 'Penguraian AI',
   'settings.aiParsing.hint':
@@ -355,12 +351,12 @@ const settings: TranslationStrings = {
   'settings.aiParsing.model': 'Model',
   'settings.aiParsing.baseUrl': 'URL Dasar',
   'settings.aiParsing.baseUrlHint':
-    'Tempat model berjalan — server Ollama lokal atau endpoint yang kompatibel dengan OpenAI.',
+    'Tempat model berjalan â€” server Ollama lokal atau endpoint yang kompatibel dengan OpenAI.',
   'settings.aiParsing.apiKey': 'Kunci API',
   'settings.aiParsing.apiKeyHint': 'Disimpan secara terenkripsi. Biarkan kosong untuk mempertahankan kunci saat ini.',
   'settings.aiParsing.multimodal': 'Kirim dokumen sebagai gambar',
   'settings.aiParsing.multimodalHint':
-    'Untuk model yang mendukung visi — mengirim PDF asli alih-alih teks yang diekstrak.',
+    'Untuk model yang mendukung visi â€” mengirim PDF asli alih-alih teks yang diekstrak.',
   'settings.aiParsing.toast.saved': 'Pengaturan AI disimpan',
   'settings.aiParsing.toast.saveError': 'Tidak dapat menyimpan pengaturan AI',
   'settings.tabs.appearance': 'Appearance',
@@ -430,25 +426,25 @@ const settings: TranslationStrings = {
   'settings.general.languageRegion': 'Language & region',
   'settings.general.travelMap': 'Travel & map',
 
-  // ── Offline (#1135)
+  // â”€â”€ Offline (#1135)
   'settings.offline.cache.title': 'Cache offline',
   'settings.offline.mode.title': 'Mode offline',
   'settings.offline.mode.force': 'Paksa mode offline',
   'settings.offline.mode.forceHint':
     'Bekerja hanya dari data cache dan antrekan perubahanmu. Matikan untuk terhubung kembali dan menyinkronkan.',
   'settings.offline.mode.active':
-    'Mode offline aktif — perubahanmu diantrekan dan akan disinkronkan saat kamu mematikannya.',
+    'Mode offline aktif â€” perubahanmu diantrekan dan akan disinkronkan saat kamu mematikannya.',
   'settings.offline.prepare.title': 'Persiapkan untuk offline',
   'settings.offline.prepare.hint':
-    'Unduh semua yang kamu perlukan — data perjalanan, dokumen, dan tile peta — sebelum kehilangan koneksi.',
+    'Unduh semua yang kamu perlukan â€” data perjalanan, dokumen, dan tile peta â€” sebelum kehilangan koneksi.',
   'settings.offline.prepare.button': 'Unduh untuk penggunaan offline',
-  'settings.offline.prepare.running': 'Mengunduh…',
+  'settings.offline.prepare.running': 'Mengunduhâ€¦',
   'settings.offline.prepare.done': 'Siap untuk penggunaan offline',
   'settings.offline.prepare.phase.trips': 'Data perjalanan',
   'settings.offline.prepare.phase.files': 'Dokumen',
   'settings.offline.prepare.phase.tiles': 'Tile peta',
   'settings.offline.resync': 'Sinkronkan ulang sekarang',
-  'settings.offline.resyncing': 'Menyinkronkan…',
+  'settings.offline.resyncing': 'Menyinkronkanâ€¦',
   'settings.offline.storage.title': 'Apa yang disimpan offline',
   'settings.offline.storage.tiles': 'Simpan tile peta offline',
   'settings.offline.storage.tilesHint':
@@ -464,7 +460,7 @@ const settings: TranslationStrings = {
   'settings.offline.stats.failed': 'Perubahan gagal',
   'settings.offline.stats.conflicts': 'Konflik',
   'settings.offline.empty': 'Belum ada perjalanan di cache. Sambungkan ke internet untuk menyinkronkan.',
-  'settings.offline.loading': 'Memuat…',
+  'settings.offline.loading': 'Memuatâ€¦',
   'settings.offline.conflicts.title': 'Konflik sinkronisasi',
   'settings.offline.conflicts.hint':
     'Perubahan yang kamu buat secara offline bentrok dengan perubahan yang lebih baru di server. Pilih versi mana yang ingin disimpan.',
@@ -472,15 +468,15 @@ const settings: TranslationStrings = {
   'settings.offline.conflicts.keepServer': 'Simpan punya server',
   'settings.offline.conflicts.mine': 'Versimu',
   'settings.offline.conflicts.server': 'Versi server',
-  'settings.offline.conflicts.item': 'Perubahan pada “{name}”',
+  'settings.offline.conflicts.item': 'Perubahan pada â€œ{name}â€',
   'settings.offline.conflicts.strategyTitle': 'Saat terjadi konflik',
   'settings.offline.conflicts.strategy.ask': 'Tanya aku setiap kali',
   'settings.offline.conflicts.strategy.mine': 'Selalu simpan versiku',
   'settings.offline.conflicts.strategy.server': 'Selalu simpan versi server',
   'settings.offline.banner.offline': 'Offline',
   'settings.offline.banner.forced': 'Mode offline',
-  'settings.offline.banner.queued': 'Offline · {count} diantrekan',
-  'settings.offline.banner.syncing': 'Menyinkronkan {count}…',
+  'settings.offline.banner.queued': 'Offline Â· {count} diantrekan',
+  'settings.offline.banner.syncing': 'Menyinkronkan {count}â€¦',
   'settings.offline.banner.failed': 'Gagal menyinkronkan: {count}',
   'settings.offline.banner.conflicts': 'Konflik: {count}',
   'settings.pluginActivity.title': 'Aktivitas plugin',

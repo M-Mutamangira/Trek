@@ -1,4 +1,4 @@
-import type { TranslationStrings } from '../types';
+﻿import type { TranslationStrings } from '../types';
 
 const settings: TranslationStrings = {
   'settings.title': 'Instellingen',
@@ -19,7 +19,6 @@ const settings: TranslationStrings = {
   'settings.plugins.saved': 'Instellingen opgeslagen',
   'settings.tabs.account': 'Account',
   'settings.tabs.offline': 'Offline',
-  'settings.tabs.about': 'Over',
   'settings.map': 'Kaart',
   'settings.mapTemplate': 'Kaartsjabloon',
   'settings.mapTemplatePlaceholder.select': 'Selecteer sjabloon...',
@@ -34,18 +33,18 @@ const settings: TranslationStrings = {
   'settings.mapExperimental': 'Experimenteel',
   'settings.mapMapboxToken': 'Mapbox Access Token',
   'settings.mapMapboxTokenHint': 'Openbaar token (pk.*) van',
-  'settings.mapMapboxTokenLink': 'mapbox.com → Access tokens',
+  'settings.mapMapboxTokenLink': 'mapbox.com â†’ Access tokens',
   'settings.mapStyle': 'Kaartstijl',
   'settings.mapStylePlaceholder': 'Kies een Mapbox-stijl',
   'settings.mapStyleHint': 'Preset of eigen mapbox://styles/USER/ID URL',
   'settings.mapOpenFreeMapStylePlaceholder': 'Kies een OpenFreeMap-stijl',
   'settings.mapOpenFreeMapStyleHint': 'Preset of OpenFreeMap-stijl-URL. OpenFreeMap-stijlen werken zonder token.',
   'settings.map3dBuildings': '3D-gebouwen & terrein',
-  'settings.map3dHint': 'Kanteling + echte 3D-gebouwenextrusies — werkt op elke stijl, inclusief satelliet.',
+  'settings.map3dHint': 'Kanteling + echte 3D-gebouwenextrusies â€” werkt op elke stijl, inclusief satelliet.',
   'settings.mapHighQuality': 'Hoge kwaliteit modus',
   'settings.mapHighQualityHint':
     'Antialiasing + globeprojectie voor scherpere randen en een realistische wereldweergave.',
-  'settings.mapHighQualityWarning': 'Kan de prestaties op minder krachtige apparaten beïnvloeden.',
+  'settings.mapHighQualityWarning': 'Kan de prestaties op minder krachtige apparaten beÃ¯nvloeden.',
   'settings.mapTipLabel': 'Tip:',
   'settings.mapTip':
     'Rechts-klik en sleep om de kaart te roteren/kantelen. Middenklik om een locatie toe te voegen (rechts-klik is voor rotatie).',
@@ -98,7 +97,7 @@ const settings: TranslationStrings = {
     'Vervang <your_token> door een API-token uit de onderstaande lijst. Het pad naar npx moet mogelijk worden aangepast voor jouw systeem (bijv. C:\\PROGRA~1\\nodejs\\npx.cmd op Windows).',
   'settings.mcp.clientConfigHintOAuth':
     'Replace <your_client_id> and <your_client_secret> with the credentials shown in the OAuth 2.1 client you created above. mcp-remote will open your browser to complete the authorization the first time you connect. The path to npx may need to be adjusted for your system (e.g. C:PROGRA~1\nodejs\npx.cmd on Windows).',
-  'settings.mcp.copy': 'Kopiëren',
+  'settings.mcp.copy': 'KopiÃ«ren',
   'settings.mcp.copied': 'Gekopieerd!',
   'settings.mcp.apiTokens': 'API-tokens',
   'settings.mcp.createToken': 'Nieuw token aanmaken',
@@ -111,11 +110,11 @@ const settings: TranslationStrings = {
   'settings.mcp.modal.createTitle': 'API-token aanmaken',
   'settings.mcp.modal.tokenName': 'Tokennaam',
   'settings.mcp.modal.tokenNamePlaceholder': 'bijv. Claude Desktop, Werklaptop',
-  'settings.mcp.modal.creating': 'Aanmaken…',
+  'settings.mcp.modal.creating': 'Aanmakenâ€¦',
   'settings.mcp.modal.create': 'Token aanmaken',
   'settings.mcp.modal.createdTitle': 'Token aangemaakt',
   'settings.mcp.modal.createdWarning':
-    'Dit token wordt slechts één keer getoond. Kopieer en bewaar het nu — het kan niet worden hersteld.',
+    'Dit token wordt slechts Ã©Ã©n keer getoond. Kopieer en bewaar het nu â€” het kan niet worden hersteld.',
   'settings.mcp.modal.done': 'Klaar',
   'settings.mcp.toast.created': 'Token aangemaakt',
   'settings.mcp.toast.createError': 'Token aanmaken mislukt',
@@ -137,10 +136,10 @@ const settings: TranslationStrings = {
   'settings.oauth.rotateSecretMessage':
     'Er wordt een nieuw clientgeheim gegenereerd en alle bestaande sessies worden direct ongeldig. Werk uw toepassing bij voordat u dit venster sluit.',
   'settings.oauth.rotateSecretConfirm': 'Vernieuwen',
-  'settings.oauth.rotateSecretConfirming': 'Vernieuwen…',
+  'settings.oauth.rotateSecretConfirming': 'Vernieuwenâ€¦',
   'settings.oauth.rotateSecretDoneTitle': 'Nieuw geheim gegenereerd',
   'settings.oauth.rotateSecretDoneWarning':
-    'Dit geheim wordt slechts eenmalig getoond. Kopieer het nu en werk uw toepassing bij — alle vorige sessies zijn ongeldig gemaakt.',
+    'Dit geheim wordt slechts eenmalig getoond. Kopieer het nu en werk uw toepassing bij â€” alle vorige sessies zijn ongeldig gemaakt.',
   'settings.oauth.activeSessions': 'Actieve OAuth-sessies',
   'settings.oauth.sessionScopes': 'Rechten',
   'settings.oauth.sessionExpires': 'Verloopt',
@@ -154,17 +153,17 @@ const settings: TranslationStrings = {
   'settings.oauth.modal.redirectUris': "Redirect-URI's",
   'settings.oauth.modal.redirectUrisPlaceholder': 'https://your-app.com/callback\nhttps://your-app.com/auth',
   'settings.oauth.modal.redirectUrisHint':
-    'Eén URI per regel. HTTPS vereist (localhost uitgezonderd). Exacte overeenkomst vereist.',
+    'EÃ©n URI per regel. HTTPS vereist (localhost uitgezonderd). Exacte overeenkomst vereist.',
   'settings.oauth.modal.scopes': 'Toegestane rechten',
   'settings.oauth.modal.scopesHint':
-    "list_trips en get_trip_summary zijn altijd beschikbaar — geen recht vereist. Ze helpen de AI trip-ID's te ontdekken.",
+    "list_trips en get_trip_summary zijn altijd beschikbaar â€” geen recht vereist. Ze helpen de AI trip-ID's te ontdekken.",
   'settings.oauth.modal.selectAll': 'Alles selecteren',
   'settings.oauth.modal.deselectAll': 'Alles deselecteren',
-  'settings.oauth.modal.creating': 'Registreren…',
+  'settings.oauth.modal.creating': 'Registrerenâ€¦',
   'settings.oauth.modal.create': 'Client registreren',
   'settings.oauth.modal.createdTitle': 'Client geregistreerd',
   'settings.oauth.modal.createdWarning':
-    'Het clientgeheim wordt slechts eenmalig getoond. Kopieer het nu — het kan niet worden hersteld.',
+    'Het clientgeheim wordt slechts eenmalig getoond. Kopieer het nu â€” het kan niet worden hersteld.',
   'settings.oauth.toast.createError': 'OAuth-client kon niet worden geregistreerd',
   'settings.oauth.toast.deleted': 'OAuth-client verwijderd',
   'settings.oauth.toast.deleteError': 'OAuth-client kon niet worden verwijderd',
@@ -173,12 +172,11 @@ const settings: TranslationStrings = {
   'settings.oauth.toast.rotateError': 'Clientgeheim kon niet worden vernieuwd',
   'settings.oauth.modal.machineClient': 'Machineclient (zonder browserinlog)',
   'settings.oauth.modal.machineClientHint':
-    "Gebruikt de client_credentials grant — geen redirect-URI's nodig. Het token wordt direct verstrekt via client_id + client_secret en handelt namens jou binnen de geselecteerde scopes.",
+    "Gebruikt de client_credentials grant â€” geen redirect-URI's nodig. Het token wordt direct verstrekt via client_id + client_secret en handelt namens jou binnen de geselecteerde scopes.",
   'settings.oauth.modal.machineClientUsage':
     'Token ophalen: POST /oauth/token met grant_type=client_credentials, client_id en client_secret. Geen browser, geen vernieuwingstoken.',
   'settings.oauth.badge.machine': 'machine',
   'settings.account': 'Account',
-  'settings.about': 'Over',
   'settings.about.reportBug': 'Bug melden',
   'settings.about.reportBugHint': 'Probleem gevonden? Laat het ons weten',
   'settings.about.featureRequest': 'Feature aanvragen',
@@ -187,7 +185,7 @@ const settings: TranslationStrings = {
   'settings.about.supporters.badge': 'Maandelijkse Steuners',
   'settings.about.supporters.title': 'Reisgezelschap voor TREK',
   'settings.about.supporters.subtitle':
-    'Terwijl jij je volgende route plant, plannen deze mensen mee aan de toekomst van TREK. Hun maandelijkse bijdrage gaat rechtstreeks naar ontwikkeling en echte uren — zodat TREK Open Source blijft.',
+    'Terwijl jij je volgende route plant, plannen deze mensen mee aan de toekomst van TREK. Hun maandelijkse bijdrage gaat rechtstreeks naar ontwikkeling en echte uren â€” zodat TREK Open Source blijft.',
   'settings.about.supporters.since': 'steuner sinds {date}',
   'settings.about.supporters.tierEmpty': 'Wees de eerste',
   'settings.about.supporter.tier.noReturnTicket': 'No Return Ticket',
@@ -195,8 +193,6 @@ const settings: TranslationStrings = {
   'settings.about.supporter.tier.businessClassDreamer': 'Business Class Dreamer',
   'settings.about.supporter.tier.budgetTraveller': 'Budget Traveller',
   'settings.about.supporter.tier.hostelBunkmate': 'Hostel Bunkmate',
-  'settings.about.description':
-    "TREK is een zelf-gehoste reisplanner die je helpt je reizen te organiseren van het eerste idee tot de laatste herinnering. Dagplanning, budget, paklijsten, foto's en nog veel meer — alles op één plek, op je eigen server.",
   'settings.about.madeWith': 'Gemaakt met',
   'settings.about.madeBy': 'door Maurice en een groeiende open-source community.',
   'settings.username': 'Gebruikersnaam',
@@ -236,7 +232,7 @@ const settings: TranslationStrings = {
   'settings.mfa.backupDescription':
     'Gebruik deze eenmalige codes als je geen toegang meer hebt tot je authenticator-app.',
   'settings.mfa.backupWarning': 'Sla deze codes nu op. Elke code kan maar een keer worden gebruikt.',
-  'settings.mfa.backupCopy': 'Codes kopiëren',
+  'settings.mfa.backupCopy': 'Codes kopiÃ«ren',
   'settings.mfa.backupDownload': 'TXT downloaden',
   'settings.mfa.backupPrint': 'Afdrukken / PDF',
   'settings.mfa.backupCopied': 'Back-upcodes gekopieerd',
@@ -290,7 +286,7 @@ const settings: TranslationStrings = {
   'settings.ntfyUrl.tokenCleared': 'Toegangstoken gewist',
   'settings.notificationPreferences.inapp': 'In-App',
   'settings.notificationPreferences.notConfigured':
-    'Nog niet ingesteld — configureer het in de instellingen van de plug-in',
+    'Nog niet ingesteld â€” configureer het in de instellingen van de plug-in',
   'settings.plugins.actions': 'Acties',
   'settings.plugins.actions.confirm': 'Deze actie uitvoeren?',
   'settings.notificationPreferences.sendTest': 'Test versturen',
@@ -305,7 +301,7 @@ const settings: TranslationStrings = {
   'settings.currencyHint': 'Alle bedragen onder Onkosten worden omgerekend naar en weergegeven in deze valuta.',
   'settings.passkey.title': 'Passkeys',
   'settings.passkey.description':
-    'Log sneller en phishingbestendig in met een passkey — je vingerafdruk, gezicht, pincode of een hardwaresleutel. Je wachtwoord blijft als back-up bestaan.',
+    'Log sneller en phishingbestendig in met een passkey â€” je vingerafdruk, gezicht, pincode of een hardwaresleutel. Je wachtwoord blijft als back-up bestaan.',
   'settings.passkey.notConfigured':
     'Passkeys zijn ingeschakeld maar nog niet volledig geconfigureerd op deze server. Vraag je beheerder om het WebAuthn-domein in te stellen.',
   'settings.passkey.add': 'Een passkey toevoegen',
@@ -330,11 +326,11 @@ const settings: TranslationStrings = {
     'Toon een categorielabel op de reiskaart om restaurants, hotels en meer in de buurt te vinden via OpenStreetMap.',
   'settings.airtrail.title': 'AirTrail',
   'settings.airtrail.hint':
-    'Verbind je zelf-gehoste AirTrail om vluchten te importeren en te synchroniseren. Maak een API-sleutel aan in AirTrail onder Instellingen → Beveiliging.',
+    'Verbind je zelf-gehoste AirTrail om vluchten te importeren en te synchroniseren. Maak een API-sleutel aan in AirTrail onder Instellingen â†’ Beveiliging.',
   'settings.airtrail.url': 'Instantie-URL',
   'settings.airtrail.apiKey': 'API-sleutel',
   'settings.airtrail.apiKeyPlaceholder': 'Bearer API-sleutel',
-  'settings.airtrail.apiKeyHint': 'Aangemaakt in AirTrail onder Instellingen → Beveiliging. Versleuteld opgeslagen.',
+  'settings.airtrail.apiKeyHint': 'Aangemaakt in AirTrail onder Instellingen â†’ Beveiliging. Versleuteld opgeslagen.',
   'settings.airtrail.allowInsecureTls': 'Zelfondertekende certificaten toestaan',
   'settings.airtrail.allowInsecureTlsHint': 'Schakel dit alleen in voor een vertrouwde instantie op je eigen netwerk.',
   'settings.airtrail.writeBack': 'Wijzigingen terugschrijven naar AirTrail',
@@ -345,11 +341,11 @@ const settings: TranslationStrings = {
   'settings.airtrail.toast.saved': 'AirTrail-verbinding opgeslagen',
   'settings.airtrail.toast.saveError': 'De verbinding kon niet worden opgeslagen',
   'settings.airtrail.test.button': 'Verbinding testen',
-  'settings.airtrail.test.success': 'Verbonden — {count} vlucht(en) gevonden',
+  'settings.airtrail.test.success': 'Verbonden â€” {count} vlucht(en) gevonden',
   'settings.airtrail.test.failed': 'Verbinding mislukt',
   'settings.aiParsing.title': 'AI-verwerking',
   'settings.aiParsing.hint':
-    'Gebruik je eigen AI-model om boekingen uit geüploade bestanden te halen. Dit geldt alleen als je beheerder geen model voor de hele instantie heeft ingesteld.',
+    'Gebruik je eigen AI-model om boekingen uit geÃ¼ploade bestanden te halen. Dit geldt alleen als je beheerder geen model voor de hele instantie heeft ingesteld.',
   'settings.aiParsing.provider': 'Provider',
   'settings.aiParsing.providerLocal': 'Lokaal (Ollama)',
   'settings.aiParsing.providerOpenai': 'OpenAI',
@@ -357,12 +353,12 @@ const settings: TranslationStrings = {
   'settings.aiParsing.model': 'Model',
   'settings.aiParsing.baseUrl': 'Basis-URL',
   'settings.aiParsing.baseUrlHint':
-    'Waar het model draait — een lokale Ollama-server of een OpenAI-compatibel endpoint.',
+    'Waar het model draait â€” een lokale Ollama-server of een OpenAI-compatibel endpoint.',
   'settings.aiParsing.apiKey': 'API-sleutel',
   'settings.aiParsing.apiKeyHint': 'Versleuteld opgeslagen. Laat leeg om de huidige sleutel te behouden.',
   'settings.aiParsing.multimodal': 'Documenten als afbeeldingen versturen',
   'settings.aiParsing.multimodalHint':
-    'Voor modellen met beeldherkenning — verstuurt de originele PDF in plaats van geëxtraheerde tekst.',
+    'Voor modellen met beeldherkenning â€” verstuurt de originele PDF in plaats van geÃ«xtraheerde tekst.',
   'settings.aiParsing.toast.saved': 'AI-instellingen opgeslagen',
   'settings.aiParsing.toast.saveError': 'AI-instellingen konden niet worden opgeslagen',
   'settings.tabs.appearance': 'Appearance',
@@ -432,25 +428,25 @@ const settings: TranslationStrings = {
   'settings.general.languageRegion': 'Language & region',
   'settings.general.travelMap': 'Travel & map',
 
-  // ── Offline (#1135)
+  // â”€â”€ Offline (#1135)
   'settings.offline.cache.title': 'Offline cache',
   'settings.offline.mode.title': 'Offlinemodus',
   'settings.offline.mode.force': 'Offlinemodus forceren',
   'settings.offline.mode.forceHint':
     'Werk alleen met gecachte gegevens en zet je wijzigingen in de wachtrij. Schakel uit om opnieuw te verbinden en te synchroniseren.',
   'settings.offline.mode.active':
-    'Offlinemodus staat aan — je wijzigingen staan in de wachtrij en worden gesynchroniseerd zodra je hem uitschakelt.',
+    'Offlinemodus staat aan â€” je wijzigingen staan in de wachtrij en worden gesynchroniseerd zodra je hem uitschakelt.',
   'settings.offline.prepare.title': 'Voorbereiden op offline',
   'settings.offline.prepare.hint':
-    'Download alles wat je nodig hebt — reisgegevens, documenten en kaarttegels — voordat je je verbinding verliest.',
+    'Download alles wat je nodig hebt â€” reisgegevens, documenten en kaarttegels â€” voordat je je verbinding verliest.',
   'settings.offline.prepare.button': 'Downloaden voor offline gebruik',
-  'settings.offline.prepare.running': 'Downloaden…',
+  'settings.offline.prepare.running': 'Downloadenâ€¦',
   'settings.offline.prepare.done': 'Klaar voor offline gebruik',
   'settings.offline.prepare.phase.trips': 'Reisgegevens',
   'settings.offline.prepare.phase.files': 'Documenten',
   'settings.offline.prepare.phase.tiles': 'Kaarttegels',
   'settings.offline.resync': 'Nu opnieuw synchroniseren',
-  'settings.offline.resyncing': 'Synchroniseren…',
+  'settings.offline.resyncing': 'Synchroniserenâ€¦',
   'settings.offline.storage.title': 'Wat offline opslaan',
   'settings.offline.storage.tiles': 'Kaarttegels offline opslaan',
   'settings.offline.storage.tilesHint':
@@ -466,7 +462,7 @@ const settings: TranslationStrings = {
   'settings.offline.stats.failed': 'Mislukte wijzigingen',
   'settings.offline.stats.conflicts': 'Conflicten',
   'settings.offline.empty': 'Nog geen reizen gecacht. Maak verbinding met internet om te synchroniseren.',
-  'settings.offline.loading': 'Laden…',
+  'settings.offline.loading': 'Ladenâ€¦',
   'settings.offline.conflicts.title': 'Synchronisatieconflicten',
   'settings.offline.conflicts.hint':
     'Wijzigingen die je offline hebt gemaakt botsen met nieuwere wijzigingen op de server. Kies welke versie je wilt behouden.',
@@ -474,15 +470,15 @@ const settings: TranslationStrings = {
   'settings.offline.conflicts.keepServer': 'Die van de server behouden',
   'settings.offline.conflicts.mine': 'Jouw versie',
   'settings.offline.conflicts.server': 'Serverversie',
-  'settings.offline.conflicts.item': 'Wijziging in “{name}”',
+  'settings.offline.conflicts.item': 'Wijziging in â€œ{name}â€',
   'settings.offline.conflicts.strategyTitle': 'Wanneer er een conflict optreedt',
   'settings.offline.conflicts.strategy.ask': 'Vraag het me elke keer',
   'settings.offline.conflicts.strategy.mine': 'Altijd mijn versie behouden',
   'settings.offline.conflicts.strategy.server': 'Altijd de serverversie behouden',
   'settings.offline.banner.offline': 'Offline',
   'settings.offline.banner.forced': 'Offlinemodus',
-  'settings.offline.banner.queued': 'Offline · {count} in wachtrij',
-  'settings.offline.banner.syncing': 'Synchroniseren {count}…',
+  'settings.offline.banner.queued': 'Offline Â· {count} in wachtrij',
+  'settings.offline.banner.syncing': 'Synchroniseren {count}â€¦',
   'settings.offline.banner.failed': 'Synchroniseren mislukt: {count}',
   'settings.offline.banner.conflicts': 'Conflicten: {count}',
   'settings.pluginActivity.title': 'Plugin-activiteit',
