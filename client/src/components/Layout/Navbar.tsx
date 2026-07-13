@@ -120,9 +120,8 @@ export default function Navbar({ tripTitle, tripId, onBack, showBack, onShare }:
           </button>
         )}
 
-        <Link to="/dashboard" className="flex items-center transition-colors flex-shrink-0">
-          <img src={dark ? '/icons/icon-white.svg' : '/icons/icon-dark.svg'} alt="Savanna Escape" className="sm:hidden" style={{ height: 22, width: 22 }} />
-          <img src={dark ? '/logo-light.svg' : '/logo-dark.svg'} alt="Savanna Escape" className="hidden sm:block" style={{ height: 28 }} />
+        <Link to="/dashboard" className="flex items-center transition-colors flex-shrink-0" style={{ textDecoration: 'none' }}>
+          <span style={{ fontSize: 'calc(17px * var(--fs-scale-title, 1))', color: dark ? '#ffffff' : '#111827', fontWeight: 700, fontFamily: "var(--font-system)", letterSpacing: '-0.01em' }}>Savanna Escape</span>
         </Link>
 
         {tripTitle && (

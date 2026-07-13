@@ -101,10 +101,10 @@ export default function LoginPage(): React.ReactElement {
         {/* Logo fade in + burst */}
         <div className="takeoff-logo" style={{
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
-          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8,
+          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12,
         }}>
-          <img src="/logo-light.svg" alt="Savanna Escape" style={{ height: 72 }} />
-          <p style={{ margin: 0, fontSize: 'calc(20px * var(--fs-scale-title, 1))', color: 'rgba(255,255,255,0.6)', fontFamily: "'MuseoModerno', sans-serif", textTransform: 'lowercase', whiteSpace: 'nowrap' }}>{t('login.tagline')}</p>
+          <span style={{ fontSize: 'calc(42px * var(--fs-scale-title, 1))', color: '#ffffff', fontWeight: 800, fontFamily: "var(--font-system)", letterSpacing: '-0.02em', whiteSpace: 'nowrap' }}>Savanna Escape</span>
+          <p style={{ margin: 0, fontSize: 'calc(20px * var(--fs-scale-title, 1))', color: 'rgba(255,255,255,0.6)', fontFamily: "var(--font-system)", textTransform: 'none', whiteSpace: 'nowrap' }}>{t('login.tagline')}</p>
         </div>
 
 
@@ -342,8 +342,8 @@ export default function LoginPage(): React.ReactElement {
 
         <div style={{ position: 'relative', zIndex: 1, maxWidth: 560, textAlign: 'center' }}>
           {/* Logo */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 48 }}>
-            <img src="/logo-light.svg" alt="Savanna Escape" style={{ height: 64 }} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 40 }}>
+            <span style={{ fontSize: 'calc(40px * var(--fs-scale-title, 1))', color: '#ffffff', fontWeight: 800, fontFamily: "var(--font-system)", letterSpacing: '-0.02em' }}>Savanna Escape</span>
           </div>
 
           <h2 style={{ margin: '0 0 12px', fontSize: 'calc(36px * var(--fs-scale-title, 1))', fontWeight: 700, color: 'white', lineHeight: 1.15, letterSpacing: '-0.02em', fontFamily: "'MuseoModerno', sans-serif", textTransform: 'lowercase' }}>
@@ -385,11 +385,11 @@ export default function LoginPage(): React.ReactElement {
         <div style={{ width: '100%', maxWidth: 400 }}>
 
           {/* Mobile logo */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, marginBottom: 36 }}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, marginBottom: 28 }}
             className="mobile-logo">
             <style>{`@media(min-width:1024px){.mobile-logo{display:none!important}}`}</style>
-            <img src="/logo-dark.svg" alt="Savanna Escape" style={{ height: 48 }} />
-            <p style={{ margin: 0, fontSize: 'calc(16px * var(--fs-scale-subtitle, 1))', color: '#9ca3af', fontFamily: "'MuseoModerno', sans-serif", textTransform: 'lowercase', whiteSpace: 'nowrap' }}>{t('login.tagline')}</p>
+            <span style={{ fontSize: 'calc(28px * var(--fs-scale-title, 1))', color: '#111827', fontWeight: 800, fontFamily: "var(--font-system)", letterSpacing: '-0.02em' }}>Savanna Escape</span>
+            <p style={{ margin: 0, fontSize: 'calc(15px * var(--fs-scale-subtitle, 1))', color: '#9ca3af', fontFamily: "var(--font-system)", textTransform: 'none', whiteSpace: 'nowrap' }}>{t('login.tagline')}</p>
           </div>
 
           <div style={{ background: 'white', borderRadius: 20, border: '1px solid #e5e7eb', padding: '36px 32px', boxShadow: '0 2px 16px rgba(0,0,0,0.06)' }}>
