@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Plane, Mail, Phone, MapPin, CheckCircle } from 'lucide-react'
+import { Plane, Mail, Phone, MapPin, CheckCircle, Menu, X } from 'lucide-react'
 import { useAuthStore } from '../store/authStore'
 
 export default function ContactPage(): React.ReactElement {
@@ -10,6 +10,7 @@ export default function ContactPage(): React.ReactElement {
   const [message, setMessage] = useState('')
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -28,32 +29,46 @@ export default function ContactPage(): React.ReactElement {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 flex flex-col font-sans">
+      <style>{`
+        .logo-exciting {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 900;
+          font-size: 1.4rem;
+          letter-spacing: -0.03em;
+          text-transform: uppercase;
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 0 2px 10px rgba(16,185,129,0.15);
+          transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .logo-exciting:hover {
+          transform: scale(1.04);
+        }
+      `}</style>
       {/* Navbar */}
-      <header className="sticky top-0 z-50 bg-white dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800 transition-colors">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 font-semibold text-lg tracking-tight select-none">
-            <Plane className="w-5 h-5 text-slate-900 dark:text-zinc-100 rotate-[45deg]" />
-            <span>Savanna Escape</span>
-          </Link>
-
-          {/* Navigation Links */}
-          <nav className="flex items-center gap-8">
-            <Link 
-              to="/#about" 
-              className="text-sm font-medium text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+      <header className="sticky top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-slate-200 dark:border-zinc-800 transition-colors">
+        {/* Mobile / Tablet View (< lg) */}
+        <div className="lg:hidden max-w-6xl mx-auto px-6 h-16 flex items-center justify-between relative">
+          {/* Left: Hamburger menu toggle */}
+          <div className="flex items-center">
+            <button
+              onClick={() => setMenuOpen(true)}
+              className="p-2 -ml-2 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors text-slate-700 dark:text-zinc-300"
+              aria-label="Open menu"
             >
-              About us
-            </Link>
-            <Link 
-              to="/#destinations" 
-              className="text-sm font-medium text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
-            >
-              Destinations
-            </Link>
-          </nav>
+              <Menu className="w-6 h-6" />
+            </button>
+          </div>
 
-          {/* Login Button */}
+          {/* Center: Exciting Logo (Centered) */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <Link to="/" className="logo-exciting select-none no-underline">
+              Savanna Escape
+            </Link>
+          </div>
+
+          {/* Right: Login Button */}
           <div>
             <Link
               to={isAuthenticated ? '/dashboard' : '/login'}
@@ -63,6 +78,93 @@ export default function ContactPage(): React.ReactElement {
             </Link>
           </div>
         </div>
+
+        {/* Laptop / Desktop View (>= lg) */}
+        <div className="hidden lg:flex max-w-6xl mx-auto px-6 h-16 items-center justify-between relative">
+          {/* Left: Exciting Logo */}
+          <div>
+            <Link to="/" className="logo-exciting select-none no-underline">
+              Savanna Escape
+            </Link>
+          </div>
+
+          {/* Center: Nav links */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-8">
+            <Link 
+              to="/#destinations" 
+              className="text-sm font-medium text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+            >
+              Destinations
+            </Link>
+            <Link 
+              to="/#about" 
+              className="text-sm font-medium text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+            >
+              About us
+            </Link>
+            <Link
+              to="/contact"
+              className="text-sm font-medium text-emerald-600 dark:text-emerald-400 transition-colors"
+            >
+              Contact us
+            </Link>
+          </div>
+
+          {/* Right: Login Button */}
+          <div>
+            <Link
+              to={isAuthenticated ? '/dashboard' : '/login'}
+              className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white dark:text-zinc-950 bg-slate-900 dark:bg-zinc-100 hover:bg-slate-800 dark:hover:bg-zinc-200 rounded-lg shadow-sm transition-all active:scale-[0.97]"
+            >
+              Login
+            </Link>
+          </div>
+        </div>
+
+        {/* Slide-out Hamburger Menu Panel */}
+        {menuOpen && (
+          <>
+            <div
+              className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-[998] transition-opacity"
+              onClick={() => setMenuOpen(false)}
+            />
+            <div className="fixed top-0 left-0 bottom-0 w-72 bg-white dark:bg-zinc-900 border-r border-slate-200 dark:border-zinc-800 z-[999] p-6 flex flex-col gap-6 shadow-2xl transition-transform animate-in slide-in-from-left duration-200">
+              <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-zinc-800">
+                <span className="logo-exciting">Savanna Escape</span>
+                <button
+                  onClick={() => setMenuOpen(false)}
+                  className="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors text-slate-500 hover:text-slate-900"
+                  aria-label="Close menu"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+              <nav className="flex flex-col gap-4">
+                <Link
+                  to="/#destinations"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base font-semibold text-slate-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors no-underline py-1.5"
+                >
+                  Destinations
+                </Link>
+                <Link
+                  to="/#about"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base font-semibold text-slate-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors no-underline py-1.5"
+                >
+                  About us
+                </Link>
+                <Link
+                  to="/contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base font-semibold text-emerald-600 dark:text-emerald-400 transition-colors no-underline py-1.5"
+                >
+                  Contact us
+                </Link>
+              </nav>
+            </div>
+          </>
+        )}
       </header>
 
       {/* Main Content */}

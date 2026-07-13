@@ -175,7 +175,7 @@ export default function LandingPage(): React.ReactElement {
   const tripB = featuredTrips[(carouselIndex + 1) % featuredTrips.length]
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 flex flex-col font-sans">
+    <div className="min-h-screen bg-white dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 flex flex-col font-sans">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
         html {
@@ -323,45 +323,49 @@ export default function LandingPage(): React.ReactElement {
         )}
       </header>
 
-      {/* Hero Section */}
-      <section className="flex-1 max-w-6xl w-full mx-auto px-6 py-12 md:py-20 flex flex-col justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl text-slate-900 dark:text-zinc-50 mb-6 leading-tight min-h-[3rem] md:min-h-[4.5rem] tracking-tight" style={{ fontFamily: "'Slackey', sans-serif" }}>
-              Your next journey, <span className="text-emerald-600 dark:text-emerald-400 min-w-[8rem] inline-block">{typedText}<span className="animate-pulse ml-0.5 text-slate-900 dark:text-zinc-50 font-light">|</span></span>.
-            </h1>
-            <p className="text-base md:text-lg text-slate-500 dark:text-zinc-400 leading-relaxed font-light">
-              Custom trip plans built by our team and shared with your group as you go — no spreadsheets needed.
-            </p>
-            <div className="flex flex-wrap gap-3 mt-8">
-              <a
-                href="#destinations"
-                className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white dark:text-zinc-950 bg-slate-900 dark:bg-zinc-100 hover:bg-slate-800 dark:hover:bg-zinc-200 rounded-lg shadow-sm transition-all active:scale-[0.97] gap-2"
-              >
-                Find Trips
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="#about"
-                className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-800 transition-all active:scale-[0.97] gap-2"
-              >
-                Learn More
-              </a>
+      {/* Main Content */}
+      <main className="flex-1 w-full flex flex-col">
+        {/* Hero Section */}
+        <section className="w-full bg-white dark:bg-zinc-950 px-6 py-12 md:py-20 flex flex-col justify-center">
+          <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-2xl">
+              <h1 className="text-4xl md:text-6xl text-slate-900 dark:text-zinc-50 mb-6 leading-tight min-h-[3rem] md:min-h-[4.5rem] tracking-tight" style={{ fontFamily: "'Slackey', sans-serif" }}>
+                Your next journey, <span className="text-emerald-600 dark:text-emerald-400 min-w-[8rem] inline-block">{typedText}<span className="animate-pulse ml-0.5 text-slate-900 dark:text-zinc-50 font-light">|</span></span>.
+              </h1>
+              <p className="text-base md:text-lg text-slate-500 dark:text-zinc-400 leading-relaxed font-light">
+                Custom trip plans built by our team and shared with your group as you go — no spreadsheets needed.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-8">
+                <a
+                  href="#destinations"
+                  className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white dark:text-zinc-950 bg-slate-900 dark:bg-zinc-100 hover:bg-slate-800 dark:hover:bg-zinc-200 rounded-lg shadow-sm transition-all active:scale-[0.97] gap-2"
+                >
+                  Find Trips
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <a
+                  href="#about"
+                  className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium border border-slate-200 dark:border-zinc-800 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-800 transition-all active:scale-[0.97] gap-2"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="hidden md:flex justify-end">
+              <img
+                src="/cosmos-hero.jpeg"
+                alt="Savanna Escape travel hero"
+                className="w-full max-w-md rounded-2xl shadow-xl object-cover select-none"
+                style={{ aspectRatio: '4/3' }}
+              />
             </div>
           </div>
-          <div className="hidden md:flex justify-end">
-            <img
-              src="/cosmos-hero.jpeg"
-              alt="Savanna Escape travel hero"
-              className="w-full max-w-md rounded-2xl shadow-xl object-cover select-none"
-              style={{ aspectRatio: '4/3' }}
-            />
-          </div>
-        </div>
+        </section>
 
         {/* Featured Destinations Carousel Section */}
-        <div id="destinations" className="scroll-mt-24 mb-16">
-          <div className="flex items-center justify-between mb-8">
+        <section id="destinations" className="w-full bg-white dark:bg-zinc-950 py-16 scroll-mt-16">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-xl font-medium text-slate-900 dark:text-zinc-100">Featured Expeditions</h2>
               <p className="text-xs text-slate-500 dark:text-zinc-400 mt-1">Pre-built itineraries from our team</p>
@@ -456,11 +460,13 @@ export default function LandingPage(): React.ReactElement {
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
-        </div>
+          </div>
+        </section>
 
         {/* About Section */}
-        <div id="about" className="scroll-mt-24 border-t border-slate-200 dark:border-zinc-850 pt-16 mb-16">
-          <div className="max-w-2xl mb-14">
+        <section id="about" className="w-full bg-slate-50 dark:bg-zinc-900 py-16 border-y border-slate-200 dark:border-zinc-850 scroll-mt-16">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="max-w-2xl mb-14">
             <h2 className="text-3xl md:text-4xl text-slate-900 dark:text-zinc-100 mb-6" style={{ fontFamily: "'Slackey', sans-serif" }}>About Savanna Escape Agency</h2>
             <p className="text-sm md:text-base text-slate-500 dark:text-zinc-400 leading-relaxed font-light mb-4">
               Travel works better when everyone plans together. We give our travelers a shared dashboard where friends, family, and agents can build itineraries side by side.
@@ -519,12 +525,28 @@ export default function LandingPage(): React.ReactElement {
               ))}
             </div>
           </div>
-        </div>
+          </div>
+        </section>
 
-          {/* FAQ */}
-          <div>
-            <h3 className="text-lg font-medium text-slate-900 dark:text-zinc-100 mb-6">Frequently Asked Questions</h3>
-            <div className="space-y-3 max-w-2xl">
+        {/* Plan the next one (CTA) */}
+        <section className="w-full bg-slate-900 dark:bg-zinc-950 py-24 text-center border-t border-slate-800">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-4xl md:text-6xl text-white mb-6" style={{ fontFamily: "'Slackey', sans-serif" }}>Plan the next one.</h2>
+            <p className="text-xl text-slate-300 mb-10 font-light">Go somewhere. Bring the group.</p>
+            <Link
+              to="/login"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-slate-900 bg-emerald-400 hover:bg-emerald-300 rounded-xl shadow-lg transition-all active:scale-[0.97]"
+            >
+              Start Planning Now
+            </Link>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="w-full bg-white dark:bg-zinc-950 py-16 border-t border-slate-200 dark:border-zinc-800">
+          <div className="max-w-2xl mx-auto px-6">
+            <h2 className="text-3xl text-slate-900 dark:text-zinc-100 mb-8 text-center" style={{ fontFamily: "'Slackey', sans-serif" }}>Frequently Asked Questions</h2>
+            <div className="space-y-3 max-w-2xl mx-auto">
               {[
                 { q: 'Is Savanna Escape free to use?', a: 'Yes. No subscriptions, no hidden costs. Plan as many trips as you want with as many people as you want.' },
                 { q: 'Do I need to install anything?', a: 'No. It runs in your browser. You can save it to your phone\'s home screen for a feel close to a native app.' },
@@ -558,7 +580,8 @@ export default function LandingPage(): React.ReactElement {
               })}
             </div>
           </div>
-      </section>
+        </section>
+      </main>
 
       {/* Footer */}
       <footer className="border-t border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 py-8 transition-colors mt-auto">
