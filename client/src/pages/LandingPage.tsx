@@ -22,7 +22,7 @@ const FEATURED_TRIPS: FeaturedTrip[] = [
     duration: '10 Days',
     image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop',
     tags: ['Cultural', 'Seasonal', 'Japan'],
-    description: 'Immerse yourself in Japan\'s ancient capital. Walk the historic temples of Gion and experience the breathtaking sakura blooms.',
+    description: 'See Kyoto during cherry blossom season — temples, gardens, and the Philosopher\'s Path in full bloom.',
     publicToken: 'kyoto-demo',
     inviteToken: 'kyoto-join',
   },
@@ -32,7 +32,7 @@ const FEATURED_TRIPS: FeaturedTrip[] = [
     duration: '7 Days',
     image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600&auto=format&fit=crop',
     tags: ['Coastal', 'Scenic', 'Italy'],
-    description: 'Wind along clifftop roads, explore pastel-colored fishing villages, and sail across the pristine waters of the Mediterranean.',
+    description: 'Drive the Amalfi coast, visit Positano and Ravello, and eat your way through Italy\'s most scenic stretch of coastline.',
     publicToken: 'amalfi-demo',
     inviteToken: 'amalfi-join',
   },
@@ -42,7 +42,7 @@ const FEATURED_TRIPS: FeaturedTrip[] = [
     duration: '12 Days',
     image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?q=80&w=600&auto=format&fit=crop',
     tags: ['Adventure', 'Nature', 'Switzerland'],
-    description: 'Journey through alpine peaks, crystal lakes, and mountain villages. Perfect for outdoor enthusiasts and hikers.',
+    description: 'Hike alpine trails, swim in mountain lakes, and sleep in villages that sit at the foot of glaciers.',
     publicToken: 'swiss-demo',
     inviteToken: 'swiss-join',
   },
@@ -203,7 +203,7 @@ export default function LandingPage(): React.ReactElement {
               Your next journey, <span className="font-normal border-b-2 border-slate-900 dark:border-zinc-100 min-w-[8rem] inline-block">{typedText}<span className="animate-pulse ml-0.5 font-light">|</span></span>.
             </h1>
             <p className="text-base md:text-lg text-slate-500 dark:text-zinc-400 leading-relaxed font-light">
-              Bespoke travel plans, crafted by our expert team and designed to be explored, adapted, and experienced together with your companions in real-time.
+              Custom trip plans built by our team and shared with your group as you go — no spreadsheets needed.
             </p>
             <div className="flex flex-wrap gap-3 mt-8">
               <a
@@ -236,7 +236,7 @@ export default function LandingPage(): React.ReactElement {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="text-xl font-medium text-slate-900 dark:text-zinc-100">Featured Expeditions</h2>
-              <p className="text-xs text-slate-500 dark:text-zinc-400 mt-1">Ready-made itineraries crafted by our agency</p>
+              <p className="text-xs text-slate-500 dark:text-zinc-400 mt-1">Pre-built itineraries from our team</p>
             </div>
             <div className="flex items-center gap-2">
               <button
@@ -335,10 +335,10 @@ export default function LandingPage(): React.ReactElement {
           <div className="max-w-2xl mb-14">
             <h2 className="text-xl font-medium text-slate-900 dark:text-zinc-100 mb-4">About Savanna Escape Agency</h2>
             <p className="text-sm md:text-base text-slate-500 dark:text-zinc-400 leading-relaxed font-light mb-4">
-              We believe travel is best when planned together. As a modern, tech-forward agency, we supply our travelers with collaborative itinerary dashboards where friends, family, and agents can seamlessly work together.
+              Travel works better when everyone plans together. We give our travelers a shared dashboard where friends, family, and agents can build itineraries side by side.
             </p>
             <p className="text-sm md:text-base text-slate-500 dark:text-zinc-400 leading-relaxed font-light">
-              From hotels, flight tickets, packing lists, to shared budgets—everything syncs in real-time across all devices, giving you total peace of mind on your next vacation.
+              Hotels, flights, packing lists, budgets — everything updates instantly across every device.
             </p>
           </div>
 
@@ -347,12 +347,12 @@ export default function LandingPage(): React.ReactElement {
             <h3 className="text-lg font-medium text-slate-900 dark:text-zinc-100 mb-6">What We Offer</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
-                { icon: Users, title: 'Collaborative Planning', desc: 'Invite friends and family to build itineraries together in real-time. No more email chains or spreadsheets.' },
-                { icon: Map, title: 'Interactive Maps', desc: 'Pin destinations, visualize routes, and explore places with Google Places or OpenStreetMap integration.' },
-                { icon: Wallet, title: 'Budget Management', desc: 'Track expenses, split costs, and settle debts across multiple currencies - Splitwise-style.' },
-                { icon: Luggage, title: 'Packing Lists', desc: 'Create shared packing lists with categories, templates, and per-person assignments so nothing gets left behind.' },
-                { icon: RefreshCw, title: 'Real-Time Sync', desc: 'Changes appear instantly across all devices via WebSocket. Everyone stays on the same page.' },
-                { icon: Sparkles, title: 'AI-Powered Assistance', desc: 'Plan itineraries, generate packing lists, and manage budgets using natural language with built-in MCP AI support.' },
+                { icon: Users, title: 'Collaborative Planning', desc: 'Build itineraries with friends in real-time — no more email chains.' },
+                { icon: Map, title: 'Interactive Maps', desc: 'Pin places on a map and explore them with Google or OpenStreetMap data.' },
+                { icon: Wallet, title: 'Budget Management', desc: 'Split costs, track expenses, and settle debts in any currency.' },
+                { icon: Luggage, title: 'Packing Lists', desc: 'Shared checklists with categories, templates, and assigned people.' },
+                { icon: RefreshCw, title: 'Real-Time Sync', desc: 'Changes show up on everyone\'s screen the moment you make them.' },
+                { icon: Sparkles, title: 'AI-Powered Assistance', desc: 'Plan trips and manage budgets by typing what you want — powered by built-in AI.' },
               ].map((item) => {
                 const Icon = item.icon
                 return (
@@ -396,12 +396,12 @@ export default function LandingPage(): React.ReactElement {
             <h3 className="text-lg font-medium text-slate-900 dark:text-zinc-100 mb-6">Frequently Asked Questions</h3>
             <div className="space-y-3 max-w-2xl">
               {[
-                { q: 'Is Savanna Escape free to use?', a: 'Yes. The platform is completely free. There are no subscription fees, hidden charges, or premium tiers. You can plan as many trips as you want with unlimited companions.' },
-                { q: 'Do I need to install anything?', a: 'No. Savanna Escape runs entirely in your browser and works as a Progressive Web App (PWA). You can install it to your home screen on iOS or Android for a native-like experience — no App Store needed.' },
-                { q: 'Can I plan trips offline?', a: 'Yes. The PWA supports offline mode, caching your trips, maps, and data so you can access everything even without an internet connection.' },
-                { q: 'How does real-time collaboration work?', a: 'Every change syncs instantly via WebSocket. When someone adds a place, updates a budget item, or checks off packing, everyone connected sees it immediately.' },
-                { q: 'Is my data private?', a: '              Absolutely. Savanna Escape is built on open-source technology. You own your data — it stays on your server, not in the cloud. We never sell or share your information.' },
-                { q: 'Can travel agencies use this?', a: 'Yes. The platform supports role-based access, invite links with expiry, SSO integration, and detailed itineraries — perfect for agencies managing multiple clients.' },
+                { q: 'Is Savanna Escape free to use?', a: 'Yes. No subscriptions, no hidden costs. Plan as many trips as you want with as many people as you want.' },
+                { q: 'Do I need to install anything?', a: 'No. It runs in your browser. You can save it to your phone\'s home screen for a feel close to a native app.' },
+                { q: 'Can I plan trips offline?', a: 'Yes. The app caches your trips, maps, and data so you can access them without internet.' },
+                { q: 'How does real-time collaboration work?', a: 'Every change syncs instantly. Add a place, update a budget, tick off packing — everyone sees it right away.' },
+                { q: 'Is my data private?', a: '              Yes. You own your data. It stays on your server, not in someone else\'s cloud. We never sell or share your information.' },
+                { q: 'Can travel agencies use this?', a: 'Yes. It supports invite links, role-based access, SSO, and detailed itineraries for managing multiple clients.' },
               ].map((faq, i) => {
                 const isOpen = openFaq === i
                 return (
