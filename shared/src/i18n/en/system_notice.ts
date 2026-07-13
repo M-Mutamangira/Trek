@@ -26,8 +26,7 @@ const system_notice: TranslationStrings = {
   'system_notice.v3_mcp.highlight_deprecated': 'Static savanna_ tokens deprecated',
   'system_notice.v3_mcp.highlight_tools': 'Expanded toolset & prompts',
   'system_notice.v3_thankyou.title': 'A personal note from me',
-  'system_notice.v3_thankyou.body':
-    "Before you go — I want to take a moment.\n\nSavanna Escape started as a side project I built for my own trips. I never imagined it would grow into something that 4,000 of you now trust to plan your adventures. Every star, every issue, every feature request — I read them all, and they keep me going through late nights between a full-time job and university.\n\nI want you to know: Savanna Escape will always be open source, always self-hosted, always yours. No tracking, no subscriptions, no strings attached. Just a tool built by someone who loves traveling as much as you do.\n\nSpecial thanks to [jubnl](https://github.com/jubnl) — you have become an incredible collaborator. So much of what makes 3.0 great carries your fingerprints. Thank you for believing in this project when it was still rough around the edges.\n\nAnd to every single one of you who filed a bug, translated a string, shared Savanna Escape with a friend, or simply used it to plan a trip — **thank you**. You are the reason this exists.\n\nHere's to many more adventures together.\n\n— Maurice\n\n---\n\n[Join the community on Discord](https://discord.gg/7Q6M6jDwzf)\n\nIf Savanna Escape makes your travels better, a [small coffee](https://ko-fi.com/mauriceboe) always keeps the lights on.",
+  'system_notice.v3_thankyou.body': '',
   'system_notice.v3014_whitespace_collision.title': 'Action required: user account conflict',
   'system_notice.v3014_whitespace_collision.body':
     'The 3.0.14 upgrade detected one or more username or email collisions caused by leading/trailing whitespace in stored accounts. Affected accounts were renamed automatically. Check the server logs for lines starting with **[migration] WHITESPACE COLLISION** to identify which accounts need review.',
@@ -43,8 +42,7 @@ const system_notice: TranslationStrings = {
   'system_notice.dev_test_modal.body': 'This is a dev-only test notice.',
   // Thank-you + support the project (shown once per install and once per upgrade)
   'system_notice.thank_you_support.title': 'Thank you for using Savanna Escape',
-  'system_notice.thank_you_support.body':
-    "A quick thank-you for installing Savanna Escape — it genuinely means a lot.\n\nI'm a solo developer and I build Savanna Escape in my spare time. It started as a little tool just for my own trips, and I'm honestly blown away by the support and interest from the community since then. Savanna Escape is made with a lot of heart on my side — but also thanks to the many amazing external contributors who've helped shape it.\n\n**Savanna Escape is open source and completely free — and it will stay that way forever. No paid tiers, no subscriptions, no catch. I promise.**\n\nIf Savanna Escape is useful to you and you'd like to support its development, a small coffee genuinely helps me keep building — no pressure at all, but every cup keeps the late nights going.\n\nThank you for being here.\n\n— Maurice",
+  'system_notice.thank_you_support.body': '',
   'system_notice.thank_you_support.highlight_opensource': '100% open source on GitHub',
   'system_notice.thank_you_support.highlight_free': 'Free forever — never any paid tiers',
   'system_notice.thank_you_support.highlight_community': 'Built together with the community',

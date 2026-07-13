@@ -136,7 +136,7 @@ export default function FeaturedStoriesStrip(): React.ReactElement | null {
           flex-shrink: 0;
           scroll-snap-align: center;
           text-decoration: none;
-          width: 72px;
+          width: 75px;
           cursor: pointer;
           transition: transform 0.2s ease;
         }
@@ -144,15 +144,15 @@ export default function FeaturedStoriesStrip(): React.ReactElement | null {
         .story-bubble:active { transform: scale(0.95); }
 
         .story-ring {
-          width: 64px;
-          height: 64px;
-          border-radius: 50%;
+          width: 67px;
+          height: 67px;
+          border-radius: 12px;
           padding: 3px;
           transition: background 0.4s ease, box-shadow 0.4s ease;
         }
         .story-ring--unseen {
-          background: linear-gradient(135deg, #f59e0b, #ef4444, #ec4899);
-          box-shadow: 0 0 12px rgba(245,158,11,0.35);
+          background: linear-gradient(135deg, #4ade80, #22c55e, #10b981);
+          box-shadow: 0 0 12px rgba(34, 197, 94, 0.35);
         }
         .story-ring--seen {
           background: linear-gradient(135deg, #d4d4d8, #a1a1aa);
@@ -160,7 +160,7 @@ export default function FeaturedStoriesStrip(): React.ReactElement | null {
         .story-img-wrap {
           width: 100%;
           height: 100%;
-          border-radius: 50%;
+          border-radius: 9px;
           overflow: hidden;
           border: 2px solid var(--bg, #fff);
         }
@@ -179,7 +179,7 @@ export default function FeaturedStoriesStrip(): React.ReactElement | null {
           font-weight: 500;
           color: var(--text-muted, #64748b);
           text-align: center;
-          max-width: 72px;
+          max-width: 75px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -190,8 +190,14 @@ export default function FeaturedStoriesStrip(): React.ReactElement | null {
         }
 
         @keyframes storyPulse {
-          0%, 100% { box-shadow: 0 0 0 0 rgba(245,158,11,0.4); }
-          50% { box-shadow: 0 0 14px 4px rgba(245,158,11,0.2); }
+          0%, 100% {
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+            transform: scale(1);
+          }
+          50% {
+            box-shadow: 0 0 14px 4px rgba(34, 197, 94, 0.25);
+            transform: scale(1.03);
+          }
         }
         .story-ring--unseen {
           animation: storyPulse 2s ease-in-out infinite;

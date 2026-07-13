@@ -1,8 +1,12 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Plane, Calendar, MapPin, ChevronLeft, ChevronRight, ChevronDown, ArrowRight, Users, Map, Wallet, Luggage, RefreshCw, Sparkles } from 'lucide-react'
+import { Plane, Calendar, MapPin, ChevronLeft, ChevronRight, ChevronDown, ArrowRight, Users, Map, Wallet, Luggage, RefreshCw, Sparkles, Menu, X } from 'lucide-react'
 import { useAuthStore } from '../store/authStore'
 import { shareApi } from '../api/client'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 interface FeaturedTrip {
   id: string
@@ -55,6 +59,7 @@ export default function LandingPage(): React.ReactElement {
   const [carouselIndex, setCarouselIndex] = useState(0)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [activeSection, setActiveSection] = useState('')
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const ids = ['destinations', 'about']
@@ -117,6 +122,32 @@ export default function LandingPage(): React.ReactElement {
   }, [typedText, isDeleting, wordIndex])
 
   const autoPlayRef = useRef<NodeJS.Timeout | null>(null)
+  const stackContainerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!stackContainerRef.current) return
+    const cards = stackContainerRef.current.querySelectorAll('.gsap-stacked-card')
+    
+    cards.forEach((card, index) => {
+      if (index === cards.length - 1) return
+      
+      gsap.to(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: 'top top+=90',
+          end: 'bottom top+=90',
+          scrub: true,
+        },
+        scale: 0.94 - (index * 0.02),
+        opacity: 0.45,
+        transformOrigin: 'top center'
+      })
+    })
+
+    return () => {
+      ScrollTrigger.getAll().forEach(t => t.kill())
+    }
+  }, [featuredTrips])
 
   const startAutoPlay = useCallback(() => {
     if (autoPlayRef.current) clearInterval(autoPlayRef.current)
@@ -146,23 +177,75 @@ export default function LandingPage(): React.ReactElement {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 flex flex-col font-sans">
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+        html {
+          scroll-behavior: smooth;
+        }
         @keyframes carouselSlideIn {
           from { opacity: 0; transform: translateX(40px); }
           to   { opacity: 1; transform: translateX(0); }
         }
         .carousel-slide-in { animation: carouselSlideIn 0.5s ease-out both; }
+        .logo-exciting {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 900;
+          font-size: 1.4rem;
+          letter-spacing: -0.03em;
+          text-transform: uppercase;
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 0 2px 10px rgba(16,185,129,0.15);
+          transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .logo-exciting:hover {
+          transform: scale(1.04);
+        }
       `}</style>
       {/* Navbar */}
-      <header className="sticky top-0 z-50 bg-white dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800 transition-colors">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 font-semibold text-lg tracking-tight select-none">
-            <Plane className="w-5 h-5 text-slate-900 dark:text-zinc-100 rotate-[45deg]" />
-            <span>Savanna Escape</span>
-          </Link>
+      <header className="sticky top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-slate-200 dark:border-zinc-800 transition-colors">
+        {/* Mobile / Tablet View (< lg) */}
+        <div className="lg:hidden max-w-6xl mx-auto px-6 h-16 flex items-center justify-between relative">
+          {/* Left: Hamburger menu toggle */}
+          <div className="flex items-center">
+            <button
+              onClick={() => setMenuOpen(true)}
+              className="p-2 -ml-2 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors text-slate-700 dark:text-zinc-300"
+              aria-label="Open menu"
+            >
+              <Menu className="w-6 h-6" />
+            </button>
+          </div>
 
-          {/* Navigation Links */}
-          <nav className="flex items-center gap-8">
+          {/* Center: Exciting Logo (Centered) */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <Link to="/" className="logo-exciting select-none no-underline">
+              Savanna Escape
+            </Link>
+          </div>
+
+          {/* Right: Login Button */}
+          <div>
+            <Link
+              to={isAuthenticated ? '/dashboard' : '/login'}
+              className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white dark:text-zinc-950 bg-slate-900 dark:bg-zinc-100 hover:bg-slate-800 dark:hover:bg-zinc-200 rounded-lg shadow-sm transition-all active:scale-[0.97]"
+            >
+              Login
+            </Link>
+          </div>
+        </div>
+
+        {/* Laptop / Desktop View (>= lg) */}
+        <div className="hidden lg:flex max-w-6xl mx-auto px-6 h-16 items-center justify-between relative">
+          {/* Left: Exciting Logo */}
+          <div>
+            <Link to="/" className="logo-exciting select-none no-underline">
+              Savanna Escape
+            </Link>
+          </div>
+
+          {/* Center: Nav links */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-8">
             <a 
               href="#destinations" 
               className={`text-sm font-medium transition-colors ${activeSection === 'destinations' ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-zinc-100'}`}
@@ -181,9 +264,9 @@ export default function LandingPage(): React.ReactElement {
             >
               Contact us
             </Link>
-          </nav>
+          </div>
 
-          {/* Login Button */}
+          {/* Right: Login Button */}
           <div>
             <Link
               to={isAuthenticated ? '/dashboard' : '/login'}
@@ -193,14 +276,59 @@ export default function LandingPage(): React.ReactElement {
             </Link>
           </div>
         </div>
+
+        {/* Slide-out Hamburger Menu Panel */}
+        {menuOpen && (
+          <>
+            <div
+              className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-[998] transition-opacity"
+              onClick={() => setMenuOpen(false)}
+            />
+            <div className="fixed top-0 left-0 bottom-0 w-72 bg-white dark:bg-zinc-900 border-r border-slate-200 dark:border-zinc-800 z-[999] p-6 flex flex-col gap-6 shadow-2xl transition-transform animate-in slide-in-from-left duration-200">
+              <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-zinc-800">
+                <span className="logo-exciting">Savanna Escape</span>
+                <button
+                  onClick={() => setMenuOpen(false)}
+                  className="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors text-slate-500 hover:text-slate-900"
+                  aria-label="Close menu"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+              <nav className="flex flex-col gap-4">
+                <a
+                  href="#destinations"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base font-semibold text-slate-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors no-underline py-1.5"
+                >
+                  Destinations
+                </a>
+                <a
+                  href="#about"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base font-semibold text-slate-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors no-underline py-1.5"
+                >
+                  About us
+                </a>
+                <Link
+                  to="/contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base font-semibold text-slate-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors no-underline py-1.5"
+                >
+                  Contact us
+                </Link>
+              </nav>
+            </div>
+          </>
+        )}
       </header>
 
       {/* Hero Section */}
       <section className="flex-1 max-w-6xl w-full mx-auto px-6 py-12 md:py-20 flex flex-col justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-light tracking-tight text-slate-900 dark:text-zinc-50 mb-6 leading-tight min-h-[3rem] md:min-h-[3.75rem]">
-              Your next journey, <span className="font-normal border-b-2 border-slate-900 dark:border-zinc-100 min-w-[8rem] inline-block">{typedText}<span className="animate-pulse ml-0.5 font-light">|</span></span>.
+            <h1 className="text-4xl md:text-6xl text-slate-900 dark:text-zinc-50 mb-6 leading-tight min-h-[3rem] md:min-h-[4.5rem] tracking-tight" style={{ fontFamily: "'Slackey', sans-serif" }}>
+              Your next journey, <span className="text-emerald-600 dark:text-emerald-400 min-w-[8rem] inline-block">{typedText}<span className="animate-pulse ml-0.5 text-slate-900 dark:text-zinc-50 font-light">|</span></span>.
             </h1>
             <p className="text-base md:text-lg text-slate-500 dark:text-zinc-400 leading-relaxed font-light">
               Custom trip plans built by our team and shared with your group as you go — no spreadsheets needed.
@@ -333,7 +461,7 @@ export default function LandingPage(): React.ReactElement {
         {/* About Section */}
         <div id="about" className="scroll-mt-24 border-t border-slate-200 dark:border-zinc-850 pt-16 mb-16">
           <div className="max-w-2xl mb-14">
-            <h2 className="text-xl font-medium text-slate-900 dark:text-zinc-100 mb-4">About Savanna Escape Agency</h2>
+            <h2 className="text-3xl md:text-4xl text-slate-900 dark:text-zinc-100 mb-6" style={{ fontFamily: "'Slackey', sans-serif" }}>About Savanna Escape Agency</h2>
             <p className="text-sm md:text-base text-slate-500 dark:text-zinc-400 leading-relaxed font-light mb-4">
               Travel works better when everyone plans together. We give our travelers a shared dashboard where friends, family, and agents can build itineraries side by side.
             </p>
@@ -343,9 +471,9 @@ export default function LandingPage(): React.ReactElement {
           </div>
 
           {/* What We Offer */}
-          <div className="mb-14">
-            <h3 className="text-lg font-medium text-slate-900 dark:text-zinc-100 mb-6">What We Offer</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="mb-16">
+            <h3 className="text-2xl md:text-3xl text-slate-900 dark:text-zinc-100 mb-6" style={{ fontFamily: "'Slackey', sans-serif" }}>What We Offer</h3>
+            <div ref={stackContainerRef} className="flex flex-col gap-8 max-w-3xl lg:max-w-4xl mx-auto pb-12">
               {[
                 { icon: Users, title: 'Collaborative Planning', desc: 'Build itineraries with friends in real-time — no more email chains.' },
                 { icon: Map, title: 'Interactive Maps', desc: 'Pin places on a map and explore them with Google or OpenStreetMap data.' },
@@ -358,14 +486,15 @@ export default function LandingPage(): React.ReactElement {
                 return (
                   <div
                     key={item.title}
-                    className="flex flex-col gap-3 p-5 rounded-xl border border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 transition-colors"
+                    className="gsap-stacked-card sticky top-28 bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-2xl p-6 md:p-8 shadow-lg flex items-start gap-5 transition-transform origin-top w-full"
+                    style={{ minHeight: '150px' }}
                   >
-                    <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300">
-                      <Icon className="w-5 h-5" />
+                    <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400">
+                      <Icon className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-slate-900 dark:text-zinc-100 mb-1">{item.title}</h4>
-                      <p className="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed font-light">{item.desc}</p>
+                      <h4 className="text-base font-bold text-slate-900 dark:text-zinc-100 mb-2">{item.title}</h4>
+                      <p className="text-sm text-slate-500 dark:text-zinc-400 leading-relaxed font-light">{item.desc}</p>
                     </div>
                   </div>
                 )
@@ -375,7 +504,7 @@ export default function LandingPage(): React.ReactElement {
 
           {/* How It Works */}
           <div className="mb-14">
-            <h3 className="text-lg font-medium text-slate-900 dark:text-zinc-100 mb-6">How It Works</h3>
+            <h3 className="text-2xl md:text-3xl text-slate-900 dark:text-zinc-100 mb-6" style={{ fontFamily: "'Slackey', sans-serif" }}>How It Works</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { step: '01', title: 'Plan Together', desc: 'Create a trip, invite your companions, and start building your itinerary. Drag-and-drop places into day plans, add reservations, and set a budget.' },
@@ -390,6 +519,7 @@ export default function LandingPage(): React.ReactElement {
               ))}
             </div>
           </div>
+        </div>
 
           {/* FAQ */}
           <div>
@@ -428,7 +558,6 @@ export default function LandingPage(): React.ReactElement {
               })}
             </div>
           </div>
-        </div>
       </section>
 
       {/* Footer */}

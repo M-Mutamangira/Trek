@@ -20,7 +20,7 @@ const login: TranslationStrings = {
   'login.features.filesDesc': 'Upload & manage documents',
   'login.features.routes': 'Smart Routes',
   'login.features.routesDesc': 'Auto-optimize & Google Maps export',
-  'login.selfHosted': 'Self-hosted · Open Source · Your data stays yours',
+  'login.selfHosted': '',
   'login.title': 'Sign In',
   'login.subtitle': 'Welcome back',
   'login.signingIn': 'Signing in…',
