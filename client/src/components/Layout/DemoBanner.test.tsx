@@ -72,9 +72,9 @@ describe('DemoBanner', () => {
   });
 
   // FE-COMP-DEMOBANNER-009
-  it('shows "What is TREK?" section', () => {
-    render(<DemoBanner />);
-    expect(screen.getByText('What is TREK?')).toBeInTheDocument();
+  it('shows "What is Savanna Escape?" section', () => {
+
+    expect(screen.getByText('What is Savanna Escape?')).toBeInTheDocument();
   });
 
   // FE-COMP-DEMOBANNER-010

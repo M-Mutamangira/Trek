@@ -31,34 +31,69 @@ const FALLBACK_TRIPS: FeaturedTrip[] = [
   },
 ]
 
+const STORAGE_KEY = 'featured-strip-seen'
+
+function loadSeenIds(): Set<string> {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (raw) return new Set(JSON.parse(raw))
+  } catch {}
+  return new Set()
+}
+
+function saveSeenIds(ids: Set<string>): void {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([...ids]))
+  } catch {}
+}
+
+function scrollStripToChild(container: HTMLDivElement, index: number): void {
+  const child = container.children[index] as HTMLElement | undefined
+  if (!child) return
+  const center = child.offsetLeft - (container.clientWidth / 2) + (child.offsetWidth / 2)
+  container.scrollTo({ left: center, behavior: 'smooth' })
+}
+
 /**
  * Instagram/Facebook-stories–style horizontal strip of featured trips.
  * Auto-scrolls continuously, wraps infinitely, and each bubble links
  * to the public shared trip page.
+ * Rings: coloured gradient for unseen trips, grey for seen.
  */
 export default function FeaturedStoriesStrip(): React.ReactElement | null {
   const [trips, setTrips] = useState<FeaturedTrip[]>(FALLBACK_TRIPS)
+  const [isFromApi, setIsFromApi] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
+  const [seenIds, setSeenIds] = useState<Set<string>>(loadSeenIds)
   const scrollRef = useRef<HTMLDivElement>(null)
   const autoRef = useRef<NodeJS.Timeout | null>(null)
 
   // Fetch featured trips on mount — overwrite fallbacks if real data exists
   useEffect(() => {
     shareApi.getFeaturedTrips()
-      .then((data) => { if (data?.length) setTrips(data) })
+      .then((data) => { if (data?.length) { setTrips(data); setIsFromApi(true) } })
       .catch(() => {})
   }, [])
 
-  // Auto-advance the active "ring" highlight every 4s
+  const markSeen = useCallback((tripId: string) => {
+    setSeenIds((prev) => {
+      if (prev.has(tripId)) return prev
+      const next = new Set(prev)
+      next.add(tripId)
+      saveSeenIds(next)
+      return next
+    })
+  }, [])
+
+  // Auto-advance the active index every 4s, scrolling the strip horizontally
   const startAuto = useCallback(() => {
     if (autoRef.current) clearInterval(autoRef.current)
     if (trips.length === 0) return
     autoRef.current = setInterval(() => {
       setActiveIndex((prev) => {
         const next = (prev + 1) % trips.length
-        // Smooth-scroll the strip to keep the active bubble visible
-        const el = scrollRef.current?.children[next] as HTMLElement | undefined
-        el?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+        const container = scrollRef.current
+        if (container) scrollStripToChild(container, next)
         return next
       })
     }, 4000)
@@ -113,12 +148,14 @@ export default function FeaturedStoriesStrip(): React.ReactElement | null {
           height: 64px;
           border-radius: 50%;
           padding: 3px;
-          background: linear-gradient(135deg, #d4d4d8, #a1a1aa);
           transition: background 0.4s ease, box-shadow 0.4s ease;
         }
-        .story-ring.active {
+        .story-ring--unseen {
           background: linear-gradient(135deg, #f59e0b, #ef4444, #ec4899);
           box-shadow: 0 0 12px rgba(245,158,11,0.35);
+        }
+        .story-ring--seen {
+          background: linear-gradient(135deg, #d4d4d8, #a1a1aa);
         }
         .story-img-wrap {
           width: 100%;
@@ -156,30 +193,34 @@ export default function FeaturedStoriesStrip(): React.ReactElement | null {
           0%, 100% { box-shadow: 0 0 0 0 rgba(245,158,11,0.4); }
           50% { box-shadow: 0 0 14px 4px rgba(245,158,11,0.2); }
         }
-        .story-ring.active {
+        .story-ring--unseen {
           animation: storyPulse 2s ease-in-out infinite;
         }
       `}</style>
 
       <div className="stories-scroll" ref={scrollRef}>
-        {trips.map((trip, i) => (
-          <Link
-            key={trip.id}
-            to={`/shared/${trip.publicToken}`}
-            className="story-bubble"
-            onClick={() => {
-              setActiveIndex(i)
-              startAuto()
-            }}
-          >
-            <div className={`story-ring ${i === activeIndex ? 'active' : ''}`}>
-              <div className="story-img-wrap">
-                <img src={trip.image} alt={trip.title} loading="lazy" />
+        {trips.map((trip, i) => {
+          const unseen = !seenIds.has(trip.id)
+          return (
+            <Link
+              key={trip.id}
+              to={isFromApi ? `/shared/${trip.publicToken}` : '/#destinations'}
+              className="story-bubble"
+              onClick={() => {
+                markSeen(trip.id)
+                setActiveIndex(i)
+                startAuto()
+              }}
+            >
+              <div className={`story-ring ${unseen ? 'story-ring--unseen' : 'story-ring--seen'}`}>
+                <div className="story-img-wrap">
+                  <img src={trip.image} alt={trip.title} loading="lazy" />
+                </div>
               </div>
-            </div>
-            <span className="story-label">{trip.title}</span>
-          </Link>
-        ))}
+              <span className="story-label">{trip.title}</span>
+            </Link>
+          )
+        })}
       </div>
     </div>
   )

@@ -1,12 +1,18 @@
-# Graph Report - C:\Users\Munashe\Desktop\Trek  (2026-07-12)
+# Graph Report - Trek  (2026-07-13)
 
 ## Corpus Check
-- Large corpus: 2599 files · ~3,392,521 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- 2497 files · ~3,404,642 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 12284 nodes · 33745 edges · 446 communities (334 shown, 112 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 393 edges (avg confidence: 0.79)
-- Token cost: 326,274 input · 12,833 output
+- 13387 nodes · 35106 edges · 495 communities (411 shown, 84 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 390 edges (avg confidence: 0.78)
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `343afc45`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Client Components Tests Tests|Client Components Tests Tests]]
@@ -429,6 +435,55 @@
 - [[_COMMUNITY_Wiki Updating|Wiki Updating]]
 - [[_COMMUNITY_Wiki Vacay|Wiki Vacay]]
 - [[_COMMUNITY_Wiki Weather Forecasts|Wiki Weather Forecasts]]
+- [[_COMMUNITY_Day Plans and Notes|Day Plans and Notes]]
+- [[_COMMUNITY_Encryption Key Rotation|Encryption Key Rotation]]
+- [[_COMMUNITY_Internal Network Access|Internal Network Access]]
+- [[_COMMUNITY_User Settings|User Settings]]
+- [[_COMMUNITY_system-notices.e2e.test.ts|system-notices.e2e.test.ts]]
+- [[_COMMUNITY_ki-reservation.schema.ts|ki-reservation.schema.ts]]
+- [[_COMMUNITY_Admin — Categories|Admin — Categories]]
+- [[_COMMUNITY_Demo Mode|Demo Mode]]
+- [[_COMMUNITY_Reverse Proxy|Reverse Proxy]]
+- [[_COMMUNITY_Page pattern wiring container + data hook|Page pattern: wiring container + data hook]]
+- [[_COMMUNITY_Appearance & theming|Appearance & theming]]
+- [[_COMMUNITY_9. i18n — translation keys|9. i18n — translation keys]]
+- [[_COMMUNITY_jimp|jimp]]
+- [[_COMMUNITY_admin.e2e.test.ts|admin.e2e.test.ts]]
+- [[_COMMUNITY_notifications.e2e.test.ts|notifications.e2e.test.ts]]
+- [[_COMMUNITY_vacay.e2e.test.ts|vacay.e2e.test.ts]]
+- [[_COMMUNITY_kitineraryMapper.test.ts|kitineraryMapper.test.ts]]
+- [[_COMMUNITY_airport.schema.ts|airport.schema.ts]]
+- [[_COMMUNITY_Accommodations|Accommodations]]
+- [[_COMMUNITY_Admin — GitHub Releases|Admin — GitHub Releases]]
+- [[_COMMUNITY_Dashboard Widgets|Dashboard Widgets]]
+- [[_COMMUNITY_Quick Start|Quick Start]]
+- [[_COMMUNITY_Route Optimization|Route Optimization]]
+- [[_COMMUNITY_Tags and Categories|Tags and Categories]]
+- [[_COMMUNITY_5. Notice fields reference|5. Notice fields reference]]
+- [[_COMMUNITY_PULL_REQUEST_TEMPLATE|PULL_REQUEST_TEMPLATE.md]]
+- [[_COMMUNITY_@trekshared|@trek/shared]]
+- [[_COMMUNITY_Admin Panel Overview|Admin Panel Overview]]
+- [[_COMMUNITY_13. Testing|13. Testing]]
+- [[_COMMUNITY_7. Display types|7. Display types]]
+- [[_COMMUNITY_8. CTAs (call to action)|8. CTAs (call to action)]]
+- [[_COMMUNITY_backup.schema.ts|backup.schema.ts]]
+- [[_COMMUNITY_share.schema.ts|share.schema.ts]]
+- [[_COMMUNITY_3. Database schema|3. Database schema]]
+- [[_COMMUNITY_collectionPlaceUpdateRequestSchema|collectionPlaceUpdateRequestSchema]]
+- [[_COMMUNITY_Helm Chart Metadata|Helm Chart Metadata]]
+- [[_COMMUNITY_Helm Chart Values|Helm Chart Values]]
+- [[_COMMUNITY_Collab Addon|Collab Addon]]
+- [[_COMMUNITY_OAuth 2.1 Authentication|OAuth 2.1 Authentication]]
+- [[_COMMUNITY_TREK Plugin System|TREK Plugin System]]
+- [[_COMMUNITY_TREK Docker Image|TREK Docker Image]]
+- [[_COMMUNITY_WebSocket Transport|WebSocket Transport]]
+- [[_COMMUNITY_settings.e2e.test.ts|settings.e2e.test.ts]]
+- [[_COMMUNITY_Invite Links|Invite Links]]
+- [[_COMMUNITY_Weather Forecasts|Weather Forecasts]]
+- [[_COMMUNITY_theme-lint.mjs|theme-lint.mjs]]
+- [[_COMMUNITY_setup.ts|setup.ts]]
+- [[_COMMUNITY_maps.service.test.ts|maps.service.test.ts]]
+- [[_COMMUNITY_AdminStatCard.tsx|AdminStatCard.tsx]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `TranslationStrings` - 949 edges
@@ -438,7 +493,7 @@
 5. `useToast()` - 150 edges
 6. `HostDeps` - 130 edges
 7. `useSettingsStore` - 121 edges
-8. `useAuthStore` - 116 edges
+8. `useAuthStore` - 120 edges
 9. `useTripStore` - 114 edges
 10. `resetAllStores()` - 112 edges
 
@@ -447,8 +502,8 @@
   client/src/components/Map/MapView.tsx → server/src/nest/booking-import/kitinerary-mapper.ts
 - `AtlasCountrySearch()` --indirect_call--> `raw()`  [INFERRED]
   client/src/pages/atlas/AtlasCountrySearch.tsx → plugin-sdk/src/cli/preflight.ts
-- `System Notices Documentation` --references--> `English Translations`  [EXTRACTED]
-  docs/system-notices.md → client/src/i18n/translations/en.ts
+- `scanForNativeBinaries()` --references--> `offenders`  [EXTRACTED]
+  server/src/nest/plugins/install/native-scan.ts → client/scripts/theme-lint.mjs
 - `PerPersonInlineProps` --references--> `BudgetItem`  [EXTRACTED]
   client/src/components/Budget/BudgetPanelPerPersonInline.tsx → shared/src/budget/budget.schema.ts
 - `CostsPanel()` --indirect_call--> `note()`  [INFERRED]
@@ -464,7 +519,6 @@
 - **Project Governance & Contribution** — code_of_conduct, contributing, security, trademarks, github_pull_request_template, github_issue_template_bug_report_template [EXTRACTED 0.95]
 - **Deployment & Infrastructure** — docker_compose, charts_readme, charts_trek_chart, charts_trek_values [EXTRACTED 0.90]
 - **Model Context Protocol Implementation** — mcp, readme [EXTRACTED 0.90]
-- **System Notices Implementation Flow** — server_src_systemnotices_registry, client_src_i18n_translations_en, client_src_components_systemnotices_noticeactions [EXTRACTED 1.00]
 - **TREK Core Features** — docs_screenshots_trip_planner, docs_screenshots_budget, docs_screenshots_vacay, docs_screenshots_journey, docs_screenshots_atlas [INFERRED 0.95]
 - **TREK Plugin System** — plugin_sdk_examples_trip_doctor_readme, wiki_admin_addons, wiki_audit_log, wiki_environment_variables [EXTRACTED 0.90]
 - **TREK Deployment Options** — wiki_install_docker_compose, wiki_install_docker, wiki_install_helm, wiki_install_portainer, wiki_install_proxmox, wiki_install_unraid [EXTRACTED 1.00]
@@ -480,55 +534,55 @@
 - **Trek User and Admin Settings Flow** — wiki_assets_usersandinvites, wiki_assets_usrsettings, wiki_assets_usrsettingsmap [EXTRACTED 0.90]
 - **Portainer Stack Deployment and Update Workflow** — wiki_assets_portainer_add_stack, wiki_assets_portainer_stack_save, wiki_assets_portainer_deploy_stack, wiki_assets_portainer_update_version, wiki_assets_portainer_update_stack, wiki_assets_portainer_force_pull [EXTRACTED 1.00]
 
-## Communities (446 total, 112 thin omitted)
+## Communities (495 total, 84 thin omitted)
 
 ### Community 0 - "Client Components Tests Tests"
-Cohesion: 0.02
-Nodes (187): TOKEN_1, TOKEN_2, ENTRY_1, ENTRY_2, autoBackup, manualBackup, ADMIN_USER, PAGE_1 (+179 more)
+Cohesion: 0.03
+Nodes (45): ENTRY_1, ENTRY_2, PAGE_1, PAGE_2, ALLOWED, renderPanel(), SAMPLE_PERMISSIONS, tomorrow (+37 more)
 
 ### Community 1 - "Client Sync Store Tests"
-Cohesion: 0.03
-Nodes (180): categoriesApi, daysApi, filesApi, tagsApi, todoApi, FileManagerProps, OfflineBanner(), conflictCount (+172 more)
+Cohesion: 0.04
+Nodes (110): getActiveTrips(), setPreReconnectHook(), setRefetchCallback(), OfflineBanner(), conflictCount, failedCount, pendingCount, btnStyle() (+102 more)
 
 ### Community 2 - "Client Components Admin Tests"
 Cohesion: 0.02
-Nodes (171): adminApi, airtrailApi, API_DEV, authApi, backupApi, collabApi, dayNotesApi, helpApi (+163 more)
+Nodes (102): API_DEV, categoriesApi, dayNotesApi, helpApi, HelpNavItem, HelpNavSection, HelpPageData, isAuthPublicPath() (+94 more)
 
 ### Community 3 - "Client Components Settings Tests"
 Cohesion: 0.02
-Nodes (126): configApi, oauthApi, PluginAction, PluginUserSettingField, ALL_SCOPES, getScopesByGroup(), SCOPE_GROUP_NAMES, SCOPE_GROUPS (+118 more)
+Nodes (220): adminApi, authApi, backupApi, configApi, notificationsApi, PasskeyCredential, settingsApi, App() (+212 more)
 
 ### Community 4 - "Client Components Planner Tests"
-Cohesion: 0.03
-Nodes (117): ViewContribution, weatherApi, placeToSaveTarget(), withHotelBookends(), ChipProps, cTemp(), DayDetailPanel(), formatTime12() (+109 more)
+Cohesion: 0.04
+Nodes (120): budgetApi, daysApi, catMeta(), placeToSaveTarget(), FileManagerProps, Props, TransportItem, TransportItem (+112 more)
 
 ### Community 5 - "Journey Server Nest Tests"
 Cohesion: 0.04
-Nodes (36): Get, CurrentUser, JourneyAddonGuard, Injectable, IMAGE_UPLOAD, JourneyController, Body, Controller (+28 more)
+Nodes (27): JourneyAddonGuard, Injectable, JourneyController, Body, Controller, Delete, Get, Headers (+19 more)
 
 ### Community 6 - "Server Services Nest Tests"
-Cohesion: 0.03
-Nodes (97): db, isOwner(), PlaceWithCategory, PlaceWithTags, TripAccess, ensureDemoMembership(), seedDemoData(), seedExampleTrips() (+89 more)
+Cohesion: 0.02
+Nodes (98): Trip, Trip, AdminGuard, Injectable, JwtAuthGuard, Injectable, UPLOAD, ACCEPTED_EXTS (+90 more)
 
 ### Community 7 - "Import Server Nest Tests"
-Cohesion: 0.03
-Nodes (61): ADDON_IDS, AddonId, registerMcpPrompts(), ACCEPTED_EXTS, BookingImportController, Body, Controller, Get (+53 more)
+Cohesion: 0.10
+Nodes (19): pdf-parse, LlmParseService, MIME_BY_EXT, normalizeNode(), ROOT_KEYS, Injectable, buildSystemPrompt(), cleanPdfText() (+11 more)
 
 ### Community 8 - "Admin Server Nest Tests"
-Cohesion: 0.04
-Nodes (19): AdminController, ok(), Body, Controller, Delete, Get, HttpCode, Param (+11 more)
+Cohesion: 0.02
+Nodes (86): RFC-7009, logToolCallAudit(), AdminController, ok(), Body, Controller, Delete, Get (+78 more)
 
 ### Community 10 - "Client Api Components Tests"
-Cohesion: 0.04
-Nodes (84): accommodationsApi, addonsApi, assignmentsApi, healthApi, mapsApi, activeTrips, addListener(), connect() (+76 more)
+Cohesion: 0.02
+Nodes (134): accommodationsApi, addonsApi, airtrailApi, assignmentsApi, collabApi, healthApi, mapsApi, placesApi (+126 more)
 
 ### Community 11 - "Server Services Host Tests"
-Cohesion: 0.04
-Nodes (88): accessDenied(), jsonContent(), parseId(), registerResources(), budgetFor(), budgets, budgetSvc, createRealRpcHost() (+80 more)
+Cohesion: 0.03
+Nodes (114): db, PlaceWithCategory, PlaceWithTags, TripAccess, ensureDemoMembership(), seedDemoData(), seedExampleTrips(), broadcastPackingItem() (+106 more)
 
 ### Community 12 - "Client Components Budget Tests"
 Cohesion: 0.04
-Nodes (86): budgetApi, shareApi, BudgetPanel(), BudgetPanelProps, CURRENCIES, currenciesWith(), PIE_COLORS, SPLIT_COLORS (+78 more)
+Nodes (82): BudgetPanel(), BudgetPanelProps, CURRENCIES, currenciesWith(), PIE_COLORS, SPLIT_COLORS, SYMBOLS, calcPD() (+74 more)
 
 ### Community 13 - "Plugin Sdk Index"
 Cohesion: 0.02
@@ -539,44 +593,44 @@ Cohesion: 0.03
 Nodes (65): enKeys, NON_EN_LOCALES, locale, locale, locale, locale, locale, locale (+57 more)
 
 ### Community 15 - "Server Tests Integration Tests"
-Cohesion: 0.06
-Nodes (65): buildApp(), createTables(), AppModule, Module, apiDocsEnabled(), invalidatePermissionsCache(), getOnlineUserIds(), authCookie() (+57 more)
+Cohesion: 0.05
+Nodes (78): buildApp(), createTables(), AppModule, Module, apiDocsEnabled(), invalidatePermissionsCache(), getOnlineUserIds(), authCookie() (+70 more)
 
 ### Community 16 - "Server Services Mcp Tests"
-Cohesion: 0.08
-Nodes (90): canAccessTrip(), ALL_SCOPES, canDeleteTrips(), canRead(), canReadTrips(), canShareTrips(), canWrite(), Scope (+82 more)
+Cohesion: 0.09
+Nodes (81): canAccessTrip(), canRead(), canWrite(), registerAssignmentTools(), registerCollabTools(), registerDayTools(), registerMapsWeatherTools(), registerNotificationTools() (+73 more)
 
 ### Community 17 - "Client Components Planner Tests"
-Cohesion: 0.04
-Nodes (82): pluginsApi, TripCardBadge, ProtectedRoute(), EntryCard(), ADDON_NAV, BottomNav(), NavItem, useCreateAction() (+74 more)
+Cohesion: 0.18
+Nodes (17): buildStatsHtml(), cleanName(), computeDuration(), endpointIcon(), haversineKm(), parseInTz(), Props, ReservationOverlay() (+9 more)
 
 ### Community 18 - "Plugins Server Nest Tests"
-Cohesion: 0.04
-Nodes (75): JwtAuthGuard, Injectable, LocationBias, AtlasLayer, AtlasLayerCountry, cap(), normalize(), normalizeCountries() (+67 more)
+Cohesion: 0.03
+Nodes (68): AtlasLayer, AtlasLayerCountry, AtlasLayersController, cap(), normalize(), normalizeCountries(), Tone, TONES (+60 more)
 
 ### Community 19 - "Server Services Notifications Tests"
-Cohesion: 0.05
-Nodes (81): NtfyConfig, PreferencesMatrix, RespondResult, deleteAll(), NotificationInput, resolveRecipients(), ADMIN_GLOBAL_CHANNELS, ADMIN_SCOPED_EVENTS (+73 more)
+Cohesion: 0.07
+Nodes (43): RFC-1918, fetchLinkPreview(), buildEmailHtml(), buildPasswordResetHtml(), buildWebhookBody(), BUILTIN_CHANNELS, emailChannel, ntfyChannel (+35 more)
 
 ### Community 20 - "Server Services Oauthservice Tests"
-Cohesion: 0.04
-Nodes (82): RFC-6749, RFC-6750, avatarsDir, backupsDir, bootstrap(), coversDir, filesDir, onListen() (+74 more)
+Cohesion: 0.10
+Nodes (37): RFC-6749, validateScopes(), revokeUserSessionsForClient(), revokeOAuthSession(), authenticateClient(), createAuthCode(), createOAuthClient(), deleteOAuthClient() (+29 more)
 
 ### Community 21 - "Server Assignments Nest Tests"
-Cohesion: 0.05
-Nodes (58): AssignmentOpsController, DayAssignmentsController, requireEdit(), requireTrip(), Trip, Body, Controller, Delete (+50 more)
+Cohesion: 0.11
+Nodes (18): AssignmentOpsController, DayAssignmentsController, requireEdit(), requireTrip(), Body, Controller, Delete, Get (+10 more)
 
 ### Community 22 - "Auth Server Nest Tests"
 Cohesion: 0.05
-Nodes (27): AuthController, Body, Controller, Delete, HttpCode, Param, Post, Put (+19 more)
+Nodes (39): 1. Enable the MCP addon (admin), 2. Connect your MCP client, Accommodations, Addon-Gated Resources, Airports, Atlas _(Atlas addon required)_, Atlas Extended _(Atlas addon required)_, Authentication (+31 more)
 
 ### Community 23 - "Collections Server Nest Tests"
-Cohesion: 0.06
-Nodes (25): CollectionsAddonGuard, Injectable, CollectionsController, COVER_UPLOAD, coversDir, Body, Controller, Delete (+17 more)
+Cohesion: 0.07
+Nodes (21): CurrentUser, CollectionsController, COVER_UPLOAD, coversDir, Body, Controller, Delete, Get (+13 more)
 
 ### Community 24 - "Plugins Server Nest Tests"
-Cohesion: 0.04
-Nodes (63): EXEMPT, offenders, strict, devLinkEnabled(), discoverPlugins(), upsert(), arr(), assertSettingKey() (+55 more)
+Cohesion: 0.05
+Nodes (59): discoverPlugins(), upsert(), arr(), assertSettingKey(), _ChannelEventsAreReal, ManifestAction, ManifestSettingField, NotificationChannelCapability (+51 more)
 
 ### Community 25 - "Server Nest Plugins (Server)"
 Cohesion: 0.02
@@ -588,7 +642,7 @@ Nodes (44): TranslationValue, admin, airport, atlas, backup, budget, categories,
 
 ### Community 27 - "Server Tests Mcp Tests"
 Cohesion: 0.05
-Nodes (68): createMcpHarness(), McpHarness, McpHarnessOptions, parseResourceResult(), parseToolResult(), withHarness(), { broadcastMock }, { isAddonEnabledMock } (+60 more)
+Nodes (76): createDay(), createPackingItem(), createMcpHarness(), McpHarness, McpHarnessOptions, parseResourceResult(), parseToolResult(), withHarness() (+68 more)
 
 ### Community 28 - "Shared I18n Ar"
 Cohesion: 0.04
@@ -671,36 +725,36 @@ Cohesion: 0.03
 Nodes (43): admin, airport, atlas, backup, budget, categories, collab, collection (+35 more)
 
 ### Community 48 - "Plugins Server Nest Tests"
-Cohesion: 0.05
-Nodes (37): DependencyCycleError, DependencyState, disabledRequiredAddons(), EMPTY, enableOrder(), findDependents(), findDependentsTransitive(), parseDependencies() (+29 more)
+Cohesion: 0.06
+Nodes (17): closePluginDataDb(), setStagedRestoreApplier(), MIME, PluginFrameController, Controller, Get, Param, Req (+9 more)
 
 ### Community 49 - "Server Supervisor Plugins Tests"
 Cohesion: 0.05
 Nodes (31): ScheduledJob, scheduleJobs(), stopJobs(), DEFAULT_LOG_LIMIT, DEFAULT_RPC_LIMIT, RpcLimitConfig, RpcRateLimiter, TokenBucket (+23 more)
 
 ### Community 50 - "Client Components Planner Tests"
-Cohesion: 0.04
-Nodes (73): airportsApi, transitApi, absUrl(), ACCOMMODATION_ICON_MAP, accommodationIconSvg(), categoryIconSvg(), dayCost(), downloadTripPDF() (+65 more)
+Cohesion: 0.03
+Nodes (121): ViewContribution, weatherApi, calculateRoute(), calculateRouteWithLegs(), calculateSegments(), formatDuration(), formatRouteDistance(), generateGoogleMapsUrl() (+113 more)
 
 ### Community 51 - "Files Server Nest Tests"
-Cohesion: 0.06
-Nodes (34): FilesController, Body, Controller, Delete, Get, Headers, HttpCode, Param (+26 more)
+Cohesion: 0.07
+Nodes (26): FilesController, Body, Controller, Delete, Get, Headers, HttpCode, Param (+18 more)
 
 ### Community 52 - "Client Collections Components Tests"
-Cohesion: 0.06
-Nodes (52): AddPlaceToCollectionModal(), AddPlaceToCollectionModalProps, MapsPlace, num(), BulkAssignLabelModal(), BulkAssignLabelModalProps, CollectionListProps, CollectionMap() (+44 more)
+Cohesion: 0.02
+Nodes (167): postMultipart(), collectionsApi, CopyToTripResult, MembershipQuery, AddPlaceToCollectionModal(), AddPlaceToCollectionModalProps, MapsPlace, num() (+159 more)
 
 ### Community 53 - "Oauth Server Nest Tests"
-Cohesion: 0.05
-Nodes (30): AdminNotificationsTab(), RFC-7009, OauthApiController, Body, Controller, Delete, Get, HttpCode (+22 more)
+Cohesion: 0.12
+Nodes (13): OauthApiController, Body, Controller, Delete, Get, HttpCode, Param, Post (+5 more)
 
 ### Community 54 - "Server Tests Helpers Tests"
-Cohesion: 0.04
-Nodes (56): CollectionsModule, Module, getPublicJourney(), validateShareTokenForAsset(), validateShareTokenForPhoto(), build(), { db }, { isAddonEnabled } (+48 more)
+Cohesion: 0.05
+Nodes (53): addJourneyContributor(), createBucketListItem(), createBudgetItem(), createCollabNote(), createDayAccommodation(), createDayAssignment(), createDayNote(), createInviteToken() (+45 more)
 
 ### Community 55 - "Packing Server Nest Tests"
 Cohesion: 0.08
-Nodes (17): PackingController, Body, Controller, Delete, Get, Headers, HttpCode, Param (+9 more)
+Nodes (18): PackingController, Body, Controller, Delete, Get, Headers, HttpCode, Param (+10 more)
 
 ### Community 56 - "Server Plugins Services Tests"
 Cohesion: 0.05
@@ -711,87 +765,87 @@ Cohesion: 0.07
 Nodes (17): Body, Controller, Delete, Get, Headers, HttpCode, Param, Post (+9 more)
 
 ### Community 58 - "Server Services Authservice Tests"
-Cohesion: 0.06
-Nodes (59): revokeUserSessions(), PasskeyEnabledGuard, Injectable, getHiddenCountries(), ADMIN_SETTINGS_KEYS, avatarDir, changePassword(), createMcpToken() (+51 more)
+Cohesion: 0.04
+Nodes (86): ENCRYPTION_KEY, PasskeyEnabledGuard, Injectable, getHiddenCountries(), ADMIN_SETTINGS_KEYS, avatarDir, changePassword(), createMcpToken() (+78 more)
 
 ### Community 59 - "Client Pages Atlas Tests"
-Cohesion: 0.05
-Nodes (54): apiClient, PluginAtlasLayer, GitHubPanel(), GithubRelease, fetchRegionOptions(), VacayMonthCardProps, AddCalendarForm(), CalendarRow() (+46 more)
+Cohesion: 0.10
+Nodes (29): PluginAtlasLayer, GitHubPanel(), GithubRelease, localeLoaders, TranslationContext, TranslationContextValue, TranslationProviderProps, A2_TO_A3 (+21 more)
 
 ### Community 60 - "Server Services Airtrail Tests"
 Cohesion: 0.08
-Nodes (54): AirtrailAirport, AirtrailAuthError, AirtrailCreds, AirtrailFlightRaw, AirtrailNamedCode, AirtrailRequestError, AirtrailSavePayload, AirtrailSeat (+46 more)
+Nodes (51): installSdkInjection(), AirtrailAirport, AirtrailAuthError, AirtrailCreds, AirtrailFlightRaw, AirtrailNamedCode, AirtrailRequestError, AirtrailSavePayload (+43 more)
 
 ### Community 61 - "Collection Shared Schema (Client)"
-Cohesion: 0.04
-Nodes (59): postMultipart(), CopyToTripResult, MembershipQuery, LabelManagerProps, SWATCHES, CollectionState, CollectionView, COLLECTION_ROLES (+51 more)
+Cohesion: 0.05
+Nodes (54): mockDayNotesState, MockIO, trip, defaultProps, cat, defaultProps, MockIO, place (+46 more)
 
 ### Community 62 - "Client Components Map Tests"
-Cohesion: 0.05
-Nodes (48): geodesicArcs(), greatCircle(), FRA, ICN, JFK, YVR, toDeg(), toRad() (+40 more)
+Cohesion: 0.08
+Nodes (22): buildItems(), buildStatsHtml(), cleanName(), computeDuration(), endpointMarkerHtml(), GlMarker, haversineKm(), MarkerConstructor (+14 more)
 
 ### Community 63 - "Maps Server Nest Tests"
-Cohesion: 0.05
-Nodes (36): jimp, MapsController, toHttpException(), Body, Controller, Get, HttpCode, Param (+28 more)
+Cohesion: 0.13
+Nodes (13): MapsController, toHttpException(), Body, Controller, Get, HttpCode, Param, Post (+5 more)
 
 ### Community 64 - "Server Services Placeservice Tests"
 Cohesion: 0.07
-Nodes (53): getPlaceWithTags(), PackingItemRow, isUpdateConflict(), UpdateConflict, asArray(), asTrimmedString(), buildCategoryNameLookup(), createKmlImportSummary() (+45 more)
+Nodes (52): getPlaceWithTags(), UpdateConflict, asArray(), asTrimmedString(), buildCategoryNameLookup(), createKmlImportSummary(), decodeHtmlEntities(), decodeUtf8WithWarning() (+44 more)
 
 ### Community 65 - "Collab Server Nest Tests"
-Cohesion: 0.09
-Nodes (19): CollabController, Body, Controller, Delete, Get, Headers, HttpCode, Param (+11 more)
+Cohesion: 0.08
+Nodes (20): CollabController, Body, Controller, Delete, Get, Headers, HttpCode, Param (+12 more)
 
 ### Community 66 - "Places Server Nest Tests"
-Cohesion: 0.08
-Nodes (24): parseBool(), PlacesController, STRING_LIMITS, Body, Controller, Delete, Get, Headers (+16 more)
+Cohesion: 0.09
+Nodes (22): parseBool(), PlacesController, Body, Controller, Delete, Get, Headers, HttpCode (+14 more)
 
 ### Community 67 - "Client Components Packing Tests"
 Cohesion: 0.08
-Nodes (37): BAG_COLORS, KAT_COLORS, VORSCHLAEGE, itemWeight(), katColor(), parseCsvLine(), ParsedImportItem, parseImportLines() (+29 more)
+Nodes (33): packingApi, BAG_COLORS, KAT_COLORS, VORSCHLAEGE, itemWeight(), parseCsvLine(), ParsedImportItem, parseImportLines() (+25 more)
 
 ### Community 68 - "Server Tests Unit Tests"
-Cohesion: 0.05
-Nodes (40): bcrypt, crypto, Database, db, existing, hash, path, runMigrations() (+32 more)
+Cohesion: 0.06
+Nodes (33): CollectionsModule, Module, createOrRotateTripInviteLink(), deleteTripInviteLink(), getTripInviteLink(), resolveTripInvite(), TripInviteInfo, build() (+25 more)
 
 ### Community 69 - "Server Services Adminservice Tests"
-Cohesion: 0.06
-Nodes (49): updateJwtSecret(), emitUserDeleted(), checkAndNotifyVersion(), checkVersion(), __clearVersionCacheForTests(), COLLAB_FEATURE_KEYS, compareVersions(), createInvite() (+41 more)
+Cohesion: 0.04
+Nodes (72): ADDON_IDS, AddonId, updateJwtSecret(), AddonsController, Controller, Get, UseGuards, AddonsService (+64 more)
 
 ### Community 70 - "Server Services Mapsservice Tests"
-Cohesion: 0.07
-Nodes (53): registerMapsWeatherTools(), LocationBias, Airport, backfillFlightEndpoints(), findByIata(), load(), searchAirports(), acquirePhotoFetchSlot() (+45 more)
+Cohesion: 0.06
+Nodes (53): resolveDayId(), LocationBias, acquirePhotoFetchSlot(), API_LANG_OVERRIDES, autocompleteNominatim(), autocompletePlaces(), buildOsmDetails(), buildUserAgent() (+45 more)
 
 ### Community 71 - "Server Services Collectionsservice (Server)"
 Cohesion: 0.09
-Nodes (58): acceptInvite(), accessibleCollectionIds(), assertAccess(), assertCanDelete(), assertCanEdit(), assignLabels(), attachTags(), buildMembers() (+50 more)
+Nodes (59): acceptInvite(), accessibleCollectionIds(), assertAccess(), assertCanDelete(), assertCanEdit(), assignLabels(), attachTags(), buildMembers() (+51 more)
 
 ### Community 72 - "Server Tests Unit Tests"
-Cohesion: 0.07
-Nodes (41): createGuest(), deleteOldCover(), transferOwnership(), addTripMember(), createBudgetItem(), createCollabNote(), createDay(), createDayAccommodation() (+33 more)
+Cohesion: 0.04
+Nodes (55): connect(), disconnect(), RootRedirect(), currentUser, defaultProps, currentUser, defaultProps, currentUser (+47 more)
 
 ### Community 73 - "Server Scheduler Services Tests"
-Cohesion: 0.07
-Nodes (47): applyGlobalMiddleware(), RFC-7591, RFC-8414, RFC-9728, autoBackupTimestampMs(), backupsDir, BackupSettings, buildCronExpression() (+39 more)
+Cohesion: 0.09
+Nodes (39): applyGlobalMiddleware(), RFC-7591, RFC-8414, RFC-9728, autoBackupTimestampMs(), backupsDir, BackupSettings, buildCronExpression() (+31 more)
 
 ### Community 74 - "Budget Server Nest Tests"
-Cohesion: 0.10
-Nodes (17): BudgetController, Body, Controller, Delete, Get, Headers, Param, Post (+9 more)
+Cohesion: 0.08
+Nodes (23): BudgetController, Body, Controller, Delete, Get, Headers, Param, Post (+15 more)
 
 ### Community 75 - "Controller Server Plugins Tests"
 Cohesion: 0.04
-Nodes (32): AtlasLayersController, Controller, UseGuards, JournalEntryRowsController, Controller, UseGuards, MapMarkersController, Controller (+24 more)
+Nodes (67): shareApi, TripCardBadge, FALLBACK_TRIPS, FeaturedStoriesStrip(), FeaturedTrip, loadSeenIds(), saveSeenIds(), scrollStripToChild() (+59 more)
 
 ### Community 76 - "Server Services Journeyservice Tests"
-Cohesion: 0.12
-Nodes (49): canShareJourneys(), notFound(), registerJourneyTools(), addContributor(), addPhoto(), addProviderPhoto(), addProviderPhotoToGallery(), addTripToJourney() (+41 more)
+Cohesion: 0.09
+Nodes (61): canShareJourneys(), notFound(), registerJourneyTools(), addContributor(), addPhoto(), addProviderPhoto(), addProviderPhotoToGallery(), addTripToJourney() (+53 more)
 
 ### Community 77 - "Client Components Systemnotices Tests"
 Cohesion: 0.06
 Nodes (43): parseInDev(), actions, NoticeActionContext, NoticeActionHandler, registerNoticeAction(), runNoticeAction(), AnimatedBannerItemProps, BannerItem() (+35 more)
 
 ### Community 78 - "Server Atlasservice Services (Server)"
-Cohesion: 0.08
+Cohesion: 0.09
 Nodes (48): registerAtlasTools(), CreateBucketData, UpdateBucketData, Box, buildCountryIndexes(), buildRegionInfo(), cacheKey(), createBucketItem() (+40 more)
 
 ### Community 79 - "I18n Shared Externalnotifications"
@@ -799,75 +853,75 @@ Cohesion: 0.08
 Nodes (31): ar, br, cs, de, en, es, EMAIL_I18N, EVENT_TEXTS (+23 more)
 
 ### Community 80 - "Server Nest Health Tests"
-Cohesion: 0.06
-Nodes (22): BookingImportModule, Module, IdempotencyInterceptor, IdempotencyRow, MUTATING_METHODS, Injectable, DatabaseService, Injectable (+14 more)
+Cohesion: 0.09
+Nodes (10): IdempotencyInterceptor, IdempotencyRow, MUTATING_METHODS, Injectable, DatabaseService, Injectable, HealthService, Injectable (+2 more)
 
 ### Community 81 - "Server Plugins Controller Tests"
-Cohesion: 0.06
-Nodes (36): raw(), Get, Req, Get, Param, Req, Get, Param (+28 more)
+Cohesion: 0.10
+Nodes (18): Action, ActionTarget, cap(), Column, Contribution, normalize(), safeUrl(), Tone (+10 more)
 
 ### Community 82 - "Notifications Server Nest Tests"
-Cohesion: 0.07
-Nodes (17): NotificationsController, Body, Controller, Delete, Get, HttpCode, Param, Post (+9 more)
+Cohesion: 0.08
+Nodes (18): NotificationsController, Body, Controller, Delete, HttpCode, Param, Post, Put (+10 more)
 
 ### Community 83 - "Backup Server Nest Tests"
 Cohesion: 0.07
-Nodes (23): AdminGuard, Injectable, BackupController, Body, Controller, Delete, Get, HttpCode (+15 more)
+Nodes (20): BackupController, Body, Controller, Delete, Get, HttpCode, Param, Post (+12 more)
 
 ### Community 84 - "Reservations Server Nest Tests"
 Cohesion: 0.07
-Nodes (25): notifyBooking(), ReservationBody, ReservationsController, Body, Controller, Delete, Get, Headers (+17 more)
+Nodes (27): ReservationBody, ReservationsController, Body, Controller, Delete, Get, Headers, Param (+19 more)
 
 ### Community 85 - "Plugin Sdk Cli Tests"
 Cohesion: 0.11
 Nodes (45): insideGitRepo(), interactiveScaffold(), permissionRows(), readme(), resolveDir(), scaffold(), ScaffoldOptions, sdkVersionRange() (+37 more)
 
 ### Community 86 - "E2e Server Tests Tests"
-Cohesion: 0.06
-Nodes (43): AdminModule, Module, AuthModule, Module, OauthModule, Module, ReservationsModule, Module (+35 more)
+Cohesion: 0.11
+Nodes (21): MemoriesModule, Module, OauthModule, Module, Module, WeatherModule, createTempDb(), SeededUser (+13 more)
 
 ### Community 87 - "Memories Server Services (Server)"
-Cohesion: 0.08
-Nodes (42): AlbumsList, Asset, AssetInfo, AssetsList, canAccessTrekPhoto(), canAccessUserPhoto(), handleServiceResult(), PhotoProviderConfig (+34 more)
+Cohesion: 0.07
+Nodes (97): error(), decrypt_api_key(), encrypt_api_key(), get_key(), maybe_encrypt_api_key(), getSettings(), updateAppSettings(), validateKeys() (+89 more)
 
 ### Community 88 - "Shared Schema Airtrail Tests"
-Cohesion: 0.05
-Nodes (35): Airport, airportSchema, AirportSearchQuery, airportSearchQuerySchema, AirtrailConnection, airtrailConnectionSchema, AirtrailFlight, airtrailFlightSchema (+27 more)
+Cohesion: 0.15
+Nodes (12): AirtrailConnection, airtrailConnectionSchema, AirtrailFlight, airtrailFlightSchema, AirtrailImport, AirtrailImportResult, airtrailImportResultSchema, airtrailImportSchema (+4 more)
 
 ### Community 89 - "Server Services Collabservice Tests"
-Cohesion: 0.07
-Nodes (40): avatarUrl(), addOrRemoveReaction(), createMessage(), createNote(), deleteNote(), formatMessage(), formatNote(), getFormattedNoteById() (+32 more)
+Cohesion: 0.12
+Nodes (20): addOrRemoveReaction(), createMessage(), createNote(), deleteNote(), formatMessage(), formatNote(), getFormattedNoteById(), GroupedReaction (+12 more)
 
 ### Community 90 - "Server Services Budgetservice Tests"
-Cohesion: 0.09
-Nodes (35): payersSchema, registerBudgetTools(), resolveMemberIds(), BudgetEntry, Trip, calculateSettlement(), createBudgetItem(), createSettlement() (+27 more)
+Cohesion: 0.10
+Nodes (34): payersSchema, registerBudgetTools(), resolveMemberIds(), avatarUrl(), calculateSettlement(), createBudgetItem(), createSettlement(), deleteBudgetItem() (+26 more)
 
 ### Community 91 - "Shared Package Devdependencies Tests"
 Cohesion: 0.05
 Nodes (47): dependencies, isomorphic-dompurify, zod, description, devDependencies, eslint, eslint-config-flat-gitignore, eslint-config-prettier (+39 more)
 
 ### Community 92 - "Server Services Tripservice (Server)"
-Cohesion: 0.06
-Nodes (38): RFC-5545, extractVEvents(), extractVTimezones(), ninetyDaysAgo(), CreateAccommodation, CreateReservationData, EndpointInput, loadEndpointsByTrip() (+30 more)
+Cohesion: 0.04
+Nodes (76): RFC-5545, isOwner(), accessDenied(), jsonContent(), parseId(), registerResources(), canDeleteTrips(), canReadTrips() (+68 more)
 
 ### Community 93 - "Server Services Vacayservice Tests"
 Cohesion: 0.13
 Nodes (43): registerVacayTools(), getCurrentUser(), acceptInvite(), addHolidayCalendar(), addYear(), applyHolidayCalendars(), cancelInvite(), COLORS (+35 more)
 
 ### Community 94 - "Server Nest Auth Tests"
-Cohesion: 0.08
-Nodes (25): ALLOWED_AVATAR_EXTS, AVATAR_UPLOAD, avatarDir, GENERIC_FORGOT_RESPONSE, Attempt, RateLimitService, Injectable, TransitController (+17 more)
+Cohesion: 0.31
+Nodes (6): TransitController, Controller, Get, Query, Req, UseGuards
 
 ### Community 95 - "Memories Server Services Tests"
-Cohesion: 0.10
-Nodes (26): MemoriesService, Injectable, pipeAsset(), Selection, updateSyncTimeForAlbumLink(), browseTimeline(), fetchAlbumAssets(), fetchAlbumAssetsViaSearch() (+18 more)
+Cohesion: 0.06
+Nodes (29): TOKEN_1, TOKEN_2, autoBackup, manualBackup, ADMIN_USER, tripMembers, clipboardWriteText, enableMcp() (+21 more)
 
 ### Community 96 - "Adminpluginspanel Client Components (Client)"
 Cohesion: 0.06
 Nodes (34): ActivateErr, AdminPluginsPanel(), Cap, DepChip, DependencyIssues, DependencyResolveDialog(), DependencyStatus, deriveCaps() (+26 more)
 
 ### Community 97 - "Atlas Server Nest Tests"
-Cohesion: 0.08
+Cohesion: 0.07
 Nodes (17): Header, AtlasController, Body, Controller, Delete, Get, HttpCode, Param (+9 more)
 
 ### Community 98 - "Plugin Sdk Mock Tests"
@@ -875,48 +929,48 @@ Cohesion: 0.06
 Nodes (26): BudgetItem, Day, NotificationMessage, PackingItem, Place, PluginActionResult, PluginContext, PluginDefinition (+18 more)
 
 ### Community 99 - "Server Auth Middleware Tests"
-Cohesion: 0.08
-Nodes (25): JWT_SECRET, adminOnly(), authenticate(), demoUploadBlock(), extractToken(), optionalAuth(), requireCookieAuth(), verifyJwtAndLoadUser() (+17 more)
+Cohesion: 0.11
+Nodes (18): JWT_SECRET, adminOnly(), authenticate(), demoUploadBlock(), extractToken(), optionalAuth(), requireCookieAuth(), verifyJwtAndLoadUser() (+10 more)
 
 ### Community 100 - "Feeds Server Nest (Server)"
-Cohesion: 0.11
-Nodes (16): FeedsPublicController, resolveFeedBase(), TripFeedTokenController, Controller, Delete, Get, Param, Post (+8 more)
+Cohesion: 0.10
+Nodes (19): FeedsPublicController, resolveFeedBase(), TripFeedTokenController, Controller, Delete, Get, Param, Post (+11 more)
 
 ### Community 101 - "Plugins Server Nest Tests"
-Cohesion: 0.10
-Nodes (14): PluginConsentRequired, PluginsController, Body, Controller, Delete, Get, HttpCode, Param (+6 more)
+Cohesion: 0.13
+Nodes (14): pluginsEnabled(), PluginsController, Body, Controller, Delete, Get, HttpCode, Param (+6 more)
 
 ### Community 102 - "Share Server Nest Tests"
-Cohesion: 0.08
-Nodes (20): SharedController, TripShareController, Body, Controller, Delete, Get, Param, Post (+12 more)
+Cohesion: 0.07
+Nodes (21): SharedController, TripShareController, Body, Controller, Delete, Get, Param, Post (+13 more)
 
 ### Community 103 - "Oidc Server Nest Tests"
-Cohesion: 0.09
-Nodes (13): OidcController, Controller, Get, Query, Req, Res, OidcService, Injectable (+5 more)
+Cohesion: 0.07
+Nodes (23): OidcController, Controller, Get, Query, Req, Res, OidcModule, Module (+15 more)
 
 ### Community 104 - "Server Plugins Plugin Tests"
-Cohesion: 0.09
-Nodes (19): PluginOAuthController, Controller, Get, Param, Post, Query, Req, Res (+11 more)
+Cohesion: 0.06
+Nodes (30): PluginActivityController, Controller, UseGuards, PluginOAuthController, Controller, Get, Param, Post (+22 more)
 
 ### Community 105 - "Server Weather Weatherservice Tests"
 Cohesion: 0.10
 Nodes (26): toHttp(), Controller, Get, Query, UseGuards, WeatherController, Injectable, WeatherService (+18 more)
 
 ### Community 106 - "Todo Server Nest Tests"
-Cohesion: 0.11
+Cohesion: 0.12
 Nodes (15): TodoController, Body, Controller, Delete, Get, Headers, Param, Post (+7 more)
 
 ### Community 107 - "Server Services Oidcservice Tests"
 Cohesion: 0.07
-Nodes (30): authCodes, base64url(), base64UrlDecode(), consumeAuthCode(), consumeState(), createAuthCode(), createState(), discover() (+22 more)
+Nodes (31): authCodes, base64url(), base64UrlDecode(), consumeAuthCode(), consumeState(), createAuthCode(), createState(), discover() (+23 more)
 
 ### Community 108 - "Server Tests Unit Tests"
-Cohesion: 0.07
-Nodes (22): createAdmin(), disableNotificationPref(), setAppSetting(), setNotificationChannels(), setupCollisionAdmin(), TEST_NOTICE, { testDb, dbMock }, rogueGlobal (+14 more)
+Cohesion: 0.13
+Nodes (10): disableNotificationPref(), setAppSetting(), setSmtp(), { broadcastMock }, { testDb, dbMock }, { sendMailMock, fetchMock, broadcastMock }, setAdminNtfyTopic(), setAdminWebhookUrl() (+2 more)
 
 ### Community 109 - "Plugins Server Nest Tests"
-Cohesion: 0.09
-Nodes (17): PluginUserSettingsController, Body, Controller, Get, HttpCode, Param, Post, Req (+9 more)
+Cohesion: 0.08
+Nodes (30): DependencyCycleError, DependencyState, disabledRequiredAddons(), EMPTY, enableOrder(), findDependents(), findDependentsTransitive(), parseDependencies() (+22 more)
 
 ### Community 110 - "Package Scripts Version Tests"
 Cohesion: 0.05
@@ -931,28 +985,28 @@ Cohesion: 0.06
 Nodes (36): devDependencies, eslint, eslint-config-flat-gitignore, eslint-config-prettier, @eslint/js, eslint-plugin-prettier, @nestjs/testing, nodemon (+28 more)
 
 ### Community 113 - "Client Tests Helpers Tests"
-Cohesion: 0.08
-Nodes (19): buildAppConfig(), addonHandlers, adminHandlers, assignmentsHandlers, authHandlers, budgetHandlers, dayNotesHandlers, filesHandlers (+11 more)
+Cohesion: 0.13
+Nodes (36): applyCommonMeta(), coords(), formatAddress(), mapBoat(), mapBus(), mapEvent(), mapFlight(), mapFlightGroup() (+28 more)
 
 ### Community 114 - "Server Package Dependencies (Server)"
 Cohesion: 0.06
-Nodes (35): dependencies, archiver, bcryptjs, better-sqlite3, compression, cookie-parser, cors, dotenv (+27 more)
+Nodes (36): dependencies, archiver, bcryptjs, better-sqlite3, compression, cookie-parser, cors, dotenv (+28 more)
 
 ### Community 115 - "Client Package Devdependencies Tests"
 Cohesion: 0.06
 Nodes (34): devDependencies, autoprefixer, eslint, eslint-config-flat-gitignore, eslint-config-prettier, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh (+26 more)
 
 ### Community 116 - "Client Components Files Tests"
-Cohesion: 0.13
-Nodes (22): TRANSPORT_TYPES, formatDateWithLocale(), formatSize(), getFileIcon(), isImage(), isMarkdown(), isMedia(), isVideo() (+14 more)
+Cohesion: 0.07
+Nodes (45): clearImageQueue(), dequeue(), fetchImageAsBlob(), getAuthUrl(), queue, filesApi, FilePreviewPortal(), TRANSPORT_TYPES (+37 more)
 
 ### Community 117 - "E2e Server Tests Tests"
-Cohesion: 0.08
-Nodes (24): BudgetModule, Module, TrekExceptionFilter, Catch, NotificationsModule, Module, OidcModule, Module (+16 more)
+Cohesion: 0.33
+Nodes (6): BudgetModule, Module, build(), { checkPermission }, { db }, { svc }
 
 ### Community 118 - "Memories Server Nest Tests"
-Cohesion: 0.13
-Nodes (18): _parseNumberBodyField(), _parseStringBodyField(), SynologyMemoriesController, Body, Controller, Get, Headers, HttpCode (+10 more)
+Cohesion: 0.06
+Nodes (57): airportsApi, absUrl(), ACCOMMODATION_ICON_MAP, accommodationIconSvg(), categoryIconSvg(), dayCost(), downloadTripPDF(), ensureRenderer() (+49 more)
 
 ### Community 119 - "Server Nest Accommodations Tests"
 Cohesion: 0.11
@@ -963,36 +1017,36 @@ Cohesion: 0.06
 Nodes (33): compilerOptions, allowJs, baseUrl, declaration, emitDecoratorMetadata, esModuleInterop, experimentalDecorators, forceConsistentCasingInFileNames (+25 more)
 
 ### Community 121 - "Server Systemnotices Conditions Tests"
-Cohesion: 0.11
-Nodes (25): English Translations, Admin Screenshot, System Notices Documentation, ConditionContext, customPredicates, evaluate(), evaluateOne(), registerPredicate() (+17 more)
+Cohesion: 0.06
+Nodes (37): SlidingTab, SlidingTabs(), SlidingTabsProps, SystemNoticesController, Controller, Get, HttpCode, Param (+29 more)
 
 ### Community 122 - "Packing Shared Schema"
-Cohesion: 0.07
-Nodes (31): open, PackingBagMember, packingBagMemberSchema, PackingBagMembersRequest, packingBagMembersRequestSchema, packingBagSchema, PackingCategoryAssigneesRequest, packingCategoryAssigneesRequestSchema (+23 more)
+Cohesion: 0.05
+Nodes (72): NtfyConfig, PreferencesMatrix, RespondResult, BaseNotificationInput, BooleanNotificationInput, createNotification(), createNotificationForRecipient(), deleteAll() (+64 more)
 
 ### Community 123 - "Client Components Collab (Client)"
 Cohesion: 0.11
 Nodes (22): EMOJI_CATEGORIES, QUICK_REACTIONS, emojiToCodepoint(), formatDateSeparator(), formatTime(), parseUTC(), shouldShowDateSeparator(), ChatMessage (+14 more)
 
 ### Community 124 - "Server Nest Days (Server)"
-Cohesion: 0.12
-Nodes (15): DayNoteBody, DayNotesController, MAX_LENGTHS, Body, Controller, Delete, Get, Headers (+7 more)
+Cohesion: 0.13
+Nodes (13): DayNotesController, Body, Controller, Delete, Get, Headers, Param, Post (+5 more)
 
 ### Community 125 - "Client Package Dependencies (Client)"
 Cohesion: 0.06
 Nodes (31): dependencies, axios, dexie, drag-drop-touch, @fontsource/geist-sans, @fontsource/poppins, heic-to, iso-3166-2 (+23 more)
 
 ### Community 126 - "Plugin Sdk Cli Tests"
-Cohesion: 0.11
-Nodes (25): DIRS, packPluginDir(), PackResult, ROOT_FILES, SKIP_DIR, walk(), Entry, EntryVersion (+17 more)
+Cohesion: 0.09
+Nodes (32): readBody(), DIRS, packPluginDir(), PackResult, ROOT_FILES, SKIP_DIR, walk(), Entry (+24 more)
 
 ### Community 127 - "Router Server Nest Tests"
-Cohesion: 0.12
-Nodes (27): DATE_FIELDS, detectFlightNumbers(), detectType(), extractBookingRef(), extractFlights(), extractSingle(), extractTotalPrice(), fillBookingWideFields() (+19 more)
+Cohesion: 0.08
+Nodes (33): DATE_FIELDS, detectFlightNumbers(), detectType(), extractBookingRef(), extractFlights(), extractSingle(), extractTotalPrice(), fillBookingWideFields() (+25 more)
 
 ### Community 128 - "Budget Shared Schema (Client)"
-Cohesion: 0.08
-Nodes (28): CostCategoryMeta, budgetCreateItemRequestSchema, BudgetCreateSettlementRequest, budgetCreateSettlementRequestSchema, budgetItemMemberSchema, BudgetItemPayer, budgetItemPayerSchema, budgetItemSchema (+20 more)
+Cohesion: 0.09
+Nodes (25): budgetCreateItemRequestSchema, BudgetCreateSettlementRequest, budgetCreateSettlementRequestSchema, budgetItemMemberSchema, BudgetItemPayer, budgetItemPayerSchema, budgetItemSchema, BudgetReorderCategoriesRequest (+17 more)
 
 ### Community 129 - "Days Server Nest (Server)"
 Cohesion: 0.14
@@ -1008,91 +1062,91 @@ Nodes (28): AccommodationCreateRequest, accommodationCreateRequestSchema, accomm
 
 ### Community 132 - "Plugin Sdk Cli"
 Cohesion: 0.10
-Nodes (17): createDevContext(), createDevDb(), Fixtures, guardSql(), Handler, installSdkInjection(), loadFixtures(), PermissionDenied (+9 more)
+Nodes (16): createDevContext(), createDevDb(), Fixtures, guardSql(), Handler, loadFixtures(), PermissionDenied, PluginContextDb (+8 more)
 
 ### Community 133 - "Server Services Packingservice (Server)"
 Cohesion: 0.16
-Nodes (27): registerPackingTools(), adminRequired(), isAdminUser(), addContributor(), applyTemplate(), BAG_COLORS, bulkImport(), createBag() (+19 more)
+Nodes (31): registerPackingTools(), adminRequired(), isAdminUser(), addContributor(), applyTemplate(), BAG_COLORS, bulkImport(), cloneItem() (+23 more)
 
 ### Community 134 - "Trip Invite Server (Server)"
-Cohesion: 0.13
+Cohesion: 0.12
 Nodes (13): TripInviteController, TripInviteLinkController, Body, Controller, Delete, Get, HttpCode, Param (+5 more)
 
 ### Community 135 - "Assignment Shared Schema"
-Cohesion: 0.09
-Nodes (25): AssignmentCreateRequest, assignmentCreateRequestSchema, AssignmentMoveRequest, assignmentMoveRequestSchema, AssignmentParticipant, assignmentParticipantSchema, AssignmentParticipantsRequest, assignmentParticipantsRequestSchema (+17 more)
+Cohesion: 0.06
+Nodes (35): Dependencies, Driving your plugin's handlers, Event subscriptions, Events — publish / subscribe, Exports — request / response, GDPR data-subject hooks, Host-brokered OAuth (`ctx.oauth`), Manifest reference (`trek-plugin.json`) (+27 more)
 
 ### Community 136 - "Server Services Wikiservice (Server)"
-Cohesion: 0.12
-Nodes (24): HelpController, Controller, Get, Param, Req, Res, ASSET_TYPES, assetCache (+16 more)
+Cohesion: 0.11
+Nodes (26): HelpController, Controller, Get, Param, Req, Res, HelpModule, Module (+18 more)
 
 ### Community 137 - "Tags Server Nest Tests"
 Cohesion: 0.10
 Nodes (14): TagsController, Body, Controller, Delete, Get, Param, Post, Put (+6 more)
 
 ### Community 138 - "Server Services Passkeyservice Tests"
-Cohesion: 0.13
-Nodes (23): AUTH_FAILED, challengeFromResponse(), claimChallenge(), CredentialRow, defaultCredentialName(), NOT_CONFIGURED, parseTransports(), passkeyLoginOptions() (+15 more)
+Cohesion: 0.06
+Nodes (20): BookingImportController, Body, Controller, Get, Headers, Param, Post, UploadedFiles (+12 more)
 
 ### Community 139 - "Client Services Photoservice Tests"
-Cohesion: 0.12
-Nodes (23): Category, PlaceAvatarProps, basePlaceNoImage, basePlaceWithImage, mockDisconnect, MockIntersectionObserver, mockObserve, acquireRequestSlot() (+15 more)
+Cohesion: 0.13
+Nodes (18): basePlaceNoImage, basePlaceWithImage, mockDisconnect, MockIntersectionObserver, mockObserve, acquireRequestSlot(), cache, fetchPhoto() (+10 more)
 
 ### Community 140 - "Airports Server Nest Tests"
 Cohesion: 0.11
 Nodes (16): AirportsController, Controller, Get, Param, Query, UseGuards, AirportsModule, Module (+8 more)
 
 ### Community 141 - "Memories Server Nest Tests"
-Cohesion: 0.16
-Nodes (12): ImmichMemoriesController, Body, Controller, Get, Headers, HttpCode, Param, Post (+4 more)
+Cohesion: 0.05
+Nodes (21): MemoriesService, Injectable, Body, Controller, Delete, Get, Headers, HttpCode (+13 more)
 
 ### Community 142 - "Memories Server Nest (Server)"
-Cohesion: 0.13
-Nodes (12): Body, Controller, Delete, Get, Headers, HttpCode, Param, Post (+4 more)
+Cohesion: 0.09
+Nodes (30): RFC-6750, resolveKeepaliveMs(), resolveSessionTtlMs(), armSseKeepalive(), BASE_MCP_INSTRUCTIONS, closeMcpSessions(), countSessionsForUser(), invalidateMcpSessions() (+22 more)
 
 ### Community 143 - "Server Services Tests Tests"
-Cohesion: 0.10
-Nodes (18): createOrRotateTripInviteLink(), deleteTripInviteLink(), getTripInviteLink(), resolveTripInvite(), TripInviteInfo, createUser(), { mockCheckSsrf, mockCreatePinnedDispatcher }, setup() (+10 more)
+Cohesion: 0.07
+Nodes (31): open, PackingBagMember, packingBagMemberSchema, PackingBagMembersRequest, packingBagMembersRequestSchema, packingBagSchema, PackingCategoryAssigneesRequest, packingCategoryAssigneesRequestSchema (+23 more)
 
 ### Community 144 - "Place Shared Schema"
-Cohesion: 0.09
-Nodes (23): assignmentPlaceSchema, open, PlaceBulkDeleteRequest, placeBulkDeleteRequestSchema, PlaceBulkUpdateRequest, placeBulkUpdateRequestSchema, PlaceCategory, placeCategorySchema (+15 more)
+Cohesion: 0.14
+Nodes (12): ImmichMemoriesController, Body, Controller, Get, Headers, HttpCode, Param, Post (+4 more)
 
 ### Community 145 - "Client Components Map Tests"
-Cohesion: 0.15
-Nodes (21): Defaults, DefaultUserSettingsTab(), MAP_PRESETS, MapProvider, normalizeProvider(), styleForProvider(), BASEMAP_LANG_OVERRIDES, basemapLanguage() (+13 more)
+Cohesion: 0.40
+Nodes (3): ActionHandler, actionRegistry, getAction()
 
 ### Community 146 - "Client Components Map (Client)"
-Cohesion: 0.14
-Nodes (22): buildPlaceClusterData(), categoryIconSvg(), createMarkerElement(), createPoiMarkerElement(), hasValidCoords(), MapViewGL(), PlaceWithCoords, Props (+14 more)
+Cohesion: 0.19
+Nodes (17): attachLocationMarker(), buildLocationEl(), ensurePulseStyle(), LocationMarkerHandle, MarkerConstructor, buildPlaceClusterData(), categoryIconSvg(), createMarkerElement() (+9 more)
 
 ### Community 147 - "Client Tsconfig Compileroptions (Client)"
 Cohesion: 0.08
 Nodes (25): compilerOptions, allowImportingTsExtensions, allowJs, baseUrl, esModuleInterop, forceConsistentCasingInFileNames, ignoreDeprecations, isolatedModules (+17 more)
 
 ### Community 148 - "Plugin Sdk Manifest"
-Cohesion: 0.13
-Nodes (22): readJsonFile(), EntryLike, gh(), git(), mergeOnto(), submitEntry(), validatePluginDir(), ValidateReport (+14 more)
+Cohesion: 0.17
+Nodes (16): validatePluginDir(), ValidateReport, CHANNEL_EVENTS, isKnownPermission(), KNOWN_ADDONS, KNOWN_PERMISSIONS, PluginDependency, PluginManifest (+8 more)
 
 ### Community 149 - "Plugin Server Plugins Tests"
-Cohesion: 0.13
-Nodes (19): boot(), errMsg(), errStack(), handleInvoke(), heartbeat, installIpcGuard(), installSdkInjection(), onFatal() (+11 more)
+Cohesion: 0.14
+Nodes (18): boot(), errMsg(), errStack(), handleInvoke(), heartbeat, installIpcGuard(), installSdkInjection(), onFatal() (+10 more)
 
 ### Community 150 - "Platform Server Nest Tests"
-Cohesion: 0.12
-Nodes (20): trekClientsStore, trekOAuthProvider, applyPlatformSpa(), applyPlatformStatic(), applyPlatformTransport(), applyPlatformUploads(), PUBLIC_DIR, RFC-8414 (+12 more)
+Cohesion: 0.09
+Nodes (26): assertValidRedirectUris(), DANGEROUS_SCHEMES, OAuthClientRow, trekClientsStore, trekOAuthProvider, ALL_SCOPES, applyPlatformSpa(), applyPlatformStatic() (+18 more)
 
 ### Community 151 - "Categories Server Nest Tests"
 Cohesion: 0.11
 Nodes (14): CategoriesController, Body, Controller, Delete, Get, Param, Post, Put (+6 more)
 
 ### Community 152 - "Server Memories Services Tests"
-Cohesion: 0.24
-Nodes (24): error(), fail(), getAlbumIdFromLink(), getAlbumLinkForSync(), mapDbError(), success(), deleteTrekPhotoIfOrphan(), getOrCreateTrekPhoto() (+16 more)
+Cohesion: 0.16
+Nodes (20): apiClient, NoteCard(), formatDayLabel(), formatTime(), TripMember, WhatsNextWidget(), WhatsNextWidgetProps, MemberAvatar() (+12 more)
 
 ### Community 153 - "Client Components Collab (Client)"
-Cohesion: 0.12
-Nodes (14): CollabChatProps, CollabNotes(), CollabNotesProps, NOTE_COLORS, NotesState, AuthedImg(), CategorySettingsModal(), CategorySettingsModalProps (+6 more)
+Cohesion: 0.08
+Nodes (24): Add / move something on the itinerary, Ask the configured LLM, Batch writes atomically, and read per-user settings, Become a notification channel (Gotify, Pushover, …), Call a third-party API the user connected, Contribute extra info to a place (rendered natively), Contribute native primitives to core views, Convert currencies (+16 more)
 
 ### Community 154 - "Llm Parse Server Tests"
 Cohesion: 0.11
@@ -1107,115 +1161,115 @@ Cohesion: 0.14
 Nodes (12): buildEntry(), Entry, minTrekFrom(), resolveCommit(), Version, generateKeypair(), loadPrivateKey(), publicKeyBase64() (+4 more)
 
 ### Community 157 - "Settings Server Nest Tests"
-Cohesion: 0.13
+Cohesion: 0.12
 Nodes (12): SettingsController, Body, Controller, Get, HttpCode, Post, Put, UseGuards (+4 more)
 
 ### Community 158 - "Client Components Todo Tests"
-Cohesion: 0.20
-Nodes (16): formatDayLabel(), formatTime(), TripMember, WhatsNextWidget(), WhatsNextWidgetProps, FilterType, KAT_COLORS, katColor() (+8 more)
+Cohesion: 0.09
+Nodes (23): "Access token required" when changing password on first login, Backup restore fails with "file too large", Can't log in after setup / ADMIN_EMAIL and ADMIN_PASSWORD seem ignored, "Cannot find module" on startup, Clipboard features not working (copy link, share, etc.), Container won't start: "exec /usr/bin/dumb-init: operation not permitted", CORS error — API requests blocked in the browser, Demo user cannot edit or create (+15 more)
 
 ### Community 159 - "Client Components Collections Tests"
-Cohesion: 0.12
-Nodes (14): ListEditorModalProps, ListsRailProps, MoveToListModalProps, Harness(), listA, listB, renderModal(), CollectionsWidget() (+6 more)
+Cohesion: 0.10
+Nodes (21): Advanced / Tuning, API Docs, Booking Import (KDE Itinerary), Core, `DEFAULT_LANGUAGE` — Supported Codes, Demo Mode, Email / SMTP, `ENCRYPTION_KEY` — Resolution Order (+13 more)
 
 ### Community 160 - "Client Components Map Tests"
-Cohesion: 0.17
-Nodes (19): calculateRoute(), calculateRouteWithLegs(), calculateSegments(), formatDuration(), formatRouteDistance(), generateGoogleMapsUrl(), getDistanceUnit(), nearestNeighborOrder() (+11 more)
+Cohesion: 0.19
+Nodes (15): CachedPhoto, deleteEntry(), filePath(), get(), getErrored(), getInFlight(), inFlight, isReferenced() (+7 more)
 
 ### Community 161 - "Server Services Settingsservice Tests"
-Cohesion: 0.20
-Nodes (18): decrypt_api_key(), encrypt_api_key(), get_key(), maybe_encrypt_api_key(), BOOLEAN_KEYS, bulkUpsertSettings(), DEFAULTABLE_USER_SETTING_KEYS, DefaultableKey (+10 more)
+Cohesion: 0.25
+Nodes (13): BOOLEAN_KEYS, bulkUpsertSettings(), DEFAULTABLE_USER_SETTING_KEYS, DefaultableKey, ENCRYPTED_SETTING_KEYS, getAdminUserDefaults(), getUserSettings(), MASKED_SETTING_KEYS (+5 more)
 
 ### Community 162 - "Controller Server Nest (Server)"
 Cohesion: 0.20
 Nodes (13): delay(), PasskeyController, Body, Controller, Delete, Get, HttpCode, Param (+5 more)
 
 ### Community 163 - "Llm Server Nest Tests"
-Cohesion: 0.17
-Nodes (11): AnthropicClient, OpenAiCompatibleClient, LlmExtractionClient, LlmExtractionFile, LlmExtractionInput, LLM_PROVIDERS, LlmAddonConfig, LlmProvider (+3 more)
+Cohesion: 0.12
+Nodes (24): AnthropicClient, buildNode(), buildNuExtractUserText(), clean(), isNuExtractModel(), nameOrFallback(), NUEXTRACT_TEMPLATE, nuExtractToKiReservations() (+16 more)
 
 ### Community 164 - "Server Services Transitservice Tests"
 Cohesion: 0.15
 Nodes (19): ALLOWED_MODES, cache, cacheGet(), cacheSet(), geocode(), isCoord(), mapStop(), MotisPlaceRaw (+11 more)
 
 ### Community 165 - "Client Components Journey (Client)"
-Cohesion: 0.12
-Nodes (16): EMPTY_TRAIL, JourneyMap, JourneyMapHandle, MapEntry, MapMarkerItem, Props, MobileEntryCard(), MOOD_COLORS (+8 more)
+Cohesion: 0.11
+Nodes (22): Props, EntryCard(), SkeletonCard(), MapView(), JourneyMapAutoHandle, MobileEntryCard(), MOOD_COLORS, MOOD_ICONS (+14 more)
 
 ### Community 166 - "Client Components Journeymapgl (Client)"
-Cohesion: 0.18
-Nodes (13): EMPTY_TRAIL, Item, JourneyMapGL, MapEntry, Props, GlMapProvider, addCustom3dBuildings(), addTerrainAndSky() (+5 more)
+Cohesion: 0.12
+Nodes (23): styleForProvider(), EMPTY_TRAIL, Item, JourneyMapGL, MapEntry, Props, BASEMAP_LANG_OVERRIDES, basemapLanguage() (+15 more)
 
 ### Community 167 - "Client Appearancesettingstab Components (Client)"
-Cohesion: 0.14
-Nodes (16): AppearanceSettingsTab(), channelLum(), contrastRatio(), DESKTOP_GROUPS, DesktopWidgetKey, isHex(), MOBILE_GROUPS, MobileWidgetKey (+8 more)
+Cohesion: 0.06
+Nodes (42): AppearanceSettingsTab(), channelLum(), contrastRatio(), DESKTOP_GROUPS, DesktopWidgetKey, isHex(), MOBILE_GROUPS, MobileWidgetKey (+34 more)
 
 ### Community 168 - "Client Sync Connectivity Tests"
 Cohesion: 0.14
 Nodes (9): listeners, onChange(), probe(), probeNow(), ProbeState, setReachable(), startConnectivityProbe(), requestPersistentStorage() (+1 more)
 
 ### Community 169 - "Server Utils Ssrfguard Tests"
-Cohesion: 0.15
-Nodes (14): RFC-1918, fetchLinkPreview(), checkSsrf(), createPinnedDispatcher(), isAlwaysBlocked(), isInternalHostname(), isPrivateNetwork(), safeFetchFollow() (+6 more)
+Cohesion: 0.12
+Nodes (15): PoiCategoryPill(), Props, PlacesBulkCategoryModal(), PlacesBulkCategoryModalProps, rowStyle, PlacesSidebar, PlacesDropOverlay(), PlacesHeader() (+7 more)
 
 ### Community 170 - "Client Package Scripts Tests"
 Cohesion: 0.10
 Nodes (20): scripts, build, dev, e2e, e2e:report, format, format:check, lint (+12 more)
 
 ### Community 171 - "Client Pages Journeydetailpage (Client)"
-Cohesion: 0.29
-Nodes (14): journeyApi, AddTripDialog(), GalleryView(), JourneySettingsDialog(), formatDate(), groupByDate(), photoUrl(), pickGradient() (+6 more)
+Cohesion: 0.44
+Nodes (9): journeyApi, AddTripDialog(), JourneySettingsDialog(), formatDate(), groupByDate(), pickGradient(), useJourneyDetail(), JourneyDetailPage() (+1 more)
 
 ### Community 172 - "Client Components Collections Tests"
-Cohesion: 0.13
-Nodes (14): CollectionFilterBar(), CollectionFilterBarProps, Opt, CATEGORY_OPTIONS, Harness(), HarnessProps, CollectionList(), PlacesDropOverlay() (+6 more)
+Cohesion: 0.14
+Nodes (11): AdminNotificationsTab(), OauthPublicController, Controller, Get, Headers, HttpCode, Post, Req (+3 more)
 
 ### Community 173 - "Client Components Journey (Client)"
-Cohesion: 0.14
-Nodes (14): Props, SkeletonCard(), MobileEntryView(), MOOD_CONFIG, photoUrl(), WEATHER_CONFIG, LightboxPhoto, Props (+6 more)
+Cohesion: 0.20
+Nodes (14): _parseNumberBodyField(), _parseStringBodyField(), SynologyMemoriesController, Body, Controller, Get, Headers, HttpCode (+6 more)
 
 ### Community 174 - "Client Components Pdf Tests"
-Cohesion: 0.17
+Cohesion: 0.15
 Nodes (15): MobileMapTimeline(), downloadJourneyBookPDF(), esc(), fmtDate(), groupByDate(), md(), pSrc(), renderPhotoBlock() (+7 more)
 
 ### Community 175 - "Addons Server Nest Tests"
-Cohesion: 0.15
-Nodes (10): AddonsController, Controller, Get, UseGuards, AddonsService, Injectable, Addon, { dbMock } (+2 more)
+Cohesion: 0.18
+Nodes (11): AddonsModule, Module, NotificationsModule, Module, build(), { db }, { getCollabFeatures, getBagTracking, getPhotoProviderConfig }, seedUser() (+3 more)
 
 ### Community 176 - "Plugins Server Plugin Tests"
 Cohesion: 0.16
 Nodes (14): appendAudit(), appendsSincePrune, AuditDb, AuditEntry, auditResource(), isAuditable(), MAX_AUDIT_ROWS, pruneAudit() (+6 more)
 
 ### Community 177 - "Vacay Shared Schema Tests"
-Cohesion: 0.12
-Nodes (18): open, VacayAddHolidayCalendarRequest, vacayAddHolidayCalendarRequestSchema, VacayAddYearRequest, vacayAddYearRequestSchema, VacayCompanyHolidayRequest, vacayCompanyHolidayRequestSchema, VacayInviteActionRequest (+10 more)
+Cohesion: 0.06
+Nodes (48): addDays(), BUNDESLAENDER, daysInMonth(), easterSunday(), fmt(), formatDate(), getHolidays(), getWeekday() (+40 more)
 
 ### Community 178 - "Airports Server Scripts (Server)"
 Cohesion: 0.11
 Nodes (16): airports, COUNTRY, __dirname, IATA, ICAO, KEEP, LAT, LNG (+8 more)
 
 ### Community 179 - "Photos Server Nest (Server)"
-Cohesion: 0.20
-Nodes (9): PhotosController, Controller, Get, Headers, Param, Res, UseGuards, PhotosService (+1 more)
+Cohesion: 0.19
+Nodes (10): PhotosController, Controller, Get, Headers, Param, Res, UseGuards, PhotosService (+2 more)
 
 ### Community 180 - "System Notices Server Tests"
-Cohesion: 0.16
-Nodes (11): SystemNoticesController, Controller, HttpCode, Param, Post, UseGuards, SystemNoticesService, Injectable (+3 more)
+Cohesion: 0.09
+Nodes (22): 1. Market Definition, 2. Bottom-Up TAM Calculation, 3. Top-Down Validation, 4. SAM Calculation, 5. SOM Projection, 6. Market Growth, 7. Validation & Sanity Checks, 8. Investment Thesis (+14 more)
 
 ### Community 181 - "Trips Server Nest (Server)"
-Cohesion: 0.17
-Nodes (7): TripsController, Controller, Delete, Get, Param, Res, UseGuards
+Cohesion: 0.05
+Nodes (38): AirtrailController, Body, Controller, Get, HttpCode, Post, Put, Req (+30 more)
 
 ### Community 182 - "Plugins Proxy Server Tests"
-Cohesion: 0.14
-Nodes (11): All, pickInboundHeaders(), PluginsProxyController, SAFE_INBOUND_HEADERS, SAFE_RESPONSE_HEADERS, toRelativeLocation(), Controller, Param (+3 more)
+Cohesion: 0.12
+Nodes (12): All, pickInboundHeaders(), PluginsProxyController, SAFE_INBOUND_HEADERS, SAFE_RESPONSE_HEADERS, toRelativeLocation(), Controller, Param (+4 more)
 
 ### Community 183 - "Client Components Collab (Client)"
-Cohesion: 0.18
-Nodes (13): CollabNote, NoteAuthor, NoteFile, NoteCard(), NoteCardProps, FilePreviewPortal(), FilePreviewPortalProps, NoteFormModalProps (+5 more)
+Cohesion: 0.13
+Nodes (13): cap(), EntryRow, JournalEntryRowsController, normalize(), ProviderResult, safeUrl(), Controller, Get (+5 more)
 
 ### Community 184 - "E2e Server Categories Tests"
-Cohesion: 0.15
+Cohesion: 0.16
 Nodes (14): Global, CategoriesModule, Module, DatabaseModule, Module, MapsModule, Module, build() (+6 more)
 
 ### Community 185 - "Server Package Scripts Tests"
@@ -1227,48 +1281,44 @@ Cohesion: 0.16
 Nodes (16): ChangePasswordRequest, changePasswordRequestSchema, ForgotPasswordRequest, forgotPasswordRequestSchema, LoginRequest, loginRequestSchema, McpTokenCreateRequest, mcpTokenCreateRequestSchema (+8 more)
 
 ### Community 187 - "Wiki Addons Overview"
-Cohesion: 0.11
-Nodes (18): Addons Overview, Admin — Addons, Admin Panel Overview, AI Booking Import, Atlas, Audit Log, Backups, Budget Tracking (+10 more)
+Cohesion: 0.08
+Nodes (20): 2FA Setup Screenshot, How language is detected, Languages, RTL support, See also, Supported languages, Where the language picker appears, Account & Auth (+12 more)
 
 ### Community 188 - "Server Nest Llm Tests"
-Cohesion: 0.25
-Nodes (13): buildNode(), buildNuExtractUserText(), clean(), isNuExtractModel(), nameOrFallback(), NUEXTRACT_TEMPLATE, nuExtractToKiReservations(), parseAmount() (+5 more)
+Cohesion: 0.14
+Nodes (19): transitApi, dateYMDInTz(), fmtDuration(), fmtTimeInTz(), ItineraryCard(), legIcon(), LineBadge(), localToUtcIso() (+11 more)
 
 ### Community 189 - "Appearance Shared Schema"
 Cohesion: 0.12
-Nodes (15): APPEARANCE_DENSITIES, APPEARANCE_PRESET_SCHEMES, APPEARANCE_SCHEME_IDS, appearanceConfigSchema, AppearanceDensity, clampScale(), dashboardWidgetsSchema, DEFAULT_APPEARANCE (+7 more)
+Nodes (14): cap(), normalize(), safeUrl(), Tone, TONES, TripCardBadge, TripCardContributionsController, Controller (+6 more)
 
 ### Community 190 - "Trip Shared Schema"
-Cohesion: 0.14
-Nodes (15): TripAddMemberRequest, tripAddMemberRequestSchema, TripCopyRequest, tripCopyRequestSchema, TripCreateGuestRequest, tripCreateGuestRequestSchema, tripCreateRequestSchema, tripMemberSchema (+7 more)
+Cohesion: 0.18
+Nodes (13): oauthApi, ALL_SCOPES, getScopesByGroup(), SCOPE_GROUP_NAMES, SCOPE_GROUPS, ScopeInfo, ScopeKeys, Props (+5 more)
 
 ### Community 191 - "Client Sync Tileprefetcher Tests"
-Cohesion: 0.28
-Nodes (14): buildTileUrl(), clearTileCache(), computeBbox(), countTiles(), ensureMinSpan(), latToTileY(), lngToTileX(), MAX_TILES (+6 more)
+Cohesion: 0.12
+Nodes (17): capturedConfirmDialogProps, capturedDayDetailPanelProps, capturedDayPlanSidebarProps, capturedFileManagerProps, capturedPlaceFormModalProps, capturedPlaceInspectorProps, capturedPlacesSidebarProps, capturedReservationModalProps (+9 more)
 
 ### Community 192 - "Server Config Services Tests"
-Cohesion: 0.16
-Nodes (12): dataDir, DURATION_UNITS_MS, encKeyFile, ENCRYPTION_KEY, jwtSecretFile, parsedRememberMs, parsedSessionMs, SESSION_DURATION_REMEMBER_SECONDS (+4 more)
+Cohesion: 0.11
+Nodes (18): Admin actions, Audit Log, Authentication, Backups, Database retention, Integrations, IP addresses, Log columns (+10 more)
 
 ### Community 193 - "Server Services Unsplashservice Tests"
-Cohesion: 0.20
-Nodes (11): COVER_UPLOAD, coversDir, searchPlaceImage(), COVER_EXT_BY_TYPE, getUnsplashKey(), isUnsplashCoverUrl(), saveUnsplashCover(), searchUnsplashPhotos() (+3 more)
+Cohesion: 0.11
+Nodes (18): Accommodations, Budget, Compound tools, Core resources, Day Notes, Day Planning, Maps & Weather, MCP Tools and Resources (+10 more)
 
 ### Community 194 - "Trips Server Nest (Server)"
-Cohesion: 0.18
-Nodes (4): Body, Headers, Put, Req
+Cohesion: 0.20
+Nodes (10): Archived Trips, Dashboard Widgets Sidebar, Empty State, Greeting (Mobile), My Trips Dashboard, Per-Trip Actions, Related Pages, Sort Order (+2 more)
 
 ### Community 195 - "Notification Shared Schema Tests"
 Cohesion: 0.16
 Nodes (14): ChannelTestResult, channelTestResultSchema, InAppListResult, inAppListResultSchema, NotificationRespondRequest, notificationRespondRequestSchema, notificationRowSchema, PreferencesUpdateRequest (+6 more)
 
 ### Community 196 - "Client Pages Journeypublic (Client)"
-Cohesion: 0.25
-Nodes (9): DAY_COLORS, EntryEditor(), useIsMobile(), groupByDate(), PublicEntry, PublicGalleryPhoto, PublicPhoto, useJourneyPublic() (+1 more)
-
-### Community 197 - "Slidingtabs Client Components Tests"
-Cohesion: 0.13
-Nodes (6): SlidingTab, SlidingTabs(), SlidingTabsProps, CapturingResizeObserver, TABS, Get
+Cohesion: 0.16
+Nodes (13): DAY_COLORS, LightboxPhoto, Props, groupByDate(), PublicEntry, PublicGalleryPhoto, PublicPhoto, useJourneyPublic() (+5 more)
 
 ### Community 198 - "Plugin Sdk Package"
 Cohesion: 0.13
@@ -1283,32 +1333,32 @@ Cohesion: 0.21
 Nodes (14): apiKey(), decryptApiKey(), decryptMfa(), encryptApiKey(), encryptMfa(), lineQueue, lineWaiters, main() (+6 more)
 
 ### Community 201 - "Controller Server Nest Tests"
-Cohesion: 0.18
-Nodes (9): AirtrailController, Body, Controller, Get, HttpCode, Post, Put, Req (+1 more)
+Cohesion: 0.12
+Nodes (17): 1. Fork & Clone the Repository, 2. Configure Git Remotes, 3. Keep Your Fork Up to Date, 4. Create a Feature Branch, 5. Install Dependencies, 6. Optional: KItinerary (Booking Import), 7. Available Scripts, 8. Commit & Push Your Changes (+9 more)
 
 ### Community 202 - "Shared Tsconfig Compileroptions"
 Cohesion: 0.13
 Nodes (14): compilerOptions, declaration, esModuleInterop, forceConsistentCasingInFileNames, ignoreDeprecations, lib, module, moduleResolution (+6 more)
 
 ### Community 203 - "Client Api Authurl Tests"
-Cohesion: 0.24
-Nodes (9): clearImageQueue(), dequeue(), fetchImageAsBlob(), getAuthUrl(), queue, AuthedImg(), ImageLightbox(), ImageLightboxProps (+1 more)
+Cohesion: 0.12
+Nodes (17): Activating a plugin, Allowed hosts, Building your own, Dependencies between plugins and addons, Enabling plugins, Installing a plugin, Managing a plugin, Notification channels (+9 more)
 
 ### Community 204 - "Client Components Journey (Client)"
-Cohesion: 0.24
-Nodes (10): MoodChip(), WeatherChip(), CheckinCard(), PhotoGrid(), PhotoImg(), Props, GRADIENTS, MOOD_CONFIG (+2 more)
+Cohesion: 0.28
+Nodes (9): MoodChip(), WeatherChip(), CheckinCard(), PhotoGrid(), PhotoImg(), GRADIENTS, MOOD_CONFIG, WEATHER_CONFIG (+1 more)
 
 ### Community 205 - "Client Utils Uploadqueue Tests"
-Cohesion: 0.23
-Nodes (8): JourneyContributor, JourneyState, ResilientResult, uploadFilesResilient(), UploadOpts, UploadProgress, captureVideoPoster(), isVideoFile()
+Cohesion: 0.13
+Nodes (20): DatePicker(), EntryEditor(), GalleryView(), ProviderPicker(), ScrollTrigger(), useIsMobile(), groupPhotosByDate(), GalleryPhoto (+12 more)
 
 ### Community 206 - "Server Scripts Build (Server)"
-Cohesion: 0.24
-Nodes (13): A3_TO_A2, CACHE_DIR, COUNTRIES, __dirname, fetchGeo(), main(), MEDIA(), normalizeAdm0Feature() (+5 more)
+Cohesion: 0.20
+Nodes (14): A3_TO_A2, CACHE_DIR, COUNTRIES, __dirname, fetchGeo(), main(), MEDIA(), normalizeAdm0Feature() (+6 more)
 
 ### Community 207 - "Server Nest Zod Tests"
-Cohesion: 0.22
-Nodes (7): attachZodBodySchemas(), HTTP_METHOD, joinPath(), zodToOpenApi(), Injectable, ZodValidationPipe, setupApiDocs()
+Cohesion: 0.43
+Nodes (5): attachZodBodySchemas(), HTTP_METHOD, joinPath(), zodToOpenApi(), setupApiDocs()
 
 ### Community 208 - "Daily Budget Server Tests"
 Cohesion: 0.21
@@ -1319,8 +1369,8 @@ Cohesion: 0.18
 Nodes (3): META_ENTITY_TYPES, num(), PluginRpcHost
 
 ### Community 210 - "Server Plugins Plugin Tests"
-Cohesion: 0.15
-Nodes (7): PluginFrameController, Controller, Get, Param, Req, Res, { pluginsEnabledMock }
+Cohesion: 0.12
+Nodes (17): Adding a guest, Creating a Link, Creating and revoking, Deleting a Link, Guest Members, Inviting Members, Members List, Opening the Members Panel (+9 more)
 
 ### Community 211 - "Atlas Shared Schema"
 Cohesion: 0.18
@@ -1331,48 +1381,48 @@ Cohesion: 0.20
 Nodes (12): CollabMessageCreateRequest, collabMessageCreateRequestSchema, CollabNoteCreateRequest, collabNoteCreateRequestSchema, CollabNoteUpdateRequest, collabNoteUpdateRequestSchema, CollabPollCreateRequest, collabPollCreateRequestSchema (+4 more)
 
 ### Community 213 - "Journey Shared Schema"
-Cohesion: 0.21
-Nodes (12): JourneyAddTripRequest, journeyAddTripRequestSchema, JourneyContributorRequest, journeyContributorRequestSchema, JourneyCreateRequest, journeyCreateRequestSchema, JourneyProviderPhotosRequest, journeyProviderPhotosRequestSchema (+4 more)
+Cohesion: 0.09
+Nodes (16): PluginUserSettingsController, Body, Controller, Get, HttpCode, Param, Post, Req (+8 more)
 
 ### Community 214 - "Client Weather Weatherwidget (Client)"
 Cohesion: 0.23
 Nodes (10): getWeatherCache(), setWeatherCache(), WEATHER_ICON_MAP, WeatherIconProps, WeatherWidget(), WeatherWidgetProps, acquire(), fetchWeather() (+2 more)
 
 ### Community 215 - "Server Plugins Verify Tests"
-Cohesion: 0.22
+Cohesion: 0.24
 Nodes (8): RFC-8410, ED25519_SPKI_PREFIX, ed25519KeyFromRaw(), parseMinisignPubKey(), parseMinisignSignature(), SignatureError, verifyAuthorSignature(), KEY_ID
 
 ### Community 216 - "Server Package Overrides (Server)"
-Cohesion: 0.15
-Nodes (12): main, name, overrides, file-type, hono, @hono/node-server, ip-address, multer (+4 more)
+Cohesion: 0.11
+Nodes (13): main, name, overrides, file-type, hono, @hono/node-server, ip-address, multer (+5 more)
 
 ### Community 217 - "Server Plugins Safe Tests"
 Cohesion: 0.24
 Nodes (10): DEFAULTS, extractArchive(), ExtractError, ExtractLimits, Member, readTarGz(), readZip(), safeJoin() (+2 more)
 
 ### Community 218 - "Trips Server Nest (Server)"
-Cohesion: 0.21
-Nodes (4): UploadedFile, UseInterceptors, TripsService, Injectable
+Cohesion: 0.12
+Nodes (16): Add the Chart Repository, Admin Account, Basic Install, Encryption Key, Full Values Reference, Image, Ingress, Install: Helm (+8 more)
 
 ### Community 219 - "Client Components Pdf Tests"
 Cohesion: 0.17
 Nodes (9): assignmentForDay, categoryForPlace, dayNote, dayWithPlaces, minimalArgs, multiLegFlight, placeWithDetails, richArgs (+1 more)
 
 ### Community 220 - "Client Utils Filedownload Tests"
-Cohesion: 0.33
-Nodes (8): getCachedBlob(), assertRelativeUrl(), downloadFile(), getFileBlob(), isIosStandalone(), openFile(), SAFE_INLINE_TYPES, triggerAnchorDownload()
+Cohesion: 0.11
+Nodes (16): Authentication options, Endpoint, MCP Overview, Next steps, Rate limits and session limits, Requirements, What you can do, Built-in prompts (+8 more)
 
 ### Community 221 - "Applyappearance Client Theme (Client)"
-Cohesion: 0.26
-Nodes (11): accentTextFor(), AppearanceSnapshot, applyAppearance(), ApplyAppearanceInput, clearAppearanceSnapshot(), DarkModeSetting, resolveDark(), setScaleVar() (+3 more)
+Cohesion: 0.14
+Nodes (12): cap(), DetailItem, normalize(), PlaceDetailsController, ProviderResult, safeUrl(), Controller, Get (+4 more)
 
 ### Community 222 - "I18n Scripts Migrate"
 Cohesion: 0.21
 Nodes (11): __dirname, I18N_OUT, loadLocale(), LOCALE_FILE_MAP, LocaleStrings, main(), ROOT, serializeValue() (+3 more)
 
 ### Community 223 - "Server Nest Llm Tests"
-Cohesion: 0.24
-Nodes (8): EnforcedExtractInput, extractEnforced(), parseJson(), toNativeBase(), isLinkLocal(), safeFetchLlm(), INPUT, { safeFetchLlmMock }
+Cohesion: 0.25
+Nodes (8): Can I restrict who can register?, Can I use TREK offline?, Do I need a Google Maps API key?, Does TREK support single sign-on?, FAQ, How do I update TREK?, How many MCP tokens can I create?, Where is my data stored?
 
 ### Community 224 - "Server Plugins Egress Tests"
 Cohesion: 0.36
@@ -1387,28 +1437,28 @@ Cohesion: 0.35
 Nodes (9): getMood(), getWeather(), moodColor(), MoodDef, MOODS, TAG_STYLES, tagColors(), WeatherDef (+1 more)
 
 ### Community 227 - "Client Components Vacay Tests"
-Cohesion: 0.35
-Nodes (9): addDays(), BUNDESLAENDER, daysInMonth(), easterSunday(), fmt(), formatDate(), getHolidays(), getWeekday() (+1 more)
+Cohesion: 0.13
+Nodes (15): Assigning members to a category, Bag tracking, Categories, Filters, Items, Packing Lists, Permissions, Progress bar (+7 more)
 
 ### Community 228 - "Client Pages Journeypage (Client)"
-Cohesion: 0.36
-Nodes (8): useJourney(), GRADIENTS, JourneyCard(), JourneyPage(), pickGradient(), timeAgo(), computeJourneyLifecycle(), JourneyLifecycle
+Cohesion: 0.18
+Nodes (7): inAppNotificationsApi, NotificationItemProps, useInAppNotifications(), InAppNotification, NotificationState, RawNotification, useInAppNotificationStore
 
 ### Community 229 - "Server Parse Text Tests"
-Cohesion: 0.33
-Nodes (9): pdf-parse, cleanPdfText(), extractPdfText(), extractText(), isPdf(), isTextLike(), stripMarkup(), TEXT_LIKE (+1 more)
+Cohesion: 0.21
+Nodes (12): asProvider(), readInstanceConfig(), readUserConfig(), resolveLlmConfig(), decryptLlmApiKey(), LLM_PROVIDERS, LlmAddonConfig, LlmProvider (+4 more)
 
 ### Community 230 - "Server Db Seeds Tests"
-Cohesion: 0.27
-Nodes (7): initDb(), isOidcOnlyConfigured(), runSeeds(), seedAddons(), seedAdminAccount(), seedCategories(), ENV_KEYS
+Cohesion: 0.05
+Nodes (40): bcrypt, crypto, Database, db, existing, hash, path, runMigrations() (+32 more)
 
 ### Community 231 - "Config Server Nest Tests"
-Cohesion: 0.25
-Nodes (6): ConfigController, Controller, Get, ConfigModule, Module, build()
+Cohesion: 0.12
+Nodes (14): dataDir, DURATION_UNITS_MS, encKeyFile, jwtSecretFile, parsedRememberMs, parsedSessionMs, SESSION_DURATION_REMEMBER_SECONDS, SESSION_DURATION_SECONDS (+6 more)
 
 ### Community 232 - "Trips Server Nest Tests"
-Cohesion: 0.22
-Nodes (4): addDays(), toDateStr(), HttpCode, Post
+Cohesion: 0.13
+Nodes (15): AI fallback for hard-to-read files, Creating a reservation, Editing and deleting, How to import, Import from booking confirmation, Needs review flag, Pending and Confirmed, Real-time sync (+7 more)
 
 ### Community 233 - "Usetransportroutes Client Hooks Tests"
 Cohesion: 0.27
@@ -1439,24 +1489,24 @@ Cohesion: 0.27
 Nodes (8): DetailedWeatherQuery, detailedWeatherQuerySchema, HourlyEntry, hourlyEntrySchema, WeatherQuery, weatherQuerySchema, WeatherResult, weatherResultSchema
 
 ### Community 240 - "Client Components Collections (Client)"
-Cohesion: 0.33
-Nodes (8): AV_COLORS, CollectionHero(), CollectionHeroProps, initials(), linkHost(), ShareCollectionModalProps, CollectionLink, CollectionMember
+Cohesion: 0.25
+Nodes (8): Admin-enforced 2FA, Demo users, Disabling 2FA, Logging in with 2FA, Rate limits, Setting up 2FA, Two-Factor Authentication, What it is
 
 ### Community 241 - "Client Components Journey (Client)"
-Cohesion: 0.25
-Nodes (7): MapView(), JourneyMapAuto, JourneyMapAutoHandle, JourneyMapGL, MapEntry, Props, JourneyMapGLHandle
+Cohesion: 0.14
+Nodes (11): EMPTY_TRAIL, JourneyMap, JourneyMapHandle, MapEntry, MapMarkerItem, Props, JourneyMapAuto, JourneyMapGL (+3 more)
 
 ### Community 242 - "E2e Assignments Server Tests"
 Cohesion: 0.25
 Nodes (8): AssignmentsModule, Module, { asg }, build(), { canAccessTrip }, { checkPermission }, { db }, { reconcileTripSkeletons }
 
 ### Community 243 - "Trips E2e Server Tests"
-Cohesion: 0.28
+Cohesion: 0.29
 Nodes (7): TripsModule, Module, build(), { canAccessTrip }, { checkPermission }, { db }, { tripSvc }
 
 ### Community 245 - "Server Tests Unit Tests"
-Cohesion: 0.22
-Nodes (6): ALLOWED_DESTRUCTIVE, DestructiveHit, here, MIGRATIONS_PATH, migrationsSource, scannableSource
+Cohesion: 0.14
+Nodes (14): 1. Host and build your plugin, 2. Validate, 3. Pack, 4. Create the GitHub release, 5. Generate the registry entry, 6. Preflight — run the CI checks locally, 7. Open the registry PR, One-shot: `release` (+6 more)
 
 ### Community 246 - "Category Shared Schema"
 Cohesion: 0.31
@@ -1467,8 +1517,8 @@ Cohesion: 0.31
 Nodes (7): FileLinkRequest, fileLinkRequestSchema, FileUpdateRequest, fileUpdateRequestSchema, nullableIdField, PhotoVariant, photoVariantSchema
 
 ### Community 248 - "Client Components Journey (Client)"
-Cohesion: 0.36
-Nodes (5): DatePicker(), ProviderPicker(), ScrollTrigger(), groupPhotosByDate(), JourneyTrip
+Cohesion: 0.15
+Nodes (13): Accessing Collections, Adding places, Categories, Collections, Custom labels, Filtering and bulk actions, Lists, Member roles (+5 more)
 
 ### Community 249 - "Client Components Planner (Client)"
 Cohesion: 0.32
@@ -1481,10 +1531,6 @@ Nodes (5): Country, Iso31662, iso-3166-2, Subdivision, SubdivisionDetail
 ### Community 251 - "Client Tests Unit Tests"
 Cohesion: 0.25
 Nodes (3): ApiClientModule, freshImports(), PhotoServiceModule
-
-### Community 252 - "Mcp Wiki Server (Server)"
-Cohesion: 0.32
-Nodes (8): Model Context Protocol Server, OAuth 2.1 Authentication, MCP Overview, MCP Prompts, MCP Scopes, MCP Setup, MCP Tools and Resources, OIDC / Single Sign-On
 
 ### Community 253 - "E2e Days Server Tests"
 Cohesion: 0.29
@@ -1499,44 +1545,40 @@ Cohesion: 0.29
 Nodes (7): PlacesModule, Module, build(), { canAccessTrip }, { checkPermission }, { db }, { pl }
 
 ### Community 256 - "Controller Server Plugins Tests"
-Cohesion: 0.25
-Nodes (4): PlaceDetailsController, Controller, UseGuards, { canAccessTrip, placeTrip, pluginsEnabled }
+Cohesion: 0.15
+Nodes (13): Authentication reference, Claude.ai, Claude Desktop, Create a machine client, Cursor, VS Code, Windsurf, and Zed, How token management works, MCP Setup, Option A: OAuth 2.1 (recommended) (+5 more)
 
 ### Community 257 - "Controller Server Plugins Tests"
-Cohesion: 0.25
-Nodes (4): TripWarningsController, Controller, UseGuards, { canAccessTrip, pluginsEnabled }
+Cohesion: 0.20
+Nodes (6): Level, TripWarningsController, Controller, UseGuards, Warning, { canAccessTrip, pluginsEnabled }
 
 ### Community 258 - "E2e Trip Invite Tests"
 Cohesion: 0.29
 Nodes (7): TripInviteModule, Module, build(), { checkPermission }, { db, canAccessTrip }, { inviteSvc }, { joinTripAsMember }
 
 ### Community 260 - "Server Tests Unit Tests"
-Cohesion: 0.25
-Nodes (5): { isDemoEmail }, req, thrown(), thrownAsync(), user
+Cohesion: 0.12
+Nodes (16): Closing page, Cover page, Cover page, Entry pages, Font, Footer, Format, How rendering works (+8 more)
 
 ### Community 261 - "Oauth Shared Schema (Client)"
 Cohesion: 0.36
 Nodes (6): OauthClientCreateRequest, oauthClientCreateRequestSchema, OauthConsentRequest, oauthConsentRequestSchema, OauthTokenRequest, oauthTokenRequestSchema
 
 ### Community 262 - "Todo Shared Schema"
-Cohesion: 0.36
-Nodes (6): TodoCategoryAssigneesRequest, todoCategoryAssigneesRequestSchema, todoCreateItemRequestSchema, TodoReorderRequest, todoReorderRequestSchema, todoUpdateItemRequestSchema
+Cohesion: 0.17
+Nodes (12): Authentication, Backups, Content Security Policy, Encryption & Secrets, HTTPS & Network, Monitoring, Password Policy, Plugin Runtime Hardening (+4 more)
 
 ### Community 263 - "Client E2e Server (Client)"
 Cohesion: 0.29
 Nodes (5): child, dbFile, env, here, serverDir
 
 ### Community 264 - "Client Components Map (Client)"
-Cohesion: 0.43
-Nodes (6): attachLocationMarker(), buildLocationEl(), ensurePulseStyle(), LocationMarkerHandle, MarkerConstructor, GeoPosition
+Cohesion: 0.18
+Nodes (9): BookingImportModule, Module, FeaturesController, Controller, execFileAsync, KitineraryExtractorService, Injectable, KiReservation (+1 more)
 
 ### Community 265 - "Client Store Journeystore Tests"
 Cohesion: 0.48
 Nodes (6): buildEntry(), buildJourney(), buildJourneyDetail(), buildPhoto(), initialState, nextId()
-
-### Community 266 - "Wiki Encryption Key"
-Cohesion: 0.29
-Nodes (7): Encryption Key, TREK Docker Image, 2FA Setup Screenshot, Quick Start, Reverse Proxy, Security Hardening, Two-Factor Authentication
 
 ### Community 267 - "Plugin Sdk Tsconfig"
 Cohesion: 0.29
@@ -1547,12 +1589,12 @@ Cohesion: 0.29
 Nodes (3): baselinePath, dataDir, dbPath
 
 ### Community 269 - "E2e Collab Server Tests"
-Cohesion: 0.33
-Nodes (6): CollabModule, Module, build(), { checkPermission }, { db }, { svc }
+Cohesion: 0.08
+Nodes (23): AdminModule, Module, AuthModule, Module, BackupModule, Module, TrekExceptionFilter, Catch (+15 more)
 
 ### Community 270 - "E2e Memories Server Tests"
-Cohesion: 0.33
-Nodes (6): MemoriesModule, Module, build(), { canAccessUserPhoto }, { db }, { unified, immich, synology }
+Cohesion: 0.21
+Nodes (12): JourneyAddTripRequest, journeyAddTripRequestSchema, JourneyContributorRequest, journeyContributorRequestSchema, JourneyCreateRequest, journeyCreateRequestSchema, JourneyProviderPhotosRequest, journeyProviderPhotosRequestSchema (+4 more)
 
 ### Community 271 - "E2e Packing Server Tests"
 Cohesion: 0.33
@@ -1563,24 +1605,24 @@ Cohesion: 0.33
 Nodes (6): ShareModule, Module, build(), { checkPermission }, { db, canAccessTrip }, { shareSvc }
 
 ### Community 273 - "E2e Tags Server Tests"
-Cohesion: 0.33
-Nodes (6): TagsModule, Module, build(), { db }, { mocks }, tag
+Cohesion: 0.27
+Nodes (9): geodesicArcs(), greatCircle(), FRA, ICN, JFK, YVR, toDeg(), toRad() (+1 more)
 
 ### Community 274 - "E2e Todo Server Tests"
 Cohesion: 0.33
 Nodes (6): TodoModule, Module, build(), { checkPermission }, { db }, { svc }
 
 ### Community 275 - "Budget Server Tests Tests"
-Cohesion: 0.29
-Nodes (5): { broadcast }, { budget }, { checkPermission }, { dbMock }, { getRates }
+Cohesion: 0.17
+Nodes (12): Common fields, Endpoints, Flight-specific fields, Flights, In the day plan, On the map, Public transit search, Train-specific fields (multi-leg route) (+4 more)
 
 ### Community 276 - "Server Tests Unit Tests"
-Cohesion: 0.29
-Nodes (6): helpers, immich, res, synology, unified, ws
+Cohesion: 0.17
+Nodes (12): Admin-only events, Configuring the matrix, In-app notification center, Notification channels, Notification events, Notifications, ntfy configuration, Per-trip preferences (+4 more)
 
 ### Community 277 - "Server Tests Unit Tests"
-Cohesion: 0.29
-Nodes (5): { broadcast }, { checkPermission }, { dbMock }, { pk }, { send }
+Cohesion: 0.27
+Nodes (9): buildPlacePopupHtml(), buildPoiPopupHtml(), esc(), iconSvg(), isDisplayablePhoto(), PlaceWithCategory, POI_CATEGORIES, POI_CATEGORY_BY_KEY (+1 more)
 
 ### Community 278 - "Server Tests Unit Tests"
 Cohesion: 0.29
@@ -1591,20 +1633,20 @@ Cohesion: 0.33
 Nodes (4): invoke, navigate, toast, wsListeners
 
 ### Community 280 - "Plugin Wiki System"
-Cohesion: 0.47
-Nodes (6): TREK Plugin System, Plugin Cookbook, Plugin Development, Plugin Permissions, Plugin Publishing, Plugins
+Cohesion: 0.08
+Nodes (19): Accommodation-specific fields, Accommodations, Creating an accommodation, In the Day Detail panel, In the day plan sidebar, In the Reservations panel, Addon list, Addons Overview (+11 more)
 
 ### Community 282 - "Addons E2e Server Tests"
-Cohesion: 0.40
-Nodes (5): AddonsModule, Module, build(), { db }, { getCollabFeatures, getBagTracking, getPhotoProviderConfig }
+Cohesion: 0.29
+Nodes (7): PaginationQuery, paginationQuerySchema, Id, idParamSchema, idSchema, isoDateTime, nonEmptyString
 
 ### Community 283 - "Atlas E2e Server Tests"
 Cohesion: 0.40
 Nodes (5): AtlasModule, Module, build(), { db }, { mocks }
 
 ### Community 284 - "Backup E2e Server Tests"
-Cohesion: 0.40
-Nodes (5): BackupModule, Module, { backupSvc }, build(), { db }
+Cohesion: 0.27
+Nodes (7): initDb(), isOidcOnlyConfigured(), runSeeds(), seedAddons(), seedAdminAccount(), seedCategories(), ENV_KEYS
 
 ### Community 285 - "Feeds E2e Server Tests"
 Cohesion: 0.40
@@ -1619,8 +1661,8 @@ Cohesion: 0.47
 Nodes (4): OidcCallbackQuery, oidcCallbackQuerySchema, OidcExchangeQuery, oidcExchangeQuerySchema
 
 ### Community 289 - "Settings Shared Schema"
-Cohesion: 0.47
-Nodes (4): SettingsBulkRequest, settingsBulkRequestSchema, SettingUpsertRequest, settingUpsertRequestSchema
+Cohesion: 0.20
+Nodes (10): Active and closed sections, Closing a poll manually, Collab Polls, Creating a poll, Deadline, Deleting a poll, Related pages, Results (+2 more)
 
 ### Community 290 - "Client Package Name (Client)"
 Cohesion: 0.40
@@ -1634,9 +1676,13 @@ Nodes (4): BANNED, bannedRe, pagesDir, violations
 Cohesion: 0.40
 Nodes (4): __dirname, iconsDir, sizes, svgBuffer
 
+### Community 294 - "Client Tests Setup Tests"
+Cohesion: 0.18
+Nodes (10): Admin Screenshot, 10. Client store & dismissal, 11. Sorting & priority, 14. Rules & constraints, 1. Architecture overview, 2. Data flow, 4. The notice registry, System Notices — Technical Documentation & Dev Guide (+2 more)
+
 ### Community 295 - "Wiki Collab Addon"
-Cohesion: 0.40
-Nodes (5): Collab Addon, WebSocket Transport, Collab Widget Screenshot, Real-Time Collaboration, What's Next Widget
+Cohesion: 0.18
+Nodes (11): Attachments, Categories, Collab Notes, Creating a note, Editing a note, Expanding a note, Filtering, Markdown support (+3 more)
 
 ### Community 296 - "Docs Screenshots Budget"
 Cohesion: 0.40
@@ -1651,20 +1697,20 @@ Cohesion: 0.40
 Nodes (5): scripts, build, prepublishOnly, test, typecheck
 
 ### Community 299 - "Server Nest Integrations (Server)"
-Cohesion: 0.40
-Nodes (4): Body, Headers, Param, Post
+Cohesion: 0.18
+Nodes (11): 6. Condition system, `addonEnabled`, `always`, Built-in conditions, Combining conditions (AND), `custom`, `dateWindow`, `existingUserBeforeVersion` (+3 more)
 
 ### Community 300 - "Maps Server Tests Tests"
-Cohesion: 0.50
-Nodes (4): makeDb(), { maps }, { serveFilePath }, svc()
+Cohesion: 0.20
+Nodes (9): avatarsDir, backupsDir, bootstrap(), coversDir, filesDir, onListen(), photosDir, tmpDir (+1 more)
+
+### Community 302 - "Client Usecountup Adminstatcard (Client)"
+Cohesion: 0.18
+Nodes (11): Admin — Users and Invites, Creating a user directly, Creating an invite, Delete a user, Edit a user, Invite links, Invite list, Permissions (+3 more)
 
 ### Community 303 - "Docker Compose Mcp"
-Cohesion: 0.50
-Nodes (4): Docker Compose Configuration, MCP Integration, Third-party data & attributions, TREK README
-
-### Community 304 - "Wiki Bookings Kde"
-Cohesion: 0.50
-Nodes (4): KDE Itinerary, Reservations Panel Screenshot, Reservations & Bookings, Transport: Flights, Trains & Cars
+Cohesion: 0.09
+Nodes (20): Docker Compose Configuration, geoBoundaries — country & sub-national boundaries, OpenStreetMap — geocoding, OurAirports — airport reference data, Third-party data & attributions, 🧩 Addons (admin-toggleable), ⚙️ Admin & customisation, 🤖 AI / MCP (+12 more)
 
 ### Community 306 - "Plugin Sdk Package"
 Cohesion: 0.50
@@ -1675,24 +1721,28 @@ Cohesion: 0.50
 Nodes (4): repository, directory, type, url
 
 ### Community 309 - "Health Server Nest (Server)"
-Cohesion: 0.50
-Nodes (3): Body, Post, UseGuards
+Cohesion: 0.18
+Nodes (11): Budget summary, Budget Tracking, Categories, Currency, Expense items, Exporting, Permissions, See also (+3 more)
+
+### Community 310 - "Server Services Passwordpolicy Tests"
+Cohesion: 0.18
+Nodes (11): Collab Chat, Deleting messages, Emoji, Message styling, Reactions, Read-only viewers, Related pages, Replies (+3 more)
 
 ### Community 311 - "Server Services Usercleanupservice (Server)"
-Cohesion: 0.83
-Nodes (3): cleanupUserReferences(), deleteUserCompletely(), erasePluginUserData()
+Cohesion: 0.18
+Nodes (11): Cover Image, Creating a Trip, Dates, Description (optional), Fields, Members, Opening the Dialog, Related Pages (+3 more)
 
 ### Community 312 - "Charts Trek Readme"
-Cohesion: 0.67
-Nodes (3): TREK Helm Chart README, Helm Chart Metadata, Helm Chart Values
+Cohesion: 0.29
+Nodes (6): Features, Files, Helm Repository, Notes, TREK Helm Chart, Usage
 
 ### Community 313 - "Client Public Icons (Client)"
 Cohesion: 0.67
 Nodes (3): Client Entry Point, TREK Loading Dark GIF, TREK Loading Light GIF
 
 ### Community 316 - "Code Of Conduct"
-Cohesion: 0.67
-Nodes (3): Contributor Covenant 3.0 Code of Conduct, Contributing to TREK, Pull Request Template
+Cohesion: 0.20
+Nodes (9): Addressing and Repairing Harm, Attribution, Contributor Covenant 3.0 Code of Conduct, Encouraged Behaviors, Other Restrictions, Our Pledge, Reporting an Issue, Restricted Behaviors (+1 more)
 
 ### Community 318 - "Plugin Sdk Package"
 Cohesion: 0.67
@@ -1714,25 +1764,337 @@ Nodes (3): Portainer UI: Add Stack Button, Portainer UI: Deploy Stack Action, Po
 Cohesion: 0.67
 Nodes (3): Portainer UI: Force Update and Re-pull Image Dialog, Portainer UI: Update Stack Action, Portainer UI: Updating Image Version in Compose
 
+### Community 338 - "Plugin Sdk Readme"
+Cohesion: 0.18
+Nodes (10): Build a native UI (page / widget), Commands, Develop with a live reload loop, Exports, Publish — one command, Scaffold a plugin, Sign your releases (optional, recommended), Test without a running TREK (+2 more)
+
+### Community 339 - "Plugin Sdk Examples"
+Cohesion: 0.40
+Nodes (4): Permissions, Run it, Trip Doctor, What it does
+
+### Community 355 - "Readme Server Nest (Server)"
+Cohesion: 0.22
+Nodes (8): Cross-cutting Foundation pieces, Definition of Done (per module), How to write the tests, Migrated so far, Module layout (per domain), NestJS migration layer — module & test guide, Parity gotchas worth remembering, Parity is law
+
+### Community 357 - "Wiki Accommodations Day"
+Cohesion: 0.18
+Nodes (11): Browsing and filtering, Documents and Files, Downloading, Linking files to places, reservations, or assignments, Permissions, Previewing files, See also, Starring (+3 more)
+
+### Community 360 - "Wiki Collab Chat"
+Cohesion: 0.18
+Nodes (11): After setup, Configuring a provider, Immich, Multiple providers, Photo Providers, Required API key permissions, Required DSM account permissions, See also (+3 more)
+
+### Community 361 - "Wiki Contributing Development"
+Cohesion: 0.18
+Nodes (11): Before You Update, Database Migrations, Docker Compose (Recommended), Docker Run, Encryption Key Note, Image Tags, Next Steps, Portainer (+3 more)
+
+### Community 362 - "Wiki Map Features"
+Cohesion: 0.25
+Nodes (8): 3D Buildings & Terrain, Default map center, High Quality Mode *(Experimental)*, Leaflet — tile source, Map provider, Map Settings, Mapbox GL — access token and style, See also
+
+### Community 363 - "Wiki Packing Lists"
+Cohesion: 0.12
+Nodes (14): Adding categories to a template, Adding items to a category, Admin — Packing Templates, Applying templates to a trip, Creating a template, Deleting, Editing inline, Related pages (+6 more)
+
+### Community 364 - "Wiki Trip Members"
+Cohesion: 0.20
+Nodes (10): Adding tasks, Layout, Permissions, Priority levels, See also, Sidebar filters, Sort by priority, Task fields (+2 more)
+
+### Community 384 - "Security"
+Cohesion: 0.40
+Nodes (4): Reporting a Vulnerability, Scope, Security Policy, Supported Versions
+
+### Community 399 - "Trademarks"
+Cohesion: 0.20
+Nodes (9): Distribution of executable code that you have compiled, or modified code, Distribution of unmodified source code or unmodified executable code we have compiled, In general, Introduction, Mobile wrappers, hosted instances, and forks, Our trademarks, Questions and permission requests, Statements about your software's relation to TREK (+1 more)
+
+### Community 401 - "Wiki Admin Categories"
+Cohesion: 0.20
+Nodes (10): Action categories, Admin — Permissions, Budget, Packing & Collaboration, Changing permissions, Content & Schedule, Files, Members, Related pages (+2 more)
+
+### Community 402 - "Wiki Admin Github"
+Cohesion: 0.20
+Nodes (10): Admin: instance-wide configuration, AI Booking Import, Choosing a provider, Good to know, How it fits with normal import, Importing a booking with AI, Per-user configuration, Pulling a local model (+2 more)
+
+### Community 403 - "Wiki Admin Packing"
+Cohesion: 0.20
+Nodes (10): Accessing Atlas, Atlas, Bucket list, Marking countries as visited, Plugin country layers, See also, Statistics, Sub-national regions (+2 more)
+
+### Community 404 - "Wiki Admin Users"
+Cohesion: 0.20
+Nodes (10): Before You Start, Code Quality, Commit Messages, Contributing, Development Setup, PR Description, Pull Request Guidelines, Tech Stack (+2 more)
+
+### Community 421 - "Wiki Collab Polls"
+Cohesion: 0.20
+Nodes (10): Common optional variables, Health Check, Image Tags, Install: Docker, Limitations of `docker run`, Named Volumes, Next Steps, Run Command (+2 more)
+
+### Community 422 - "Wiki Dashboard Widgets"
+Cohesion: 0.20
+Nodes (10): Compose File, Environment Variables, HTTPS and Reverse Proxy, Image Tags, Install: Docker Compose, Named Volumes, Next Steps, Security Hardening Explained (+2 more)
+
+### Community 423 - "Wiki Display Settings"
+Cohesion: 0.20
+Nodes (10): After Install, Binding to a specific network interface, Configuration, Default container specs, Install, Install: Proxmox VE (LXC), Next Steps, Prerequisites (+2 more)
+
+### Community 424 - "Wiki Documents And"
+Cohesion: 0.20
+Nodes (10): Advanced Variables, After Install, Core Variables (always visible), Install: Unraid, Install via Community Applications, Next Steps, Ports & Paths, Prerequisite (+2 more)
+
+### Community 425 - "Wiki Faq"
+Cohesion: 0.20
+Nodes (10): Accessing Journey, Creating a journey, Journal entries, Journey Journal, Map view, Mobile timeline, Plugin entry rows, Public sharing (+2 more)
+
+### Community 426 - "Wiki Install Docker"
+Cohesion: 0.20
+Nodes (10): Demo mode, First user, Forced password change, Invite link flow, Login and Registration, Password requirements, Rate limiting, Registering (+2 more)
+
+### Community 427 - "Wiki Install Helm"
+Cohesion: 0.20
+Nodes (10): Addon-gated resources, Addon-gated tools, Atlas _(Atlas addon required)_, Collab _(Collab addon required)_, Journey _(Journey addon required)_, MCP Addon Tools and Resources, Packing _(Packing addon required)_, Related (+2 more)
+
+### Community 428 - "Wiki Install Portainer"
+Cohesion: 0.20
+Nodes (10): Install as an app (PWA), Limitations, Offline mode, Offline Mode and PWA, See also, Settings → Offline, Stats & cache, Sync conflicts (+2 more)
+
+### Community 429 - "Wiki Install Unraid"
+Cohesion: 0.20
+Nodes (10): Declaring them, Not a permission — inter-plugin calls & events, Not a permission — settings-page actions, `operatorEgress` — hosts only the operator knows, Outbound network — `http:outbound` vs `http:outbound:<host>`, Plugin Permissions, Publishing — the `trek-plugin` CLI, Reference (+2 more)
+
+### Community 430 - "Wiki Invite Links"
+Cohesion: 0.22
+Nodes (8): Commit messages, Contributing to TREK, Development Environment, Ground Rules, More Details, Pull Requests, Your PR should include:, Your PR will be closed if it:
+
+### Community 431 - "Wiki Languages"
+Cohesion: 0.22
+Nodes (9): Blur booking codes, Booking route labels, Color mode, Display Settings, Language, Route calculation, See also, Temperature unit (+1 more)
+
+### Community 432 - "Wiki Login And"
+Cohesion: 0.29
+Nodes (6): { broadcastMock }, invokePrompt(), invokePromptText(), { isAddonEnabledMock }, { mockGetTripSummary }, { testDb, dbMock }
+
+### Community 433 - "Wiki Mcp Addon"
+Cohesion: 0.25
+Nodes (8): Getting Around, Layout, Mobile Layout, Related Pages, Splash Screen, Tabs, Trip Planner Overview, Undo
+
+### Community 434 - "Wiki My Trips"
+Cohesion: 0.25
+Nodes (8): Accessing Vacay, Calendar view, Inviting collaborators, Live sync, See also, Vacay, What Vacay is, Year plans
+
+### Community 435 - "Wiki Notifications"
+Cohesion: 0.22
+Nodes (9): Additional configuration, Addon categories, Admin — Addons, Enabling or disabling an addon, Global addons, Integration addons, Related pages, Trip addons (+1 more)
+
+### Community 436 - "Wiki Pdf Export"
+Cohesion: 0.22
+Nodes (9): Audit log, Auto-backup, Backups, Before updating TREK, Manual backup, Restoring a backup, See also, What a backup contains (+1 more)
+
+### Community 437 - "Wiki Photo Providers"
+Cohesion: 0.22
+Nodes (9): Addons _(admin-toggleable)_, Admin, AI / MCP Integration, Collaboration, Features, Get Started, Planning, Travel Management (+1 more)
+
+### Community 438 - "Wiki Places And"
+Cohesion: 0.22
+Nodes (9): Compose Content, Create a Stack, Image Tags, Install: Portainer, Named Volumes, Next Steps, Prerequisite, Updating (+1 more)
+
+### Community 439 - "Wiki Public Share"
+Cohesion: 0.11
+Nodes (17): Assigning places to a day, Day Detail panel, Day notes, Day Plans and Notes, Day timeline, Multi-day reservations, The Day Plan sidebar, Toolbar actions (+9 more)
+
+### Community 440 - "Wiki Tags And"
+Cohesion: 0.22
+Nodes (9): Adding a place, Entering coordinates manually, Importing multiple places, Pasting a Google Maps URL, Place fields, Places and Search, Searching for a place, With a Google Maps API key (+1 more)
+
+### Community 441 - "Wiki Todos And"
+Cohesion: 0.25
+Nodes (8): 12. How-to recipes, Add a custom condition, Add a new modal notice, Add a notice with an action CTA, Create a multipage upgrade announcement, Retire a notice (stop showing it), Show a notice only during a campaign window, Show a notice only if an addon is enabled
+
+### Community 442 - "Wiki Troubleshooting"
+Cohesion: 0.25
+Nodes (7): Building, Koffi, License, Permissions, Screenshots, Setup, What it does
+
+### Community 443 - "Wiki Updating"
+Cohesion: 0.29
+Nodes (5): bridge, cafe, Handlers, places, TFnProbe()
+
+### Community 444 - "Wiki Vacay"
+Cohesion: 0.33
+Nodes (6): CollabModule, Module, build(), { checkPermission }, { db }, { svc }
+
+### Community 445 - "Wiki Weather Forecasts"
+Cohesion: 0.29
+Nodes (7): ReservationsModule, Module, build(), { canAccessTrip }, { checkPermission }, { db }, { resv, budget, day }
+
+### Community 446 - "Day Plans and Notes"
+Cohesion: 0.29
+Nodes (3): { createReadStream }, thrown(), user
+
+### Community 447 - "Encryption Key Rotation"
+Cohesion: 0.25
+Nodes (8): Backing up the key, Encryption Key Rotation, Key resolution order, Rotating the key, See also, Upgrading from very old versions, What happens if the key is lost, What the encryption key protects
+
+### Community 448 - "Internal Network Access"
+Cohesion: 0.25
+Nodes (8): Always blocked (no override possible), Audit log, Blocked unless `ALLOW_INTERNAL_NETWORK=true`, Default behavior, DNS rebinding protection, Internal Network Access, See also, When to enable
+
+### Community 449 - "User Settings"
+Cohesion: 0.25
+Nodes (8): Account tab summary, Display tab, Integrations tab, Map tab, Navigating to Settings, See also, Tabs, User Settings
+
+### Community 450 - "system-notices.e2e.test.ts"
+Cohesion: 0.32
+Nodes (6): SystemNoticesModule, Module, build(), { db }, { mockGetActive, mockDismiss }, notice
+
+### Community 451 - "ki-reservation.schema.ts"
+Cohesion: 0.29
+Nodes (6): KI_RESERVATION_JSON_SCHEMA, KI_RESERVATION_TYPES, KiReservationArrayDto, kiReservationArraySchema, KiReservationDto, kiReservationSchema
+
+### Community 452 - "Admin — Categories"
+Cohesion: 0.29
+Nodes (7): Admin — Categories, Creating a category, Deleting a category, Editing a category, List ordering, Related pages, What categories are
+
+### Community 453 - "Demo Mode"
+Cohesion: 0.29
+Nodes (7): Demo Mode, Enabling demo mode, Hourly reset, Limitations, Saving a baseline, See also, What the demo user can and cannot do
+
+### Community 454 - "Reverse Proxy"
+Cohesion: 0.29
+Nodes (7): Caddy, HTTPS Environment Variables, Next Steps, Nginx, Reverse Proxy, Two Hard Requirements, Why HTTPS Matters for TREK
+
+### Community 455 - "Page pattern: wiring container + data hook"
+Cohesion: 0.33
+Nodes (5): Enforcement, Notes, Page pattern: wiring container + data hook, What goes where, Why
+
+### Community 456 - "Appearance & theming"
+Cohesion: 0.33
+Nodes (5): Allowed to stay inline / literal, Appearance & theming, How it works, The contract (enforced by `npm run theme:lint`), Token taxonomy
+
+### Community 457 - "9. i18n — translation keys"
+Cohesion: 0.33
+Nodes (6): 9. i18n — translation keys, Adding keys, `bodyParams` interpolation, Key naming convention, Multiline bodies (modals only), Pager i18n keys
+
+### Community 458 - "jimp"
+Cohesion: 0.29
+Nodes (5): jimp, downscale(), makeJpeg(), testDb, TMP_DIR
+
+### Community 459 - "admin.e2e.test.ts"
+Cohesion: 0.29
+Nodes (7): Admin panel (runtime configuration), New-user registration via SSO, OIDC / Single Sign-On, Optional environment variables, Prerequisites, User flow, What OIDC gives you
+
+### Community 460 - "notifications.e2e.test.ts"
+Cohesion: 0.29
+Nodes (7): Creating a share link, Journey public share, Permission toggles, Public Share Links, Related pages, Revoking a share link, What the public viewer shows
+
+### Community 461 - "vacay.e2e.test.ts"
+Cohesion: 0.40
+Nodes (5): Module, VacayModule, build(), { db }, { svc }
+
+### Community 462 - "kitineraryMapper.test.ts"
+Cohesion: 0.33
+Nodes (3): BER, FRA, HND
+
+### Community 463 - "airport.schema.ts"
+Cohesion: 0.47
+Nodes (4): Airport, airportSchema, AirportSearchQuery, airportSearchQuerySchema
+
+### Community 464 - "Accommodations"
+Cohesion: 0.29
+Nodes (7): Access control, Conflict handling, Real-Time Collaboration, Real-time sync, Related pages, The Collab addon, WebSocket transport
+
+### Community 465 - "Admin — GitHub Releases"
+Cohesion: 0.33
+Nodes (6): Admin — GitHub Releases, Related pages, Release timeline, Support and resources, Version check, When to check
+
+### Community 466 - "Dashboard Widgets"
+Cohesion: 0.33
+Nodes (6): Currency Converter, Dashboard Widgets, See also, Showing and hiding widgets, Timezone Clock, Where they appear
+
+### Community 467 - "Quick Start"
+Cohesion: 0.33
+Nodes (6): Access TREK, First User, Next Steps, Prerequisites, Quick Start, Run TREK
+
+### Community 468 - "Route Optimization"
+Cohesion: 0.33
+Nodes (6): Export day to Google Maps, Optimize route, Route calculation, Route calculation on/off, Route display, Route Optimization
+
+### Community 469 - "Tags and Categories"
+Cohesion: 0.33
+Nodes (6): Global Place Categories, Personal Tags, See also, Tags and Categories, When to use which, Where to manage them
+
+### Community 470 - "5. Notice fields reference"
+Cohesion: 0.40
+Nodes (5): 5. Notice fields reference, Character limits, `NoticeMedia`, Optional fields, Required fields
+
+### Community 471 - "PULL_REQUEST_TEMPLATE.md"
+Cohesion: 0.40
+Nodes (4): Checklist, Description, Related Issue or Discussion, Type of Change
+
+### Community 472 - "@trek/shared"
+Cohesion: 0.40
+Nodes (4): Consumption (dev), Not yet here, Rules, @trek/shared
+
+### Community 473 - "Admin Panel Overview"
+Cohesion: 0.40
+Nodes (5): Accessing the Admin Panel, Admin Panel Overview, Plugin activity and audit, Related pages, Tabs
+
+### Community 474 - "13. Testing"
+Cohesion: 0.50
+Nodes (4): 13. Testing, Client unit tests, Running all notice tests, Server unit tests
+
+### Community 475 - "7. Display types"
+Cohesion: 0.50
+Nodes (4): 7. Display types, `banner`, `modal`, `toast`
+
+### Community 476 - "8. CTAs (call to action)"
+Cohesion: 0.50
+Nodes (4): 8. CTAs (call to action), `action` — run a registered client-side handler, Dismiss behaviour summary, `nav` — navigate to a route
+
+### Community 479 - "3. Database schema"
+Cohesion: 0.67
+Nodes (3): 3. Database schema, `user_notice_dismissals`, `users` columns (added by migration 101)
+
+### Community 480 - "collectionPlaceUpdateRequestSchema"
+Cohesion: 0.33
+Nodes (5): cat1, item1, item2, tmpl1, tmpl2
+
+### Community 488 - "settings.e2e.test.ts"
+Cohesion: 0.40
+Nodes (5): SettingsModule, Module, build(), { db }, { settingsSvc }
+
+### Community 489 - "Invite Links"
+Cohesion: 0.33
+Nodes (6): Creating invite links, Invite Links, Related pages, Revoking an invite link, Sharing the link, What invite links do
+
+### Community 490 - "Weather Forecasts"
+Cohesion: 0.33
+Nodes (6): Data source and time windows, Session cache, Temperature and wind units, Weather Forecasts, What is shown, Where forecasts appear
+
+### Community 491 - "theme-lint.mjs"
+Cohesion: 0.40
+Nodes (3): EXEMPT, offenders, strict
+
+### Community 493 - "maps.service.test.ts"
+Cohesion: 0.50
+Nodes (4): makeDb(), { maps }, { serveFilePath }, svc()
+
 ## Knowledge Gaps
-- **2383 isolated node(s):** `here`, `dbFile`, `serverDir`, `env`, `child` (+2378 more)
+- **3217 isolated node(s):** `here`, `dbFile`, `serverDir`, `env`, `child` (+3212 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **112 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **84 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TranslationStrings` connect `Shared I18n Ar` to `I18n Shared Zh Tests`, `Shared I18n Zh`, `Shared I18n Sv`, `Shared I18n Vi`, `Shared I18n Br`, `Shared I18n Cs`, `Shared I18n De`, `Shared I18n En`, `Shared I18n Es`, `Shared I18n Fr`, `Shared I18n Gr`, `Shared I18n Hu`, `Shared I18n Id`, `Shared I18n It`, `Shared I18n Ja`, `Shared I18n Ko`, `Shared I18n Nl`, `Shared I18n Pl`, `Shared I18n Ru`, `Shared I18n Tr`, `Shared I18n Uk`, `Client Pages Atlas Tests`?**
-  _High betweenness centrality (0.277) - this node is a cross-community bridge._
-- **Why does `useTranslation()` connect `Client Components Settings Tests` to `Client Components Tests Tests`, `Client Sync Store Tests`, `Client Components Admin Tests`, `Client Components Planner Tests`, `Client Api Components Tests`, `Client Components Budget Tests`, `Client Components Planner Tests`, `Client Components Map Tests`, `Client Components Collab (Client)`, `Client Components Todo Tests`, `Client Components Collections Tests`, `Client Appearancesettingstab Components (Client)`, `Client Pages Journeydetailpage (Client)`, `Client Components Collections Tests`, `Client Components Journey (Client)`, `Client Components Planner Tests`, `Client Collections Components Tests`, `Client Pages Atlas Tests`, `Client Components Packing Tests`, `Client Pages Journeypublic (Client)`, `Client Api Authurl Tests`, `Client Components Journey (Client)`, `Client Components Systemnotices Tests`, `Adminpluginspanel Client Components (Client)`, `Client Pages Journeypage (Client)`, `Client Components Journey (Client)`, `Client Components Journey (Client)`?**
-  _High betweenness centrality (0.196) - this node is a cross-community bridge._
-- **Why does `User` connect `Collections Server Nest Tests` to `Days Server Nest (Server)`, `Server Tests Unit Tests`, `Journey Server Nest Tests`, `Server Services Nest Tests`, `Import Server Nest Tests`, `Admin Server Nest Tests`, `Tags Server Nest Tests`, `Trip Invite Server (Server)`, `Server Services Host Tests`, `Server Services Passkeyservice Tests`, `Memories Server Nest Tests`, `Memories Server Nest (Server)`, `Server Services Mcp Tests`, `Plugins Server Nest Tests`, `Server Services Oauthservice Tests`, `Server Assignments Nest Tests`, `Auth Server Nest Tests`, `Categories Server Nest Tests`, `Settings Server Nest Tests`, `Controller Server Nest (Server)`, `Server Nest Integrations (Server)`, `Files Server Nest Tests`, `Photos Server Nest (Server)`, `Oauth Server Nest Tests`, `System Notices Server Tests`, `Packing Server Nest Tests`, `Trips Server Nest (Server)`, `Vacay Server Nest Tests`, `Server Services Authservice Tests`, `Server Services Airtrail Tests`, `Maps Server Nest Tests`, `Server Services Placeservice Tests`, `Collab Server Nest Tests`, `Places Server Nest Tests`, `Server Services Unsplashservice Tests`, `Trips Server Nest (Server)`, `Slidingtabs Client Components Tests`, `Server Services Adminservice Tests`, `Controller Server Nest Tests`, `Budget Server Nest Tests`, `Server Scheduler Services Tests`, `Server Nest Health Tests`, `Notifications Server Nest Tests`, `Backup Server Nest Tests`, `Reservations Server Nest Tests`, `Server Services Budgetservice Tests`, `Trips Server Nest (Server)`, `Server Services Tripservice (Server)`, `Server Nest Auth Tests`, `Memories Server Services Tests`, `Atlas Server Nest Tests`, `Server Auth Middleware Tests`, `Feeds Server Nest (Server)`, `Share Server Nest Tests`, `Trips Server Nest Tests`, `Todo Server Nest Tests`, `Server Services Oidcservice Tests`, `Memories Server Nest Tests`, `Server Nest Accommodations Tests`, `Server Nest Days (Server)`?**
-  _High betweenness centrality (0.123) - this node is a cross-community bridge._
+  _High betweenness centrality (0.252) - this node is a cross-community bridge._
+- **Why does `useTranslation()` connect `Client Components Settings Tests` to `Client Components Tests Tests`, `Client Sync Store Tests`, `Client Components Admin Tests`, `Client Components Planner Tests`, `Client Api Components Tests`, `Client Components Budget Tests`, `Server Memories Services Tests`, `Client Components Journey (Client)`, `Client Appearancesettingstab Components (Client)`, `Server Utils Ssrfguard Tests`, `Client Pages Journeydetailpage (Client)`, `Vacay Shared Schema Tests`, `Client Components Planner Tests`, `Client Collections Components Tests`, `Wiki Updating`, `Client Pages Atlas Tests`, `Server Nest Llm Tests`, `Trip Shared Schema`, `Client Components Packing Tests`, `Client Pages Journeypublic (Client)`, `Server Tests Unit Tests`, `Controller Server Plugins Tests`, `Client Components Journey (Client)`, `Client Utils Uploadqueue Tests`, `Client Components Systemnotices Tests`, `Adminpluginspanel Client Components (Client)`, `Client Components Files Tests`, `Memories Server Nest Tests`?**
+  _High betweenness centrality (0.171) - this node is a cross-community bridge._
+- **Why does `User` connect `Trips Server Nest (Server)` to `Days Server Nest (Server)`, `Journey Server Nest Tests`, `Server Services Nest Tests`, `Trip Invite Server (Server)`, `Admin Server Nest Tests`, `Tags Server Nest Tests`, `Server Services Passkeyservice Tests`, `Server Services Host Tests`, `Memories Server Nest Tests`, `Memories Server Nest (Server)`, `Place Shared Schema`, `Server Services Oauthservice Tests`, `Server Assignments Nest Tests`, `Collections Server Nest Tests`, `Categories Server Nest Tests`, `Settings Server Nest Tests`, `Controller Server Nest (Server)`, `Client Components Journey (Client)`, `Files Server Nest Tests`, `Photos Server Nest (Server)`, `Oauth Server Nest Tests`, `Packing Server Nest Tests`, `Vacay Server Nest Tests`, `Server Services Authservice Tests`, `Day Plans and Notes`, `Maps Server Nest Tests`, `Collab Server Nest Tests`, `Places Server Nest Tests`, `Server Services Adminservice Tests`, `Budget Server Nest Tests`, `Server Nest Health Tests`, `Notifications Server Nest Tests`, `Backup Server Nest Tests`, `Reservations Server Nest Tests`, `Server Services Tripservice (Server)`, `Atlas Server Nest Tests`, `Server Auth Middleware Tests`, `Feeds Server Nest (Server)`, `Share Server Nest Tests`, `Todo Server Nest Tests`, `Server Services Oidcservice Tests`, `Server Nest Accommodations Tests`, `Server Systemnotices Conditions Tests`, `Server Nest Days (Server)`?**
+  _High betweenness centrality (0.104) - this node is a cross-community bridge._
 - **What connects `here`, `dbFile`, `serverDir` to the rest of the system?**
-  _2386 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3220 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Client Components Tests Tests` be split into smaller, more focused modules?**
-  _Cohesion score 0.021276292335115864 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.03223443223443224 - nodes in this community are weakly interconnected._
 - **Should `Client Sync Store Tests` be split into smaller, more focused modules?**
-  _Cohesion score 0.02731673582295989 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.03565448635871171 - nodes in this community are weakly interconnected._
 - **Should `Client Components Admin Tests` be split into smaller, more focused modules?**
-  _Cohesion score 0.01871619184998197 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.022984126984126985 - nodes in this community are weakly interconnected._
