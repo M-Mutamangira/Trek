@@ -14,7 +14,7 @@
   <img src="docs/subtitle-dark.png" alt="Your trips. Your plan. Your server." height="28" />
 </picture>
 
-A self-hosted, real-time collaborative travel planner — with maps, budgets, packing lists, a journal, and AI built in.
+A real-time collaborative travel planner — with maps, budgets, packing lists, a journal, and AI built in.
 
 <br />
 
